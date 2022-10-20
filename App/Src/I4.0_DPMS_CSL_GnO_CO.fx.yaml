@@ -205,7 +205,6 @@
                 Width: =33
                 Wrap: =false
                 X: =1226
-                Y: =9
                 ZIndex: =16
 
             StarVisible1_2 As label:
@@ -223,8 +222,42 @@
                 Width: =31
                 Wrap: =false
                 X: =1228
-                Y: =62
+                Y: =52
                 ZIndex: =17
+
+            Label47_25 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Size: =15
+                Text: ="Please select Focus Area."
+                Visible: |-
+                    =If(
+                        IsBlank(Dropdown9_7.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult'),
+                        true,
+                        false
+                    )
+                Width: =1153
+                X: =40
+                Y: =10
+                ZIndex: =18
+
+            Label47_26 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Size: =15
+                Text: ="Please select Focus Area."
+                Visible: |-
+                    =If(
+                        IsBlank(Dropdown9_6.SelectedText.Value),
+                        true,
+                        false
+                    )
+                Width: =1153
+                X: =40
+                Y: =62
+                ZIndex: =19
 
     "'I4.0_DPMS_CSL_XXX_C_F_6' As 'I4.0_DPMS_CSL_XXX_C_F'":
         Height: =26
