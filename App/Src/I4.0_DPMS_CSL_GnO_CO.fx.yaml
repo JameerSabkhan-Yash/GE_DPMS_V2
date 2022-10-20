@@ -70,7 +70,6 @@
 
             ObjectiveDescription As text:
                 Align: =Align.Justify
-                BorderColor: =RGBA(131, 24, 75, 1)
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =""
@@ -79,15 +78,16 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 FocusedBorderThickness: =4
                 Height: =105
-                HintText: ="Please enter your objective descriptio."
-                HoverBorderColor: =RGBA(131, 24, 75, 1)
+                HintText: ="Please enter your objective description."
+                HoverBorderColor: =RGBA(0, 0, 0, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 211, 205, 1)
                 Mode: =TextMode.MultiLine
+                PressedBorderColor: =RGBA(0, 0, 0, 1)
                 Size: =13
                 Width: =1186
                 X: =40
-                Y: =140
+                Y: =150
                 ZIndex: =2
 
             Label47_16 As label:
@@ -571,7 +571,7 @@
                 Width: =31
                 Wrap: =false
                 X: =1228
-                Y: =136
+                Y: =146
                 ZIndex: =26
 
             StarVisible1_4 As label:
