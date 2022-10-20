@@ -94,11 +94,11 @@
     "Id": "38777bab-fae0-4d85-a1d0-0d18db2a9e45",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "Name": "CSL_DPMS_201022_v2",
+    "Name": "CSL_DPMS_201022_v2_Jameer",
     "OriginatingVersion": "1.326"
   },
   "PublishInfo": {
-    "AppName": "CSL_DPMS_201022_v2",
+    "AppName": "CSL_DPMS_201022_v2_Jameer",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",
