@@ -1,4 +1,4 @@
-"CreateObjective As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+"'I4.0_DPMS_CSL_GnO_CO' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     Fill: =RGBA(226, 223, 218, 1)
 
     "'I4.0_DPMS_CSL_GnO_R2_CI-2_7' As rectangle":
@@ -373,10 +373,7 @@
             Y: =137
             ZIndex: =12
 
-    "'I4.0_DPMS_CSL_XXX_C_N_7' As 'I4.0_DPMS_CSL_XXX_C_N'":
-        Height: =357
-        Width: =1350
-        X: =7
-        Y: =91
+    "'I4.0_DPMS_CSL_XXX_C_N_7' As 'I4.0_DPMS_CSL_XXX_C_N_3'":
+        Y: =83
         ZIndex: =17
 
