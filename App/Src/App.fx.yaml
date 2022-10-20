@@ -140,5 +140,14 @@ App As appinfo:
             varTabSelected,
             0
         );
+        //Global var for ORG & BU 
+        Set(
+            I4_0_DPMS_CSL_XXX_GVORG,
+            "ORG1"
+        );
+        Set(
+            I4_0_DPMS_CSL_XXX_GVBU,
+            "BU1"
+        );
     StartScreen: =
 

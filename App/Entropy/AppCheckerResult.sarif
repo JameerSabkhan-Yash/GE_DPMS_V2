@@ -6140,6 +6140,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.I4_0_DPMS_CSL_XXX_GVORG"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.I4_0_DPMS_CSL_XXX_GVORG",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "I4_0_DPMS_CSL_XXX_GVORG",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.varOverView"
                 }
               ],
@@ -6241,6 +6271,216 @@
               },
               "properties": {
                 "member": "varInsightDashboad",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.I4_0_DPMS_CSL_GnO_LVOBNN"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.I4_0_DPMS_CSL_GnO_LVOBNN",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "I4_0_DPMS_CSL_GnO_LVOBNN",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.I4_0_DPMS_CSL_GnO_CO_LVFL"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.I4_0_DPMS_CSL_GnO_CO_LVFL",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "I4_0_DPMS_CSL_GnO_CO_LVFL",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.I4_0_DPMS_CSL_GnO_CO_LVFA"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.I4_0_DPMS_CSL_GnO_CO_LVFA",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "I4_0_DPMS_CSL_GnO_CO_LVFA",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.I4_0_DPMS_CSL_GnO_CO_LVOBNI"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.I4_0_DPMS_CSL_GnO_CO_LVOBNI",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "I4_0_DPMS_CSL_GnO_CO_LVOBNI",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.I4_0_DPMS_CSL_XXX_GVBU"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.I4_0_DPMS_CSL_XXX_GVBU",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "I4_0_DPMS_CSL_XXX_GVBU",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.I4_0_DPMS_CSL_GnO_CO_LVOBPN"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.I4_0_DPMS_CSL_GnO_CO_LVOBPN",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "I4_0_DPMS_CSL_GnO_CO_LVOBPN",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.I4_0_DPMS_CSL_GnO_CO_LVOBPI"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.I4_0_DPMS_CSL_GnO_CO_LVOBPI",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "I4_0_DPMS_CSL_GnO_CO_LVOBPI",
                 "module": "App",
                 "type": "App"
               }

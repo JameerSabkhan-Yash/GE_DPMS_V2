@@ -1,7 +1,38 @@
 "'I4.0_DPMS_CSL_GnO_CO' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     Fill: =RGBA(226, 223, 218, 1)
     OnVisible: |-
-        =Reset(Dropdown9_6);
+        =//local var for Objective Next No 
+        Set(
+           I4_0_DPMS_CSL_GnO_LVOBNN,
+            0
+        );
+        //local var for Objective Next ID 
+        Set(
+            I4_0_DPMS_CSL_GnO_CO_LVOBNI,
+            ""
+        );
+        //local var for focus area code 
+        Set(
+            I4_0_DPMS_CSL_GnO_CO_LVFA,
+            ""
+        );
+        //local var for focus line code 
+        Set(
+            I4_0_DPMS_CSL_GnO_CO_LVFL,
+            ""
+        );
+        //local var for Objective Pre ID
+        Set(
+            I4_0_DPMS_CSL_GnO_CO_LVOBPI,
+            ""
+        );
+        //local var for Objective Pre No
+        Set(
+            I4_0_DPMS_CSL_GnO_CO_LVOBPN,
+            0
+        );
+        //Reset Dropdown
+        Reset(Dropdown9_6);
         Reset(Dropdown9_7);
 
     "'I4.0_DPMS_CSL_GnO_R2_CI-2_7' As rectangle":
@@ -226,10 +257,8 @@
                 ZIndex: =17
 
             Label47_25 As label:
-                Align: =Align.Center
                 FontWeight: =FontWeight.Semibold
                 Height: =34
-                Size: =15
                 Text: ="Please select Focus Area."
                 Visible: |-
                     =If(
@@ -243,10 +272,8 @@
                 ZIndex: =18
 
             Label47_26 As label:
-                Align: =Align.Center
                 FontWeight: =FontWeight.Semibold
                 Height: =34
-                Size: =15
                 Text: ="Please select Focus Area."
                 Visible: |-
                     =If(
