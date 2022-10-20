@@ -164,17 +164,18 @@
                 Height: =35
                 OnSelect: |
                     =If(
-                        !IsBlank(dpFocusArea.SelectedText.Value) And !IsBlank(dpFocusLine.SelectedText.Value) And !IsBlank(ObjectiveDescription.Text) And !IsBlank(dpOwner.SelectedText.Value) And !IsBlank(TextInput3.Text) And !IsBlank(TextInput3_2.Text) And !IsBlank(DatePicker1.SelectedDate),
+                        !IsBlank(dpFocusArea.SelectedText.Value) And !IsBlank(dpFocusLine.SelectedText.Value) And !IsBlank(ObjectiveDescription.Text) And !IsBlank(dpOwner.SelectedText.Value) And !IsBlank(dpOwner.Selected.Title) And !IsBlank(ProgressTI.Text) And !IsBlank(TargetDatePicker.SelectedDate),
+                        
                         Patch(
                             I4_0_DPMS_CSL_GnO,
                             Defaults(I4_0_DPMS_CSL_GnO),
                             {
-                                ObjectiveId: varObjNextId,
-                                ObjNo: varObjNextNo,
-                                FocusAreaCode: varFA,
-                                FocusLineCode: varFL,
-                                ORG: varORG,
-                                BU: varBU,
+                                ObjectiveId: I4_0_DPMS_CSL_GnO_CO_LVOBNI,
+                                ObjNo: I4_0_DPMS_CSL_GnO_LVOBNN,
+                                FocusAreaCode: I4_0_DPMS_CSL_GnO_CO_LVFA,
+                                FocusLineCode: I4_0_DPMS_CSL_GnO_CO_LVFL,
+                                ORG: I4_0_DPMS_CSL_XXX_GVORG,
+                                BU: I4_0_DPMS_CSL_XXX_GVBU,
                                 ObjCreatedBy: {
                                     '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",
                                     Claims: "i:0#.f|membership|" & User().Email,
@@ -188,8 +189,8 @@
                                     '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",
                                     Claims: "i:0#.f|membership|" & Last(
                                         Filter(
-                                            SharePointUser,
-                                            Title = Dropdown1_2.SelectedText.Value
+                                            I4_0_DPMS_CSL_XXX_CSPU,
+                                            Title = dpOwner.SelectedText.Value
                                         ).Email
                                     ).Email,
                                     Department: "",
@@ -198,18 +199,18 @@
                                     JobTitle: "",
                                     Picture: ""
                                 },
-                                FocusArea: Dropdown1.SelectedText.Value,
-                                FocusLine: Dropdown1_1.SelectedText.Value,
-                                ObjectiveDescription: TextInput2.Text,
+                                FocusArea: dpFocusArea.SelectedText.Value,
+                                FocusLine: dpFocusLine.SelectedText.Value,
+                                ObjectiveDescription: ObjectiveDescription.Text,
                                 ObjCreatedDateTime: Today(),
-                                ObjTargetDateTime: DatePicker1.SelectedDate,
-                                ObjProgress: {Value: TextInput3.Text},
-                                ObjStatus: {Value: TextInput3_2.Text}
+                                ObjTargetDateTime: TargetDatePicker.SelectedDate,
+                                ObjProgress: {Value: ProgressTI.Text},
+                                ObjStatus: {Value: "Not Started"}
                             //ObjStatus : "Red" 
                             }
                         );
                         Notify(
-                            "Your Objective ID : " & varObjNextId & " is successfully created.",
+                            "Your Objective ID : " & I4_0_DPMS_CSL_GnO_CO_LVOBNI & " is successfully created.",
                             NotificationType.Success
                         ),
                         Notify(
@@ -231,7 +232,7 @@
                 Y: =345
                 ZIndex: =12
 
-            DatePicker3_3 As datepicker:
+            TargetDatePicker As datepicker:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =0
                 Height: =35
@@ -529,7 +530,7 @@
                 Y: =334
                 ZIndex: =27
 
-            TextInput1 As text:
+            ProgressTI As text:
                 Default: ="0%"
                 DisplayMode: |
                     =DisplayMode.View
