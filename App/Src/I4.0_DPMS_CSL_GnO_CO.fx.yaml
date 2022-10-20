@@ -32,8 +32,8 @@
             0
         );
         //Reset Dropdown
-        Reset(Dropdown9_6);
-        Reset(Dropdown9_7);
+        Reset(dpFocusLine);
+        Reset(dpFocusArea);
 
     "'I4.0_DPMS_CSL_GnO_R2_CI-2_7' As rectangle":
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -65,20 +65,10 @@
             Y: =0
             ZIndex: =1
 
-            Dropdown9_5 As dropdown:
-                BorderColor: =RGBA(0, 0, 0, 1)
-                ChevronBackground: =RGBA(0, 0, 0, 0.7)
-                Height: =32
-                Items: =DropDownSample
-                Width: =1187
-                X: =40
-                Y: =228
-                ZIndex: =1
-
-            TextInput1_2 As text:
+            ObjectiveDescription As text:
                 Default: =""
                 Height: =145
-                HintText: =" Enter values..."
+                HintText: ="Please enter your objective descriptio."
                 Mode: =TextMode.MultiLine
                 Width: =1186
                 X: =40
@@ -195,18 +185,142 @@
                 Y: =331
                 ZIndex: =13
 
-            Dropdown9_6 As dropdown:
+            dpFocusLine As dropdown:
                 AllowEmptySelection: =true
                 BorderColor: =RGBA(0, 0, 0, 1)
                 ChevronBackground: =RGBA(0, 0, 0, 0.7)
                 Height: =35
-                Items: =Filter(I4_0_DPMS_CSL_CFG_FL,FocusArea = Dropdown9_7.Selected.Result).FocusLine
+                Items: =Filter(I4_0_DPMS_CSL_CFG_FL,FocusArea = dpFocusArea.SelectedText.Value).FocusLine
+                OnChange: |-
+                    =//Set the Focus area code 
+                    Set(
+                        I4_0_DPMS_CSL_GnO_CO_LVFA,
+                        Last(
+                            Filter(
+                                I4_0_DPMS_CSL_CFG_FL,
+                                FocusArea = dpFocusArea.SelectedText.Value
+                            ).FocusAreaCode
+                        ).FocusAreaCode
+                    );
+                    //Set the Focus Line code
+                    Set(
+                        I4_0_DPMS_CSL_GnO_CO_LVFL,
+                        Last(
+                            Filter(
+                                I4_0_DPMS_CSL_CFG_FL,
+                                FocusLine = dpFocusLine.SelectedText.Value
+                            ).FocusLineCode
+                        ).FocusLineCode
+                    );
+                    //Set the Objective Pre Id
+                    Set(
+                        I4_0_DPMS_CSL_GnO_CO_LVOBPI,
+                        Last(
+                            Filter(
+                                I4_0_DPMS_CSL_GnO,
+                                FocusArea = dpFocusArea.SelectedText.Value && FocusLine = dpFocusLine.SelectedText.Value && ORG = I4_0_DPMS_CSL_XXX_GVORG && BU = I4_0_DPMS_CSL_XXX_GVBU
+                            ).ObjectiveId
+                        ).ObjectiveId
+                    );
+                    //Set the Objective Pre No
+                    Set(
+                        I4_0_DPMS_CSL_GnO_CO_LVOBPN,
+                        Last(
+                            Filter(
+                                I4_0_DPMS_CSL_GnO,
+                                FocusArea = dpFocusArea.SelectedText.Value && FocusLine = dpFocusLine.SelectedText.Value && ORG = I4_0_DPMS_CSL_XXX_GVORG && BU = I4_0_DPMS_CSL_XXX_GVBU
+                            ).ObjNo
+                        ).ObjNo
+                    );
+                    //Set the Objective Next No
+                    Set(
+                        I4_0_DPMS_CSL_GnO_LVOBNN,
+                        I4_0_DPMS_CSL_GnO_CO_LVOBPN + 1
+                    );
+                    //Set the Objective Next Id
+                    If(
+                        IsBlank(I4_0_DPMS_CSL_GnO_CO_LVFL),
+                        "",
+                        Set(
+                            I4_0_DPMS_CSL_GnO_CO_LVOBNI,
+                            Concatenate(
+                                I4_0_DPMS_CSL_XXX_GVORG,
+                                I4_0_DPMS_CSL_XXX_GVBU,
+                                I4_0_DPMS_CSL_GnO_CO_LVFA,
+                                I4_0_DPMS_CSL_GnO_CO_LVFL,
+                                "OB",
+                                I4_0_DPMS_CSL_GnO_LVOBNN
+                            )
+                        )
+                    )
+                OnSelect: |-
+                    =//Set the Focus area code 
+                    Set(
+                        I4_0_DPMS_CSL_GnO_CO_LVFA,
+                        Last(
+                            Filter(
+                                I4_0_DPMS_CSL_CFG_FL,
+                                FocusArea = dpFocusArea.SelectedText.Value
+                            ).FocusAreaCode
+                        ).FocusAreaCode
+                    );
+                    //Set the Focus Line code
+                    Set(
+                        I4_0_DPMS_CSL_GnO_CO_LVFL,
+                        Last(
+                            Filter(
+                                I4_0_DPMS_CSL_CFG_FL,
+                                FocusLine = dpFocusLine.SelectedText.Value
+                            ).FocusLineCode
+                        ).FocusLineCode
+                    );
+                    //Set the Objective Pre Id
+                    Set(
+                        I4_0_DPMS_CSL_GnO_CO_LVOBPI,
+                        Last(
+                            Filter(
+                                I4_0_DPMS_CSL_GnO,
+                                FocusArea = dpFocusArea.SelectedText.Value && FocusLine = dpFocusLine.SelectedText.Value && ORG = I4_0_DPMS_CSL_XXX_GVORG && BU = I4_0_DPMS_CSL_XXX_GVBU
+                            ).ObjectiveId
+                        ).ObjectiveId
+                    );
+                    //Set the Objective Pre No
+                    Set(
+                        I4_0_DPMS_CSL_GnO_CO_LVOBPN,
+                        Last(
+                            Filter(
+                                I4_0_DPMS_CSL_GnO,
+                                FocusArea = dpFocusArea.SelectedText.Value && FocusLine = dpFocusLine.SelectedText.Value && ORG = I4_0_DPMS_CSL_XXX_GVORG && BU = I4_0_DPMS_CSL_XXX_GVBU
+                            ).ObjNo
+                        ).ObjNo
+                    );
+                    //Set the Objective Next No
+                    Set(
+                        I4_0_DPMS_CSL_GnO_LVOBNN,
+                        I4_0_DPMS_CSL_GnO_CO_LVOBPI + 1
+                    );
+                    //Set the Objective Next Id
+                    If(
+                        IsBlank(I4_0_DPMS_CSL_GnO_CO_LVFL),
+                        "",
+                        Set(
+                            I4_0_DPMS_CSL_GnO_CO_LVOBNI,
+                            Concatenate(
+                                I4_0_DPMS_CSL_XXX_GVORG,
+                                I4_0_DPMS_CSL_XXX_GVBU,
+                                I4_0_DPMS_CSL_GnO_CO_LVFA,
+                                I4_0_DPMS_CSL_GnO_CO_LVFL,
+                                "OB",
+                                I4_0_DPMS_CSL_GnO_LVOBNN
+                            )
+                        )
+                    )
                 Width: =1187
                 X: =40
                 Y: =62
                 ZIndex: =14
 
-            Dropdown9_7 As dropdown:
+            dpFocusArea As dropdown:
                 AccessibleLabel: ="Please Slect the focus Area"
                 AllowEmptySelection: =true
                 BorderColor: =RGBA(0, 0, 0, 1)
@@ -229,7 +343,7 @@
                 Text: ="*"
                 Visible: |-
                     =If(
-                        IsBlank(Dropdown9_7.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult'),
+                        IsBlank(dpFocusArea.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult'),
                         true,
                         false
                     )
@@ -246,7 +360,7 @@
                 Text: ="*"
                 Visible: |-
                     =If(
-                        IsBlank(Dropdown9_6.SelectedText.Value),
+                        IsBlank(dpFocusLine.SelectedText.Value),
                         true,
                         false
                     )
@@ -262,7 +376,7 @@
                 Text: ="Please select Focus Area."
                 Visible: |-
                     =If(
-                        IsBlank(Dropdown9_7.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult'),
+                        IsBlank(dpFocusArea.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult'),
                         true,
                         false
                     )
@@ -274,10 +388,10 @@
             Label47_26 As label:
                 FontWeight: =FontWeight.Semibold
                 Height: =34
-                Text: ="Please select Focus Area."
+                Text: ="Please select Focus Line."
                 Visible: |-
                     =If(
-                        IsBlank(Dropdown9_6.SelectedText.Value),
+                        IsBlank(dpFocusLine.SelectedText.Value),
                         true,
                         false
                     )
@@ -285,6 +399,60 @@
                 X: =40
                 Y: =62
                 ZIndex: =19
+
+            FL As label:
+                Fill: =RGBA(255, 191, 0, 1)
+                Height: =50
+                Text: =I4_0_DPMS_CSL_GnO_CO_LVOBPI
+                Width: =328
+                X: =56
+                Y: =217
+                ZIndex: =21
+
+            FL_1 As label:
+                Fill: =RGBA(255, 191, 0, 1)
+                Height: =44
+                Text: =I4_0_DPMS_CSL_GnO_CO_LVOBPN
+                Width: =189
+                X: =660
+                Y: =223
+                ZIndex: =22
+
+            FL_3 As label:
+                Fill: =RGBA(255, 191, 0, 1)
+                Height: =50
+                Text: =I4_0_DPMS_CSL_GnO_LVOBNN
+                Width: =123
+                X: =412
+                Y: =217
+                ZIndex: =24
+
+            FL_4 As label:
+                Fill: =RGBA(255, 191, 0, 1)
+                Height: =50
+                Text: =I4_0_DPMS_CSL_GnO_CO_LVOBNI
+                Width: =328
+                X: =883
+                Y: =223
+                ZIndex: =25
+
+            StarVisible1_3 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =33
+                Size: =20
+                Text: ="*"
+                Visible: |-
+                    =If(
+                        IsBlank(ObjectiveDescription.Text),
+                        true,
+                        false
+                    )
+                Width: =31
+                Wrap: =false
+                X: =1228
+                Y: =125
+                ZIndex: =26
 
     "'I4.0_DPMS_CSL_XXX_C_F_6' As 'I4.0_DPMS_CSL_XXX_C_F'":
         Height: =26
