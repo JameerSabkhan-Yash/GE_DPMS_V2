@@ -70,7 +70,7 @@
             ObjectiveDescription As text:
                 Align: =Align.Justify
                 Default: =""
-                Height: =145
+                Height: =105
                 HintText: ="Please enter your objective descriptio."
                 Mode: =TextMode.MultiLine
                 Width: =1186
@@ -85,7 +85,7 @@
                 Text: ="Owner"
                 Width: =130
                 X: =40
-                Y: =300
+                Y: =270
                 ZIndex: =4
 
             Label47_17 As label:
@@ -96,7 +96,7 @@
                 Text: ="Status"
                 Width: =112
                 X: =368
-                Y: =300
+                Y: =270
                 ZIndex: =5
 
             Label47_18 As label:
@@ -106,7 +106,7 @@
                 Text: ="Progress"
                 Width: =130
                 X: =681
-                Y: =300
+                Y: =270
                 ZIndex: =6
 
             Label47_19 As label:
@@ -116,7 +116,7 @@
                 Text: ="Target Date"
                 Width: =130
                 X: =1015
-                Y: =300
+                Y: =270
                 ZIndex: =7
 
             dpOwner As dropdown:
@@ -135,9 +135,9 @@
                         ) && Title <> User().FullName
                     ).Title
                 Size: =15
-                Width: =200
+                Width: =250
                 X: =40
-                Y: =345
+                Y: =315
                 ZIndex: =8
 
             Label47_20 As label:
@@ -156,7 +156,7 @@
                 Text: ="Cancel"
                 Width: =150
                 X: =1078
-                Y: =412
+                Y: =392
                 ZIndex: =10
 
             Button17_9 As button:
@@ -221,7 +221,7 @@
                 Text: ="Create"
                 Width: =150
                 X: =883
-                Y: =412
+                Y: =392
                 ZIndex: =11
 
             Circle1_3 As circle:
@@ -229,7 +229,7 @@
                 Height: =35
                 Width: =32
                 X: =403
-                Y: =345
+                Y: =315
                 ZIndex: =12
 
             TargetDatePicker As datepicker:
@@ -240,7 +240,7 @@
                 IconFill: =Color.Black
                 Width: =200
                 X: =1015
-                Y: =345
+                Y: =315
                 ZIndex: =13
 
             dpFocusLine As dropdown:
@@ -458,42 +458,6 @@
                 Y: =62
                 ZIndex: =19
 
-            FL As label:
-                Fill: =RGBA(255, 191, 0, 1)
-                Height: =50
-                Text: =I4_0_DPMS_CSL_GnO_CO_LVOBPI
-                Width: =328
-                X: =56
-                Y: =217
-                ZIndex: =21
-
-            FL_1 As label:
-                Fill: =RGBA(255, 191, 0, 1)
-                Height: =44
-                Text: =I4_0_DPMS_CSL_GnO_CO_LVOBPN
-                Width: =189
-                X: =660
-                Y: =223
-                ZIndex: =22
-
-            FL_3 As label:
-                Fill: =RGBA(255, 191, 0, 1)
-                Height: =50
-                Text: =I4_0_DPMS_CSL_GnO_LVOBNN
-                Width: =123
-                X: =412
-                Y: =217
-                ZIndex: =24
-
-            FL_4 As label:
-                Fill: =RGBA(255, 191, 0, 1)
-                Height: =50
-                Text: =I4_0_DPMS_CSL_GnO_CO_LVOBNI
-                Width: =328
-                X: =883
-                Y: =223
-                ZIndex: =25
-
             StarVisible1_3 As label:
                 Align: =Align.Center
                 Color: =RGBA(255, 0, 0, 1)
@@ -537,8 +501,19 @@
                 Height: =35
                 Width: =200
                 X: =681
-                Y: =345
+                Y: =315
                 ZIndex: =28
+
+            TargetDatePicker_1 As datepicker:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =0
+                Height: =35
+                IconBackground: =Color
+                IconFill: =Color.Black
+                Width: =200
+                X: =458
+                Y: =392
+                ZIndex: =29
 
     "'I4.0_DPMS_CSL_XXX_C_F_6' As 'I4.0_DPMS_CSL_XXX_C_F'":
         Height: =26
