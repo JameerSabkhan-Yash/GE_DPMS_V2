@@ -162,6 +162,61 @@
             Button17_9 As button:
                 Fill: =RGBA(255, 0, 0, 1)
                 Height: =35
+                OnSelect: |
+                    =If(
+                        !IsBlank(dpFocusArea.SelectedText.Value) And !IsBlank(dpFocusLine.SelectedText.Value) And !IsBlank(ObjectiveDescription.Text) And !IsBlank(dpOwner.SelectedText.Value) And !IsBlank(TextInput3.Text) And !IsBlank(TextInput3_2.Text) And !IsBlank(DatePicker1.SelectedDate),
+                        Patch(
+                            I4_0_DPMS_CSL_GnO,
+                            Defaults(I4_0_DPMS_CSL_GnO),
+                            {
+                                ObjectiveId: varObjNextId,
+                                ObjNo: varObjNextNo,
+                                FocusAreaCode: varFA,
+                                FocusLineCode: varFL,
+                                ORG: varORG,
+                                BU: varBU,
+                                ObjCreatedBy: {
+                                    '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",
+                                    Claims: "i:0#.f|membership|" & User().Email,
+                                    Department: "",
+                                    DisplayName: User().FullName,
+                                    Email: User().Email,
+                                    JobTitle: "",
+                                    Picture: ""
+                                },
+                                ObjOwner: {
+                                    '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",
+                                    Claims: "i:0#.f|membership|" & Last(
+                                        Filter(
+                                            SharePointUser,
+                                            Title = Dropdown1_2.SelectedText.Value
+                                        ).Email
+                                    ).Email,
+                                    Department: "",
+                                    DisplayName: User().FullName,
+                                    Email: User().Email,
+                                    JobTitle: "",
+                                    Picture: ""
+                                },
+                                FocusArea: Dropdown1.SelectedText.Value,
+                                FocusLine: Dropdown1_1.SelectedText.Value,
+                                ObjectiveDescription: TextInput2.Text,
+                                ObjCreatedDateTime: Today(),
+                                ObjTargetDateTime: DatePicker1.SelectedDate,
+                                ObjProgress: {Value: TextInput3.Text},
+                                ObjStatus: {Value: TextInput3_2.Text}
+                            //ObjStatus : "Red" 
+                            }
+                        );
+                        Notify(
+                            "Your Objective ID : " & varObjNextId & " is successfully created.",
+                            NotificationType.Success
+                        ),
+                        Notify(
+                            "Please enter all flieds",
+                            NotificationType.Information
+                        )
+                    );
                 Text: ="Create"
                 Width: =150
                 X: =883
