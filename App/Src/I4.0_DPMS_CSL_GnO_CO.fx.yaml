@@ -80,7 +80,7 @@
 
             Label47_16 As label:
                 FontWeight: =FontWeight.Bold
-                Height: =30
+                Height: =35
                 Size: =15
                 Text: ="Owner"
                 Width: =130
@@ -91,7 +91,7 @@
             Label47_17 As label:
                 Align: =Align.Center
                 FontWeight: =FontWeight.Bold
-                Height: =30
+                Height: =35
                 Size: =15
                 Text: ="Status"
                 Width: =112
@@ -101,7 +101,7 @@
 
             Label47_18 As label:
                 FontWeight: =FontWeight.Bold
-                Height: =30
+                Height: =35
                 Size: =15
                 Text: ="Progress"
                 Width: =130
@@ -111,7 +111,7 @@
 
             Label47_19 As label:
                 FontWeight: =FontWeight.Bold
-                Height: =30
+                Height: =35
                 Size: =15
                 Text: ="Target Date"
                 Width: =130
