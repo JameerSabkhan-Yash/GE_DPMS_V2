@@ -1,9 +1,9 @@
 "'I4.0_DPMS_CSL_GnO_CO' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     Fill: =RGBA(226, 223, 218, 1)
-    OnVisible: |-
+    OnVisible: |+
         =//local var for Objective Next No 
         Set(
-           I4_0_DPMS_CSL_GnO_LVOBNN,
+            I4_0_DPMS_CSL_GnO_LVOBNN,
             0
         );
         //local var for Objective Next ID 
@@ -34,6 +34,8 @@
         //Reset Dropdown
         Reset(dpFocusLine);
         Reset(dpFocusArea);
+        
+        
 
     "'I4.0_DPMS_CSL_GnO_R2_CI-2_7' As rectangle":
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -66,6 +68,7 @@
             ZIndex: =1
 
             ObjectiveDescription As text:
+                Align: =Align.Justify
                 Default: =""
                 Height: =145
                 HintText: ="Please enter your objective descriptio."
@@ -93,7 +96,7 @@
                 Text: ="Owner"
                 Width: =130
                 X: =40
-                Y: =287
+                Y: =298
                 ZIndex: =4
 
             Label47_17 As label:
@@ -127,15 +130,25 @@
                 Y: =287
                 ZIndex: =7
 
-            Dropdown2_13 As dropdown:
+            dpOwner As dropdown:
                 ChevronBackground: =RGBA(0, 0, 0, 1)
                 FontWeight: =FontWeight.Bold
-                Height: =30
-                Items: =sss1
+                Height: =35
+                Items: |-
+                    =Filter(
+                        I4_0_DPMS_CSL_XXX_CSPU,
+                        GroupName in Concat(
+                            Filter(
+                                I4_0_DPMS_CSL_XXX_CSPG,
+                                Value(Result) >= Value(I4_0_DPMS_CSL_XXX_GVUGN)//&& Result <> varUserGroup
+                            ).Result,
+                            Result & ","
+                        ) && Title <> User().FullName
+                    ).Title
                 Size: =15
                 Width: =248
                 X: =40
-                Y: =334
+                Y: =345
                 ZIndex: =8
 
             Label47_20 As label:
@@ -380,14 +393,14 @@
                         true,
                         false
                     )
-                Width: =1153
+                Width: =223
                 X: =40
                 Y: =10
                 ZIndex: =18
 
             Label47_26 As label:
                 FontWeight: =FontWeight.Semibold
-                Height: =34
+                Height: =35
                 Text: ="Please select Focus Line."
                 Visible: |-
                     =If(
@@ -395,7 +408,7 @@
                         true,
                         false
                     )
-                Width: =1153
+                Width: =248
                 X: =40
                 Y: =62
                 ZIndex: =19
@@ -453,6 +466,24 @@
                 X: =1228
                 Y: =125
                 ZIndex: =26
+
+            StarVisible1_4 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =31
+                Size: =20
+                Text: ="*"
+                Visible: |-
+                    =If(
+                        IsBlank(dpOwner.SelectedText.Value),
+                        true,
+                        false
+                    )
+                Width: =46
+                Wrap: =false
+                X: =294
+                Y: =334
+                ZIndex: =27
 
     "'I4.0_DPMS_CSL_XXX_C_F_6' As 'I4.0_DPMS_CSL_XXX_C_F'":
         Height: =26

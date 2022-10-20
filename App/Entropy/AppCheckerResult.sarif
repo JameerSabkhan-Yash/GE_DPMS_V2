@@ -4160,19 +4160,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CO'.Canvas1_3.DataCard4_1.Dropdown2_13.AccessibleLabel"
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CO'.Canvas1_3.DataCard4_1.dpOwner.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CO'.Canvas1_3.DataCard4_1.Dropdown2_13.AccessibleLabel",
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CO'.Canvas1_3.DataCard4_1.dpOwner.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "I4.0_DPMS_CSL_GnO_CO",
-                "type": "'I4.0_DPMS_CSL_GnO_CO'.Canvas1_3.DataCard4_1.Dropdown2_13"
+                "type": "'I4.0_DPMS_CSL_GnO_CO'.Canvas1_3.DataCard4_1.dpOwner"
               }
             }
           ],

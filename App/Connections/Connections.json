@@ -1,4 +1,44 @@
 {
+  "85796ba0-4392-4ab9-b132-482d5d5c3c9b": {
+    "connectionParameters": {
+      "workFlowCallbackUri": "https://prod-19.centralindia.logic.azure.com:443/workflows/68065e80cc5b442082818630a8bbc554/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=G4yY-hZUqP-gat52iDp3tJtr5nIMOqPKZCXspGtqf2c",
+      "workflowEndpoint": "/subscriptions/742257b5-f53c-4533-82d4-84ab3c24009d/resourceGroups/2161a74d1c3e4d34a8c8131360d2e92c-102f4c18691d459091fa01248317b473/providers/Microsoft.Logic/workflows/d1dd3771-234a-4bc5-9609-1d3795d2f98d",
+      "workflowName": "d1dd3771-234a-4bc5-9609-1d3795d2f98d",
+      "workflowPath": "/subscriptions/742257b5-f53c-4533-82d4-84ab3c24009d/resourceGroups/2161a74d1c3e4d34a8c8131360d2e92c-102f4c18691d459091fa01248317b473/providers/Microsoft.Logic/workflows/d1dd3771-234a-4bc5-9609-1d3795d2f98d"
+    },
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "9d19dcc2-1e96-48d1-bced-a5544abf9feb": {
+          "value": "shared_sharepointonline"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "d1dd3771-234a-4bc5-9609-1d3795d2f98d"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "9d19dcc2-1e96-48d1-bced-a5544abf9feb"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "d1dd3771-234a-4bc5-9609-1d3795d2f98d"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "PowerApp->RequestType,GroupIs,Condition,SendanHTTPrequesttoS..."
+    ],
+    "dependencies": {
+      "shared_sharepointonline": "9d19dcc2-1e96-48d1-bced-a5544abf9feb"
+    },
+    "dependents": [],
+    "id": "85796ba0-4392-4ab9-b132-482d5d5c3c9b"
+  },
   "9d19dcc2-1e96-48d1-bced-a5544abf9feb": {
     "connectionParameters": {
       "sku": "Enterprise"
@@ -180,7 +220,9 @@
       "I4_0_DPMS_CSL_GnO_1"
     ],
     "dependencies": {},
-    "dependents": [],
+    "dependents": [
+      "85796ba0-4392-4ab9-b132-482d5d5c3c9b"
+    ],
     "id": "9d19dcc2-1e96-48d1-bced-a5544abf9feb"
   },
   "a61c2783-dccb-4dd7-bc73-52a4cb75784b": {

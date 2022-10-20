@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: |
+    OnStart: |-
         =ClearCollect(
             colHorizontalMenu,
             {
@@ -148,6 +148,101 @@ App As appinfo:
         Set(
             I4_0_DPMS_CSL_XXX_GVBU,
             "BU1"
+        );
+        //Collecting the sharepoint user
+        Set(
+            I4_0_DPMS_CSL_XXX_GVSPU,
+            'PowerApp->RequestType,GroupIs,Condition,SendanHTTPrequesttoS...'.Run(
+                "User",
+                "22",
+                "1"
+            ).respond
+        );
+        ClearCollect(
+            I4_0_DPMS_CSL_XXX_CSPU,
+            MatchAll(
+                I4_0_DPMS_CSL_XXX_GVSPU,
+                "(""Id"":(?<Id>[^""]*),""Title"":""(?<Title>[^""]*)"",""Email"":""(?<Email>[^""]*)"",""GroupId"":""(?<GroupId>[^""]*)"",""GroupName"":""(?<GroupName>[^""]*)"")"
+            )
+        );
+        Set(
+            I4_0_DPMS_CSL_XXX_GVSPU,
+            'PowerApp->RequestType,GroupIs,Condition,SendanHTTPrequesttoS...'.Run(
+                "User",
+                "23",
+                "2"
+            ).respond
+        );
+        Collect(
+            I4_0_DPMS_CSL_XXX_CSPU,
+            MatchAll(
+                I4_0_DPMS_CSL_XXX_GVSPU,
+                "(""Id"":(?<Id>[^""]*),""Title"":""(?<Title>[^""]*)"",""Email"":""(?<Email>[^""]*)"",""GroupId"":""(?<GroupId>[^""]*)"",""GroupName"":""(?<GroupName>[^""]*)"")"
+            )
+        );
+        Set(
+            I4_0_DPMS_CSL_XXX_GVSPU,
+            'PowerApp->RequestType,GroupIs,Condition,SendanHTTPrequesttoS...'.Run(
+                "User",
+                "24",
+                "3"
+            ).respond
+        );
+        Collect(
+            I4_0_DPMS_CSL_XXX_CSPU,
+            MatchAll(
+                I4_0_DPMS_CSL_XXX_GVSPU,
+                "(""Id"":(?<Id>[^""]*),""Title"":""(?<Title>[^""]*)"",""Email"":""(?<Email>[^""]*)"",""GroupId"":""(?<GroupId>[^""]*)"",""GroupName"":""(?<GroupName>[^""]*)"")"
+            )
+        );
+        Set(
+            I4_0_DPMS_CSL_XXX_GVSPU,
+            'PowerApp->RequestType,GroupIs,Condition,SendanHTTPrequesttoS...'.Run(
+                "User",
+                "25",
+                "4"
+            ).respond
+        );
+        Collect(
+            I4_0_DPMS_CSL_XXX_CSPU,
+            MatchAll(
+                I4_0_DPMS_CSL_XXX_GVSPU,
+                "(""Id"":(?<Id>[^""]*),""Title"":""(?<Title>[^""]*)"",""Email"":""(?<Email>[^""]*)"",""GroupId"":""(?<GroupId>[^""]*)"",""GroupName"":""(?<GroupName>[^""]*)"")"
+            )
+        );
+        Set(
+            I4_0_DPMS_CSL_XXX_GVSPU,
+            'PowerApp->RequestType,GroupIs,Condition,SendanHTTPrequesttoS...'.Run(
+                "User",
+                "26",
+                "5"
+            ).respond
+        );
+        Collect(
+            I4_0_DPMS_CSL_XXX_CSPU,
+            MatchAll(
+                I4_0_DPMS_CSL_XXX_GVSPU,
+                "(""Id"":(?<Id>[^""]*),""Title"":""(?<Title>[^""]*)"",""Email"":""(?<Email>[^""]*)"",""GroupId"":""(?<GroupId>[^""]*)"",""GroupName"":""(?<GroupName>[^""]*)"")"
+            )
+        );
+        
+        //Collection for sharepoint group
+        ClearCollect(
+            I4_0_DPMS_CSL_XXX_CSPG,
+            Distinct(
+                I4_0_DPMS_CSL_XXX_CSPU,
+                GroupName
+            )
+        );
+        //local variables for user group
+        Set(
+            I4_0_DPMS_CSL_XXX_GVUGN,
+            Last(
+                Filter(
+                    I4_0_DPMS_CSL_XXX_CSPU,
+                    Title = User().FullName
+                ).GroupName
+            ).GroupName
         );
     StartScreen: =
 
