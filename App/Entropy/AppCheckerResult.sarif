@@ -14,6 +14,246 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Objective Dashboard'.Label7_71.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Objective Dashboard'.Label7_71.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 22,
+                  "charOffset": 9,
+                  "snippet": {
+                    "text": "'I4.0_DPMS_CSL_GnO_SC'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Objective Dashboard",
+                "type": "'Objective Dashboard'.Label7_71"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "I4.0_DPMS_CSL_GnO_SC"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Objective Dashboard'.Label7_73.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Objective Dashboard'.Label7_73.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 22,
+                  "charOffset": 9,
+                  "snippet": {
+                    "text": "'I4.0_DPMS_CSL_GnO_SC'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Objective Dashboard",
+                "type": "'Objective Dashboard'.Label7_73"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "I4.0_DPMS_CSL_GnO_SC"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Objective Dashboard'.Label7_72.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Objective Dashboard'.Label7_72.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 22,
+                  "charOffset": 9,
+                  "snippet": {
+                    "text": "'I4.0_DPMS_CSL_GnO_SC'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Objective Dashboard",
+                "type": "'Objective Dashboard'.Label7_72"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "I4.0_DPMS_CSL_GnO_SC"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Deliverables.Label7_68.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Deliverables.Label7_68.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 22,
+                  "charOffset": 9,
+                  "snippet": {
+                    "text": "'I4.0_DPMS_CSL_GnO_SC'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Deliverables",
+                "type": "Deliverables.Label7_68"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "I4.0_DPMS_CSL_GnO_SC"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Deliverables.Label7_69.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Deliverables.Label7_69.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 22,
+                  "charOffset": 9,
+                  "snippet": {
+                    "text": "'I4.0_DPMS_CSL_GnO_SC'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Deliverables",
+                "type": "Deliverables.Label7_69"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "I4.0_DPMS_CSL_GnO_SC"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Deliverables.Label7_70.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Deliverables.Label7_70.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 22,
+                  "charOffset": 9,
+                  "snippet": {
+                    "text": "'I4.0_DPMS_CSL_GnO_SC'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Deliverables",
+                "type": "Deliverables.Label7_70"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "I4.0_DPMS_CSL_GnO_SC"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible"
                 }
               ],
@@ -2960,126 +3200,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Objective Dashboard'.Label7_71.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Objective Dashboard'.Label7_71.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 22,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": "'I4.0_DPMS_CSL_GnO_SC'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Objective Dashboard",
-                "type": "'Objective Dashboard'.Label7_71"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "I4.0_DPMS_CSL_GnO_SC"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Objective Dashboard'.Label7_73.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Objective Dashboard'.Label7_73.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 22,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": "'I4.0_DPMS_CSL_GnO_SC'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Objective Dashboard",
-                "type": "'Objective Dashboard'.Label7_73"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "I4.0_DPMS_CSL_GnO_SC"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Objective Dashboard'.Label7_72.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Objective Dashboard'.Label7_72.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 22,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": "'I4.0_DPMS_CSL_GnO_SC'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Objective Dashboard",
-                "type": "'Objective Dashboard'.Label7_72"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "I4.0_DPMS_CSL_GnO_SC"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "OverviewNew.Label7_77.OnSelect"
                 }
               ],
@@ -3440,126 +3560,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Deliverables.Label7_68.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Deliverables.Label7_68.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 22,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": "'I4.0_DPMS_CSL_GnO_SC'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Deliverables",
-                "type": "Deliverables.Label7_68"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "I4.0_DPMS_CSL_GnO_SC"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Deliverables.Label7_69.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Deliverables.Label7_69.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 22,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": "'I4.0_DPMS_CSL_GnO_SC'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Deliverables",
-                "type": "Deliverables.Label7_69"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "I4.0_DPMS_CSL_GnO_SC"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Deliverables.Label7_70.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Deliverables.Label7_70.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 22,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": "'I4.0_DPMS_CSL_GnO_SC'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Deliverables",
-                "type": "Deliverables.Label7_70"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "I4.0_DPMS_CSL_GnO_SC"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'I4.0_DPMS_CSL_XXX_C_N'.Gallery1_1.AccessibleLabel"
                 }
               ],
@@ -3854,6 +3854,366 @@
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
           "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Objective Dashboard'.DatePicker1_17.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Objective Dashboard'.DatePicker1_17.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Objective Dashboard",
+                "type": "'Objective Dashboard'.DatePicker1_17"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Objective Dashboard'.Dropdown1_23.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Objective Dashboard'.Dropdown1_23.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Objective Dashboard",
+                "type": "'Objective Dashboard'.Dropdown1_23"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Objective Dashboard'.Canvas1_6.DataCard4_3.ColumnChart1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Objective Dashboard'.Canvas1_6.DataCard4_3.ColumnChart1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Objective Dashboard",
+                "type": "'Objective Dashboard'.Canvas1_6.DataCard4_3.ColumnChart1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Objective Dashboard'.Canvas1_6.DataCard9_2.Dropdown2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Objective Dashboard'.Canvas1_6.DataCard9_2.Dropdown2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Objective Dashboard",
+                "type": "'Objective Dashboard'.Canvas1_6.DataCard9_2.Dropdown2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Deliverables.DatePicker1_16.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Deliverables.DatePicker1_16.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Deliverables",
+                "type": "Deliverables.DatePicker1_16"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Deliverables.Dropdown1_22.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Deliverables.Dropdown1_22.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Deliverables",
+                "type": "Deliverables.Dropdown1_22"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Deliverables.Canvas1_4.DataCard4_2.Dropdown9_8.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Deliverables.Canvas1_4.DataCard4_2.Dropdown9_8.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Deliverables",
+                "type": "Deliverables.Canvas1_4.DataCard4_2.Dropdown9_8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Deliverables.Canvas1_4.DataCard4_2.TextInput1_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Deliverables.Canvas1_4.DataCard4_2.TextInput1_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Deliverables",
+                "type": "Deliverables.Canvas1_4.DataCard4_2.TextInput1_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Deliverables.Canvas1_4.DataCard4_2.TextInput1_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Deliverables.Canvas1_4.DataCard4_2.TextInput1_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Deliverables",
+                "type": "Deliverables.Canvas1_4.DataCard4_2.TextInput1_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Deliverables.Canvas1_4.DataCard4_2.DatePicker3_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Deliverables.Canvas1_4.DataCard4_2.DatePicker3_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Deliverables",
+                "type": "Deliverables.Canvas1_4.DataCard4_2.DatePicker3_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Deliverables.Canvas1_4.DataCard4_2.Dropdown2_15.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Deliverables.Canvas1_4.DataCard4_2.Dropdown2_15.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Deliverables",
+                "type": "Deliverables.Canvas1_4.DataCard4_2.Dropdown2_15"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Deliverables.Canvas1_4.DataCard4_2.Dropdown2_14.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Deliverables.Canvas1_4.DataCard4_2.Dropdown2_14.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Deliverables",
+                "type": "Deliverables.Canvas1_4.DataCard4_2.Dropdown2_14"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -4970,126 +5330,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Objective Dashboard'.DatePicker1_17.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Objective Dashboard'.DatePicker1_17.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Objective Dashboard",
-                "type": "'Objective Dashboard'.DatePicker1_17"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Objective Dashboard'.Dropdown1_23.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Objective Dashboard'.Dropdown1_23.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Objective Dashboard",
-                "type": "'Objective Dashboard'.Dropdown1_23"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Objective Dashboard'.Canvas1_6.DataCard4_3.ColumnChart1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Objective Dashboard'.Canvas1_6.DataCard4_3.ColumnChart1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Objective Dashboard",
-                "type": "'Objective Dashboard'.Canvas1_6.DataCard4_3.ColumnChart1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Objective Dashboard'.Canvas1_6.DataCard9_2.Dropdown2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Objective Dashboard'.Canvas1_6.DataCard9_2.Dropdown2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Objective Dashboard",
-                "type": "'Objective Dashboard'.Canvas1_6.DataCard9_2.Dropdown2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "OverviewNew.DatePicker1_19.AccessibleLabel"
                 }
               ],
@@ -5660,36 +5900,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NavigationDemo.TargetDatePicker_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NavigationDemo.TargetDatePicker_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "NavigationDemo",
-                "type": "NavigationDemo.TargetDatePicker_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CO'.DatePicker1_15.AccessibleLabel"
                 }
               ],
@@ -5900,229 +6110,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Deliverables.DatePicker1_16.AccessibleLabel"
+                  "fullyQualifiedName": "NavigationDemo.TargetDatePicker_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Deliverables.DatePicker1_16.AccessibleLabel",
+                  "fullyQualifiedName": "NavigationDemo.TargetDatePicker_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Deliverables",
-                "type": "Deliverables.DatePicker1_16"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Deliverables.Dropdown1_22.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Deliverables.Dropdown1_22.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Deliverables",
-                "type": "Deliverables.Dropdown1_22"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Deliverables.Canvas1_4.DataCard4_2.Dropdown9_8.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Deliverables.Canvas1_4.DataCard4_2.Dropdown9_8.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Deliverables",
-                "type": "Deliverables.Canvas1_4.DataCard4_2.Dropdown9_8"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Deliverables.Canvas1_4.DataCard4_2.TextInput1_3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Deliverables.Canvas1_4.DataCard4_2.TextInput1_3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Deliverables",
-                "type": "Deliverables.Canvas1_4.DataCard4_2.TextInput1_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Deliverables.Canvas1_4.DataCard4_2.TextInput1_4.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Deliverables.Canvas1_4.DataCard4_2.TextInput1_4.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Deliverables",
-                "type": "Deliverables.Canvas1_4.DataCard4_2.TextInput1_4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Deliverables.Canvas1_4.DataCard4_2.DatePicker3_4.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Deliverables.Canvas1_4.DataCard4_2.DatePicker3_4.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Deliverables",
-                "type": "Deliverables.Canvas1_4.DataCard4_2.DatePicker3_4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Deliverables.Canvas1_4.DataCard4_2.Dropdown2_15.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Deliverables.Canvas1_4.DataCard4_2.Dropdown2_15.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Deliverables",
-                "type": "Deliverables.Canvas1_4.DataCard4_2.Dropdown2_15"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Deliverables.Canvas1_4.DataCard4_2.Dropdown2_14.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Deliverables.Canvas1_4.DataCard4_2.Dropdown2_14.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Deliverables",
-                "type": "Deliverables.Canvas1_4.DataCard4_2.Dropdown2_14"
+                "module": "NavigationDemo",
+                "type": "NavigationDemo.TargetDatePicker_1"
               }
             }
           ],
