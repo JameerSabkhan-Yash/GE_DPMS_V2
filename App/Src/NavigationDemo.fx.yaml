@@ -3,6 +3,7 @@ NavigationDemo As screen:
     LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
 
     "'I4.0_DPMS_CSL_XXX_C_N_6' As 'I4.0_DPMS_CSL_XXX_C_N_3'":
+        Height: =44
 
     TargetDatePicker_1 As datepicker:
         BorderThickness: =0
