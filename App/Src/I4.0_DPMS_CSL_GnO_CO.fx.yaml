@@ -1,5 +1,8 @@
 "'I4.0_DPMS_CSL_GnO_CO' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     Fill: =RGBA(226, 223, 218, 1)
+    OnVisible: |-
+        =Reset(Dropdown9_6);
+        Reset(Dropdown9_7);
 
     "'I4.0_DPMS_CSL_GnO_R2_CI-2_7' As rectangle":
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -48,7 +51,7 @@
                 Mode: =TextMode.MultiLine
                 Width: =1186
                 X: =40
-                Y: =130
+                Y: =140
                 ZIndex: =2
 
             Dropdown2_12 As dropdown:
@@ -121,7 +124,7 @@
                 Text: ="Objective Description"
                 Width: =266
                 X: =40
-                Y: =96
+                Y: =106
                 ZIndex: =9
 
             Button17_8 As button:
@@ -162,24 +165,66 @@
                 ZIndex: =13
 
             Dropdown9_6 As dropdown:
+                AllowEmptySelection: =true
                 BorderColor: =RGBA(0, 0, 0, 1)
                 ChevronBackground: =RGBA(0, 0, 0, 0.7)
-                Height: =29
-                Items: =I4_0_DPMS_CSL_GnO
+                Height: =35
+                Items: =Filter(I4_0_DPMS_CSL_CFG_FL,FocusArea = Dropdown9_7.Selected.Result).FocusLine
                 Width: =1187
                 X: =40
-                Y: =52
+                Y: =62
                 ZIndex: =14
 
             Dropdown9_7 As dropdown:
+                AccessibleLabel: ="Please Slect the focus Area"
+                AllowEmptySelection: =true
                 BorderColor: =RGBA(0, 0, 0, 1)
                 ChevronBackground: =RGBA(0, 0, 0, 0.7)
-                Height: =29
-                Items: =I4_0_DPMS_CSL_GnO
+                ContentLanguage: ="Please Slect the focus Area"
+                Default: ="Please Slect the focus Area"
+                Height: =35
+                Items: =Distinct(I4_0_DPMS_CSL_CFG_FA,FoucsArea)
+                Tooltip: ="Please Slect the focus Area"
                 Width: =1187
                 X: =40
                 Y: =9
                 ZIndex: =15
+
+            StarVisible1_1 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =35
+                Size: =20
+                Text: ="*"
+                Visible: |-
+                    =If(
+                        IsBlank(Dropdown9_7.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult'),
+                        true,
+                        false
+                    )
+                Width: =33
+                Wrap: =false
+                X: =1226
+                Y: =9
+                ZIndex: =16
+
+            StarVisible1_2 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =35
+                Size: =20
+                Text: ="*"
+                Visible: |-
+                    =If(
+                        IsBlank(Dropdown9_6.SelectedText.Value),
+                        true,
+                        false
+                    )
+                Width: =31
+                Wrap: =false
+                X: =1228
+                Y: =62
+                ZIndex: =17
 
     "'I4.0_DPMS_CSL_XXX_C_F_6' As 'I4.0_DPMS_CSL_XXX_C_F'":
         Height: =26

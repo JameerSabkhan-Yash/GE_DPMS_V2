@@ -12,23 +12,22 @@
       "parameterHintsV2": {}
     },
     "datasets": {
-      "https://ytpl.sharepoint.com/sites/CSLGE-DPMS": {
-        "dataSources": {
-          "I4_0_DPMS_CSL_CFG_FA": {
-            "tableName": "6edcf453-15c7-4eef-973f-ec873de72970"
-          },
-          "I4_0_DPMS_CSL_CFG_FL": {
-            "tableName": "0a11ba81-83bb-49bc-93c5-7258ed145771"
-          }
-        }
-      },
       "https://ytpl.sharepoint.com/sites/CustomOEEApplication": {
         "dataSources": {
+          "I4_0_DPMS_CSL_CFG_FA": {
+            "tableName": "1dc99750-9890-4c9e-b4f2-09ee617ec812"
+          },
+          "I4_0_DPMS_CSL_CFG_FL": {
+            "tableName": "21ed4dda-a17e-48f2-93b3-1ac9f756c937"
+          },
           "I4_0_DPMS_CSL_GnO": {
             "tableName": "91d349df-f337-4f2b-bab2-5faba9c0ea12"
           },
-          "I4_0_DPMS_CSL_GnO-IN": {
-            "tableName": "b6dea888-0e70-4dc9-b394-1621859f0421"
+          "I4_0_DPMS_CSL_GnO_1": {
+            "tableName": "91d349df-f337-4f2b-bab2-5faba9c0ea12"
+          },
+          "I4_0_DPMS_CSL_GnO-IS": {
+            "tableName": "8527139f-8e97-431b-9e7f-8477c35e9b5b"
           }
         }
       },
@@ -173,11 +172,12 @@
       "Block_1",
       "Block_2",
       "Insight_2",
+      "Insight_1",
+      "I4_0_DPMS_CSL_GnO",
+      "I4_0_DPMS_CSL_GnO-IS",
       "I4_0_DPMS_CSL_CFG_FA",
       "I4_0_DPMS_CSL_CFG_FL",
-      "Insight_1",
-      "I4_0_DPMS_CSL_GnO-IN",
-      "I4_0_DPMS_CSL_GnO"
+      "I4_0_DPMS_CSL_GnO_1"
     ],
     "dependencies": {},
     "dependents": [],
