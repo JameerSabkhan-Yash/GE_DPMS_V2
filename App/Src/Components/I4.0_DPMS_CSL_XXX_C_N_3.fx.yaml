@@ -1,8 +1,8 @@
-"'I4.0_DPMS_CSL_XXX_C_N' As CanvasComponent":
+"'I4.0_DPMS_CSL_XXX_C_N_3' As CanvasComponent":
     ChildTabPriority: =true
     EnableChildFocus: =true
     Fill: =RGBA(0, 0, 0, 0)
-    FlexibleHeight: =Label7_1.Text
+    FlexibleHeight: =Label7_2.Text
     Height: |
         =Self.FlexibleHeight
     Width: =App.Width
@@ -10,7 +10,7 @@
     Y: =0
     ZIndex: =1
 
-    Gallery1_1 As gallery.galleryHorizontal:
+    Gallery1_2 As gallery.galleryHorizontal:
         Height: =436
         Items: = GroupBy(Filter(colHorizontalMenu, Id = varTabSelected || ParentTab = "") ,"Id","GroupMenu")
         ShowScrollbar: =false
@@ -19,8 +19,8 @@
         Width: =1366
         ZIndex: =1
 
-        Gallery2_1 As gallery.variableTemplateHeightGallery:
-            Height: =436
+        Gallery2_2 As gallery.variableTemplateHeightGallery:
+            Height: =400
             Items: =AddColumns(ThisItem.GroupMenu, "Id", ThisItem.Id)
             Layout: =Layout.Vertical
             ShowScrollbar: =false
@@ -30,7 +30,7 @@
             Width: =277
             ZIndex: =1
 
-            Button5_1 As button:
+            Button5_2 As button:
                 BorderThickness: =0
                 Fill: =If(ThisItem.Id = LookUp(colHorizontalMenu, Screen = App.ActiveScreen).Id && IsBlank(ThisItem.ParentTab), varMenuSecondaryColor, varMenuPrimaryColor)
                 FocusedBorderThickness: =0
@@ -50,19 +50,20 @@
                 Width: =277
                 ZIndex: =1
 
-        Icon5_1 As icon.ChevronDown:
+        Icon5_2 As icon.ChevronDown:
             Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(0,0,0,0)
             Height: =20
             Icon: =Icon.ChevronDown
             OnSelect: =Select(Parent)
             PaddingTop: =6
-            Visible: =CountRows(Gallery2_1.AllItems) > 1
+            Visible: =CountRows(Gallery2_2.AllItems) > 1
             Width: =20
             X: =229
             Y: =10
             ZIndex: =2
 
-    Label7_1 As label:
+    Label7_2 As label:
         Color: =RGBA(255, 255, 255, 1)
         Font: =Font.Arial
         Height: =53
@@ -71,7 +72,24 @@
         PaddingRight: =0
         PaddingTop: =0
         Size: =21
-        Text: =If(varTabSelected = 0, 48, App.Height)
+        Text: |-
+            =//If(varTabSelected = 0, 48, App.Height);
+            Switch(
+                varTabSelected,
+                0,
+                48,
+                1,
+                48,
+                2,
+                450,//App.Height,
+                3,
+                450,// App.Height,
+                48,
+                5,
+                48,
+                6,
+                48
+            )
         Visible: =false
         Width: =49
         ZIndex: =2
