@@ -1,0 +1,578 @@
+"'Objective Dashboard' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    Fill: =RGBA(226, 223, 218, 1)
+
+    "'I4.0_DPMS_CSL_GnO_R2_CI-2_9' As rectangle":
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =2
+        Fill: =RGBA(226, 223, 218, 1)
+        Height: =499
+        Width: =1321
+        X: =24
+        Y: =233
+        ZIndex: =1
+
+    "'I4.0_DPMS_CSL_XXX_C_N_5' As 'I4.0_DPMS_CSL_XXX_C_N'":
+        Height: =56
+        Width: =1350
+        X: =7
+        Y: =91
+        ZIndex: =2
+
+    "'I4.0_DPMS_CSL_XXX_C_F_8' As 'I4.0_DPMS_CSL_XXX_C_F'":
+        Height: =26
+        Y: =742
+        ZIndex: =3
+
+    "'I4.0_DPMS_CSL_XXX_C_H_8' As 'I4.0_DPMS_CSL_XXX_C_H'":
+        Height: =77
+        ZIndex: =4
+
+    Button1_13 As button:
+        BorderColor: =ColorFade(Black, -15%)
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(226, 223, 218, 1)
+        Height: =31
+        HoverFill: =ColorFade(RGBA(255, 0, 0, 100), -20%)
+        OnSelect: |
+            =Set(varOverView,true);
+            Set(varActionDashbaord,false);
+            Set(varIssueDashboard,false);
+            Set(varInsightDashboad,false);
+        Size: =13
+        Text: ="Create Objective"
+        Width: =175
+        X: =256
+        Y: =204
+        ZIndex: =13
+
+    Button1_22 As button:
+        BorderColor: =ColorFade(Black, -15%)
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(226, 223, 218, 1)
+        Height: =31
+        HoverFill: =ColorFade(RGBA(255, 0, 0, 100), -20%)
+        OnSelect: |
+            =Set(varOverView,true);
+            Set(varActionDashbaord,false);
+            Set(varIssueDashboard,false);
+            Set(varInsightDashboad,false);
+        Size: =13
+        Text: ="Deliverables"
+        Width: =168
+        X: =453
+        Y: =204
+        ZIndex: =14
+
+    Button1_24 As button:
+        BorderColor: =ColorFade(Black, -15%)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(226, 223, 218, 1)
+        Height: =44
+        HoverColor: =
+        HoverFill: =
+        OnSelect: |
+            =Set(varOverView,true);
+            Set(varActionDashbaord,false);
+            Set(varIssueDashboard,false);
+            Set(varInsightDashboad,false);
+        PaddingBottom: =15
+        PressedColor: =
+        PressedFill: =
+        Size: =13
+        Text: ="Objective Dashboard"
+        Width: =190
+        X: =43
+        Y: =204
+        ZIndex: =15
+
+    Rectangle1_8 As rectangle:
+        Fill: |
+            =RGBA(226, 223, 218, 1)
+        Height: =29
+        Width: =202
+        X: =41
+        Y: =233.7
+        ZIndex: =16
+
+    BreadcrumbBar_11 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =20
+        ZIndex: =16
+
+        DatePicker1_17 As datepicker:
+            BorderColor: =RGBA(116, 116, 116, 1)
+            Fill: =RGBA(219, 219, 219, 1)
+            Height: =30
+            IconBackground: =RGBA(149, 149, 149, 1)
+            Width: =150
+            X: =879
+            Y: =158
+            ZIndex: =5
+
+        Dropdown1_23 As dropdown:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            ChevronBackground: =RGBA(149, 149, 149, 1)
+            ChevronHoverBackground: =ColorFade(RGBA(242, 19, 19, 1), -20%)
+            Fill: =RGBA(219, 219, 219, 1)
+            Height: =30
+            HoverColor: =RGBA(242, 19, 19, 1)
+            Items: =Friday_Demolist
+            SelectionFill: =RGBA(242, 19, 19, 1)
+            Width: =182
+            X: =1052
+            Y: =158
+            ZIndex: =6
+
+        Button1_28 As button:
+            Color: =RGBA(237, 237, 237, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Height: =30
+            HoverFill: =ColorFade(RGBA(242, 19, 19, 1), -20%)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =10
+            Text: ="Search"
+            Width: =88
+            X: =1257
+            Y: =158
+            ZIndex: =7
+
+        Label7_71 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =37
+            HoverColor: =RGBA(5, 21, 242, 100)
+            OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
+            Size: =15
+            Text: ="Home"
+            Underline: =true
+            Width: =92
+            X: =7
+            Y: =147
+            ZIndex: =8
+
+        Label7_73 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =37
+            HoverColor: =RGBA(5, 21, 242, 100)
+            OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
+            Size: =14
+            Text: ="GOALS & OBJECTIVES"
+            Underline: =true
+            Width: =274
+            X: =102
+            Y: =148
+            ZIndex: =9
+
+        Icon2_30 As icon.ChevronRight:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =21
+            Icon: =Icon.ChevronRight
+            Width: =23
+            X: =75
+            Y: =158
+            ZIndex: =10
+
+        Icon2_31 As icon.ChevronRight:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =21
+            Icon: =Icon.ChevronRight
+            Width: =23
+            X: =305
+            Y: =158
+            ZIndex: =11
+
+        Label7_72 As label:
+            Color: =RGBA(255, 0, 0, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =31
+            OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
+            Size: =14
+            Text: ="Objective Dashboard"
+            Underline: =true
+            Width: =239
+            X: =330
+            Y: =148
+            ZIndex: =12
+
+    Canvas1_6 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Fill: =RGBA(226, 223, 218, 1)
+        Height: =474
+        Width: =1280
+        X: =41
+        Y: =249
+        ZIndex: =17
+
+        DataCard4_3 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =413
+            Width: =1280
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            Button1_25 As button:
+                BorderColor: =ColorFade(Black, -15%)
+                Color: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =376
+                HoverFill: =
+                OnSelect: |
+                    =Set(varOverView,true);
+                    Set(varActionDashbaord,false);
+                    Set(varIssueDashboard,false);
+                    Set(varInsightDashboad,false);
+                PressedFill: =
+                Size: =13
+                Text: =""
+                Width: =1250
+                X: =3
+                Y: =17
+                ZIndex: =1
+
+            CompositePieChart1 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =2
+
+                Title1 As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Semibold
+                    Height: =37
+                    Text: ="Objective Status"
+                    Width: =384
+                    X: =10
+                    Y: =339
+                    ZIndex: =2
+
+                PieChart1 As pieChart:
+                    Height: =312
+                    Items: =PieChartSample
+                    Width: =384
+                    X: =3
+                    Y: =24
+                    ZIndex: =3
+
+            ColumnChart1 As barChart:
+                Height: =340
+                Items: =ColumnChartSample
+                Width: =587
+                X: =655
+                Y: =34
+                ZIndex: =4
+
+            Rectangle3 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =61
+                Width: =227
+                X: =402
+                Y: =67
+                ZIndex: =10
+
+            Label1 As label:
+                FontWeight: =FontWeight.Bold
+                Size: =20
+                Text: ="25"
+                Width: =171
+                X: =427
+                Y: =80
+                ZIndex: =11
+
+            Rectangle1_9 As rectangle:
+                Fill: |
+                    =RGBA(226, 223, 218, 1)
+                Height: =40
+                X: =412
+                Y: =40
+                ZIndex: =12
+
+            Label1_1 As label:
+                Size: =14
+                Text: ="Total Objective"
+                Width: =171
+                X: =412
+                Y: =48
+                ZIndex: =13
+
+            Rectangle3_1 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =61
+                Width: =227
+                X: =402
+                Y: =181
+                ZIndex: =14
+
+            Label1_2 As label:
+                FontWeight: =FontWeight.Bold
+                Size: =20
+                Text: ="10"
+                Width: =171
+                X: =427
+                Y: =194
+                ZIndex: =15
+
+            Rectangle1_10 As rectangle:
+                Fill: |
+                    =RGBA(226, 223, 218, 1)
+                Height: =40
+                Width: =202
+                X: =412
+                Y: =154
+                ZIndex: =16
+
+            Label1_3 As label:
+                Height: =52
+                Size: =14
+                Text: ="Completed Objective"
+                Width: =217
+                X: =412
+                Y: =154
+                ZIndex: =17
+
+            Rectangle3_2 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =61
+                Width: =227
+                X: =402
+                Y: =306
+                ZIndex: =18
+
+            Label1_4 As label:
+                FontWeight: =FontWeight.Bold
+                Size: =20
+                Text: ="15"
+                Width: =171
+                X: =427
+                Y: =319
+                ZIndex: =19
+
+            Rectangle1_11 As rectangle:
+                Fill: |
+                    =RGBA(226, 223, 218, 1)
+                Height: =40
+                Width: =202
+                X: =412
+                Y: =279
+                ZIndex: =20
+
+            Label1_5 As label:
+                Height: =52
+                Size: =14
+                Text: ="In Progress Objective"
+                Width: =230
+                X: =413
+                Y: =280
+                ZIndex: =21
+
+            "'I4.0_DPMS_CSL_GnO_R2_CI-2_12' As rectangle":
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =1
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =342
+                Width: =582
+                X: =655
+                Y: =34
+                ZIndex: =22
+
+        DataCard9_2 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =487
+            Width: =1280
+            X: =0
+            Y: =1
+            ZIndex: =2
+
+            DataTable3_4 As dataTable.datatable:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderStyle: =BorderStyle.Solid
+                BorderThickness: =2
+                DisplayMode: =DisplayMode.Edit
+                Fill: =RGBA(237, 237, 237, 1)
+                HeadingFill: =RGBA(0, 0, 0, 0.79)
+                Height: =306
+                Items: =createIssueDemo
+                Width: =1207
+                X: =32
+                Y: =94
+                ZIndex: =1
+
+                Title_Column3_4 As dataTableColumn.textualColumn:
+                    DisplayMode: =DisplayMode.Edit
+                    FieldDisplayName: ="Title"
+                    FieldName: ="Title"
+                    FieldVariantName: ="textualColumn"
+                    Height: =Parent.Height
+                    LayoutHeight: =Parent.Height
+                    Order: =1
+                    Text: =ThisItem.Title
+                    Width: =100
+                    X: =0
+                    Y: =0
+                    ZIndex: =6
+
+                "'Focus Area_Column4_4' As dataTableColumn.textualColumn":
+                    DisplayMode: =DisplayMode.Edit
+                    FieldDisplayName: ="Focus Area"
+                    FieldName: ="FocusArea"
+                    FieldVariantName: ="textualColumn"
+                    Height: =Parent.Height
+                    LayoutHeight: =Parent.Height
+                    Order: =2
+                    Text: =ThisItem.'Focus Area'
+                    Width: =100
+                    X: =272
+                    Y: =0
+                    ZIndex: =7
+
+                "'Focus Line_Column3_4' As dataTableColumn.textualColumn":
+                    DisplayMode: =DisplayMode.Edit
+                    FieldDisplayName: ="Focus Line"
+                    FieldName: ="FocusLine"
+                    FieldVariantName: ="textualColumn"
+                    Height: =Parent.Height
+                    LayoutHeight: =Parent.Height
+                    Order: =3
+                    Text: =ThisItem.'Focus Line'
+                    Width: =100
+                    X: =0
+                    Y: =0
+                    ZIndex: =8
+
+                Assigned_Column2_4 As dataTableColumn.textualColumn:
+                    DisplayMode: =DisplayMode.Edit
+                    FieldDisplayName: ="Assigned"
+                    FieldName: ="Assigned"
+                    FieldVariantName: ="textualColumn"
+                    Height: =Parent.Height
+                    LayoutHeight: =Parent.Height
+                    Order: =4
+                    Text: =ThisItem.Assigned
+                    Width: =100
+                    X: =0
+                    Y: =0
+                    ZIndex: =9
+
+                "'Progress (%)_Column2_4' As dataTableColumn.textualColumn":
+                    DisplayMode: =DisplayMode.Edit
+                    FieldDisplayName: ="Progress (%)"
+                    FieldName: ="Progress_x0028__x0025__x0029_"
+                    FieldVariantName: ="textualColumn"
+                    Height: =Parent.Height
+                    LayoutHeight: =Parent.Height
+                    Order: =5
+                    Text: =ThisItem.'Progress (%)'
+                    Width: =100
+                    X: =0
+                    Y: =0
+                    ZIndex: =10
+
+            Button1_26 As button:
+                BorderColor: =ColorFade(Black, -15%)
+                Color: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =449
+                HoverFill: =
+                OnSelect: |
+                    =Set(varOverView,true);
+                    Set(varActionDashbaord,false);
+                    Set(varIssueDashboard,false);
+                    Set(varInsightDashboad,false);
+                PressedFill: =
+                Size: =13
+                Text: =""
+                Width: =1248
+                X: =4
+                Y: =21
+                ZIndex: =2
+
+            Button17_15 As button:
+                Fill: =RGBA(255, 0, 0, 1)
+                Height: =37
+                Size: =14
+                Text: ="Export Progress Report"
+                Width: =225
+                X: =1005
+                Y: =421
+                ZIndex: =3
+
+            Dropdown2 As dropdown:
+                ChevronBackground: =RGBA(0, 0, 0, 0.81)
+                Height: =35
+                Items: =DropDownSample
+                Width: =299
+                X: =108
+                Y: =37
+                ZIndex: =4
+
+            Button17_12 As button:
+                DisabledColor: =
+                Fill: =RGBA(255, 0, 0, 1)
+                Height: =35
+                HoverFill: =RGBA(196, 6, 6, 1)
+                PressedColor: =
+                PressedFill: =
+                Size: =14
+                Text: ="History"
+                Width: =150
+                X: =731
+                Y: =37
+                ZIndex: =5
+
+            Button17_13 As button:
+                DisabledColor: =
+                Fill: =RGBA(255, 0, 0, 1)
+                Height: =35
+                HoverFill: =RGBA(196, 6, 6, 1)
+                PressedColor: =
+                PressedFill: =
+                Size: =14
+                Text: ="Update"
+                Width: =150
+                X: =905
+                Y: =37
+                ZIndex: =6
+
+            Button17_14 As button:
+                DisabledColor: =
+                Fill: =RGBA(255, 0, 0, 1)
+                Height: =35
+                HoverFill: =RGBA(196, 6, 6, 1)
+                PressedColor: =
+                PressedFill: =
+                Size: =14
+                Text: ="Create Issue"
+                Width: =150
+                X: =1080
+                Y: =37
+                ZIndex: =7
+
+            Icon1 As icon.Filter:
+                Color: =RGBA(0, 0, 0, 1)
+                Height: =35
+                Icon: =Icon.Filter
+                Width: =28
+                X: =62
+                Y: =37
+                ZIndex: =8
+

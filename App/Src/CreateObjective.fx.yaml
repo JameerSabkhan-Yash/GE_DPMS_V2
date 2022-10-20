@@ -1,0 +1,382 @@
+"CreateObjective As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    Fill: =RGBA(226, 223, 218, 1)
+
+    "'I4.0_DPMS_CSL_GnO_R2_CI-2_7' As rectangle":
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =2
+        Fill: =RGBA(226, 223, 218, 1)
+        Height: =499
+        Width: =1321
+        X: =24
+        Y: =233
+        ZIndex: =1
+
+    Canvas1_3 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Fill: =RGBA(226, 223, 218, 1)
+        Height: =448
+        Width: =1280
+        X: =41
+        Y: =249
+        ZIndex: =2
+
+        DataCard4_1 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =447
+            Width: =1280
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            Dropdown9_5 As dropdown:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                ChevronBackground: =RGBA(0, 0, 0, 0.7)
+                Height: =32
+                Items: =DropDownSample
+                Width: =1187
+                X: =40
+                Y: =228
+                ZIndex: =1
+
+            TextInput1_2 As text:
+                Default: =""
+                Height: =145
+                HintText: =" Enter values..."
+                Mode: =TextMode.MultiLine
+                Width: =1186
+                X: =40
+                Y: =130
+                ZIndex: =2
+
+            Dropdown2_12 As dropdown:
+                ChevronBackground: =RGBA(0, 0, 0, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Items: =sv2_4
+                Size: =15
+                Width: =228
+                X: =670
+                Y: =334
+                ZIndex: =3
+
+            Label47_16 As label:
+                FontWeight: =FontWeight.Bold
+                Height: =44
+                Size: =15
+                Text: ="Owner"
+                Width: =130
+                X: =40
+                Y: =287
+                ZIndex: =4
+
+            Label47_17 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Height: =57
+                Size: =15
+                Text: ="Status"
+                Width: =112
+                X: =423
+                Y: =287
+                ZIndex: =5
+
+            Label47_18 As label:
+                FontWeight: =FontWeight.Bold
+                Height: =44
+                Size: =15
+                Text: ="Progress"
+                Width: =130
+                X: =670
+                Y: =287
+                ZIndex: =6
+
+            Label47_19 As label:
+                FontWeight: =FontWeight.Bold
+                Height: =44
+                Size: =15
+                Text: ="Target Date"
+                Width: =130
+                X: =1015
+                Y: =287
+                ZIndex: =7
+
+            Dropdown2_13 As dropdown:
+                ChevronBackground: =RGBA(0, 0, 0, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Items: =sss1
+                Size: =15
+                Width: =248
+                X: =40
+                Y: =334
+                ZIndex: =8
+
+            Label47_20 As label:
+                FontWeight: =FontWeight.Bold
+                Height: =32
+                Size: =15
+                Text: ="Objective Description"
+                Width: =266
+                X: =40
+                Y: =96
+                ZIndex: =9
+
+            Button17_8 As button:
+                Fill: =RGBA(255, 0, 0, 1)
+                Height: =35
+                Text: ="Create"
+                Width: =150
+                X: =1078
+                Y: =400
+                ZIndex: =10
+
+            Button17_9 As button:
+                Fill: =RGBA(255, 0, 0, 1)
+                Height: =35
+                Text: ="Cancel"
+                Width: =150
+                X: =864
+                Y: =400
+                ZIndex: =11
+
+            Circle1_3 As circle:
+                Fill: =RGBA(204, 204, 204, 1)
+                Height: =30
+                Width: =30
+                X: =464
+                Y: =331
+                ZIndex: =12
+
+            DatePicker3_3 As datepicker:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =0
+                Height: =35
+                IconBackground: =Color
+                IconFill: =Color.Black
+                Width: =213
+                X: =1015
+                Y: =331
+                ZIndex: =13
+
+            Dropdown9_6 As dropdown:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                ChevronBackground: =RGBA(0, 0, 0, 0.7)
+                Height: =29
+                Items: =I4_0_DPMS_CSL_GnO
+                Width: =1187
+                X: =40
+                Y: =52
+                ZIndex: =14
+
+            Dropdown9_7 As dropdown:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                ChevronBackground: =RGBA(0, 0, 0, 0.7)
+                Height: =29
+                Items: =I4_0_DPMS_CSL_GnO
+                Width: =1187
+                X: =40
+                Y: =9
+                ZIndex: =15
+
+    "'I4.0_DPMS_CSL_XXX_C_F_6' As 'I4.0_DPMS_CSL_XXX_C_F'":
+        Height: =26
+        Y: =742
+        ZIndex: =3
+
+    "'I4.0_DPMS_CSL_XXX_C_H_6' As 'I4.0_DPMS_CSL_XXX_C_H'":
+        Height: =77
+        ZIndex: =4
+
+    Button1_16 As button:
+        AutoDisableOnSelect: =false
+        BorderColor: =ColorFade(Black, -15%)
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(226, 223, 218, 1)
+        Height: =50
+        HoverBorderColor: =
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: |
+            =
+        OnSelect: |
+            =Set(varOverView,true);
+            Set(varActionDashbaord,false);
+            Set(varIssueDashboard,false);
+            Set(varInsightDashboad,false);
+        PaddingBottom: =23
+        RadiusBottomLeft: =7
+        RadiusBottomRight: =7
+        RadiusTopLeft: =7
+        RadiusTopRight: =7
+        Size: =13
+        Text: ="Create Objective"
+        Width: =172
+        X: =249
+        Y: =204
+        ZIndex: =13
+
+    Button1_8 As button:
+        BorderColor: =ColorFade(Black, -15%)
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(226, 223, 218, 1)
+        Height: =31
+        HoverFill: =ColorFade(RGBA(255, 0, 0, 100), -20%)
+        OnSelect: |
+            =Set(varOverView,true);
+            Set(varActionDashbaord,false);
+            Set(varIssueDashboard,false);
+            Set(varInsightDashboad,false);
+        RadiusBottomLeft: =7
+        RadiusBottomRight: =7
+        RadiusTopLeft: =7
+        RadiusTopRight: =7
+        Size: =13
+        Text: ="Objective Dashboard"
+        Width: =190
+        X: =41
+        Y: =204
+        ZIndex: =14
+
+    Button1_17 As button:
+        BorderColor: =ColorFade(Black, -15%)
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(226, 223, 218, 1)
+        Height: =31
+        HoverFill: =ColorFade(RGBA(255, 0, 0, 100), -20%)
+        OnSelect: |
+            =Set(varOverView,true);
+            Set(varActionDashbaord,false);
+            Set(varIssueDashboard,false);
+            Set(varInsightDashboad,false);
+        RadiusBottomLeft: =7
+        RadiusBottomRight: =7
+        RadiusTopLeft: =7
+        RadiusTopRight: =7
+        Size: =13
+        Text: ="Deliverables"
+        Width: =168
+        X: =438
+        Y: =204
+        ZIndex: =15
+
+    Rectangle1_4 As rectangle:
+        Fill: |
+            =RGBA(226, 223, 218, 1)
+        Height: =22
+        Width: =195
+        X: =243
+        Y: =233.95
+        ZIndex: =16
+
+    BreadcrumbBar_9 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =20
+        ZIndex: =16
+
+        DatePicker1_15 As datepicker:
+            BorderColor: =RGBA(116, 116, 116, 1)
+            Fill: =RGBA(219, 219, 219, 1)
+            Height: =30
+            IconBackground: =RGBA(149, 149, 149, 1)
+            Width: =150
+            X: =879
+            Y: =147
+            ZIndex: =5
+
+        Dropdown1_21 As dropdown:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            ChevronBackground: =RGBA(149, 149, 149, 1)
+            ChevronHoverBackground: =ColorFade(RGBA(242, 19, 19, 1), -20%)
+            Fill: =RGBA(219, 219, 219, 1)
+            Height: =30
+            HoverColor: =RGBA(242, 19, 19, 1)
+            Items: =Friday_Demolist
+            SelectionFill: =RGBA(242, 19, 19, 1)
+            Width: =182
+            X: =1052
+            Y: =147
+            ZIndex: =6
+
+        Button1_15 As button:
+            Color: =RGBA(237, 237, 237, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Height: =30
+            HoverFill: =ColorFade(RGBA(242, 19, 19, 1), -20%)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =10
+            Text: ="Search"
+            Width: =88
+            X: =1257
+            Y: =147
+            ZIndex: =7
+
+        Label7_65 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =37
+            HoverColor: =RGBA(5, 21, 242, 100)
+            OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
+            Size: =15
+            Text: ="Home"
+            Underline: =true
+            Width: =92
+            X: =7
+            Y: =136
+            ZIndex: =8
+
+        Label7_67 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =37
+            HoverColor: =RGBA(5, 21, 242, 100)
+            OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
+            Size: =14
+            Text: ="GOALS & OBJECTIVES"
+            Underline: =true
+            Width: =274
+            X: =102
+            Y: =138
+            ZIndex: =9
+
+        Icon2_26 As icon.ChevronRight:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =20
+            Icon: =Icon.ChevronRight
+            Width: =23
+            X: =75
+            Y: =147
+            ZIndex: =10
+
+        Icon2_27 As icon.ChevronRight:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =20
+            Icon: =Icon.ChevronRight
+            Width: =23
+            X: =305
+            Y: =147
+            ZIndex: =11
+
+        Label7_66 As label:
+            Color: =RGBA(255, 0, 0, 1)
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
+            Size: =14
+            Text: ="Create Objective"
+            Underline: =true
+            Width: =190
+            X: =330
+            Y: =137
+            ZIndex: =12
+
+    "'I4.0_DPMS_CSL_XXX_C_N_7' As 'I4.0_DPMS_CSL_XXX_C_N'":
+        Height: =357
+        Width: =1350
+        X: =7
+        Y: =91
+        ZIndex: =17
+
