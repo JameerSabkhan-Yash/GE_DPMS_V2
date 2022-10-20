@@ -1,5 +1,6 @@
 "Deliverables As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     Fill: =RGBA(226, 223, 218, 1)
+    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
 
     "'I4.0_DPMS_CSL_GnO_R2_CI-2_8' As rectangle":
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -28,6 +29,7 @@
         ZIndex: =4
 
     Rectangle1_5 As rectangle:
+        BorderColor: =RGBA(131, 24, 75, 1)
         Fill: |
             =RGBA(226, 223, 218, 1)
         Height: =22
@@ -37,11 +39,16 @@
         ZIndex: =13
 
     Button1_10 As button:
-        BorderColor: =ColorFade(Black, -15%)
+        BorderColor: =RGBA(0, 0, 0, 1)
         Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(226, 223, 218, 1)
+        FontWeight: =FontWeight.Semibold
         Height: =31
-        HoverFill: =ColorFade(RGBA(255, 0, 0, 100), -20%)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
         OnSelect: |
             =Set(varOverView,true);
             Set(varActionDashbaord,false);
@@ -51,7 +58,6 @@
         RadiusBottomRight: =7
         RadiusTopLeft: =7
         RadiusTopRight: =7
-        Size: =13
         Text: ="Objective Dashboard"
         Width: =190
         X: =44
@@ -59,12 +65,15 @@
         ZIndex: =14
 
     Button1_20 As button:
-        BorderColor: =ColorFade(Black, -15%)
+        BorderColor: =RGBA(0, 0, 0, 1)
         Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(226, 223, 218, 1)
+        FontWeight: =FontWeight.Semibold
         Height: =45
-        HoverColor: =
+        HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =
         OnSelect: |
             =Set(varOverView,true);
@@ -78,7 +87,6 @@
         RadiusBottomRight: =7
         RadiusTopLeft: =7
         RadiusTopRight: =7
-        Size: =13
         Text: ="Deliverables"
         Width: =150
         X: =453
@@ -86,11 +94,16 @@
         ZIndex: =15
 
     Button1_12 As button:
-        BorderColor: =ColorFade(Black, -15%)
+        BorderColor: =RGBA(0, 0, 0, 1)
         Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(226, 223, 218, 1)
+        FontWeight: =FontWeight.Semibold
         Height: =31
-        HoverFill: =ColorFade(RGBA(255, 0, 0, 100), -20%)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
         OnSelect: |
             =Set(varOverView,true);
             Set(varActionDashbaord,false);
@@ -100,7 +113,6 @@
         RadiusBottomRight: =7
         RadiusTopLeft: =7
         RadiusTopRight: =7
-        Size: =13
         Text: ="Create Objective"
         Width: =175
         X: =258
@@ -116,9 +128,16 @@
 
         DatePicker1_16 As datepicker:
             BorderColor: =RGBA(116, 116, 116, 1)
+            CalendarHeaderFill: =RGBA(211, 66, 9, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
             Fill: =RGBA(219, 219, 219, 1)
             Height: =30
+            HoverDateFill: =RGBA(255, 211, 205, 1)
             IconBackground: =RGBA(149, 149, 149, 1)
+            SelectedDateFill: =RGBA(211, 66, 9, 1)
             Width: =150
             X: =879
             Y: =147
@@ -127,12 +146,22 @@
         Dropdown1_22 As dropdown:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(149, 149, 149, 1)
+            ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+            ChevronDisabledFill: =RGBA(244, 244, 244, 1)
             ChevronHoverBackground: =ColorFade(RGBA(242, 19, 19, 1), -20%)
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
             Fill: =RGBA(219, 219, 219, 1)
             Height: =30
             HoverColor: =RGBA(242, 19, 19, 1)
+            HoverFill: =RGBA(255, 211, 205, 1)
             Items: =Friday_Demolist
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(131, 24, 75, 1)
             SelectionFill: =RGBA(242, 19, 19, 1)
+            Size: =13
             Width: =182
             X: =1052
             Y: =147
@@ -140,8 +169,13 @@
 
         Button1_23 As button:
             Color: =RGBA(237, 237, 237, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
             Fill: =RGBA(255, 0, 0, 1)
+            FontWeight: =FontWeight.Semibold
             Height: =30
+            HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(242, 19, 19, 1), -20%)
             RadiusBottomLeft: =5
             RadiusBottomRight: =5
@@ -155,33 +189,38 @@
             ZIndex: =7
 
         Label7_68 As label:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Semibold
             Height: =37
             HoverColor: =RGBA(5, 21, 242, 100)
             OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
             Size: =15
             Text: ="Home"
-            Underline: =true
             Width: =92
             X: =7
             Y: =136
             ZIndex: =8
 
         Label7_70 As label:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Semibold
             Height: =37
             HoverColor: =RGBA(5, 21, 242, 100)
             OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
-            Size: =14
             Text: ="GOALS & OBJECTIVES"
-            Underline: =true
             Width: =274
             X: =102
             Y: =138
             ZIndex: =9
 
         Icon2_28 As icon.ChevronRight:
-            Color: =RGBA(0, 0, 0, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =20
             Icon: =Icon.ChevronRight
             Width: =23
@@ -190,7 +229,9 @@
             ZIndex: =10
 
         Icon2_29 As icon.ChevronRight:
-            Color: =RGBA(0, 0, 0, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =20
             Icon: =Icon.ChevronRight
             Width: =23
@@ -199,18 +240,19 @@
             ZIndex: =11
 
         Label7_69 As label:
+            BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(255, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Semibold
             OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
-            Size: =14
             Text: ="Deliverables"
-            Underline: =true
             Width: =190
             X: =330
             Y: =137
             ZIndex: =12
 
     Rectangle1_7 As rectangle:
+        BorderColor: =RGBA(131, 24, 75, 1)
         Fill: |
             =RGBA(226, 223, 218, 1)
         Height: =22
@@ -240,16 +282,30 @@
             ZIndex: =1
 
             TextInput1_3 As text:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
                 Default: =""
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                FocusedBorderThickness: =4
                 Height: =145
                 HintText: =" Enter values..."
+                HoverBorderColor: =RGBA(131, 24, 75, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 211, 205, 1)
                 Mode: =TextMode.MultiLine
+                Size: =13
                 Width: =523
                 X: =40
                 Y: =140
                 ZIndex: =1
 
             Label47_31 As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =32
                 Size: =15
@@ -262,9 +318,15 @@
                 ZIndex: =8
 
             Button17_10 As button:
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
                 Fill: =RGBA(255, 0, 0, 1)
+                FontWeight: =FontWeight.Semibold
                 Height: =35
+                HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =RGBA(156, 9, 9, 0)
+                Size: =15
                 Text: ="Create"
                 Width: =150
                 X: =1077
@@ -272,9 +334,15 @@
                 ZIndex: =9
 
             Button17_11 As button:
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
                 Fill: =RGBA(255, 0, 0, 1)
+                FontWeight: =FontWeight.Semibold
                 Height: =35
+                HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =RGBA(156, 9, 9, 0)
+                Size: =15
                 Text: ="Cancel"
                 Width: =150
                 X: =909
@@ -282,16 +350,30 @@
                 ZIndex: =10
 
             TextInput1_4 As text:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
                 Default: =""
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                FocusedBorderThickness: =4
                 Height: =145
                 HintText: =" Enter values..."
+                HoverBorderColor: =RGBA(131, 24, 75, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 211, 205, 1)
                 Mode: =TextMode.MultiLine
+                Size: =13
                 Width: =568
                 X: =657
                 Y: =140
                 ZIndex: =13
 
             Label47_32 As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =32
                 Size: =15
@@ -304,25 +386,53 @@
             Dropdown9_8 As dropdown:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 ChevronBackground: =RGBA(0, 0, 0, 0.7)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
                 Height: =29
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 211, 205, 1)
                 Items: =DropDownSample
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(131, 24, 75, 1)
+                SelectionFill: =RGBA(211, 66, 9, 1)
+                Size: =13
                 Width: =1187
                 X: =40
                 Y: =33
                 ZIndex: =15
 
             Dropdown2_14 As dropdown:
+                BorderColor: =RGBA(131, 24, 75, 1)
                 ChevronBackground: =RGBA(0, 0, 0, 1)
-                FontWeight: =FontWeight.Bold
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
                 Height: =30
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 211, 205, 1)
                 Items: =sv2_4
-                Size: =15
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(131, 24, 75, 1)
+                SelectionFill: =RGBA(211, 66, 9, 1)
+                Size: =13
                 Width: =228
                 X: =670
                 Y: =361
                 ZIndex: =16
 
             Label47_21 As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =44
                 Size: =15
@@ -334,6 +444,9 @@
 
             Label47_22 As label:
                 Align: =Align.Center
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =57
                 Size: =15
@@ -344,6 +457,9 @@
                 ZIndex: =18
 
             Label47_23 As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =44
                 Size: =15
@@ -354,6 +470,9 @@
                 ZIndex: =19
 
             Label47_24 As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =44
                 Size: =15
@@ -364,10 +483,23 @@
                 ZIndex: =20
 
             Dropdown2_15 As dropdown:
+                BorderColor: =RGBA(131, 24, 75, 1)
                 ChevronBackground: =RGBA(0, 0, 0, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =30
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 211, 205, 1)
                 Items: =sss1
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(131, 24, 75, 1)
+                SelectionFill: =RGBA(211, 66, 9, 1)
                 Size: =15
                 Width: =248
                 X: =40
@@ -375,6 +507,7 @@
                 ZIndex: =21
 
             Circle1_4 As circle:
+                BorderColor: =RGBA(131, 24, 75, 1)
                 Fill: =RGBA(204, 204, 204, 1)
                 Height: =30
                 Width: =30
@@ -383,11 +516,17 @@
                 ZIndex: =22
 
             DatePicker3_4 As datepicker:
-                BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =0
+                CalendarHeaderFill: =RGBA(211, 66, 9, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
                 Height: =35
+                HoverDateFill: =RGBA(255, 211, 205, 1)
                 IconBackground: =Color
                 IconFill: =Color.Black
+                SelectedDateFill: =RGBA(211, 66, 9, 1)
                 Width: =213
                 X: =1015
                 Y: =358

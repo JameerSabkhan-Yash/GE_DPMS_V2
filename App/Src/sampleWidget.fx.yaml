@@ -1,9 +1,13 @@
 sampleWidget As screen:
+    Fill: =RGBA(255,255,255,1)
+    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
 
     Label27 As label:
-        BorderColor: =RGBA(0, 0, 0, 1)
         BorderThickness: =1
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
         Height: =43
+        Size: =13
         Text: ="Label"
         Width: =168
         X: =167
@@ -11,11 +15,16 @@ sampleWidget As screen:
         ZIndex: =1
 
     Label28 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
         Text: ="Text Label"
         Y: =13
         ZIndex: =2
 
     Rectangle10 As rectangle:
+        BorderColor: =RGBA(131, 24, 75, 1)
         Fill: =RGBA(0, 0, 0, 1)
         Height: =768
         Width: =1
@@ -23,67 +32,119 @@ sampleWidget As screen:
         ZIndex: =3
 
     TextInput7 As text:
-        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
         Default: ="Enter Comments..."
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
         Height: =38
+        HoverBorderColor: =RGBA(131, 24, 75, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 211, 205, 1)
+        Size: =13
         Width: =244
         X: =167
         Y: =104
         ZIndex: =4
 
     Label28_1 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
         Text: ="Text input"
         Y: =104
         ZIndex: =5
 
     Button17 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(255, 0, 0, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(255, 0, 0, 1)
+        FontWeight: =FontWeight.Semibold
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+        Size: =15
         Text: ="Submit"
         X: =167
         Y: =202
         ZIndex: =6
 
     Button17_1 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(255, 0, 0, 1)
+        FontWeight: =FontWeight.Semibold
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+        Size: =15
         Text: ="Cancel"
         X: =350
         Y: =204
         ZIndex: =7
 
     Label28_2 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
         Text: ="Buttons"
         Y: =204
         ZIndex: =8
 
     DatePicker2 As datepicker:
-        BorderColor: =RGBA(0, 0, 0, 1)
+        CalendarHeaderFill: =RGBA(211, 66, 9, 1)
+        Color: =RGBA(0, 0, 0, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(0, 0, 0, 0)
+        HoverDateFill: =RGBA(255, 211, 205, 1)
+        IconBackground: =RGBA(211, 66, 9, 1)
+        SelectedDateFill: =RGBA(211, 66, 9, 1)
         X: =167
         Y: =304
         ZIndex: =9
 
     Label28_3 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
         Text: ="Date picker"
         Y: =304
         ZIndex: =10
 
     Toggle1 As toggleSwitch:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
         FalseFill: =RGBA(255, 0, 0, 1)
+        HandleFill: =RGBA(255, 255, 255, 1)
+        Size: =13
         TrueFill: =RGBA(54, 176, 75, 1)
         X: =167
         Y: =405
         ZIndex: =11
 
     Toggle1_1 As toggleSwitch:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
         FalseFill: =RGBA(255, 0, 0, 1)
+        HandleFill: =RGBA(255, 255, 255, 1)
+        Size: =13
         TrueFill: =RGBA(54, 176, 75, 1)
         X: =167
         Y: =458
         ZIndex: =12
 
     Label28_4 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
         Text: |-
             ="Toggle Off
             "
@@ -91,11 +152,18 @@ sampleWidget As screen:
         ZIndex: =13
 
     Label28_5 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
         Text: ="Toggle On"
         Y: =452
         ZIndex: =14
 
     Slider1 As slider:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        HandleFill: =RGBA(255, 255, 255, 1)
         RailFill: =RGBA(0, 0, 0, 1)
         ValueFill: =RGBA(184, 0, 0, 1)
         X: =167
@@ -103,6 +171,10 @@ sampleWidget As screen:
         ZIndex: =15
 
     Label28_6 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
         Text: |-
             ="Slider
             "
@@ -110,26 +182,35 @@ sampleWidget As screen:
         ZIndex: =16
 
     Radio1 As radio:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(131, 24, 75, 1)
         Items: =RadioSample
-        RadioBorderColor: =RGBA(0, 0, 0, 1)
         RadioSelectionFill: =RGBA(184, 0, 0, 1)
+        Size: =13
         X: =167
         Y: =618
         ZIndex: =17
 
     Label28_7 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
         Text: ="Radio Buttons"
         Y: =648
         ZIndex: =18
 
     Timer1 As timer:
         Fill: =RGBA(255, 0, 0, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(255, 0, 0, 100), -20%)
         X: =778
         Y: =13
         ZIndex: =19
 
     Rectangle10_1 As rectangle:
+        BorderColor: =RGBA(131, 24, 75, 1)
         Fill: =RGBA(0, 0, 0, 1)
         Height: =768
         Width: =1
@@ -137,6 +218,10 @@ sampleWidget As screen:
         ZIndex: =20
 
     Label28_8 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
         Text: ="Timer"
         X: =539
         Y: =13
@@ -145,14 +230,31 @@ sampleWidget As screen:
     Dropdown9 As dropdown:
         BorderColor: =RGBA(0, 0, 0, 1)
         ChevronBackground: =RGBA(0, 0, 0, 0.7)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =28
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 211, 205, 1)
         Items: =DropDownSample
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(131, 24, 75, 1)
+        SelectionFill: =RGBA(211, 66, 9, 1)
+        Size: =13
         Width: =159
         X: =779
         Y: =110
         ZIndex: =22
 
     Label28_9 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
         Text: |-
             ="Drop down
             "
@@ -161,19 +263,25 @@ sampleWidget As screen:
         ZIndex: =23
 
     Arrow1 As arrow.backArrow:
-        BorderColor: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(184, 0, 0, 1)
         X: =779
         Y: =202
         ZIndex: =24
 
     Arrow2 As arrow:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(184, 0, 0, 1)
         X: =778
         Y: =304
         ZIndex: =25
 
     Label28_10 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
         Text: |-
             ="Back arrow
             "
@@ -182,6 +290,10 @@ sampleWidget As screen:
         ZIndex: =26
 
     Label28_11 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
         Text: |-
             ="Next arrow
             "
@@ -190,6 +302,7 @@ sampleWidget As screen:
         ZIndex: =27
 
     Circle5 As circle:
+        BorderColor: =RGBA(131, 24, 75, 1)
         Fill: =RGBA(255, 0, 0, 1)
         Height: =25
         Width: =25
@@ -198,6 +311,7 @@ sampleWidget As screen:
         ZIndex: =28
 
     Circle5_1 As circle:
+        BorderColor: =RGBA(131, 24, 75, 1)
         Fill: =RGBA(54, 176, 75, 1)
         Height: =25
         Width: =25
@@ -206,6 +320,7 @@ sampleWidget As screen:
         ZIndex: =29
 
     Circle5_2 As circle:
+        BorderColor: =RGBA(131, 24, 75, 1)
         Fill: =RGBA(255, 191, 0, 1)
         Height: =25
         Width: =25

@@ -6110,6 +6110,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "NavigationDemo.TargetDatePicker_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NavigationDemo.TargetDatePicker_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "NavigationDemo",
+                "type": "NavigationDemo.TargetDatePicker_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.varOverView"
                 }
               ],
