@@ -860,11 +860,12 @@
         "PaddingRight",
         "PaddingBottom",
         "PaddingLeft",
+        "Default",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Default",
+          "AutoRuleBindingString": "false",
+          "InvariantPropertyName": "OnUncheck",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
@@ -872,7 +873,7 @@
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "false",
-          "InvariantPropertyName": "OnUncheck",
+          "InvariantPropertyName": "Reset",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         }
@@ -898,6 +899,11 @@
         {
           "Category": "Data",
           "PropertyName": "Default",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Reset",
           "RuleProviderType": "Unknown"
         },
         {
@@ -1171,11 +1177,12 @@
         "PaddingRight",
         "PaddingBottom",
         "PaddingLeft",
+        "Default",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Default",
+          "AutoRuleBindingString": "false",
+          "InvariantPropertyName": "OnUncheck",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
@@ -1183,7 +1190,7 @@
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "false",
-          "InvariantPropertyName": "OnUncheck",
+          "InvariantPropertyName": "Reset",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         }
@@ -1209,6 +1216,11 @@
         {
           "Category": "Data",
           "PropertyName": "Default",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Reset",
           "RuleProviderType": "Unknown"
         },
         {
@@ -1482,11 +1494,12 @@
         "PaddingRight",
         "PaddingBottom",
         "PaddingLeft",
+        "Default",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Default",
+          "AutoRuleBindingString": "false",
+          "InvariantPropertyName": "OnUncheck",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
@@ -1494,7 +1507,7 @@
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "false",
-          "InvariantPropertyName": "OnUncheck",
+          "InvariantPropertyName": "Reset",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         }
@@ -1520,6 +1533,11 @@
         {
           "Category": "Data",
           "PropertyName": "Default",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Reset",
           "RuleProviderType": "Unknown"
         },
         {
@@ -1803,7 +1821,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "galleryTemplate4_4",
-      "ParentIndex": 0,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2879,7 +2897,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "I4.0_DPMS_CSL_GnO_R1_IN-2_1",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6250,7 +6268,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "I4.0_DPMS_CSL_GnO_TL11_IN-2_1",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6553,7 +6571,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "I4.0_DPMS_CSL_GnO_TL11_IN-2_2",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6870,7 +6888,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "I4.0_DPMS_CSL_GnO_TL12_IN-2_1",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7173,7 +7191,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "I4.0_DPMS_CSL_GnO_TL13_IN-2_1",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7476,7 +7494,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "I4.0_DPMS_CSL_GnO_TL14_IN-2_1",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7765,7 +7783,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "I4.0_DPMS_CSL_GnO_TL15_IN-2_1",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

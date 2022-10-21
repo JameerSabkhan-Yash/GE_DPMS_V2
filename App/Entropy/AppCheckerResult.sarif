@@ -5054,36 +5054,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_BHG_IN-1_2'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_BHG_IN-1_2'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "I4.0_DPMS_CSL_GnO_CI",
-                "type": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_BHG_IN-1_2'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_BHG_IN-1_2'.TabIndex"
                 }
               ],
@@ -5108,6 +5078,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_BHG_IN-1_2'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_BHG_IN-1_2'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "I4.0_DPMS_CSL_GnO_CI",
+                "type": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_BHG_IN-1_2'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
         },
         {
           "locations": [

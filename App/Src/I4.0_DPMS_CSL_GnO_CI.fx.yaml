@@ -1,7 +1,7 @@
 "'I4.0_DPMS_CSL_GnO_CI' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     Fill: =RGBA(226, 223, 218, 1)
     LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
-    OnVisible: |-
+    OnVisible: |
         =//Collection for issue create operation
         ClearCollect(
             I4_0_DPMS_CSL_XXX_CIS,
@@ -66,11 +66,11 @@
                 I4_0_DPMS_CSL_GnO_CI_LVISNN
             )
         );
-        
         //Reset Checkbox
         Reset(Checkbox1_7);
         Reset(Checkbox1_8);
         Reset(Checkbox1_9);
+        Reset('I4.0_DPMS_CSL_GnO_TI1_CI-2_3');
 
     "'I4.0_DPMS_CSL_GnO_R2_CI-2_10' As rectangle":
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -624,12 +624,13 @@
             Checkbox1_7 As checkbox:
                 BorderColor: =RGBA(0,0,0,0)
                 Color: =RGBA(0, 0, 0, 1)
-                Default: =true
+                Default: =
                 Height: =40
                 HoverColor: =RGBA(0, 18, 107, 1)
                 OnUncheck: =Reset('I4.0_DPMS_CSL_GnO_TI_CI-3_2');
                 PressedBorderColor: =RGBA(0,0,0,0)
                 PressedColor: =RGBA(0,0,0,0)
+                Reset: =
                 Size: =13
                 Text: =""
                 Width: =45
@@ -640,10 +641,11 @@
             Checkbox1_8 As checkbox:
                 BorderColor: =RGBA(0,0,0,0)
                 Color: =RGBA(0, 0, 0, 1)
-                Default: =true
+                Default: =
                 Height: =40
                 HoverColor: =RGBA(0, 18, 107, 1)
                 OnUncheck: =Reset('I4.0_DPMS_CSL_GnO_TI_CI-2_2');
+                Reset: =
                 Size: =13
                 Text: =""
                 Width: =45
@@ -654,10 +656,11 @@
             Checkbox1_9 As checkbox:
                 BorderColor: =RGBA(0,0,0,0)
                 Color: =RGBA(0, 0, 0, 1)
-                Default: =true
+                Default: =
                 Height: =40
                 HoverColor: =RGBA(0, 18, 107, 1)
                 OnUncheck: =Reset('I4.0_DPMS_CSL_GnO_TI_CI-1_2');
+                Reset: =
                 Size: =13
                 Text: =""
                 Width: =45
@@ -880,6 +883,12 @@
                             I4_0_DPMS_CSL_GnO_CI_LVISNN
                         )
                     );
+                    
+                    //Reset Checkbox
+                    Reset(Checkbox1_7);
+                    Reset(Checkbox1_8);
+                    Reset(Checkbox1_9);
+                    Reset('I4.0_DPMS_CSL_GnO_TI1_CI-2_3');
                 Size: =15
                 Text: ="Create"
                 Width: =150
