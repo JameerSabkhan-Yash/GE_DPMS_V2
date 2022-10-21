@@ -65,7 +65,12 @@
                 "IS",
                 I4_0_DPMS_CSL_GnO_CI_LVISNN
             )
-        )
+        );
+        
+        //Reset Checkbox
+        Reset(Checkbox1_7);
+        Reset(Checkbox1_8);
+        Reset(Checkbox1_9);
 
     "'I4.0_DPMS_CSL_GnO_R2_CI-2_10' As rectangle":
         BorderColor: =RGBA(0, 0, 0, 1)

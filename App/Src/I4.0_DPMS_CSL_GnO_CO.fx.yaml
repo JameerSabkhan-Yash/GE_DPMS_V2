@@ -225,7 +225,7 @@
                 FontWeight: =FontWeight.Semibold
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
-                OnSelect: |
+                OnSelect: |-
                     =If(
                         !IsBlank(dpFocusArea.SelectedText.Value) And !IsBlank(dpFocusLine.SelectedText.Value) And !IsBlank(ObjectiveDescription.Text) And !IsBlank(dpOwner.SelectedText.Value) And !IsBlank(dpOwner.Selected.Title) And !IsBlank(ProgressTI.Text) And !IsBlank(TargetDatePicker.SelectedDate),
                         
@@ -281,6 +281,11 @@
                             NotificationType.Information
                         )
                     );
+                    
+                    Reset(dpFocusArea);
+                    Reset(dpFocusLine);
+                    Reset(dpOwner);
+                    Reset(ObjectiveDescription);
                 Size: =15
                 Text: ="Create"
                 Width: =150
@@ -447,7 +452,7 @@
                     )
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(219, 219, 219, 1)
-                SelectionFill: =RGBA(211, 66, 9, 1)
+                SelectionFill: =RGBA(202, 202, 202, 1)
                 Size: =13
                 Width: =1060
                 X: =175
@@ -474,7 +479,7 @@
                 Items: =Distinct(I4_0_DPMS_CSL_CFG_FA,FoucsArea)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(202, 202, 202, 1)
-                SelectionFill: =RGBA(211, 66, 9, 1)
+                SelectionFill: =RGBA(202, 202, 202, 1)
                 Size: =13
                 Tooltip: ="Please Slect the focus Area"
                 Width: =1060
