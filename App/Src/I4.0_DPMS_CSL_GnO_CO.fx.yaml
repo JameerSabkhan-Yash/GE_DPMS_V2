@@ -495,8 +495,8 @@
                     )
                 Width: =33
                 Wrap: =false
-                X: =1235
-                Y: =11
+                X: =137
+                Y: =21
                 ZIndex: =13
 
             StarVisible1_2 As label:
@@ -514,8 +514,8 @@
                     )
                 Width: =31
                 Wrap: =false
-                X: =1238
-                Y: =70
+                X: =149
+                Y: =80
                 ZIndex: =14
 
             Label47_25 As label:
