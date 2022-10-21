@@ -71,23 +71,27 @@
             ObjectiveDescription As text:
                 Align: =Align.Justify
                 BorderThickness: =2
+                Clear: =true
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =""
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
+                EnableSpellCheck: =true
                 FocusedBorderThickness: =4
-                Height: =105
+                Height: =91
                 HintText: ="Please enter your objective description."
                 HoverBorderColor: =RGBA(0, 0, 0, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
+                LineHeight: =2
+                MaxLength: =200
                 Mode: =TextMode.MultiLine
                 PressedBorderColor: =RGBA(0, 0, 0, 1)
                 Size: =13
                 Width: =1187
                 X: =50
-                Y: =180
+                Y: =189
                 ZIndex: =2
 
             Label47_16 As label:
@@ -187,7 +191,7 @@
                 Text: ="Objective Description"
                 Width: =266
                 X: =45
-                Y: =136
+                Y: =145
                 ZIndex: =9
 
             Button17_8 As button:
@@ -319,7 +323,7 @@
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                Height: =30
+                Height: =35
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(219, 219, 219, 1)
                 Items: =Filter(I4_0_DPMS_CSL_CFG_FL,FocusArea = dpFocusArea.SelectedText.Value).FocusLine
@@ -453,7 +457,7 @@
                 Size: =13
                 Width: =1060
                 X: =175
-                Y: =82
+                Y: =80
                 ZIndex: =14
 
             dpFocusArea As dropdown:
@@ -470,7 +474,7 @@
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                Height: =30
+                Height: =35
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(219, 219, 219, 1)
                 Items: =Distinct(I4_0_DPMS_CSL_CFG_FA,FoucsArea)
@@ -500,7 +504,7 @@
                 Width: =33
                 Wrap: =false
                 X: =1235
-                Y: =20
+                Y: =11
                 ZIndex: =16
 
             StarVisible1_2 As label:
@@ -519,7 +523,7 @@
                 Width: =31
                 Wrap: =false
                 X: =1238
-                Y: =79
+                Y: =70
                 ZIndex: =17
 
             Label47_25 As label:
@@ -527,7 +531,7 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
-                Height: =22
+                Height: =33
                 Size: =13
                 Text: ="Please select Focus Area."
                 Visible: |-
@@ -546,7 +550,7 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
-                Height: =22
+                Height: =36
                 Size: =13
                 Text: ="Please select Focus Line."
                 Visible: |-
@@ -557,7 +561,7 @@
                     )
                 Width: =248
                 X: =175
-                Y: =85
+                Y: =79
                 ZIndex: =19
 
             StarVisible1_3 As label:
@@ -624,7 +628,7 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
-                Height: =33
+                Height: =35
                 Size: =15
                 Text: ="Focus Line"
                 X: =45
@@ -636,12 +640,27 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
-                Height: =33
+                Height: =35
                 Size: =15
                 Text: ="Focus Area"
                 X: =45
                 Y: =20
                 ZIndex: =30
+
+            Label1_4 As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: |-
+                    =//RGBA(0, 0, 0, 1) 
+                    If(Len('ObjectiveDescription'.Text) >= 200 , Red,Black)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =32
+                Size: =12
+                Text: ="(Max Characters " & Len('ObjectiveDescription'.Text) &"/200)"
+                Width: =218
+                X: =1033
+                Y: =157
+                ZIndex: =31
 
     "'I4.0_DPMS_CSL_XXX_C_F_6' As 'I4.0_DPMS_CSL_XXX_C_F'":
         Height: =26
