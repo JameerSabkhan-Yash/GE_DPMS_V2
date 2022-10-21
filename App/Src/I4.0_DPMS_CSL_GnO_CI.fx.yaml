@@ -152,7 +152,7 @@
                 Height: =67
                 HoverBorderColor: =RGBA(0, 0, 0, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(240, 158, 144, 0.9)
+                HoverFill: =RGBA(255, 255, 255, 1)
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
@@ -321,7 +321,7 @@
                 FontWeight: =FontWeight.Semibold
                 Height: =35
                 Size: =13
-                Text: ="Impact on cost (in $)"
+                Text: ="Impact On Cost (in $)"
                 Width: =280
                 X: =79
                 Y: =124
@@ -334,7 +334,7 @@
                 FontWeight: =FontWeight.Semibold
                 Height: =35
                 Size: =13
-                Text: ="Impact on schedule (in months)"
+                Text: ="Impact On Schedule (in months)"
                 Width: =419
                 X: =79
                 Y: =173
@@ -347,7 +347,7 @@
                 FontWeight: =FontWeight.Semibold
                 Height: =35
                 Size: =13
-                Text: ="Impact on quality"
+                Text: ="Impact On Quality"
                 Width: =254
                 X: =79
                 Y: =220
@@ -377,9 +377,10 @@
                 FocusedBorderThickness: =4
                 Height: =39
                 HintText: ="Enter values"
-                HoverBorderColor: =RGBA(131, 24, 75, 1)
+                HoverBorderColor: =RGBA(0, 0, 0, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(255, 211, 205, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                PressedBorderColor: =Black
                 Size: =13
                 Width: =392
                 X: =505
@@ -397,9 +398,10 @@
                 FocusedBorderThickness: =4
                 Height: =39
                 HintText: ="Enter values"
-                HoverBorderColor: =RGBA(131, 24, 75, 1)
+                HoverBorderColor: =RGBA(0, 0, 0, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(255, 211, 205, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                PressedBorderColor: =Black
                 Size: =13
                 Width: =391
                 X: =505
@@ -417,9 +419,9 @@
                 FocusedBorderThickness: =4
                 Height: =39
                 HintText: ="Enter values"
-                HoverBorderColor: =RGBA(131, 24, 75, 1)
+                HoverBorderColor: =RGBA(0, 0, 0, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(255, 211, 205, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
                 Size: =13
                 Width: =391
                 X: =505
@@ -869,6 +871,56 @@
                 X: =925
                 Y: =400
                 ZIndex: =36
+
+            Rectangle4 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =1
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =34
+                Width: =1.2
+                X: =234
+                Y: =44
+                ZIndex: =37
+
+            Rectangle4_1 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =1
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =34
+                Width: =1
+                X: =457
+                Y: =44
+                ZIndex: =38
+
+            Rectangle4_2 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =1
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =34
+                Width: =1.2
+                X: =641
+                Y: =44
+                ZIndex: =39
+
+            Rectangle4_3 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =1
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =34
+                Width: =1
+                X: =959
+                Y: =44
+                ZIndex: =40
+
+            Rectangle4_4 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =1
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =34
+                Width: =1.2
+                X: =1089
+                Y: =44
+                ZIndex: =41
 
     "'I4.0_DPMS_CSL_XXX_C_N_9' As 'I4.0_DPMS_CSL_XXX_C_N_3'":
         Height: |-
