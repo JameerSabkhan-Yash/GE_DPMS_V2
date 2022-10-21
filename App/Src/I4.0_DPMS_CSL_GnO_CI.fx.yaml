@@ -892,9 +892,9 @@
                 Height: =32
                 Size: =12
                 Text: |-
-                    ="(Max Characters :" & Len('I4.0_DPMS_CSL_GnO_TI1_CI-2_3'.Text) &"/200)"
+                    ="(Max Characters : " & Len('I4.0_DPMS_CSL_GnO_TI1_CI-2_3'.Text) &"/200)"
                 Width: =218
-                X: =1045
+                X: =1038
                 Y: =282
                 ZIndex: =43
 

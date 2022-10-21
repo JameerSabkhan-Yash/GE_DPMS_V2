@@ -649,9 +649,9 @@
                 Height: =32
                 Size: =12
                 Text: |-
-                    ="(Max Characters :" & Len('ObjectiveDescription'.Text) &"/200)"
+                    ="(Max Characters : " & Len('ObjectiveDescription'.Text) &"/200)"
                 Width: =218
-                X: =1033
+                X: =1026
                 Y: =157
                 ZIndex: =22
 
