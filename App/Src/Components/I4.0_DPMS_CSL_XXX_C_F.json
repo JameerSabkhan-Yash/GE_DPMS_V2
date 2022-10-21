@@ -58,7 +58,7 @@
         "Name": "Rectangle1_48",
         "Parent": "I4.0_DPMS_CSL_XXX_C_F",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 427,
+        "PublishOrderIndex": 472,
         "Rules": [
           {
             "Category": "Design",
@@ -280,7 +280,7 @@
         "Name": "Label1_30",
         "Parent": "I4.0_DPMS_CSL_XXX_C_F",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 428,
+        "PublishOrderIndex": 473,
         "Rules": [
           {
             "Category": "Data",
@@ -594,7 +594,7 @@
         "Name": "Image1_22",
         "Parent": "I4.0_DPMS_CSL_XXX_C_F",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 429,
+        "PublishOrderIndex": 474,
         "Rules": [
           {
             "Category": "Data",
@@ -841,7 +841,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638018601584919863",
+    "LastModifiedTimestamp": "638019204686554952",
     "Name": "I4.0_DPMS_CSL_XXX_C_F",
     "Rules": [
       {
@@ -928,7 +928,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638018601584919863",
+  "LastModifiedTimestamp": "638019204686554952",
   "Name": "e15f1dc92bb04ebf89dd8734f32ecdba",
   "OverridableProperties": {},
   "TemplateOriginalName": "663aaaf0dc584b51aa63534a92d5cbfa",

@@ -77,13 +77,6 @@
         Y: =233
         ZIndex: =1
 
-    "'I4.0_DPMS_CSL_XXX_C_N_9' As 'I4.0_DPMS_CSL_XXX_C_N'":
-        Height: =56
-        Width: =1350
-        X: =7
-        Y: =77
-        ZIndex: =2
-
     "'I4.0_DPMS_CSL_XXX_C_F_9' As 'I4.0_DPMS_CSL_XXX_C_F'":
         Height: =26
         Y: =742
@@ -889,6 +882,16 @@
                 X: =950
                 Y: =400
                 ZIndex: =36
+
+    "'I4.0_DPMS_CSL_XXX_C_N_9' As 'I4.0_DPMS_CSL_XXX_C_N_3'":
+        Height: |-
+            =If(
+                IsBlank(Self.FlexibleHeight),
+                50,
+                Self.FlexibleHeight
+            )
+        Y: =83
+        ZIndex: =16
 
     BreadcrumbBar_12 As group:
         Height: =5
