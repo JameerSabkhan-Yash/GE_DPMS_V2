@@ -68,7 +68,7 @@
             PaddingTop: =6
             Visible: =CountRows(Gallery2_2.AllItems) > 1
             Width: =20
-            X: =229
+            X: =250
             Y: =10
             ZIndex: =2
 
