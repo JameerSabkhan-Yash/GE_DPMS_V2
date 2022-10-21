@@ -94,8 +94,14 @@ App As appinfo:
                 ParentTab: "Goals & Objective"
             },
             {
-                Title: "Configure",
-                Screen: Blank(),
+                Title: "Create Objective",
+                Screen: 'I4.0_DPMS_CSL_GnO_CO',
+                Id: 3,
+                ParentTab: "Goals & Objective"
+            },
+            {
+                Title: "Create Issue",
+                Screen: 'I4.0_DPMS_CSL_GnO_CI',
                 Id: 3,
                 ParentTab: "Goals & Objective"
             },
