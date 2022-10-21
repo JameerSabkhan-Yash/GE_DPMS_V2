@@ -495,7 +495,7 @@
                     )
                 Width: =33
                 Wrap: =false
-                X: =137
+                X: =149
                 Y: =21
                 ZIndex: =13
 
@@ -590,8 +590,8 @@
                     )
                 Width: =46
                 Wrap: =false
-                X: =294
-                Y: =334
+                X: =123
+                Y: =302
                 ZIndex: =18
 
             ProgressTI As text:
