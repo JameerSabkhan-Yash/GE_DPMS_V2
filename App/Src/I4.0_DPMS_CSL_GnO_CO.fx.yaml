@@ -117,7 +117,7 @@
                 Size: =15
                 Text: ="Status"
                 Width: =112
-                X: =368
+                X: =407
                 Y: =300
                 ZIndex: =3
 
@@ -130,7 +130,7 @@
                 Size: =15
                 Text: ="Progress"
                 Width: =130
-                X: =681
+                X: =741
                 Y: =300
                 ZIndex: =4
 
@@ -143,7 +143,7 @@
                 Size: =15
                 Text: ="Target Date"
                 Width: =130
-                X: =1015
+                X: =1033
                 Y: =300
                 ZIndex: =5
 
@@ -205,7 +205,7 @@
                 Size: =15
                 Text: ="Cancel"
                 Width: =150
-                X: =1078
+                X: =1088
                 Y: =407
                 ZIndex: =8
 
@@ -282,7 +282,7 @@
                 Size: =15
                 Text: ="Create"
                 Width: =150
-                X: =883
+                X: =888
                 Y: =407
                 ZIndex: =9
 
@@ -299,7 +299,7 @@
                 IconFill: =Color.Black
                 SelectedDateFill: =RGBA(211, 66, 9, 1)
                 Width: =200
-                X: =1015
+                X: =1038
                 Y: =345
                 ZIndex: =10
 
@@ -610,7 +610,7 @@
                 HoverFill: =RGBA(255, 211, 205, 1)
                 Size: =13
                 Width: =200
-                X: =681
+                X: =741
                 Y: =345
                 ZIndex: =19
 
@@ -678,7 +678,7 @@
                     HoverFill: =RGBA(255, 211, 205, 1)
                     Size: =13
                     Width: =200
-                    X: =394
+                    X: =433
                     Y: =345
                     ZIndex: =24
 
@@ -687,8 +687,8 @@
                     Fill: =RGBA(153, 153, 153, 1)
                     Height: =22
                     Width: =22
-                    X: =407
-                    Y: =351
+                    X: =446
+                    Y: =353
                     ZIndex: =25
 
     "'I4.0_DPMS_CSL_XXX_C_F_6' As 'I4.0_DPMS_CSL_XXX_C_F'":
