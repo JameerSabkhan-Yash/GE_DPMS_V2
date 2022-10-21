@@ -688,8 +688,8 @@
                     )
                 Width: =46
                 Wrap: =false
-                X: =249
-                Y: =126
+                X: =243
+                Y: =132
                 ZIndex: =32
 
             StarVisible1_6 As label:
@@ -707,8 +707,8 @@
                     )
                 Width: =46
                 Wrap: =false
-                X: =337
-                Y: =174
+                X: =331
+                Y: =180
                 ZIndex: =33
 
             StarVisible1_8 As label:
@@ -726,8 +726,8 @@
                     )
                 Width: =46
                 Wrap: =false
-                X: =227
-                Y: =225
+                X: =221
+                Y: =231
                 ZIndex: =34
 
             StarVisible1_7 As label:
@@ -745,8 +745,8 @@
                     )
                 Width: =41
                 Wrap: =false
-                X: =1230
-                Y: =290
+                X: =185
+                Y: =275
                 ZIndex: =35
 
             Button17_17 As button:
