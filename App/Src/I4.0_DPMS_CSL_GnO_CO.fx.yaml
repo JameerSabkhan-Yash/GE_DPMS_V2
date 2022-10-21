@@ -648,7 +648,8 @@
                 FontWeight: =FontWeight.Semibold
                 Height: =32
                 Size: =12
-                Text: ="(Max Characters " & Len('ObjectiveDescription'.Text) &"/200)"
+                Text: |-
+                    ="(Max Characters :" & Len('ObjectiveDescription'.Text) &"/200)"
                 Width: =218
                 X: =1033
                 Y: =157
