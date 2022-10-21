@@ -307,7 +307,7 @@
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =RGBA(0, 0, 0, 0.7)
                 OnSelect: =
-                Size: =13.5
+                Size: =15
                 Text: ="Cancel"
                 Width: =150
                 X: =1094
@@ -321,7 +321,7 @@
                 FontWeight: =FontWeight.Semibold
                 Height: =35
                 Size: =13
-                Text: ="Impact On Cost (in $)"
+                Text: ="Impact On Cost (In $)"
                 Width: =280
                 X: =79
                 Y: =124
@@ -334,7 +334,7 @@
                 FontWeight: =FontWeight.Semibold
                 Height: =35
                 Size: =13
-                Text: ="Impact On Schedule (in months)"
+                Text: ="Impact On Schedule (In Months)"
                 Width: =419
                 X: =79
                 Y: =173
@@ -654,7 +654,7 @@
                 BorderColor: =RGBA(131, 24, 75, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                FontWeight: =FontWeight.Bold
+                FontWeight: =FontWeight.Semibold
                 Height: =37
                 Size: =15
                 Text: ="Issue Description"
@@ -921,6 +921,19 @@
                 X: =1089
                 Y: =44
                 ZIndex: =41
+
+            "'I4.0_DPMS_CSL_GnO_TL_CI-4_3' As label":
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =35
+                Size: =12
+                Text: ="(Max Characters 200)"
+                Width: =280
+                X: =22
+                Y: =381
+                ZIndex: =42
 
     "'I4.0_DPMS_CSL_XXX_C_N_9' As 'I4.0_DPMS_CSL_XXX_C_N_3'":
         Height: |-

@@ -58,7 +58,7 @@ App As appinfo:
                 ParentTab: "KPI"
             },
             {
-                Title: "Goals Objective",
+                Title: "Goals & Objective",
                 Screen: Blank(),
                 Id: 3,
                 ParentTab: ""
@@ -67,37 +67,37 @@ App As appinfo:
                 Title: "Overview",
                 Screen: Blank(),
                 Id: 3,
-                ParentTab: "Goals Objective"
+                ParentTab: "Goals & Objective"
             },
             {
                 Title: "Objective",
                 Screen: Blank(),
                 Id: 3,
-                ParentTab: "Goals Objective"
+                ParentTab: "Goals & Objective"
             },
             {
                 Title: "Issue",
                 Screen: Blank(),
                 Id: 3,
-                ParentTab: "Goals Objective"
+                ParentTab: "Goals & Objective"
             },
             {
                 Title: "Action",
                 Screen: 'I4.0_DPMS_CSL_GnO_SC_IN-2',
                 Id: 3,
-                ParentTab: "Goals Objective"
+                ParentTab: "Goals & Objective"
             },
             {
                 Title: "Insights",
                 Screen: 'I4.0_DPMS_CSL_GnO_SC_IN-1',
                 Id: 3,
-                ParentTab: "Goals Objective"
+                ParentTab: "Goals & Objective"
             },
             {
                 Title: "Configure",
                 Screen: Blank(),
                 Id: 3,
-                ParentTab: "Goals Objective"
+                ParentTab: "Goals & Objective"
             },
             {
                 Title: "Bi Monthly Report",

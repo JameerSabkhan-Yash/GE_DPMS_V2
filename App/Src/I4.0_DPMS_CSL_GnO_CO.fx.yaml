@@ -81,7 +81,7 @@
                 HintText: ="Please enter your objective description."
                 HoverBorderColor: =RGBA(0, 0, 0, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(255, 211, 205, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
                 Mode: =TextMode.MultiLine
                 PressedBorderColor: =RGBA(0, 0, 0, 1)
                 Size: =13
@@ -94,7 +94,7 @@
                 BorderColor: =RGBA(131, 24, 75, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                FontWeight: =FontWeight.Bold
+                FontWeight: =FontWeight.Semibold
                 Height: =35
                 Size: =15
                 Text: ="Owner"
@@ -108,7 +108,7 @@
                 BorderColor: =RGBA(131, 24, 75, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                FontWeight: =FontWeight.Bold
+                FontWeight: =FontWeight.Semibold
                 Height: =35
                 Size: =15
                 Text: ="Status"
@@ -121,7 +121,7 @@
                 BorderColor: =RGBA(131, 24, 75, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                FontWeight: =FontWeight.Bold
+                FontWeight: =FontWeight.Semibold
                 Height: =35
                 Size: =15
                 Text: ="Progress"
@@ -134,7 +134,7 @@
                 BorderColor: =RGBA(131, 24, 75, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                FontWeight: =FontWeight.Bold
+                FontWeight: =FontWeight.Semibold
                 Height: =35
                 Size: =15
                 Text: ="Target Date"
@@ -145,15 +145,15 @@
 
             dpOwner As dropdown:
                 BorderColor: =RGBA(0, 0, 0, 1)
-                ChevronBackground: =RGBA(0, 0, 0, 1)
+                ChevronBackground: =RGBA(0, 0, 0, 0.7)
                 ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
                 ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =ColorFade(RGBA(0, 0, 0, 100), -20%)
+                ChevronHoverBackground: =
                 ChevronHoverFill: =RGBA(255, 255, 255, 1)
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                FontWeight: =FontWeight.Bold
+                FontWeight: =FontWeight.Semibold
                 Height: =35
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(219, 219, 219, 1)
@@ -169,9 +169,9 @@
                         ) && Title <> User().FullName
                     ).Title
                 PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =RGBA(131, 24, 75, 1)
+                PressedFill: =RGBA(0, 0, 0, 0)
                 SelectionFill: =RGBA(202, 202, 202, 1)
-                Size: =15
+                Size: =13
                 Width: =250
                 X: =50
                 Y: =345
@@ -181,7 +181,7 @@
                 BorderColor: =RGBA(131, 24, 75, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                FontWeight: =FontWeight.Bold
+                FontWeight: =FontWeight.Semibold
                 Height: =32
                 Size: =15
                 Text: ="Objective Description"
@@ -314,7 +314,7 @@
                 ChevronBackground: =RGBA(0, 0, 0, 0.7)
                 ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
                 ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =ColorFade(RGBA(0, 0, 0, 100), -20%)
+                ChevronHoverBackground: =
                 ChevronHoverFill: =RGBA(255, 255, 255, 1)
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -451,19 +451,19 @@
                 PressedFill: =RGBA(219, 219, 219, 1)
                 SelectionFill: =RGBA(211, 66, 9, 1)
                 Size: =13
-                Width: =1187
-                X: =50
-                Y: =92
+                Width: =1060
+                X: =175
+                Y: =82
                 ZIndex: =14
 
             dpFocusArea As dropdown:
                 AccessibleLabel: ="Please Slect the focus Area"
                 AllowEmptySelection: =true
                 BorderColor: =RGBA(0, 0, 0, 1)
-                ChevronBackground: =RGBA(0, 0, 0, 0.7)
+                ChevronBackground: =RGBA(0, 0, 0, 0.69)
                 ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
                 ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =ColorFade(RGBA(0, 0, 0, 100), -20%)
+                ChevronHoverBackground: =
                 ChevronHoverFill: =RGBA(255, 255, 255, 1)
                 ContentLanguage: ="Please Slect the focus Area"
                 Default: ="Please Slect the focus Area"
@@ -479,9 +479,9 @@
                 SelectionFill: =RGBA(211, 66, 9, 1)
                 Size: =13
                 Tooltip: ="Please Slect the focus Area"
-                Width: =1187
-                X: =50
-                Y: =30
+                Width: =1060
+                X: =175
+                Y: =20
                 ZIndex: =15
 
             StarVisible1_1 As label:
@@ -499,7 +499,8 @@
                     )
                 Width: =33
                 Wrap: =false
-                X: =1236
+                X: =1235
+                Y: =20
                 ZIndex: =16
 
             StarVisible1_2 As label:
@@ -518,7 +519,7 @@
                 Width: =31
                 Wrap: =false
                 X: =1238
-                Y: =89
+                Y: =79
                 ZIndex: =17
 
             Label47_25 As label:
@@ -536,8 +537,8 @@
                         false
                     )
                 Width: =223
-                X: =53
-                Y: =32.4
+                X: =175
+                Y: =22
                 ZIndex: =18
 
             Label47_26 As label:
@@ -555,8 +556,8 @@
                         false
                     )
                 Width: =248
-                X: =53
-                Y: =94.5
+                X: =175
+                Y: =85
                 ZIndex: =19
 
             StarVisible1_3 As label:
@@ -623,10 +624,11 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
-                Size: =13
+                Height: =33
+                Size: =15
                 Text: ="Focus Line"
-                X: =50
-                Y: =60
+                X: =45
+                Y: =80
                 ZIndex: =29
 
             Label1_2 As label:
@@ -634,9 +636,11 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
-                Size: =13
+                Height: =33
+                Size: =15
                 Text: ="Focus Area"
-                X: =50
+                X: =45
+                Y: =20
                 ZIndex: =30
 
     "'I4.0_DPMS_CSL_XXX_C_F_6' As 'I4.0_DPMS_CSL_XXX_C_F'":
@@ -699,7 +703,7 @@
         Text: ="Objective Dashboard"
         Width: =190
         X: =41
-        Y: =197
+        Y: =205
         ZIndex: =14
 
     Button1_17 As button:
@@ -725,7 +729,7 @@
         Text: ="Deliverables"
         Width: =168
         X: =438
-        Y: =197
+        Y: =205
         ZIndex: =15
 
     Rectangle1_4 As rectangle:
@@ -744,51 +748,6 @@
         X: =40
         Y: =20
         ZIndex: =16
-
-        Dropdown1_21 As dropdown:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            ChevronBackground: =RGBA(149, 149, 149, 1)
-            ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-            ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-            ChevronHoverBackground: =ColorFade(RGBA(242, 19, 19, 1), -20%)
-            ChevronHoverFill: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(219, 219, 219, 1)
-            Height: =30
-            HoverColor: =RGBA(242, 19, 19, 1)
-            HoverFill: =RGBA(255, 211, 205, 1)
-            Items: =Friday_Demolist
-            PressedColor: =RGBA(255, 255, 255, 1)
-            PressedFill: =RGBA(131, 24, 75, 1)
-            SelectionFill: =RGBA(242, 19, 19, 1)
-            Size: =13
-            Width: =182
-            X: =1052
-            Y: =147
-            ZIndex: =6
-
-        Button1_15 As button:
-            Color: =RGBA(237, 237, 237, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(255, 0, 0, 1)
-            FontWeight: =FontWeight.Semibold
-            Height: =30
-            HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =ColorFade(RGBA(242, 19, 19, 1), -20%)
-            RadiusBottomLeft: =5
-            RadiusBottomRight: =5
-            RadiusTopLeft: =5
-            RadiusTopRight: =5
-            Size: =10
-            Text: ="Search"
-            Width: =88
-            X: =1257
-            Y: =147
-            ZIndex: =7
 
         Label7_65 As label:
             BorderColor: =RGBA(131, 24, 75, 1)
