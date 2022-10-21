@@ -314,14 +314,14 @@
                 ChevronBackground: =RGBA(0, 0, 0, 0.7)
                 ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
                 ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 0, 0, 100), -20%)
                 ChevronHoverFill: =RGBA(255, 255, 255, 1)
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 Height: =30
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(255, 211, 205, 1)
+                HoverFill: =RGBA(219, 219, 219, 1)
                 Items: =Filter(I4_0_DPMS_CSL_CFG_FL,FocusArea = dpFocusArea.SelectedText.Value).FocusLine
                 OnChange: |-
                     =//Set the Focus area code 
@@ -448,7 +448,7 @@
                         )
                     )
                 PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =RGBA(131, 24, 75, 1)
+                PressedFill: =RGBA(219, 219, 219, 1)
                 SelectionFill: =RGBA(211, 66, 9, 1)
                 Size: =13
                 Width: =1187
@@ -463,7 +463,7 @@
                 ChevronBackground: =RGBA(0, 0, 0, 0.7)
                 ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
                 ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 0, 0, 100), -20%)
                 ChevronHoverFill: =RGBA(255, 255, 255, 1)
                 ContentLanguage: ="Please Slect the focus Area"
                 Default: ="Please Slect the focus Area"
@@ -472,10 +472,10 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 Height: =30
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(255, 211, 205, 1)
+                HoverFill: =RGBA(219, 219, 219, 1)
                 Items: =Distinct(I4_0_DPMS_CSL_CFG_FA,FoucsArea)
                 PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =RGBA(131, 24, 75, 1)
+                PressedFill: =RGBA(202, 202, 202, 1)
                 SelectionFill: =RGBA(211, 66, 9, 1)
                 Size: =13
                 Tooltip: ="Please Slect the focus Area"
@@ -537,7 +537,7 @@
                     )
                 Width: =223
                 X: =53
-                Y: =30
+                Y: =32.4
                 ZIndex: =18
 
             Label47_26 As label:
@@ -556,7 +556,7 @@
                     )
                 Width: =248
                 X: =53
-                Y: =92
+                Y: =94.5
                 ZIndex: =19
 
             StarVisible1_3 As label:
