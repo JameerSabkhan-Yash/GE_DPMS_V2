@@ -796,14 +796,28 @@
         "DisabledBorderColor",
         "BorderStyle",
         "FocusedBorderColor",
-        "PressedBorderColor",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "ColorFade(Self.BorderColor, -30%)",
+          "InvariantPropertyName": "PressedBorderColor",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "HoverBorderColor",
         "Color",
         "DisabledColor",
         "Fill",
         "DisabledFill",
         "Font",
-        "PressedColor",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "RGBA(70, 68, 64, 1)",
+          "InvariantPropertyName": "PressedColor",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "HoverColor",
         "PressedFill",
         "HoverFill",
@@ -873,7 +887,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Checkbox1_7",
-      "ParentIndex": 10,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1184,7 +1198,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Checkbox1_8",
-      "ParentIndex": 13,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1495,7 +1509,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Checkbox1_9",
-      "ParentIndex": 17,
+      "ParentIndex": 18,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3478,7 +3492,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "I4.0_DPMS_CSL_GnO_TI_CI-2_2",
-      "ParentIndex": 14,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3775,7 +3789,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "I4.0_DPMS_CSL_GnO_TI_CI-3_2",
-      "ParentIndex": 9,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5351,7 +5365,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "I4.0_DPMS_CSL_GnO_TL_CI-3_2",
-      "ParentIndex": 18,
+      "ParentIndex": 19,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12097,7 +12111,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "StarVisible1_5",
-      "ParentIndex": 11,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12427,7 +12441,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "StarVisible1_6",
-      "ParentIndex": 15,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13087,7 +13101,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "StarVisible1_8",
-      "ParentIndex": 19,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

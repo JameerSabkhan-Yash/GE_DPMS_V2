@@ -329,7 +329,7 @@
                 Text: ="Impact on Cost (In $)"
                 Width: =280
                 X: =79
-                Y: =128
+                Y: =137
                 ZIndex: =13
 
             "'I4.0_DPMS_CSL_GnO_TL_CI-2_2' As label":
@@ -342,7 +342,7 @@
                 Text: ="Impact on Schedule (In Months)"
                 Width: =419
                 X: =79
-                Y: =177
+                Y: =186
                 ZIndex: =14
 
             "'I4.0_DPMS_CSL_GnO_TL_CI-3_2' As label":
@@ -355,7 +355,7 @@
                 Text: ="Impact on Quality"
                 Width: =254
                 X: =79
-                Y: =224
+                Y: =233
                 ZIndex: =15
 
             "'I4.0_DPMS_CSL_GnO_TL_CI-1_2' As label":
@@ -368,7 +368,7 @@
                 Text: ="Potential Impact"
                 Width: =250
                 X: =22
-                Y: =83
+                Y: =92
                 ZIndex: =16
 
             "'I4.0_DPMS_CSL_GnO_TI_CI-3_2' As text":
@@ -389,7 +389,7 @@
                 Size: =13
                 Width: =392
                 X: =505
-                Y: =120
+                Y: =129
                 ZIndex: =17
 
             "'I4.0_DPMS_CSL_GnO_TI_CI-2_2' As text":
@@ -410,7 +410,7 @@
                 Size: =13
                 Width: =391
                 X: =505
-                Y: =173
+                Y: =182
                 ZIndex: =18
 
             "'I4.0_DPMS_CSL_GnO_TI_CI-1_2' As text":
@@ -430,7 +430,7 @@
                 Size: =13
                 Width: =391
                 X: =505
-                Y: =228
+                Y: =237
                 ZIndex: =19
 
             "'I4.0_DPMS_CSL_GnO_BHG_IN-1_2' As gallery.galleryVertical":
@@ -617,19 +617,23 @@
                 ZIndex: =27
 
             Checkbox1_7 As checkbox:
+                BorderColor: =RGBA(0,0,0,0)
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =true
                 Height: =40
                 HoverColor: =RGBA(0, 18, 107, 1)
                 OnUncheck: =Reset('I4.0_DPMS_CSL_GnO_TI_CI-3_2');
+                PressedBorderColor: =RGBA(0,0,0,0)
+                PressedColor: =RGBA(0,0,0,0)
                 Size: =13
                 Text: =""
                 Width: =45
                 X: =30
-                Y: =123
+                Y: =132
                 ZIndex: =28
 
             Checkbox1_8 As checkbox:
+                BorderColor: =RGBA(0,0,0,0)
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =true
                 Height: =40
@@ -639,10 +643,11 @@
                 Text: =""
                 Width: =45
                 X: =30
-                Y: =172
+                Y: =181
                 ZIndex: =29
 
             Checkbox1_9 As checkbox:
+                BorderColor: =RGBA(0,0,0,0)
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =true
                 Height: =40
@@ -652,7 +657,7 @@
                 Text: =""
                 Width: =45
                 X: =30
-                Y: =219
+                Y: =228
                 ZIndex: =30
 
             "'I4.0_DPMS_CSL_GnO_TL_CI-1_3' As label":
