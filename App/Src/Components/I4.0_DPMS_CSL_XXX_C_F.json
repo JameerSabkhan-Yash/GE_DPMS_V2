@@ -58,7 +58,7 @@
         "Name": "Rectangle1_48",
         "Parent": "I4.0_DPMS_CSL_XXX_C_F",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 478,
+        "PublishOrderIndex": 472,
         "Rules": [
           {
             "Category": "Design",
@@ -280,7 +280,7 @@
         "Name": "Label1_30",
         "Parent": "I4.0_DPMS_CSL_XXX_C_F",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 479,
+        "PublishOrderIndex": 473,
         "Rules": [
           {
             "Category": "Data",
@@ -594,7 +594,7 @@
         "Name": "Image1_22",
         "Parent": "I4.0_DPMS_CSL_XXX_C_F",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 480,
+        "PublishOrderIndex": 474,
         "Rules": [
           {
             "Category": "Data",
