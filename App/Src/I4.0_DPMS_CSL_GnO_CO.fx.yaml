@@ -297,9 +297,7 @@
                 HoverDateFill: =RGBA(255, 211, 205, 1)
                 IconBackground: =Color
                 IconFill: =Color.Black
-                OnSelect: |-
-                    =If(TargetDatePicker.SelectedDate<Today(),Notify("Selected date cannot be before Today",Error));
-                    Set(DefaultsDate,Today());
+                OnSelect: =If(TargetDatePicker.SelectedDate<Today(),Notify("Selected date cannot be before Today",Error));
                 SelectedDateFill: =RGBA(211, 66, 9, 1)
                 Width: =200
                 X: =1038
@@ -713,8 +711,8 @@
         Fill: =RGBA(226, 223, 218, 1)
         FontWeight: =FontWeight.Semibold
         Height: =50
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =
         OnSelect: |
             =Set(varOverView,true);
             Set(varActionDashbaord,false);
