@@ -834,12 +834,8 @@
                             NotificationType.Information
                         )
                     );
-                    //Reset all 
-                    Reset('I4.0_DPMS_CSL_GnO_TI_CI-3_2');
-                    Reset('I4.0_DPMS_CSL_GnO_TI_CI-2_2');
-                    Reset('I4.0_DPMS_CSL_GnO_TI_CI-1_2');
-                    Reset('I4.0_DPMS_CSL_GnO_TI1_CI-2_3');
-                    //Re-Configuration of the Issue Id & No
+                    
+                    
                     Set(
                         I4_0_DPMS_CSL_GnO_CI_LVISPN,
                         Last(
@@ -889,6 +885,13 @@
                     Reset(Checkbox1_8);
                     Reset(Checkbox1_9);
                     Reset('I4.0_DPMS_CSL_GnO_TI1_CI-2_3');
+                    
+                    //Reset all 
+                    Reset('I4.0_DPMS_CSL_GnO_TI_CI-3_2');
+                    Reset('I4.0_DPMS_CSL_GnO_TI_CI-2_2');
+                    Reset('I4.0_DPMS_CSL_GnO_TI_CI-1_2');
+                    Reset('I4.0_DPMS_CSL_GnO_TI1_CI-2_3');
+                    //Re-Configuration of the Issue Id & No
                 Size: =15
                 Text: ="Create"
                 Width: =150
