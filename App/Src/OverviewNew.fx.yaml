@@ -640,8 +640,8 @@
             Height: =37
             HoverColor: =RGBA(5, 21, 242, 100)
             OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
-            Text: ="GOALS & OBJECTIVES"
-            Width: =274
+            Text: ="Goals & Objective"
+            Width: =254
             X: =102
             Y: =138
             ZIndex: =10
@@ -664,7 +664,7 @@
             Height: =20
             Icon: =Icon.ChevronRight
             Width: =23
-            X: =305
+            X: =280
             Y: =147
             ZIndex: =12
 
@@ -676,7 +676,7 @@
             OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
             Text: ="Overview"
             Width: =190
-            X: =330
+            X: =305
             Y: =137
             ZIndex: =13
 

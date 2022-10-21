@@ -199,7 +199,7 @@
             Height: =37
             HoverColor: =RGBA(5, 21, 242, 100)
             OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
-            Text: ="GOALS & OBJECTIVES"
+            Text: ="Goals & Objective"
             Width: =274
             X: =102
             Y: =148
@@ -223,7 +223,7 @@
             Height: =21
             Icon: =Icon.ChevronRight
             Width: =23
-            X: =305
+            X: =285
             Y: =158
             ZIndex: =11
 
@@ -236,8 +236,8 @@
             OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
             Text: ="Objective Dashboard"
             Width: =239
-            X: =330
-            Y: =148
+            X: =315
+            Y: =154
             ZIndex: =12
 
     Canvas1_6 As fluidGrid.fluidGridWithBlankCard:

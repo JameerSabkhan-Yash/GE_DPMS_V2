@@ -156,10 +156,6 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
                 Size: =13
                 Width: =1222
                 X: =22
@@ -313,8 +309,8 @@
                 OnSelect: =
                 Size: =13.5
                 Text: ="Cancel"
-                Width: =110
-                X: =1134
+                Width: =150
+                X: =1094
                 Y: =400
                 ZIndex: =11
 
@@ -322,10 +318,10 @@
                 BorderColor: =RGBA(131, 24, 75, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                FontWeight: =FontWeight.Bold
+                FontWeight: =FontWeight.Semibold
                 Height: =35
                 Size: =13
-                Text: ="Impact on cost(in $)"
+                Text: ="Impact on cost (in $)"
                 Width: =280
                 X: =79
                 Y: =124
@@ -335,10 +331,10 @@
                 BorderColor: =RGBA(131, 24, 75, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                FontWeight: =FontWeight.Bold
+                FontWeight: =FontWeight.Semibold
                 Height: =35
                 Size: =13
-                Text: ="Impact on schedule(In Month)"
+                Text: ="Impact on schedule (in months)"
                 Width: =419
                 X: =79
                 Y: =173
@@ -348,10 +344,10 @@
                 BorderColor: =RGBA(131, 24, 75, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                FontWeight: =FontWeight.Bold
+                FontWeight: =FontWeight.Semibold
                 Height: =35
                 Size: =13
-                Text: ="Impact on Quality"
+                Text: ="Impact on quality"
                 Width: =254
                 X: =79
                 Y: =220
@@ -371,7 +367,6 @@
                 ZIndex: =16
 
             "'I4.0_DPMS_CSL_GnO_TI_CI-3_2' As text":
-                BorderColor: =RGBA(131, 24, 75, 1)
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =""
@@ -392,7 +387,6 @@
                 ZIndex: =17
 
             "'I4.0_DPMS_CSL_GnO_TI_CI-2_2' As text":
-                BorderColor: =RGBA(131, 24, 75, 1)
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =""
@@ -413,7 +407,6 @@
                 ZIndex: =18
 
             "'I4.0_DPMS_CSL_GnO_TI_CI-1_2' As text":
-                BorderColor: =RGBA(131, 24, 75, 1)
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =""
@@ -474,7 +467,7 @@
                     Size: =13
                     Text: =ThisItem.ObjCreateDate
                     Width: =220
-                    X: =213
+                    X: =214
                     ZIndex: =4
 
                 "'I4.0_DPMS_CSL_GnO_TL13_IN-2_1' As label":
@@ -486,7 +479,7 @@
                     Size: =13
                     Text: =ThisItem.ObjId
                     Width: =186
-                    X: =433
+                    X: =436
                     ZIndex: =5
 
                 "'I4.0_DPMS_CSL_GnO_TL12_IN-2_1' As label":
@@ -498,7 +491,7 @@
                     Size: =13
                     Text: =ThisItem.ObjOwner
                     Width: =319
-                    X: =620
+                    X: =621
                     ZIndex: =6
 
                 "'I4.0_DPMS_CSL_GnO_TL11_IN-2_1' As label":
@@ -510,7 +503,7 @@
                     Size: =13
                     Text: =ThisItem.IssueStatus
                     Width: =132
-                    X: =940
+                    X: =938
                     ZIndex: =8
 
                 "'I4.0_DPMS_CSL_GnO_TL11_IN-2_2' As label":
@@ -522,7 +515,7 @@
                     Size: =13
                     Text: =ThisItem.IssueProgress
                     Width: =143
-                    X: =1072
+                    X: =1071
                     ZIndex: =9
 
             "'I4.0_DPMS_CSL_GnO_TL10_IN-2_1' As label":
@@ -617,8 +610,6 @@
                 ZIndex: =27
 
             Checkbox1_7 As checkbox:
-                BorderColor: =RGBA(0, 18, 107, 1)
-                CheckboxBorderColor: =RGBA(0, 18, 107, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =true
                 Height: =40
@@ -632,8 +623,6 @@
                 ZIndex: =28
 
             Checkbox1_8 As checkbox:
-                BorderColor: =RGBA(0, 18, 107, 1)
-                CheckboxBorderColor: =RGBA(0, 18, 107, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =true
                 Height: =40
@@ -647,8 +636,6 @@
                 ZIndex: =29
 
             Checkbox1_9 As checkbox:
-                BorderColor: =RGBA(0, 18, 107, 1)
-                CheckboxBorderColor: =RGBA(0, 18, 107, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =true
                 Height: =40
@@ -670,7 +657,7 @@
                 Size: =15
                 Text: ="Issue Description"
                 Width: =250
-                X: =30
+                X: =22
                 Y: =273
                 ZIndex: =31
 
@@ -879,7 +866,7 @@
                 Size: =15
                 Text: ="Create"
                 Width: =150
-                X: =950
+                X: =925
                 Y: =400
                 ZIndex: =36
 
@@ -899,47 +886,6 @@
         X: =40
         Y: =20
         ZIndex: =16
-
-        DatePicker1_18 As datepicker:
-            BorderColor: =RGBA(116, 116, 116, 1)
-            CalendarHeaderFill: =RGBA(211, 66, 9, 1)
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(219, 219, 219, 1)
-            Height: =30
-            HoverDateFill: =RGBA(255, 211, 205, 1)
-            IconBackground: =RGBA(149, 149, 149, 1)
-            SelectedDateFill: =RGBA(211, 66, 9, 1)
-            Width: =150
-            X: =879
-            Y: =147
-            ZIndex: =5
-
-        Dropdown1_24 As dropdown:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            ChevronBackground: =RGBA(149, 149, 149, 1)
-            ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-            ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-            ChevronHoverBackground: =ColorFade(RGBA(242, 19, 19, 1), -20%)
-            ChevronHoverFill: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(219, 219, 219, 1)
-            Height: =30
-            HoverColor: =RGBA(242, 19, 19, 1)
-            HoverFill: =RGBA(255, 211, 205, 1)
-            Items: =Friday_Demolist
-            PressedColor: =RGBA(255, 255, 255, 1)
-            PressedFill: =RGBA(131, 24, 75, 1)
-            SelectionFill: =RGBA(242, 19, 19, 1)
-            Size: =13
-            Width: =182
-            X: =1052
-            Y: =147
-            ZIndex: =6
 
         Button1_33 As button:
             Color: =RGBA(237, 237, 237, 1)
@@ -985,7 +931,7 @@
             Height: =37
             HoverColor: =RGBA(5, 21, 242, 100)
             OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
-            Text: ="GOALS & OBJECTIVES"
+            Text: ="Goals & Objective"
             Width: =274
             X: =102
             Y: =138
@@ -1009,7 +955,7 @@
             Height: =20
             Icon: =Icon.ChevronRight
             Width: =23
-            X: =305
+            X: =285
             Y: =147
             ZIndex: =11
 
@@ -1021,7 +967,7 @@
             OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
             Text: ="Create Issue"
             Width: =190
-            X: =330
+            X: =310
             Y: =137
             ZIndex: =12
 

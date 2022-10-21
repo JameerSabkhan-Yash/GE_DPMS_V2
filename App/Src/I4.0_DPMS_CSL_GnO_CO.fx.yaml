@@ -85,9 +85,9 @@
                 Mode: =TextMode.MultiLine
                 PressedBorderColor: =RGBA(0, 0, 0, 1)
                 Size: =13
-                Width: =1186
-                X: =40
-                Y: =150
+                Width: =1187
+                X: =50
+                Y: =180
                 ZIndex: =2
 
             Label47_16 As label:
@@ -99,8 +99,8 @@
                 Size: =15
                 Text: ="Owner"
                 Width: =130
-                X: =40
-                Y: =270
+                X: =50
+                Y: =300
                 ZIndex: =4
 
             Label47_17 As label:
@@ -114,7 +114,7 @@
                 Text: ="Status"
                 Width: =112
                 X: =368
-                Y: =270
+                Y: =300
                 ZIndex: =5
 
             Label47_18 As label:
@@ -127,7 +127,7 @@
                 Text: ="Progress"
                 Width: =130
                 X: =681
-                Y: =270
+                Y: =300
                 ZIndex: =6
 
             Label47_19 As label:
@@ -140,15 +140,15 @@
                 Text: ="Target Date"
                 Width: =130
                 X: =1015
-                Y: =270
+                Y: =300
                 ZIndex: =7
 
             dpOwner As dropdown:
-                BorderColor: =RGBA(131, 24, 75, 1)
+                BorderColor: =RGBA(0, 0, 0, 1)
                 ChevronBackground: =RGBA(0, 0, 0, 1)
                 ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
                 ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 0, 0, 100), -20%)
                 ChevronHoverFill: =RGBA(255, 255, 255, 1)
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -156,7 +156,7 @@
                 FontWeight: =FontWeight.Bold
                 Height: =35
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(255, 211, 205, 1)
+                HoverFill: =RGBA(219, 219, 219, 1)
                 Items: |-
                     =Filter(
                         I4_0_DPMS_CSL_XXX_CSPU,
@@ -170,11 +170,11 @@
                     ).Title
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(131, 24, 75, 1)
-                SelectionFill: =RGBA(211, 66, 9, 1)
+                SelectionFill: =RGBA(202, 202, 202, 1)
                 Size: =15
                 Width: =250
-                X: =40
-                Y: =315
+                X: =50
+                Y: =345
                 ZIndex: =8
 
             Label47_20 As label:
@@ -186,8 +186,8 @@
                 Size: =15
                 Text: ="Objective Description"
                 Width: =266
-                X: =40
-                Y: =106
+                X: =45
+                Y: =136
                 ZIndex: =9
 
             Button17_8 As button:
@@ -202,7 +202,7 @@
                 Text: ="Cancel"
                 Width: =150
                 X: =1078
-                Y: =392
+                Y: =407
                 ZIndex: =10
 
             Button17_9 As button:
@@ -279,7 +279,7 @@
                 Text: ="Create"
                 Width: =150
                 X: =883
-                Y: =392
+                Y: =407
                 ZIndex: =11
 
             Circle1_3 As circle:
@@ -288,7 +288,7 @@
                 Height: =35
                 Width: =32
                 X: =403
-                Y: =315
+                Y: =345
                 ZIndex: =12
 
             TargetDatePicker As datepicker:
@@ -305,7 +305,7 @@
                 SelectedDateFill: =RGBA(211, 66, 9, 1)
                 Width: =200
                 X: =1015
-                Y: =315
+                Y: =345
                 ZIndex: =13
 
             dpFocusLine As dropdown:
@@ -319,7 +319,7 @@
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                Height: =35
+                Height: =30
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 211, 205, 1)
                 Items: =Filter(I4_0_DPMS_CSL_CFG_FL,FocusArea = dpFocusArea.SelectedText.Value).FocusLine
@@ -452,8 +452,8 @@
                 SelectionFill: =RGBA(211, 66, 9, 1)
                 Size: =13
                 Width: =1187
-                X: =40
-                Y: =62
+                X: =50
+                Y: =92
                 ZIndex: =14
 
             dpFocusArea As dropdown:
@@ -470,7 +470,7 @@
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                Height: =35
+                Height: =30
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 211, 205, 1)
                 Items: =Distinct(I4_0_DPMS_CSL_CFG_FA,FoucsArea)
@@ -480,8 +480,8 @@
                 Size: =13
                 Tooltip: ="Please Slect the focus Area"
                 Width: =1187
-                X: =40
-                Y: =9
+                X: =50
+                Y: =30
                 ZIndex: =15
 
             StarVisible1_1 As label:
@@ -499,7 +499,7 @@
                     )
                 Width: =33
                 Wrap: =false
-                X: =1226
+                X: =1236
                 ZIndex: =16
 
             StarVisible1_2 As label:
@@ -517,8 +517,8 @@
                     )
                 Width: =31
                 Wrap: =false
-                X: =1228
-                Y: =52
+                X: =1238
+                Y: =89
                 ZIndex: =17
 
             Label47_25 As label:
@@ -526,7 +526,7 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
-                Height: =34
+                Height: =22
                 Size: =13
                 Text: ="Please select Focus Area."
                 Visible: |-
@@ -536,8 +536,8 @@
                         false
                     )
                 Width: =223
-                X: =40
-                Y: =10
+                X: =53
+                Y: =30
                 ZIndex: =18
 
             Label47_26 As label:
@@ -545,7 +545,7 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
-                Height: =35
+                Height: =22
                 Size: =13
                 Text: ="Please select Focus Line."
                 Visible: |-
@@ -555,8 +555,8 @@
                         false
                     )
                 Width: =248
-                X: =40
-                Y: =62
+                X: =53
+                Y: =92
                 ZIndex: =19
 
             StarVisible1_3 As label:
@@ -574,8 +574,8 @@
                     )
                 Width: =31
                 Wrap: =false
-                X: =1228
-                Y: =146
+                X: =1238
+                Y: =180
                 ZIndex: =26
 
             StarVisible1_4 As label:
@@ -615,8 +615,29 @@
                 Size: =13
                 Width: =200
                 X: =681
-                Y: =315
+                Y: =345
                 ZIndex: =28
+
+            Label1 As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Size: =13
+                Text: ="Focus Line"
+                X: =50
+                Y: =60
+                ZIndex: =29
+
+            Label1_2 As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Size: =13
+                Text: ="Focus Area"
+                X: =50
+                ZIndex: =30
 
     "'I4.0_DPMS_CSL_XXX_C_F_6' As 'I4.0_DPMS_CSL_XXX_C_F'":
         Height: =26
@@ -678,7 +699,7 @@
         Text: ="Objective Dashboard"
         Width: =190
         X: =41
-        Y: =204
+        Y: =197
         ZIndex: =14
 
     Button1_17 As button:
@@ -704,7 +725,7 @@
         Text: ="Deliverables"
         Width: =168
         X: =438
-        Y: =204
+        Y: =197
         ZIndex: =15
 
     Rectangle1_4 As rectangle:
@@ -723,23 +744,6 @@
         X: =40
         Y: =20
         ZIndex: =16
-
-        DatePicker1_15 As datepicker:
-            BorderColor: =RGBA(116, 116, 116, 1)
-            CalendarHeaderFill: =RGBA(211, 66, 9, 1)
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(219, 219, 219, 1)
-            Height: =30
-            HoverDateFill: =RGBA(255, 211, 205, 1)
-            IconBackground: =RGBA(149, 149, 149, 1)
-            SelectedDateFill: =RGBA(211, 66, 9, 1)
-            Width: =150
-            X: =879
-            Y: =147
-            ZIndex: =5
 
         Dropdown1_21 As dropdown:
             BorderColor: =RGBA(128, 128, 128, 1)
@@ -809,8 +813,8 @@
             Height: =37
             HoverColor: =RGBA(5, 21, 242, 100)
             OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
-            Text: ="GOALS & OBJECTIVES"
-            Width: =274
+            Text: ="Goals & Objective"
+            Width: =240
             X: =102
             Y: =138
             ZIndex: =9
@@ -833,7 +837,7 @@
             Height: =20
             Icon: =Icon.ChevronRight
             Width: =23
-            X: =305
+            X: =280
             Y: =147
             ZIndex: =11
 
@@ -845,7 +849,7 @@
             OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
             Text: ="Create Objective"
             Width: =190
-            X: =330
+            X: =305
             Y: =137
             ZIndex: =12
 

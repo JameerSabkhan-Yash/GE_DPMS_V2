@@ -9196,7 +9196,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "92",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "Y",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
