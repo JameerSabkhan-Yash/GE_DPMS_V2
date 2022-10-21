@@ -91,10 +91,10 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "f2366292-62a7-490d-9d94-d9123674f1f4",
-    "Id": "fc8c6aac-377d-4175-94a6-f1fa24ffc3e5",
+    "Id": "1a398690-23e3-4788-9491-4db069b6d03f",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "Name": "CSL_DPMS_201022_v2",
+    "Name": "CSL_DPMS_201022_v2.msapp",
     "OriginatingVersion": "1.326"
   },
   "PublishInfo": {
