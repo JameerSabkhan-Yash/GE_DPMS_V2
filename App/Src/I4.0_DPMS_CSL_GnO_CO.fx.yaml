@@ -167,7 +167,7 @@
                         GroupName in Concat(
                             Filter(
                                 I4_0_DPMS_CSL_XXX_CSPG,
-                                Value(Result) >= Value(I4_0_DPMS_CSL_XXX_GVUGN)//&& Result <> varUserGroup
+                                Value(Result) > Value(I4_0_DPMS_CSL_XXX_GVUGN)//&& Result <> varUserGroup
                             ).Result,
                             Result & ","
                         ) && Title <> User().FullName
@@ -297,6 +297,9 @@
                 HoverDateFill: =RGBA(255, 211, 205, 1)
                 IconBackground: =Color
                 IconFill: =Color.Black
+                OnSelect: |-
+                    =If(TargetDatePicker.SelectedDate<Today(),Notify("Selected date cannot be before Today",Error));
+                    Set(DefaultsDate,Today());
                 SelectedDateFill: =RGBA(211, 66, 9, 1)
                 Width: =200
                 X: =1038
