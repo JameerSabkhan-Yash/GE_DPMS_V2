@@ -35,6 +35,7 @@
         //Reset Dropdown
         Reset(dpFocusLine);
         Reset(dpFocusArea);
+        Reset(dpOwner);
         
         
 
@@ -148,6 +149,7 @@
                 ZIndex: =5
 
             dpOwner As dropdown:
+                AllowEmptySelection: =true
                 BorderColor: =RGBA(0, 0, 0, 1)
                 ChevronBackground: =RGBA(0, 0, 0, 0.7)
                 ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
@@ -495,8 +497,8 @@
                     )
                 Width: =33
                 Wrap: =false
-                X: =149
-                Y: =21
+                X: =146
+                Y: =9
                 ZIndex: =13
 
             StarVisible1_2 As label:
@@ -514,8 +516,8 @@
                     )
                 Width: =31
                 Wrap: =false
-                X: =149
-                Y: =80
+                X: =146
+                Y: =74
                 ZIndex: =14
 
             Label47_25 As label:
@@ -571,8 +573,8 @@
                     )
                 Width: =31
                 Wrap: =false
-                X: =1238
-                Y: =180
+                X: =255
+                Y: =144
                 ZIndex: =17
 
             StarVisible1_4 As label:
@@ -590,7 +592,7 @@
                     )
                 Width: =46
                 Wrap: =false
-                X: =123
+                X: =111
                 Y: =302
                 ZIndex: =18
 
@@ -643,13 +645,13 @@
                 BorderColor: =RGBA(131, 24, 75, 1)
                 Color: |-
                     =//RGBA(0, 0, 0, 1) 
-                    If(Len('ObjectiveDescription'.Text) >= 200 , Red,Black)
+                    If(Len(ObjectiveDescription.Text) >= 200 , Red,Black)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =32
                 Size: =12
                 Text: |-
-                    ="(Max Characters : " & Len('ObjectiveDescription'.Text) &"/200)"
+                    ="(Max Characters : " & Len(ObjectiveDescription.Text) &"/200)"
                 Width: =218
                 X: =1026
                 Y: =157
