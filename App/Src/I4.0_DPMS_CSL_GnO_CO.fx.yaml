@@ -169,10 +169,10 @@
                         GroupName in Concat(
                             Filter(
                                 I4_0_DPMS_CSL_XXX_CSPG,
-                                Value(Result) > Value(I4_0_DPMS_CSL_XXX_GVUGN)//&& Result <> varUserGroup
+                                Value(Result) >= Value(I4_0_DPMS_CSL_XXX_GVUGN) //&& Result <> varUserGroup
                             ).Result,
                             Result & ","
-                        ) && Title <> User().FullName
+                        ) //&& Title = User().FullName
                     ).Title
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 0, 0, 0)
@@ -527,11 +527,11 @@
 
             Label47_25 As label:
                 BorderColor: =RGBA(131, 24, 75, 1)
-                Color: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(0, 0, 0, 0.5)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =33
-                Size: =13
+                Size: =12
                 Text: ="Please select Focus Area."
                 Visible: |-
                     =If(
@@ -546,11 +546,11 @@
 
             Label47_26 As label:
                 BorderColor: =RGBA(131, 24, 75, 1)
-                Color: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(0, 0, 0, 0.5)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =36
-                Size: =13
+                Size: =12
                 Text: ="Please select Focus Line."
                 Visible: |-
                     =If(
