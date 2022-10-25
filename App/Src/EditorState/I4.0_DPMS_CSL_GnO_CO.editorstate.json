@@ -5671,7 +5671,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "I4.0_DPMS_CSL_XXX_C_H_6",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5786,7 +5786,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "I4.0_DPMS_CSL_XXX_C_N_10",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

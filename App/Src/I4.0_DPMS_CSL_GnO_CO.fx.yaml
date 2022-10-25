@@ -40,7 +40,7 @@
         Reset(ObjectiveDescription_1);
         Reset(ObjectiveDescription_2);
         Reset(ProgressTI_2);
-        
+        Reset(TargetDatePicker);
         
 
     "'I4.0_DPMS_CSL_GnO_R2_CI-2_7' As rectangle":
