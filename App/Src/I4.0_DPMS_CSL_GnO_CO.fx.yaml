@@ -1074,11 +1074,7 @@
         Height: =31
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
-        OnSelect: |
-            =Set(varOverView,true);
-            Set(varActionDashbaord,false);
-            Set(varIssueDashboard,false);
-            Set(varInsightDashboad,false);
+        OnSelect: =Navigate(
         RadiusBottomLeft: =7
         RadiusBottomRight: =7
         RadiusTopLeft: =7
