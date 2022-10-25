@@ -220,7 +220,7 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: |-
                     =If(
-                        FocusAreadStar.Visible = true || MeasureStart.Visible = true || WeightStar.Visible = true || FocusLineStar.Visible = true || ObjectiveDescriptionStar.Visible = true || OwnerStar.Visible = true || OwnerStar.Visible = true || StarVisible1_5.Visible = true || DevliverableStar.Visible = true,
+                        FocusAreadStar.Visible = true || MeasureStart.Visible = true || WeightStar.Visible = true || FocusLineStar.Visible = true || ObjectiveDescriptionStar.Visible = true || OwnerStar.Visible = true || OwnerStar.Visible = true || StarVisible1_5.Visible = true || DevliverableStar.Visible = true || !IsBlank(Label1_10.Text),
                         DisplayMode.Disabled,
                         DisplayMode.Edit
                     )
@@ -310,7 +310,18 @@
                 HoverDateFill: =RGBA(255, 211, 205, 1)
                 IconBackground: =Color
                 IconFill: =Color.Black
-                OnSelect: =If(TargetDatePicker.SelectedDate<Today(),Notify("Past date cant be selected.",Error));
+                OnSelect: |
+                    =If(
+                        TargetDatePicker.SelectedDate < Today(),
+                        Set(
+                            varWorngDate,
+                            "Past Date cant be Selected."
+                        ),
+                        Set(
+                            varWorngDate,
+                            ""
+                        )
+                    );
                 SelectedDateFill: =RGBA(211, 66, 9, 1)
                 Width: =200
                 X: =568
@@ -965,7 +976,7 @@
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                DisplayMode: =If(Checkbox1_11.Value = true , DisplayMode.Edit,DisplayMode.Disabled)
+                DisplayMode: =If(Checkbox1_10.Value = true , DisplayMode.Edit,DisplayMode.Disabled)
                 EnableSpellCheck: =true
                 FocusedBorderThickness: =4
                 Height: =110
@@ -982,6 +993,19 @@
                 X: =49
                 Y: =325
                 ZIndex: =40
+
+            Label1_10 As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(255, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =32
+                Size: =10
+                Text: =varWorngDate
+                Width: =218
+                X: =570
+                Y: =530
+                ZIndex: =41
 
     "'I4.0_DPMS_CSL_XXX_C_F_6' As 'I4.0_DPMS_CSL_XXX_C_F'":
         Height: =26
