@@ -36,6 +36,10 @@
         Reset(dpFocusLine);
         Reset(dpFocusArea);
         Reset(dpOwner);
+        Reset(ObjectiveDescription);
+        Reset(ObjectiveDescription_1);
+        Reset(ObjectiveDescription_2);
+        Reset(ProgressTI_2);
         
         
 
@@ -224,10 +228,9 @@
                 FontWeight: =FontWeight.Semibold
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
-                OnSelect: |-
+                OnSelect: |
                     =If(
                         !IsBlank(dpFocusArea.SelectedText.Value) And !IsBlank(dpFocusLine.SelectedText.Value) And !IsBlank(ObjectiveDescription.Text) And !IsBlank(dpOwner.SelectedText.Value) And !IsBlank(dpOwner.Selected.Title) And !IsBlank(ProgressTI.Text) And !IsBlank(TargetDatePicker.SelectedDate),
-                        
                         Patch(
                             I4_0_DPMS_CSL_GnO,
                             Defaults(I4_0_DPMS_CSL_GnO),
@@ -267,7 +270,10 @@
                                 ObjCreatedDateTime: Today(),
                                 ObjTargetDateTime: TargetDatePicker.SelectedDate,
                                 ObjProgress: {Value: ProgressTI.Text},
-                                ObjStatus: {Value: "Not Started"}
+                                ObjStatus: {Value: "Not Started"},
+                                DeliverableDescription: ObjectiveDescription_1.Text,
+                                ObjMeasure: ObjectiveDescription_2.Text,
+                                ObjWeight: Value(ProgressTI_2.Text)
                             //ObjStatus : "Red" 
                             }
                         );
@@ -280,11 +286,13 @@
                             NotificationType.Information
                         )
                     );
-                    
                     Reset(dpFocusArea);
                     Reset(dpFocusLine);
                     Reset(dpOwner);
                     Reset(ObjectiveDescription);
+                    Reset(ObjectiveDescription_1);
+                    Reset(ObjectiveDescription_2);
+                    Reset(ProgressTI_2);
                 Size: =15
                 Text: ="Create"
                 Width: =150
