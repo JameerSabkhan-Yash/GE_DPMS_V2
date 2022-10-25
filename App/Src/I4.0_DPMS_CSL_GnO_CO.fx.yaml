@@ -1007,6 +1007,25 @@
                 Y: =530
                 ZIndex: =41
 
+            Label47_30 As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 0.5)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =22
+                Size: =12
+                Text: ="Please select user."
+                Visible: |-
+                    =If(
+                        IsBlank(dpFocusArea.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult'),
+                        true,
+                        false
+                    )
+                Width: =156
+                X: =50
+                Y: =503
+                ZIndex: =42
+
     "'I4.0_DPMS_CSL_XXX_C_F_6' As 'I4.0_DPMS_CSL_XXX_C_F'":
         Height: =26
         Y: =742
