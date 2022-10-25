@@ -2,8 +2,995 @@
     Fill: =RGBA(226, 223, 218, 1)
     LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
     OnVisible: |-
-        =//Collection for Objective
+        =//Collection for Objective pichart
         ClearCollect(
             Objective_status,
             {Objective :"On Hold", status: Label_Onhold.Text},{Objective :"In Progress",status:Label_Inprrogress.Text},{Objective :"Completed", status :Label_Completedobj.Text});
+        
+        //Collection for Objective barchart
+        ClearCollect(
+            Objective_barchart,
+            {FocusArea :"Quality", status:"12"},{FocusArea :"Realibility",status:"10"},{FocusArea :"Inovation", status :"2"},{FocusArea :"Safety", status :"7"},{FocusArea :"People", status :"4"});
+        
+            ClearCollect(
+            I4_0_DPMS_CSL_XXX_CIS_Demo,
+            {
+                FACode: "",
+                FLCode: "",
+                FA: "",
+                FL: "",
+                ObjCreateDate: "",
+                ObjId: "",
+                IssueStatus: "",
+                IssueProgress: "",
+                ObjOwner: "",
+                ObjTargetDate:""
+            }
+        );
+        Clear(I4_0_DPMS_CSL_XXX_CIS_Demo);
+
+    "'I4.0_DPMS_CSL_GnO_R2_CI-2_5' As rectangle":
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =2
+        Fill: =RGBA(226, 223, 218, 1)
+        Height: =499
+        Width: =1321
+        X: =24
+        Y: =233
+        ZIndex: =1
+
+    "'I4.0_DPMS_CSL_XXX_C_F_3' As 'I4.0_DPMS_CSL_XXX_C_F'":
+        Height: =26
+        Y: =742
+        ZIndex: =2
+
+    "'I4.0_DPMS_CSL_XXX_C_H_3' As 'I4.0_DPMS_CSL_XXX_C_H'":
+        Height: =77
+        ZIndex: =3
+
+    Button1_7 As button:
+        AutoDisableOnSelect: =false
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(226, 223, 218, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =55
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+        OnSelect: |
+            =Set(varOverView,true);
+            Set(varActionDashbaord,false);
+            Set(varIssueDashboard,false);
+            Set(varInsightDashboad,false);
+        PaddingBottom: =23
+        RadiusBottomLeft: =7
+        RadiusBottomRight: =7
+        RadiusTopLeft: =7
+        RadiusTopRight: =7
+        Text: ="Objective  Dashboard"
+        Width: =211
+        X: =50
+        Y: =204
+        ZIndex: =12
+
+    Button1_22 As button:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(226, 223, 218, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+        OnSelect: |
+            =Navigate('I4.0_DPMS_CSL_GnO_CO')
+        RadiusBottomLeft: =7
+        RadiusBottomRight: =7
+        RadiusTopLeft: =7
+        RadiusTopRight: =7
+        Text: ="Create Objective"
+        Width: =168
+        X: =278
+        Y: =204
+        ZIndex: =14
+
+    Rectangle1_2 As rectangle:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Fill: |
+            =RGBA(226, 223, 218, 1)
+        Height: =37
+        Width: =230
+        X: =48
+        Y: =235
+        ZIndex: =16
+
+    BreadcrumbBar_7 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =20
+        ZIndex: =16
+
+        Label7_71 As label:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =37
+            HoverColor: =RGBA(5, 21, 242, 100)
+            OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
+            Size: =15
+            Text: ="Home"
+            Width: =92
+            X: =7
+            Y: =136
+            ZIndex: =7
+
+        Label7_73 As label:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =37
+            HoverColor: =RGBA(5, 21, 242, 100)
+            OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
+            Text: ="GOALS & OBJECTIVES"
+            Width: =274
+            X: =102
+            Y: =138
+            ZIndex: =8
+
+        Icon2_30 As icon.ChevronRight:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =20
+            Icon: =Icon.ChevronRight
+            Width: =23
+            X: =75
+            Y: =147
+            ZIndex: =9
+
+        Icon2_31 As icon.ChevronRight:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =20
+            Icon: =Icon.ChevronRight
+            Width: =23
+            X: =305
+            Y: =147
+            ZIndex: =10
+
+        Label7_72 As label:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =38
+            OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
+            Text: ="Objective Dashboard"
+            Width: =261
+            X: =330
+            Y: =137
+            ZIndex: =11
+
+    Canvas1_6 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Fill: =RGBA(226, 223, 218, 1)
+        Height: =468
+        Width: =1296
+        X: =35
+        Y: =251
+        ZIndex: =17
+
+        DataCard4_6 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =462
+            Width: =1296
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            CompositePieChart1 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =2
+
+                Title1 As label:
+                    Align: =Align.Center
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =48
+                    Size: =15
+                    Text: ="Objective Status"
+                    Width: =363
+                    X: =34
+                    Y: =379
+                    ZIndex: =1
+
+                PieChart1 As pieChart:
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    Height: =424
+                    ItemColorSet: =[Red,Yellow,Green, RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
+                    Items: |
+                        =Objective_status
+                    Size: =12
+                    Width: =426
+                    X: =3
+                    Y: =3
+                    ZIndex: =2
+
+            ColumnChart1 As barChart:
+                BorderColor: =RGBA(56, 56, 56, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                GridStyle: =GridStyle.All
+                Height: =369
+                ItemColorSet: =[RGBA(49, 130, 93, 1),RGBA(48,166,103, 1), RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
+                Items: =Objective_barchart
+                MinimumBarWidth: =35
+                PaddingLeft: =40
+                PaddingRight: =10
+                Width: =634
+                X: =616
+                XLabelAngle: =15
+                Y: =50
+                ZIndex: =3
+
+            Rectangle3 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =61
+                Width: =227
+                X: =402
+                Y: =50
+                ZIndex: =4
+
+            Label_Total_Obj As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =20
+                Text: = CountRows( I4_0_DPMS_CSL_GnO)
+                Width: =171
+                X: =427
+                Y: =63
+                ZIndex: =5
+
+            Rectangle1_9 As rectangle:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Fill: |
+                    =RGBA(226, 223, 218, 1)
+                Height: =40
+                X: =412
+                Y: =23
+                ZIndex: =6
+
+            Label1_1 As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Size: =13
+                Text: ="Total Objectives"
+                Width: =171
+                X: =412
+                Y: =31
+                ZIndex: =7
+
+            Rectangle3_1 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =61
+                Width: =227
+                X: =402
+                Y: =140
+                ZIndex: =8
+
+            Label_Completedobj As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =20
+                Text: |-
+                    = CountRows(
+                             Filter(
+                                I4_0_DPMS_CSL_GnO,
+                                (
+                                   ObjStatus.Value = "Completed")))
+                Width: =171
+                X: =427
+                Y: =153
+                ZIndex: =9
+
+            Rectangle1_10 As rectangle:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Fill: |
+                    =RGBA(226, 223, 218, 1)
+                Height: =40
+                Width: =202
+                X: =412
+                Y: =113
+                ZIndex: =10
+
+            Label1_3 As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =52
+                Size: =13
+                Text: ="Completed Objectives"
+                Width: =217
+                X: =412
+                Y: =113
+                ZIndex: =11
+
+            Rectangle3_2 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =61
+                Width: =227
+                X: =404
+                Y: =239
+                ZIndex: =12
+
+            Label_Inprrogress As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =20
+                Text: |-
+                    = CountRows(
+                             Filter(
+                                I4_0_DPMS_CSL_GnO,
+                                (
+                                   ObjStatus.Value = "In Progress")))
+                Width: =171
+                X: =429
+                Y: =252
+                ZIndex: =13
+
+            Rectangle1_11 As rectangle:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Fill: |
+                    =RGBA(226, 223, 218, 1)
+                Height: =40
+                Width: =202
+                X: =414
+                Y: =212
+                ZIndex: =14
+
+            Label1_5 As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =52
+                Size: =13
+                Text: ="In Progress Objectives"
+                Width: =230
+                X: =415
+                Y: =213
+                ZIndex: =15
+
+            "'I4.0_DPMS_CSL_GnO_R2_CI-2_12' As rectangle":
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =1
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =359
+                Width: =592
+                X: =645
+                Y: =50
+                ZIndex: =16
+
+            Rectangle3_3 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =61
+                Width: =227
+                X: =404
+                Y: =348
+                ZIndex: =17
+
+            Label_Onhold As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =20
+                Text: |-
+                    = CountRows(
+                             Filter(
+                                I4_0_DPMS_CSL_GnO,
+                                (
+                                   ObjStatus.Value = "On Hold")))
+                Width: =171
+                X: =429
+                Y: =361
+                ZIndex: =18
+
+            Rectangle1_12 As rectangle:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Fill: |
+                    =RGBA(226, 223, 218, 1)
+                Height: =40
+                Width: =184
+                X: =414
+                Y: =321
+                ZIndex: =19
+
+            Label1_6 As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =52
+                Size: =13
+                Text: ="On Hold Objectives"
+                Width: =185
+                X: =415
+                Y: =322
+                ZIndex: =20
+
+            Button1_27 As button:
+                BorderColor: =ColorFade(Black, -15%)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =2
+                FontWeight: =FontWeight.Semibold
+                Height: =450
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =
+                OnSelect: |
+                    =Set(varOverView,true);
+                    Set(varActionDashbaord,false);
+                    Set(varIssueDashboard,false);
+                    Set(varInsightDashboad,false);
+                PressedFill: =
+                Text: =""
+                Width: =1263
+                X: =3
+                Y: =3
+                ZIndex: =21
+
+        DataCard9_2 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =554
+            Visible: =true
+            Width: =1296
+            X: =0
+            Y: =1
+            ZIndex: =2
+
+            Button1_28 As button:
+                AutoDisableOnSelect: =false
+                BorderColor: =ColorFade(Black, -15%)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =2
+                FontWeight: =FontWeight.Semibold
+                Height: =491
+                HoverBorderColor: =
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =
+                OnSelect: =
+                PressedBorderColor: =
+                PressedFill: =
+                Text: =""
+                Width: =1263
+                X: =4
+                Y: =51
+                ZIndex: =1
+
+            Button17_15 As button:
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 0, 0, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =37
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+                Size: =14
+                Text: ="Export Progress Report"
+                Visible: =false
+                Width: =225
+                X: =1012
+                Y: =482
+                ZIndex: =2
+
+            Button17_12 As button:
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 0, 0, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =35
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(196, 6, 6, 1)
+                PressedColor: =
+                PressedFill: =
+                Size: =14
+                Text: ="History"
+                Visible: =false
+                Width: =150
+                X: =734
+                Y: =88
+                ZIndex: =3
+
+            Button17_13 As button:
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 0, 0, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =35
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(196, 6, 6, 1)
+                PressedColor: =
+                PressedFill: =
+                Size: =14
+                Text: ="Update"
+                Visible: =false
+                Width: =150
+                X: =908
+                Y: =88
+                ZIndex: =4
+
+            "'I4.0_DPMS_CSL_GnO_TI1_IN-1_3' As text":
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =""
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                FocusedBorderThickness: =4
+                Height: =36
+                HoverBorderColor: =RGBA(0, 0, 0, 1)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                X: =16
+                Y: =88
+                ZIndex: =6
+
+            "'I4.0_DPMS_CSL_GnO_ICFLTR_IN-1_3' As icon.Filter":
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =36
+                Icon: =Icon.Filter
+                Width: =34
+                X: =302
+                Y: =89
+                ZIndex: =7
+
+            "'I4.0_DPMS_CSL_GnO_BHG_IN-1_3' As gallery.galleryVertical":
+                Height: =277
+                Items: =Search(I4_0_DPMS_CSL_GnO,'I4.0_DPMS_CSL_GnO_TI1_IN-1_3'.Text,"FocusArea","FocusLine","ObjectiveDescription")
+                Layout: =Layout.Vertical
+                OnSelect: =
+                ShowNavigation: =true
+                TemplateSize: =50
+                Width: =1258
+                X: =8
+                Y: =188
+                ZIndex: =8
+
+                "'I4.0_DPMS_CSL_GnO_R1_IN-1_1' As rectangle":
+                    BorderColor: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    Width: =1247
+                    ZIndex: =1
+
+                "'I4.0_DPMS_CSL_GnO_CB_IN-1_1' As checkbox":
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    CheckboxBorderColor: =RGBA(0, 0, 0, 0)
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: =
+                    DisplayMode: |+
+                        =If(
+                            Self.Value || Value(counter.Text) = 0,
+                            DisplayMode.Edit,
+                            DisplayMode.View
+                        )
+                        
+                    Fill: =RGBA(0,0,0,0)
+                    Height: =22
+                    HoverBorderColor: =
+                    HoverColor: =RGBA(0, 0, 0, 0)
+                    OnCheck: |
+                        =Clear(I4_0_DPMS_CSL_XXX_CIS_Demo);
+                        If(
+                            ThisItem.ObjectiveId in I4_0_DPMS_CSL_XXX_CIS_Demo.ObjectiveId,
+                            Update(
+                                I4_0_DPMS_CSL_XXX_CIS_Demo,
+                                First(
+                                    Filter(
+                                        I4_0_DPMS_CSL_XXX_CIS_Demo,
+                                        ObjId = ThisItem.ObjectiveId
+                                    )
+                                ),
+                                {
+                            
+                                    FocusArea: ThisItem.FocusArea,
+                                    FocusLine: ThisItem.FocusLine,
+                                    ObjectiveDescription: ThisItem.ObjectiveDescription,
+                                    ObjTargetDateTime: ThisItem.ObjTargetDateTime,
+                                    ObjectiveId:ThisItem.ObjectiveId,
+                                    ObjOwner:ThisItem.ObjOwner.DisplayName,
+                                    ObjCreateDate:Text(ThisItem.ObjCreatedDateTime,ShortDate),
+                                    IssueProgress:ThisItem.ObjProgress.Value,
+                                    IssueStatus:ThisItem.ObjStatus.Value
+                        
+                        
+                                }
+                            ),
+                            Collect(
+                                I4_0_DPMS_CSL_XXX_CIS_Demo,
+                                {
+                        
+                                    FocusArea: ThisItem.FocusArea,
+                                    FocusLine: ThisItem.FocusLine,
+                                    ObjectiveDescription: ThisItem.ObjectiveDescription,
+                                    ObjTargetDateTime: ThisItem.ObjTargetDateTime,
+                                    ObjectiveId:ThisItem.ObjectiveId,
+                                    ObjOwner:ThisItem.ObjOwner.DisplayName,
+                                    ObjCreateDate:Text(ThisItem.ObjCreatedDateTime,ShortDate),
+                                    IssueProgress:ThisItem.ObjProgress.Value,
+                                    IssueStatus:ThisItem.ObjStatus.Value
+                                }
+                            )
+                        );
+                    PressedBorderColor: =RGBA(0,0,0,0)
+                    Reset: |
+                        =//I4_0_DPMS_CSL_GnO_LVORSTCHKBK
+                    Size: =13
+                    Text: =""
+                    Tooltip: =//"Shift 1 -" & Label2.Text 
+                    Width: =38
+                    X: =4
+                    Y: =9
+                    ZIndex: =2
+
+                "'I4.0_DPMS_CSL_GnO_TL14_IN-1_1' As label":
+                    BorderThickness: =1
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =48
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =ThisItem.FocusArea
+                    Width: =113
+                    X: =56
+                    ZIndex: =3
+
+                "'I4.0_DPMS_CSL_GnO_TL13_IN-1_1' As label":
+                    BorderThickness: =1
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =48
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =ThisItem.FocusLine
+                    Width: =96
+                    X: =169
+                    ZIndex: =4
+
+                "'I4.0_DPMS_CSL_GnO_TL12_IN-1_1' As label":
+                    BorderThickness: =1
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =48
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =ThisItem.ObjectiveDescription
+                    Width: =261
+                    X: =266
+                    ZIndex: =5
+
+                "'I4.0_DPMS_CSL_GnO_TL11_IN-1_1' As label":
+                    BorderThickness: =1
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =47
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: |-
+                        =//ThisItem.ObjOwner.DisplayName
+                        First( Split( First( Split( ThisItem.ObjOwner.DisplayName, " " ) ).Result, " " ) ).Result & " " & First( Split( Last( Split(ThisItem.ObjOwner.DisplayName, " " ) ).Result, " " ) ).Result
+                    Width: =133
+                    X: =527
+                    Y: =1
+                    ZIndex: =6
+
+                "'I4.0_DPMS_CSL_GnO_TL10_IN-1_1' As label":
+                    BorderThickness: =1
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =48
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =ThisItem.ObjStatus.Value
+                    Width: =116
+                    X: =660
+                    ZIndex: =7
+
+                "'I4.0_DPMS_CSL_GnO_TL9_IN-1_1' As label":
+                    BorderThickness: =1
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =48
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =ThisItem.ObjProgress.Value
+                    Width: =86
+                    X: =776
+                    ZIndex: =8
+
+                "'I4.0_DPMS_CSL_GnO_TL9_IN-1_2' As label":
+                    BorderThickness: =1
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =48
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =Text(ThisItem.ObjTargetDateTime,ShortDate)
+                    Width: =103
+                    X: =862
+                    ZIndex: =9
+
+                "'I4.0_DPMS_CSL_GnO_TL9_IN-1_3' As label":
+                    BorderThickness: =1
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =48
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =ThisItem.ObjectiveId
+                    Width: =172
+                    X: =965
+                    ZIndex: =10
+
+                "'I4.0_DPMS_CSL_GnO_TL9_IN-1_4' As label":
+                    BorderThickness: =1
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =48
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =Text(ThisItem.ObjCreatedDateTime,ShortDate)
+                    Width: =111
+                    X: =1137
+                    ZIndex: =11
+
+            "'I4.0_DPMS_CSL_GnO_TL8_IN-1_1' As label":
+                BorderColor: =RGBA(0, 18, 107, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(0, 0, 0, 0.7)
+                Height: =32
+                Size: =13
+                Text: =
+                Width: =1249
+                X: =13
+                Y: =147
+                ZIndex: =9
+
+            "'I4.0_DPMS_CSL_GnO_TL7_IN-1_1' As label":
+                BorderThickness: =1
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =13
+                Text: ="Focus Area"
+                Width: =113
+                X: =66
+                Y: =149
+                ZIndex: =10
+
+            "'I4.0_DPMS_CSL_GnO_TL6_IN-1_1' As label":
+                BorderThickness: =1
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =29
+                Size: =13
+                Text: ="Focus Line"
+                Width: =103
+                X: =179
+                Y: =149
+                ZIndex: =11
+
+            "'I4.0_DPMS_CSL_GnO_TL5_IN-1_1' As label":
+                BorderThickness: =1
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =13
+                Text: ="Objective Desciption"
+                Width: =261
+                X: =282
+                Y: =149
+                ZIndex: =12
+
+            "'I4.0_DPMS_CSL_GnO_TL4_IN-1_1' As label":
+                BorderThickness: =1
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =13
+                Text: ="Progress"
+                Width: =99
+                X: =792
+                Y: =149
+                ZIndex: =13
+
+            "'I4.0_DPMS_CSL_GnO_TL3_IN-1_1' As label":
+                Align: =Align.Justify
+                BorderThickness: =1
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =13
+                Text: ="Status"
+                Width: =116
+                X: =676
+                Y: =149
+                ZIndex: =14
+
+            "'I4.0_DPMS_CSL_GnO_TL2_IN-1_1' As label":
+                Align: =Align.Justify
+                BorderThickness: =1
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =13
+                Text: ="Assigned"
+                Width: =133
+                X: =543
+                Y: =149
+                ZIndex: =15
+
+            "'I4.0_DPMS_CSL_GnO_TL1_IN-1_1' As label":
+                BorderThickness: =1
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =13
+                Text: =
+                Width: =53
+                X: =13
+                Y: =149
+                ZIndex: =16
+
+            "'I4.0_DPMS_CSL_GnO_ICCHK_IN-1_1' As icon.Check":
+                BorderColor: =RGBA(0, 18, 107, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =21
+                Icon: =Icon.Check
+                Width: =39
+                X: =16
+                Y: =153
+                ZIndex: =17
+
+            Label3 As label:
+                BorderThickness: =1
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =30
+                Size: =13
+                Text: ="Target Date"
+                Width: =121
+                X: =891
+                Y: =149
+                ZIndex: =18
+
+            Label3_1 As label:
+                BorderThickness: =1
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =30
+                Size: =13
+                Text: ="Object ID"
+                Width: =136
+                X: =1012
+                Y: =149
+                ZIndex: =19
+
+            Label3_5 As label:
+                BorderThickness: =1
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =30
+                Size: =13
+                Text: ="Create Date"
+                Width: =114
+                X: =1148
+                Y: =149
+                ZIndex: =20
+
+            counter As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: |+
+                    =
+                    CountRows(Filter('I4.0_DPMS_CSL_GnO_BHG_IN-1_3'.AllItems,'I4.0_DPMS_CSL_GnO_CB_IN-1_1'.Value))
+                    
+                Visible: =false
+                X: =354
+                Y: =63
+                ZIndex: =21
+
+            "'I4.0_DPMS_CSL_GnO_B5_CI-2_4' As button":
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(255, 0, 0, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =If(Value(counter.Text)>0,DisplayMode.Edit, DisplayMode.Disabled)
+                Fill: =RGBA(255, 0, 0, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =35
+                HoverBorderColor: =RGBA(0, 0, 0, 0.7)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(0, 0, 0, 0.7)
+                OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_CI');
+                Size: =15
+                Text: ="Create Issue"
+                Width: =150
+                X: =1058
+                Y: =90
+                ZIndex: =22
+
+    "'I4.0_DPMS_CSL_XXX_C_N_5' As 'I4.0_DPMS_CSL_XXX_C_N'":
+        Height: =Self.FlexibleHeight
+        Width: =1350
+        X: =7
+        Y: =91
+        ZIndex: =18
 

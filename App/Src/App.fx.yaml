@@ -71,7 +71,7 @@ App As appinfo:
             },
             {
                 Title: "Objective",
-                Screen: Blank(),
+                Screen: 'I4.0_DPMS_CSL_GnO_OD',
                 Id: 3,
                 ParentTab: "Goals & Objective"
             },
