@@ -746,7 +746,7 @@
                 Size: =15
                 Text: ="Deliverable Description"
                 Width: =266
-                X: =40
+                X: =68
                 Y: =287
                 ZIndex: =27
 
@@ -765,7 +765,7 @@
                     )
                 Width: =31
                 Wrap: =false
-                X: =270
+                X: =305
                 Y: =287
                 ZIndex: =28
 
@@ -816,11 +816,11 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
-                Height: =32
+                Height: =33
                 Size: =15
                 Text: ="Measure"
-                Width: =266
-                X: =648
+                Width: =105
+                X: =676
                 Y: =287
                 ZIndex: =31
 
@@ -839,7 +839,7 @@
                     )
                 Width: =31
                 Wrap: =false
-                X: =735
+                X: =763
                 Y: =287
                 ZIndex: =32
 
@@ -868,7 +868,7 @@
                 Size: =15
                 Text: ="Weight"
                 Width: =130
-                X: =340
+                X: =368
                 Y: =450
                 ZIndex: =34
 
@@ -915,9 +915,63 @@
                     )
                 Width: =46
                 Wrap: =false
-                X: =403
+                X: =431
                 Y: =452
                 ZIndex: =36
+
+            Checkbox1_10 As checkbox:
+                BorderColor: =RGBA(0,0,0,0)
+                CheckboxSize: =30
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =
+                Height: =30
+                HoverColor: =RGBA(0, 18, 107, 1)
+                OnUncheck: =Reset('I4.0_DPMS_CSL_GnO_TI_CI-3_2');
+                PressedBorderColor: =RGBA(0,0,0,0)
+                PressedColor: =RGBA(0,0,0,0)
+                Reset: =
+                Size: =10
+                Text: =""
+                Width: =37
+                X: =40
+                Y: =288
+                ZIndex: =37
+
+            Checkbox1_11 As checkbox:
+                BorderColor: =RGBA(0,0,0,0)
+                CheckboxSize: =30
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =
+                Height: =30
+                HoverColor: =RGBA(0, 18, 107, 1)
+                OnUncheck: =Reset('I4.0_DPMS_CSL_GnO_TI_CI-3_2');
+                PressedBorderColor: =RGBA(0,0,0,0)
+                PressedColor: =RGBA(0,0,0,0)
+                Reset: =
+                Size: =10
+                Text: =""
+                Width: =37
+                X: =649
+                Y: =288
+                ZIndex: =38
+
+            Checkbox1_12 As checkbox:
+                BorderColor: =RGBA(0,0,0,0)
+                CheckboxSize: =30
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =
+                Height: =30
+                HoverColor: =RGBA(0, 18, 107, 1)
+                OnUncheck: =Reset('I4.0_DPMS_CSL_GnO_TI_CI-3_2');
+                PressedBorderColor: =RGBA(0,0,0,0)
+                PressedColor: =RGBA(0,0,0,0)
+                Reset: =
+                Size: =10
+                Text: =""
+                Width: =37
+                X: =338
+                Y: =452
+                ZIndex: =39
 
     "'I4.0_DPMS_CSL_XXX_C_F_6' As 'I4.0_DPMS_CSL_XXX_C_F'":
         Height: =26
