@@ -1,5 +1,5 @@
 NavigationDemo As screen:
-    Fill: =RGBA(255,255,255,1)
+    Fill: =RGBA(255, 255, 0, 1)
     LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
 
     "'I4.0_DPMS_CSL_XXX_C_N_6' As 'I4.0_DPMS_CSL_XXX_C_N_3'":
