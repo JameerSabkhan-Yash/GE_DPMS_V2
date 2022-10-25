@@ -315,7 +315,7 @@
                         TargetDatePicker.SelectedDate < Today(),
                         Set(
                             varWorngDate,
-                            "Past Date cant be Selected."
+                            "Can't select past date."
                         ),
                         Set(
                             varWorngDate,
@@ -869,7 +869,7 @@
             ProgressTI_2 As text:
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
-                Default: ="0%"
+                Default: =
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -920,7 +920,7 @@
                 Default: =
                 Height: =30
                 HoverColor: =RGBA(0, 18, 107, 1)
-                OnUncheck: =Reset('I4.0_DPMS_CSL_GnO_TI_CI-3_2');
+                OnUncheck: =Reset(ObjectiveDescription_1);
                 PressedBorderColor: =RGBA(0,0,0,0)
                 PressedColor: =RGBA(0,0,0,0)
                 Reset: =
@@ -938,7 +938,7 @@
                 Default: =
                 Height: =30
                 HoverColor: =RGBA(0, 18, 107, 1)
-                OnUncheck: =Reset('I4.0_DPMS_CSL_GnO_TI_CI-3_2');
+                OnUncheck: =Reset(ObjectiveDescription_2);
                 PressedBorderColor: =RGBA(0,0,0,0)
                 PressedColor: =RGBA(0,0,0,0)
                 Reset: =
@@ -956,7 +956,7 @@
                 Default: =
                 Height: =30
                 HoverColor: =RGBA(0, 18, 107, 1)
-                OnUncheck: =Reset('I4.0_DPMS_CSL_GnO_TI_CI-3_2');
+                OnUncheck: =Reset(ProgressTI_2);
                 PressedBorderColor: =RGBA(0,0,0,0)
                 PressedColor: =RGBA(0,0,0,0)
                 Reset: =
