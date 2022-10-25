@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: |
+    OnStart: |+
         =ClearCollect(
             colHorizontalMenu,
             {
@@ -250,9 +250,6 @@ App As appinfo:
                 ).GroupName
             ).GroupName 
         );
-        //Collection for Objective
-        ClearCollect(
-            Objective_status,
-            {Objective :"On Hold", status: Label_Onhold.Text},{Objective :"In Progress",status:Label_Inprrogress.Text},{Objective :"Completed Objectives", status :Label_Completedobj.Text});
+        
     StartScreen: =
 
