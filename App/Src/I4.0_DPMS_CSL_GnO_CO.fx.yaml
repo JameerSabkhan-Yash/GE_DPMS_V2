@@ -36,6 +36,10 @@
         Reset(dpFocusLine);
         Reset(dpFocusArea);
         Reset(dpOwner);
+        Reset(ObjectiveDescription);
+        Reset(ObjectiveDescription_1);
+        Reset(ObjectiveDescription_2);
+        Reset(ProgressTI_2);
         
         
 
@@ -52,10 +56,10 @@
     Canvas1_3 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
         Fill: =RGBA(226, 223, 218, 1)
-        Height: =448
+        Height: =431
         Width: =1280
         X: =41
-        Y: =249
+        Y: =265
         ZIndex: =2
 
         DataCard4_1 As dataCard.blankCard:
@@ -63,7 +67,7 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =447
+            Height: =610
             Width: =1280
             X: =0
             Y: =0
@@ -80,7 +84,7 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 EnableSpellCheck: =true
                 FocusedBorderThickness: =4
-                Height: =91
+                Height: =80
                 HintText: ="Please enter your objective description."
                 HoverBorderColor: =RGBA(0, 0, 0, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
@@ -105,11 +109,10 @@
                 Text: ="Owner"
                 Width: =130
                 X: =50
-                Y: =300
+                Y: =450
                 ZIndex: =2
 
             Label47_17 As label:
-                Align: =Align.Center
                 BorderColor: =RGBA(131, 24, 75, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -118,8 +121,8 @@
                 Size: =15
                 Text: ="Status"
                 Width: =112
-                X: =407
-                Y: =300
+                X: =803
+                Y: =450
                 ZIndex: =3
 
             Label47_18 As label:
@@ -131,8 +134,8 @@
                 Size: =15
                 Text: ="Progress"
                 Width: =130
-                X: =741
-                Y: =300
+                X: =1031
+                Y: =450
                 ZIndex: =4
 
             Label47_19 As label:
@@ -144,8 +147,8 @@
                 Size: =15
                 Text: ="Target Date"
                 Width: =130
-                X: =1033
-                Y: =300
+                X: =568
+                Y: =450
                 ZIndex: =5
 
             dpOwner As dropdown:
@@ -169,10 +172,10 @@
                         GroupName in Concat(
                             Filter(
                                 I4_0_DPMS_CSL_XXX_CSPG,
-                                Value(Result) > Value(I4_0_DPMS_CSL_XXX_GVUGN)//&& Result <> varUserGroup
+                                Value(Result) >= Value(I4_0_DPMS_CSL_XXX_GVUGN) //&& Result <> varUserGroup
                             ).Result,
                             Result & ","
-                        ) && Title <> User().FullName
+                        ) //&& Title = User().FullName
                     ).Title
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 0, 0, 0)
@@ -180,7 +183,7 @@
                 Size: =13
                 Width: =250
                 X: =50
-                Y: =345
+                Y: =495
                 ZIndex: =6
 
             Label47_20 As label:
@@ -193,7 +196,7 @@
                 Text: ="Objective Description"
                 Width: =266
                 X: =45
-                Y: =145
+                Y: =152
                 ZIndex: =7
 
             Button17_8 As button:
@@ -208,7 +211,7 @@
                 Text: ="Cancel"
                 Width: =150
                 X: =1088
-                Y: =407
+                Y: =557
                 ZIndex: =8
 
             Button17_9 As button:
@@ -217,18 +220,17 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: |-
                     =If(
-                        !IsBlank(dpFocusArea.SelectedText.Value) And !IsBlank(dpFocusLine.SelectedText.Value) And !IsBlank(dpOwner.SelectedText.Value) And !IsBlank(ObjectiveDescription.Text) And !IsBlank(ProgressTI.Text) And !IsBlank(TargetDatePicker.SelectedDate),
-                        DisplayMode.Edit,
-                        DisplayMode.Disabled
+                        FocusAreadStar.Visible = true || MeasureStart.Visible = true || WeightStar.Visible = true || FocusLineStar.Visible = true || ObjectiveDescriptionStar.Visible = true || OwnerStar.Visible = true || OwnerStar.Visible = true || StarVisible1_5.Visible = true || DevliverableStar.Visible = true,
+                        DisplayMode.Disabled,
+                        DisplayMode.Edit
                     )
                 Fill: =RGBA(255, 0, 0, 1)
                 FontWeight: =FontWeight.Semibold
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
-                OnSelect: |-
+                OnSelect: |
                     =If(
                         !IsBlank(dpFocusArea.SelectedText.Value) And !IsBlank(dpFocusLine.SelectedText.Value) And !IsBlank(ObjectiveDescription.Text) And !IsBlank(dpOwner.SelectedText.Value) And !IsBlank(dpOwner.Selected.Title) And !IsBlank(ProgressTI.Text) And !IsBlank(TargetDatePicker.SelectedDate),
-                        
                         Patch(
                             I4_0_DPMS_CSL_GnO,
                             Defaults(I4_0_DPMS_CSL_GnO),
@@ -268,7 +270,10 @@
                                 ObjCreatedDateTime: Today(),
                                 ObjTargetDateTime: TargetDatePicker.SelectedDate,
                                 ObjProgress: {Value: ProgressTI.Text},
-                                ObjStatus: {Value: "Not Started"}
+                                ObjStatus: {Value: "Not Started"},
+                                DeliverableDescription: ObjectiveDescription_1.Text,
+                                ObjMeasure: ObjectiveDescription_2.Text,
+                                ObjWeight: Value(ProgressTI_2.Text)
                             //ObjStatus : "Red" 
                             }
                         );
@@ -281,20 +286,21 @@
                             NotificationType.Information
                         )
                     );
-                    
                     Reset(dpFocusArea);
                     Reset(dpFocusLine);
                     Reset(dpOwner);
                     Reset(ObjectiveDescription);
+                    Reset(ObjectiveDescription_1);
+                    Reset(ObjectiveDescription_2);
+                    Reset(ProgressTI_2);
                 Size: =15
                 Text: ="Create"
                 Width: =150
                 X: =888
-                Y: =407
+                Y: =557
                 ZIndex: =9
 
             TargetDatePicker As datepicker:
-                BorderThickness: =0
                 CalendarHeaderFill: =RGBA(211, 66, 9, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -304,11 +310,11 @@
                 HoverDateFill: =RGBA(255, 211, 205, 1)
                 IconBackground: =Color
                 IconFill: =Color.Black
-                OnSelect: =If(TargetDatePicker.SelectedDate<Today(),Notify("Selected date cannot be before Today",Error));
+                OnSelect: =If(TargetDatePicker.SelectedDate<Today(),Notify("Past date cant be selected.",Error));
                 SelectedDateFill: =RGBA(211, 66, 9, 1)
                 Width: =200
-                X: =1038
-                Y: =345
+                X: =568
+                Y: =495
                 ZIndex: =10
 
             dpFocusLine As dropdown:
@@ -487,7 +493,7 @@
                 Y: =20
                 ZIndex: =12
 
-            StarVisible1_1 As label:
+            FocusAreadStar As label:
                 Align: =Align.Center
                 Color: =RGBA(255, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -506,7 +512,7 @@
                 Y: =9
                 ZIndex: =13
 
-            StarVisible1_2 As label:
+            FocusLineStar As label:
                 Align: =Align.Center
                 Color: =RGBA(255, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -527,11 +533,11 @@
 
             Label47_25 As label:
                 BorderColor: =RGBA(131, 24, 75, 1)
-                Color: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(0, 0, 0, 0.5)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =33
-                Size: =13
+                Size: =12
                 Text: ="Please select Focus Area."
                 Visible: |-
                     =If(
@@ -546,11 +552,11 @@
 
             Label47_26 As label:
                 BorderColor: =RGBA(131, 24, 75, 1)
-                Color: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(0, 0, 0, 0.5)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =36
-                Size: =13
+                Size: =12
                 Text: ="Please select Focus Line."
                 Visible: |-
                     =If(
@@ -563,7 +569,7 @@
                 Y: =79
                 ZIndex: =16
 
-            StarVisible1_3 As label:
+            ObjectiveDescriptionStar As label:
                 Align: =Align.Center
                 Color: =RGBA(255, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -579,10 +585,10 @@
                 Width: =31
                 Wrap: =false
                 X: =255
-                Y: =144
+                Y: =151
                 ZIndex: =17
 
-            StarVisible1_4 As label:
+            OwnerStar As label:
                 Align: =Align.Center
                 Color: =RGBA(255, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -597,8 +603,8 @@
                     )
                 Width: =46
                 Wrap: =false
-                X: =111
-                Y: =302
+                X: =117
+                Y: =452
                 ZIndex: =18
 
             ProgressTI As text:
@@ -616,10 +622,18 @@
                 HoverBorderColor: =RGBA(131, 24, 75, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 211, 205, 1)
+                RadiusBottomLeft: |
+                    =0
+                RadiusBottomRight: |
+                    =0
+                RadiusTopLeft: |
+                    =0
+                RadiusTopRight: |
+                    =0
                 Size: =13
                 Width: =200
-                X: =741
-                Y: =345
+                X: =1031
+                Y: =495
                 ZIndex: =19
 
             Label1 As label:
@@ -685,10 +699,15 @@
                     HoverBorderColor: =RGBA(131, 24, 75, 1)
                     HoverColor: =RGBA(0, 0, 0, 1)
                     HoverFill: =RGBA(255, 211, 205, 1)
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: |
+                        =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
                     Size: =13
                     Width: =200
-                    X: =433
-                    Y: =345
+                    X: =803
+                    Y: =495
                     ZIndex: =24
 
                 Circle1_3 As circle:
@@ -696,9 +715,273 @@
                     Fill: =RGBA(153, 153, 153, 1)
                     Height: =22
                     Width: =22
-                    X: =446
-                    Y: =353
+                    X: =816
+                    Y: =503
                     ZIndex: =25
+
+            Label47_27 As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =32
+                Size: =15
+                Text: ="Deliverable Description"
+                Width: =266
+                X: =68
+                Y: =287
+                ZIndex: =27
+
+            DevliverableStar As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =33
+                Size: =15
+                Text: ="*"
+                Visible: |-
+                    =If(
+                        IsBlank(ObjectiveDescription_1.Text) && Checkbox1_10.Value = true,
+                        true,
+                        false
+                    )
+                Width: =31
+                Wrap: =false
+                X: =305
+                Y: =287
+                ZIndex: =28
+
+            Label1_8 As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: |-
+                    =//RGBA(0, 0, 0, 1) 
+                    If(Len(ObjectiveDescription_1.Text) >= 200 , Red,Black)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =32
+                Size: =12
+                Text: |-
+                    ="(Max Characters : " & Len(ObjectiveDescription_1.Text) &"/200)"
+                Width: =218
+                X: =409
+                Y: =293
+                ZIndex: =29
+
+            ObjectiveDescription_2 As text:
+                Align: =Align.Justify
+                BorderThickness: =2
+                Clear: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =""
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =If(Checkbox1_11.Value = true , DisplayMode.Edit,DisplayMode.Disabled)
+                EnableSpellCheck: =true
+                FocusedBorderThickness: =4
+                Height: =110
+                HintText: ="Please enter your Measure."
+                HoverBorderColor: =RGBA(0, 0, 0, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                LineHeight: =2
+                MaxLength: =200
+                Mode: =TextMode.MultiLine
+                PressedBorderColor: =RGBA(0, 0, 0, 1)
+                Size: =13
+                Width: =585
+                X: =650
+                Y: =325
+                ZIndex: =30
+
+            Label47_28 As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =33
+                Size: =15
+                Text: ="Measure"
+                Width: =105
+                X: =676
+                Y: =287
+                ZIndex: =31
+
+            MeasureStart As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =33
+                Size: =15
+                Text: ="*"
+                Visible: |-
+                    =If(
+                        IsBlank(ObjectiveDescription_2.Text) && Checkbox1_11.Value = true,
+                        true,
+                        false
+                    )
+                Width: =31
+                Wrap: =false
+                X: =763
+                Y: =287
+                ZIndex: =32
+
+            Label1_9 As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: |-
+                    =//RGBA(0, 0, 0, 1) 
+                    If(Len(ObjectiveDescription_2.Text) >= 200 , Red,Black)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =32
+                Size: =12
+                Text: |-
+                    ="(Max Characters : " & Len(ObjectiveDescription_2.Text) &"/200)"
+                Width: =218
+                X: =1031
+                Y: =293
+                ZIndex: =33
+
+            Label47_29 As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =35
+                Size: =15
+                Text: ="Weight"
+                Width: =130
+                X: =368
+                Y: =450
+                ZIndex: =34
+
+            ProgressTI_2 As text:
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                Default: ="0%"
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =If(Checkbox1_12.Value = true , DisplayMode.Edit,DisplayMode.Disabled)
+                FocusedBorderThickness: =4
+                Format: =TextFormat.Number
+                Height: =35
+                HintText: ="Enter Number"
+                HoverBorderColor: =RGBA(0, 0, 0, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: |
+                    =0
+                RadiusTopLeft: |
+                    =0
+                RadiusTopRight: |
+                    =0
+                Size: =13
+                Width: =200
+                X: =340
+                Y: =495
+                ZIndex: =35
+
+            WeightStar As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =31
+                Size: =15
+                Text: ="*"
+                Visible: |-
+                    =If(
+                        IsBlank(ProgressTI_2.Text) && Checkbox1_12.Value = true,
+                        true,
+                        false
+                    )
+                Width: =46
+                Wrap: =false
+                X: =431
+                Y: =452
+                ZIndex: =36
+
+            Checkbox1_10 As checkbox:
+                BorderColor: =RGBA(0,0,0,0)
+                CheckboxSize: =30
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =
+                Height: =30
+                HoverColor: =RGBA(0, 18, 107, 1)
+                OnUncheck: =Reset('I4.0_DPMS_CSL_GnO_TI_CI-3_2');
+                PressedBorderColor: =RGBA(0,0,0,0)
+                PressedColor: =RGBA(0,0,0,0)
+                Reset: =
+                Size: =10
+                Text: =""
+                Width: =37
+                X: =40
+                Y: =288
+                ZIndex: =37
+
+            Checkbox1_11 As checkbox:
+                BorderColor: =RGBA(0,0,0,0)
+                CheckboxSize: =30
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =
+                Height: =30
+                HoverColor: =RGBA(0, 18, 107, 1)
+                OnUncheck: =Reset('I4.0_DPMS_CSL_GnO_TI_CI-3_2');
+                PressedBorderColor: =RGBA(0,0,0,0)
+                PressedColor: =RGBA(0,0,0,0)
+                Reset: =
+                Size: =10
+                Text: =""
+                Width: =37
+                X: =649
+                Y: =288
+                ZIndex: =38
+
+            Checkbox1_12 As checkbox:
+                BorderColor: =RGBA(0,0,0,0)
+                CheckboxSize: =30
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =
+                Height: =30
+                HoverColor: =RGBA(0, 18, 107, 1)
+                OnUncheck: =Reset('I4.0_DPMS_CSL_GnO_TI_CI-3_2');
+                PressedBorderColor: =RGBA(0,0,0,0)
+                PressedColor: =RGBA(0,0,0,0)
+                Reset: =
+                Size: =10
+                Text: =""
+                Width: =37
+                X: =338
+                Y: =452
+                ZIndex: =39
+
+            ObjectiveDescription_1 As text:
+                Align: =Align.Justify
+                BorderThickness: =2
+                Clear: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =""
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =If(Checkbox1_11.Value = true , DisplayMode.Edit,DisplayMode.Disabled)
+                EnableSpellCheck: =true
+                FocusedBorderThickness: =4
+                Height: =110
+                HintText: ="Please enter your Deliverable."
+                HoverBorderColor: =RGBA(0, 0, 0, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                LineHeight: =2
+                MaxLength: =200
+                Mode: =TextMode.MultiLine
+                PressedBorderColor: =RGBA(0, 0, 0, 1)
+                Size: =13
+                Width: =585
+                X: =49
+                Y: =325
+                ZIndex: =40
 
     "'I4.0_DPMS_CSL_XXX_C_F_6' As 'I4.0_DPMS_CSL_XXX_C_F'":
         Height: =26
@@ -793,9 +1076,9 @@
         BorderColor: =RGBA(131, 24, 75, 1)
         Fill: |
             =RGBA(226, 223, 218, 1)
-        Height: =22
+        Height: =32
         Width: =195
-        X: =243
+        X: =237
         Y: =233.95
         ZIndex: =16
 

@@ -112,7 +112,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BreadcrumbBar_11",
-      "ParentIndex": 14,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -364,7 +364,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button1_13",
-      "ParentIndex": 8,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -678,7 +678,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button1_22",
-      "ParentIndex": 9,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1035,7 +1035,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button1_24",
-      "ParentIndex": 7,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3138,7 +3138,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Canvas1_6",
-      "ParentIndex": 12,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3475,14 +3475,6 @@
           "InvariantPropertyName": "BorderThickness",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Visible",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -3546,11 +3538,6 @@
         {
           "Category": "Design",
           "PropertyName": "BorderThickness",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Visible",
           "RuleProviderType": "Unknown"
         }
       ],
@@ -4784,7 +4771,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "I4.0_DPMS_CSL_GnO_R2_CI-2_9",
-      "ParentIndex": 10,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4936,7 +4923,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "I4.0_DPMS_CSL_XXX_C_F_8",
-      "ParentIndex": 13,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5809,14 +5796,7 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Align",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Align",
         "VerticalAlign",
         "X",
         "Y",
@@ -6092,14 +6072,7 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Align",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Align",
         "VerticalAlign",
         "X",
         "Y",
@@ -6375,14 +6348,7 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Align",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Align",
         "VerticalAlign",
         "X",
         "Y",
@@ -6658,14 +6624,7 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Align",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Align",
         "VerticalAlign",
         "X",
         "Y",
@@ -6971,7 +6930,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label1_1",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10376,14 +10335,7 @@
     "PieChart1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "Objective_status",
-          "InvariantPropertyName": "Items",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Items",
         "ItemColorSet",
         "LabelPosition",
         "ItemBorderColor",
@@ -10418,7 +10370,7 @@
       "Properties": [
         {
           "Category": "Data",
-          "NameMap": "{\"Labels\":\"Objective\",\"Series\":\"status\"}",
+          "NameMap": "{\"Labels\":\"City\",\"Series\":\"Area\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },
@@ -11018,7 +10970,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle1_8",
-      "ParentIndex": 11,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11164,7 +11116,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle1_9",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
