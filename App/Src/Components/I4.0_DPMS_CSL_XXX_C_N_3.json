@@ -26,7 +26,7 @@
             "Name": "galleryTemplate1_2",
             "Parent": "Gallery1_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 503,
+            "PublishOrderIndex": 22,
             "Rules": [
               {
                 "Category": "Design",
@@ -73,7 +73,7 @@
                 "Name": "galleryTemplate2_2",
                 "Parent": "Gallery2_2",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 505,
+                "PublishOrderIndex": 25,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -338,7 +338,7 @@
                 "Name": "Button5_2",
                 "Parent": "Gallery2_2",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 506,
+                "PublishOrderIndex": 26,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -733,7 +733,7 @@
             "Name": "Gallery2_2",
             "Parent": "Gallery1_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 504,
+            "PublishOrderIndex": 23,
             "Rules": [
               {
                 "Category": "Data",
@@ -1026,7 +1026,7 @@
             "Name": "Icon5_2",
             "Parent": "Gallery1_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 507,
+            "PublishOrderIndex": 24,
             "Rules": [
               {
                 "Category": "Design",
@@ -1314,7 +1314,7 @@
         "Name": "Gallery1_2",
         "Parent": "I4.0_DPMS_CSL_XXX_C_N_3",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 502,
+        "PublishOrderIndex": 20,
         "Rules": [
           {
             "Category": "Data",
@@ -1616,7 +1616,7 @@
         "Name": "Label7_2",
         "Parent": "I4.0_DPMS_CSL_XXX_C_N_3",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 508,
+        "PublishOrderIndex": 21,
         "Rules": [
           {
             "Category": "Data",
