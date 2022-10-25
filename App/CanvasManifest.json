@@ -94,11 +94,11 @@
     "Id": "1a398690-23e3-4788-9491-4db069b6d03f",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "Name": "CSL_DPMS_201022_v2",
+    "Name": "CSL_DPMS_251022_v2",
     "OriginatingVersion": "1.326"
   },
   "PublishInfo": {
-    "AppName": "CSL_DPMS_201022_v2",
+    "AppName": "CSL_DPMS_251022_v2",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",

@@ -528,361 +528,6 @@
             Y: =1
             ZIndex: =2
 
-            DataTable3_4 As dataTable.datatable:
-                BorderColor: =RGBA(0, 0, 0, 1)
-                BorderStyle: =BorderStyle.Solid
-                BorderThickness: =2
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisplayMode: =DisplayMode.Edit
-                Fill: =RGBA(237, 237, 237, 1)
-                Font: =Font.'Open Sans'
-                FontWeight: =FontWeight.Normal
-                HeadingColor: =RGBA(255, 255, 255, 1)
-                HeadingFill: =RGBA(0, 0, 0, 0.79)
-                HeadingFont: =Font.'Open Sans'
-                HeadingFontWeight: =FontWeight.Normal
-                HeadingSize: =13
-                Height: =306
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(255, 211, 205, .2)
-                InputFill: =RGBA(255, 255, 255, 1)
-                InvertedColor: =RGBA(255, 255, 255, 1)
-                Items: =I4_0_DPMS_CSL_GnO
-                LinkColor: =RGBA(0, 134, 208, 1)
-                PrimaryColor1: =RGBA(211, 66, 9, 1)
-                PrimaryColor2: =RGBA(131, 24, 75, 1)
-                PrimaryColor3: =RGBA(255, 211, 205, 1)
-                SelectedColor: =RGBA(0, 0, 0, 1)
-                SelectedFill: =RGBA(211, 66, 9, .2)
-                Size: =13
-                Width: =1207
-                X: =32
-                Y: =124
-                ZIndex: =1
-
-                Title_Column1 As dataTableColumn.textualColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="Title"
-                    FieldName: ="Title"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =1
-                    Text: =ThisItem.Title
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =23
-
-                FocusAreaCode_Column1 As dataTableColumn.textualColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="FocusAreaCode"
-                    FieldName: ="FocusAreaCode"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =2
-                    Text: =ThisItem.FocusAreaCode
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =24
-
-                FocusArea_Column1 As dataTableColumn.textualColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="FocusArea"
-                    FieldName: ="FocusArea"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =3
-                    Text: =ThisItem.FocusArea
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =25
-
-                FocusLineCode_Column1 As dataTableColumn.textualColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="FocusLineCode"
-                    FieldName: ="FocusLineCode"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =4
-                    Text: =ThisItem.FocusLineCode
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =26
-
-                FocusLine_Column1 As dataTableColumn.textualColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="FocusLine"
-                    FieldName: ="FocusLine"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =5
-                    Text: =ThisItem.FocusLine
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =27
-
-                ObjectiveId_Column1 As dataTableColumn.textualColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="ObjectiveId"
-                    FieldName: ="ObjectiveId"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =6
-                    Text: =ThisItem.ObjectiveId
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =28
-
-                ObjectiveDescription_Column1 As dataTableColumn.textualColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="ObjectiveDescription"
-                    FieldName: ="ObjectiveDescription"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =7
-                    Text: =ThisItem.ObjectiveDescription
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =29
-
-                DeliverableDescription_Column1 As dataTableColumn.textualColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="DeliverableDescription"
-                    FieldName: ="DeliverableDescription"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =8
-                    Text: =ThisItem.DeliverableDescription
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =30
-
-                ObjMeasure_Column1 As dataTableColumn.textualColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="ObjMeasure"
-                    FieldName: ="Measure"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =9
-                    Text: =ThisItem.ObjMeasure
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =31
-
-                ObjCreatedBy_Column1 As dataTableColumn.textualColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="ObjCreatedBy"
-                    FieldName: ="CreatedBy"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =10
-                    Text: =ThisItem.ObjCreatedBy.DisplayName
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =32
-
-                ObjTeam_Column1 As dataTableColumn.textualColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="ObjTeam"
-                    FieldName: ="Team"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =11
-                    Text: =ThisItem.ObjTeam.DisplayName
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =33
-
-                ObjOwner_Column1 As dataTableColumn.textualColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="ObjOwner"
-                    FieldName: ="Owner"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =12
-                    Text: =ThisItem.ObjOwner.DisplayName
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =34
-
-                ObjStatus_Column1 As dataTableColumn.textualColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="ObjStatus"
-                    FieldName: ="Status"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =13
-                    Text: =ThisItem.ObjStatus.Value
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =35
-
-                ObjProgress_Column1 As dataTableColumn.textualColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="ObjProgress"
-                    FieldName: ="Progress"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =14
-                    Text: =ThisItem.ObjProgress.Value
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =36
-
-                ObjWeight_Column1 As dataTableColumn.numberColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="ObjWeight"
-                    FieldName: ="Weight"
-                    FieldVariantName: ="numberColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =15
-                    Text: =ThisItem.ObjWeight
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =37
-
-                ObjCreatedDateTime_Column1 As dataTableColumn.dateTimeColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="ObjCreatedDateTime"
-                    FieldName: ="ObjCreatedDateTime"
-                    FieldVariantName: ="dateTimeColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =16
-                    Text: =Text(ThisItem.ObjCreatedDateTime,DateTimeFormat.LongDateTime)
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =38
-
-                ObjTargetDateTime_Column1 As dataTableColumn.dateTimeColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="ObjTargetDateTime"
-                    FieldName: ="ObjTargetDateTime"
-                    FieldVariantName: ="dateTimeColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =17
-                    Text: =Text(ThisItem.ObjTargetDateTime,DateTimeFormat.LongDateTime)
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =39
-
-                ObjUpdateDateTime_Column1 As dataTableColumn.dateTimeColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="ObjUpdateDateTime"
-                    FieldName: ="ObjUpdateDateTime"
-                    FieldVariantName: ="dateTimeColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =18
-                    Text: =Text(ThisItem.ObjUpdateDateTime,DateTimeFormat.LongDateTime)
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =40
-
-                ObjComment_Column1 As dataTableColumn.textualColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="ObjComment"
-                    FieldName: ="ObjComment"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =19
-                    Text: =ThisItem.ObjComment
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =41
-
-                ORG_Column1 As dataTableColumn.textualColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="ORG"
-                    FieldName: ="ORG"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =20
-                    Text: =ThisItem.ORG
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =42
-
-                BU_Column1 As dataTableColumn.textualColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="BU"
-                    FieldName: ="BU"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =21
-                    Text: =ThisItem.BU
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =43
-
-                ObjNo_Column1 As dataTableColumn.numberColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="ObjNo"
-                    FieldName: ="ObjNo"
-                    FieldVariantName: ="numberColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =22
-                    Text: =ThisItem.ObjNo
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =44
-
-                Attachments_Column1 As dataTableColumn.textualColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="Attachments"
-                    FieldName: ="{Attachments}"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =23
-                    Text: =ThisItem.Attachments
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =45
-
             Button17_15 As button:
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -898,29 +543,6 @@
                 X: =1005
                 Y: =451
                 ZIndex: =3
-
-            Dropdown2 As dropdown:
-                BorderColor: =RGBA(131, 24, 75, 1)
-                ChevronBackground: =RGBA(0, 0, 0, 0.81)
-                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
-                ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Height: =35
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(255, 211, 205, 1)
-                Items: =DropDownSample
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =RGBA(131, 24, 75, 1)
-                SelectionFill: =RGBA(211, 66, 9, 1)
-                Size: =13
-                Width: =299
-                X: =108
-                Y: =67
-                ZIndex: =4
 
             Button17_12 As button:
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -976,17 +598,6 @@
                 Y: =67
                 ZIndex: =7
 
-            Icon1 As icon.Filter:
-                BorderColor: =RGBA(131, 24, 75, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(244, 244, 244, 1)
-                Height: =35
-                Icon: =Icon.Filter
-                Width: =28
-                X: =62
-                Y: =67
-                ZIndex: =8
-
             Button1_28 As button:
                 AutoDisableOnSelect: =false
                 BorderColor: =ColorFade(Black, -15%)
@@ -1011,6 +622,375 @@
                 X: =4
                 Y: =51
                 ZIndex: =9
+
+            "'I4.0_DPMS_CSL_GnO_TI1_IN-1_3' As text":
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =""
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                FocusedBorderThickness: =4
+                Height: =36
+                HoverBorderColor: =RGBA(203, 102, 102, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 161, 161, 1)
+                X: =13
+                Y: =67
+                ZIndex: =10
+
+            "'I4.0_DPMS_CSL_GnO_ICFLTR_IN-1_3' As icon.Filter":
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =36
+                Icon: =Icon.Filter
+                Width: =34
+                X: =299
+                Y: =68
+                ZIndex: =11
+
+            "'I4.0_DPMS_CSL_GnO_BHG_IN-1_3' As gallery.galleryVertical":
+                Height: =258
+                Items: =Search('I4_0_DPMS_CSL_GnO','I4.0_DPMS_CSL_GnO_TI1_IN-1_3'.Text,"FocusArea")
+                Layout: =Layout.Vertical
+                OnSelect: =
+                ShowNavigation: =true
+                TemplateSize: =34
+                Width: =1258
+                X: =9
+                Y: =179
+                ZIndex: =12
+
+                "'I4.0_DPMS_CSL_GnO_R1_IN-1_1' As rectangle":
+                    BorderColor: =RGBA(0, 0, 0, 0.7)
+                    BorderThickness: =1
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =34
+                    Width: =1247
+                    ZIndex: =1
+
+                "'I4.0_DPMS_CSL_GnO_CB_IN-1_1' As checkbox":
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    CheckboxBorderColor: =RGBA(0, 0, 0, 0)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisplayMode: |-
+                        =If(
+                            Self.Value || Value('I4.0_DPMS_CSL_GnO_TL-IN-1'.Text) = 0,
+                            DisplayMode.Edit,
+                            DisplayMode.View
+                        )
+                    Fill: =RGBA(0,0,0,0)
+                    Height: =22
+                    HoverBorderColor: =
+                    HoverColor: =RGBA(0, 0, 0, 0)
+                    OnCheck: |
+                        =Clear(I4_0_DPMS_CSL_XXX_CINAC);
+                        If(
+                            ThisItem.ID in I4_0_DPMS_CSL_XXX_CINAC.ID,
+                            Update(
+                                I4_0_DPMS_CSL_XXX_CINAC,
+                                First(
+                                    Filter(
+                                        I4_0_DPMS_CSL_XXX_CINAC,
+                                        ID = ThisItem.ID
+                                    )
+                                ),
+                                {
+                                    ID: ThisItem.ID,
+                                    FocusArea: ThisItem.FocusArea,
+                                    FocusLine: ThisItem.FocusLine,
+                                    ObjectiveDescription: ThisItem.ObjectiveDescription,
+                                    IssueDescription: ThisItem.IssueDescription,
+                                    ObjTargetDateTime: ThisItem.ObjTargetDateTime,
+                                    ObjectiveId:ThisItem.ObjectiveId
+                                }
+                            ),
+                            Collect(
+                                I4_0_DPMS_CSL_XXX_CINAC,
+                                {
+                                    ID: ThisItem.ID,
+                                    FocusArea: ThisItem.FocusArea,
+                                    FocusLine: ThisItem.FocusLine,
+                                    ObjectiveDescription: ThisItem.ObjectiveDescription,
+                                    IssueDescription: ThisItem.IssueDescription,
+                                    ObjTargetDateTime: ThisItem.ObjTargetDateTime,
+                                    ObjectiveId:ThisItem.ObjectiveId
+                                }
+                            )
+                        );
+                    PressedBorderColor: =RGBA(0,0,0,0)
+                    Reset: =I4_0_DPMS_CSL_GnO_LVORSTCHKBK
+                    Size: =13
+                    Text: =""
+                    Tooltip: ="Shift 1 -" & Label2.Text 
+                    Width: =38
+                    X: =4
+                    Y: =9
+                    ZIndex: =2
+
+                "'I4.0_DPMS_CSL_GnO_TL14_IN-1_1' As label":
+                    BorderColor: =RGBA(0, 18, 107, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    OnSelect: =Select(Parent)
+                    Size: =13
+                    Text: =ThisItem.FocusArea
+                    Width: =113
+                    X: =56
+                    ZIndex: =3
+
+                "'I4.0_DPMS_CSL_GnO_TL13_IN-1_1' As label":
+                    BorderColor: =RGBA(0, 18, 107, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =31
+                    OnSelect: =Select(Parent)
+                    Size: =13
+                    Text: =ThisItem.FocusLine
+                    Width: =96
+                    X: =170
+                    ZIndex: =4
+
+                "'I4.0_DPMS_CSL_GnO_TL12_IN-1_1' As label":
+                    BorderColor: =RGBA(0, 18, 107, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    OnSelect: =Select(Parent)
+                    Size: =13
+                    Text: =ThisItem.ObjectiveDescription
+                    Width: =261
+                    X: =266
+                    ZIndex: =5
+
+                "'I4.0_DPMS_CSL_GnO_TL11_IN-1_1' As label":
+                    BorderColor: =RGBA(0, 18, 107, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =31
+                    OnSelect: =Select(Parent)
+                    Size: =13
+                    Text: =ThisItem.ObjOwner.DisplayName
+                    Width: =133
+                    X: =527
+                    Y: =1
+                    ZIndex: =6
+
+                "'I4.0_DPMS_CSL_GnO_TL10_IN-1_1' As label":
+                    BorderColor: =RGBA(0, 18, 107, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    OnSelect: =Select(Parent)
+                    Size: =13
+                    Text: =ThisItem.ObjStatus.Value
+                    Width: =133
+                    X: =660
+                    ZIndex: =7
+
+                "'I4.0_DPMS_CSL_GnO_TL9_IN-1_1' As label":
+                    BorderColor: =RGBA(0, 18, 107, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    OnSelect: =Select(Parent)
+                    Size: =13
+                    Text: =ThisItem.ObjProgress.Value
+                    Width: =99
+                    X: =781
+                    ZIndex: =8
+
+                "'I4.0_DPMS_CSL_GnO_TL9_IN-1_2' As label":
+                    BorderColor: =RGBA(0, 18, 107, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    OnSelect: =Select(Parent)
+                    Size: =13
+                    Text: =ThisItem.ObjProgress.Value
+                    Width: =121
+                    X: =880
+                    ZIndex: =9
+
+                "'I4.0_DPMS_CSL_GnO_TL9_IN-1_3' As label":
+                    BorderColor: =RGBA(0, 18, 107, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    OnSelect: =Select(Parent)
+                    Size: =13
+                    Text: =ThisItem.ObjectiveId
+                    X: =1001
+                    ZIndex: =10
+
+                "'I4.0_DPMS_CSL_GnO_TL9_IN-1_4' As label":
+                    BorderColor: =RGBA(0, 18, 107, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    OnSelect: =Select(Parent)
+                    Size: =13
+                    Text: =Text(ThisItem.ObjCreatedDateTime,ShortDate)
+                    Width: =114
+                    X: =1137
+                    ZIndex: =11
+
+            "'I4.0_DPMS_CSL_GnO_TL8_IN-1_1' As label":
+                BorderColor: =RGBA(0, 18, 107, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(0, 0, 0, 0.7)
+                Height: =32
+                Size: =13
+                Text: =
+                Width: =1249
+                X: =13
+                Y: =147
+                ZIndex: =13
+
+            "'I4.0_DPMS_CSL_GnO_TL7_IN-1_1' As label":
+                BorderThickness: =1
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =32
+                Size: =13
+                Text: ="Focus Area"
+                Width: =113
+                X: =66
+                Y: =147
+                ZIndex: =14
+
+            "'I4.0_DPMS_CSL_GnO_TL6_IN-1_1' As label":
+                BorderThickness: =1
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =31
+                Size: =13
+                Text: ="Focus Line"
+                Width: =101
+                X: =181
+                Y: =147
+                ZIndex: =15
+
+            "'I4.0_DPMS_CSL_GnO_TL5_IN-1_1' As label":
+                BorderThickness: =1
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =13
+                Text: ="Objective Desciption"
+                Width: =261
+                X: =282
+                Y: =149
+                ZIndex: =16
+
+            "'I4.0_DPMS_CSL_GnO_TL4_IN-1_1' As label":
+                BorderThickness: =1
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =13
+                Text: ="Progress"
+                Width: =99
+                X: =792
+                Y: =149
+                ZIndex: =17
+
+            "'I4.0_DPMS_CSL_GnO_TL3_IN-1_1' As label":
+                Align: =Align.Justify
+                BorderThickness: =1
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =13
+                Text: ="Status"
+                Width: =116
+                X: =676
+                Y: =149
+                ZIndex: =18
+
+            "'I4.0_DPMS_CSL_GnO_TL2_IN-1_1' As label":
+                Align: =Align.Justify
+                BorderThickness: =1
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =13
+                Text: ="Assigned"
+                Width: =133
+                X: =543
+                Y: =149
+                ZIndex: =19
+
+            "'I4.0_DPMS_CSL_GnO_TL1_IN-1_1' As label":
+                BorderThickness: =1
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =13
+                Text: =
+                Width: =53
+                X: =13
+                Y: =147
+                ZIndex: =20
+
+            "'I4.0_DPMS_CSL_GnO_ICCHK_IN-1_1' As icon.Check":
+                BorderColor: =RGBA(0, 18, 107, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =21
+                Icon: =Icon.Check
+                Width: =39
+                X: =16
+                Y: =147
+                ZIndex: =21
+
+            Label3 As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =30
+                Size: =13
+                Text: ="Target Date"
+                Width: =121
+                X: =891
+                Y: =149
+                ZIndex: =22
+
+            Label3_1 As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =30
+                Size: =13
+                Text: ="Object ID"
+                X: =1012
+                Y: =149
+                ZIndex: =23
+
+            Label3_5 As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =30
+                Size: =13
+                Text: ="Create Date"
+                Width: =114
+                X: =1116
+                Y: =149
+                ZIndex: =24
 
     "'I4.0_DPMS_CSL_XXX_C_N_5' As 'I4.0_DPMS_CSL_XXX_C_N'":
         Height: =Self.FlexibleHeight
