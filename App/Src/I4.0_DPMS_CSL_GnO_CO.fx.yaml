@@ -40,7 +40,7 @@
         Reset(ObjectiveDescription_1);
         Reset(ObjectiveDescription_2);
         Reset(ProgressTI_2);
-        
+        Reset(TargetDatePicker);
         
 
     "'I4.0_DPMS_CSL_GnO_R2_CI-2_7' As rectangle":
@@ -220,7 +220,7 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: |-
                     =If(
-                        FocusAreadStar.Visible = true || MeasureStart.Visible = true || WeightStar.Visible = true || FocusLineStar.Visible = true || ObjectiveDescriptionStar.Visible = true || OwnerStar.Visible = true || OwnerStar.Visible = true || StarVisible1_5.Visible = true || DevliverableStar.Visible = true,
+                        FocusAreadStar.Visible = true || MeasureStart.Visible = true || WeightStar.Visible = true || FocusLineStar.Visible = true || ObjectiveDescriptionStar.Visible = true || OwnerStar.Visible = true || OwnerStar.Visible = true || StarVisible1_5.Visible = true || DevliverableStar.Visible = true || !IsBlank(Label1_10.Text),
                         DisplayMode.Disabled,
                         DisplayMode.Edit
                     )
@@ -310,7 +310,18 @@
                 HoverDateFill: =RGBA(255, 211, 205, 1)
                 IconBackground: =Color
                 IconFill: =Color.Black
-                OnSelect: =If(TargetDatePicker.SelectedDate<Today(),Notify("Past date cant be selected.",Error));
+                OnSelect: |
+                    =If(
+                        TargetDatePicker.SelectedDate < Today(),
+                        Set(
+                            varWorngDate,
+                            "Can't select past date."
+                        ),
+                        Set(
+                            varWorngDate,
+                            ""
+                        )
+                    );
                 SelectedDateFill: =RGBA(211, 66, 9, 1)
                 Width: =200
                 X: =568
@@ -858,7 +869,7 @@
             ProgressTI_2 As text:
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
-                Default: ="0%"
+                Default: =
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -909,7 +920,7 @@
                 Default: =
                 Height: =30
                 HoverColor: =RGBA(0, 18, 107, 1)
-                OnUncheck: =Reset('I4.0_DPMS_CSL_GnO_TI_CI-3_2');
+                OnUncheck: =Reset(ObjectiveDescription_1);
                 PressedBorderColor: =RGBA(0,0,0,0)
                 PressedColor: =RGBA(0,0,0,0)
                 Reset: =
@@ -927,7 +938,7 @@
                 Default: =
                 Height: =30
                 HoverColor: =RGBA(0, 18, 107, 1)
-                OnUncheck: =Reset('I4.0_DPMS_CSL_GnO_TI_CI-3_2');
+                OnUncheck: =Reset(ObjectiveDescription_2);
                 PressedBorderColor: =RGBA(0,0,0,0)
                 PressedColor: =RGBA(0,0,0,0)
                 Reset: =
@@ -945,7 +956,7 @@
                 Default: =
                 Height: =30
                 HoverColor: =RGBA(0, 18, 107, 1)
-                OnUncheck: =Reset('I4.0_DPMS_CSL_GnO_TI_CI-3_2');
+                OnUncheck: =Reset(ProgressTI_2);
                 PressedBorderColor: =RGBA(0,0,0,0)
                 PressedColor: =RGBA(0,0,0,0)
                 Reset: =
@@ -965,7 +976,7 @@
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                DisplayMode: =If(Checkbox1_11.Value = true , DisplayMode.Edit,DisplayMode.Disabled)
+                DisplayMode: =If(Checkbox1_10.Value = true , DisplayMode.Edit,DisplayMode.Disabled)
                 EnableSpellCheck: =true
                 FocusedBorderThickness: =4
                 Height: =110
@@ -982,6 +993,38 @@
                 X: =49
                 Y: =325
                 ZIndex: =40
+
+            Label1_10 As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(255, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =32
+                Size: =10
+                Text: =varWorngDate
+                Width: =218
+                X: =570
+                Y: =530
+                ZIndex: =41
+
+            Label47_30 As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 0.5)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =22
+                Size: =12
+                Text: ="Please select user."
+                Visible: |-
+                    =If(
+                        IsBlank(dpFocusArea.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult'),
+                        true,
+                        false
+                    )
+                Width: =156
+                X: =50
+                Y: =503
+                ZIndex: =42
 
     "'I4.0_DPMS_CSL_XXX_C_F_6' As 'I4.0_DPMS_CSL_XXX_C_F'":
         Height: =26
@@ -1152,13 +1195,7 @@
             Y: =137
             ZIndex: =12
 
-    "'I4.0_DPMS_CSL_XXX_C_N_7' As 'I4.0_DPMS_CSL_XXX_C_N_3'":
-        Height: |-
-            =If(
-                IsBlank(Self.FlexibleHeight),
-                50,
-                Self.FlexibleHeight
-            )
-        Y: =83
+    "'I4.0_DPMS_CSL_XXX_C_N_10' As 'I4.0_DPMS_CSL_XXX_C_N_3'":
+        Y: =80
         ZIndex: =17
 

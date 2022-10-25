@@ -916,13 +916,7 @@
                 ZIndex: =43
 
     "'I4.0_DPMS_CSL_XXX_C_N_9' As 'I4.0_DPMS_CSL_XXX_C_N_3'":
-        Height: |-
-            =If(
-                IsBlank(Self.FlexibleHeight),
-                50,
-                Self.FlexibleHeight
-            )
-        Y: =83
+        Y: =80
         ZIndex: =16
 
     BreadcrumbBar_12 As group:
