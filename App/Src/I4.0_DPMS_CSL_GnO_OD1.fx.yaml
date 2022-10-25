@@ -650,22 +650,22 @@
                 ZIndex: =11
 
             "'I4.0_DPMS_CSL_GnO_BHG_IN-1_3' As gallery.galleryVertical":
-                Height: =258
-                Items: =Search('I4_0_DPMS_CSL_GnO','I4.0_DPMS_CSL_GnO_TI1_IN-1_3'.Text,"FocusArea")
+                Height: =284
+                Items: =Search(I4_0_DPMS_CSL_GnO,'I4.0_DPMS_CSL_GnO_TI1_IN-1_3'.Text,"FocusArea")
                 Layout: =Layout.Vertical
                 OnSelect: =
                 ShowNavigation: =true
-                TemplateSize: =34
+                TemplateSize: =50
                 Width: =1258
-                X: =9
-                Y: =179
+                X: =8
+                Y: =188
                 ZIndex: =12
 
                 "'I4.0_DPMS_CSL_GnO_R1_IN-1_1' As rectangle":
-                    BorderColor: =RGBA(0, 0, 0, 0.7)
+                    BorderColor: =RGBA(0, 0, 0, 1)
                     BorderThickness: =1
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =34
+                    Height: =50
                     Width: =1247
                     ZIndex: =1
 
@@ -684,93 +684,101 @@
                     HoverBorderColor: =
                     HoverColor: =RGBA(0, 0, 0, 0)
                     OnCheck: |
-                        =Clear(I4_0_DPMS_CSL_XXX_CINAC);
+                        =Clear(I4_0_DPMS_CSL_XXX_CIS);
                         If(
-                            ThisItem.ID in I4_0_DPMS_CSL_XXX_CINAC.ID,
+                            ThisItem.ObjectiveId in I4_0_DPMS_CSL_XXX_CIS.ObjectiveId,
                             Update(
-                                I4_0_DPMS_CSL_XXX_CINAC,
+                                I4_0_DPMS_CSL_XXX_CIS,
                                 First(
                                     Filter(
-                                        I4_0_DPMS_CSL_XXX_CINAC,
-                                        ID = ThisItem.ID
+                                        I4_0_DPMS_CSL_XXX_CIS,
+                                        ObjId = ThisItem.ObjectiveId
                                     )
                                 ),
                                 {
-                                    ID: ThisItem.ID,
+                            
                                     FocusArea: ThisItem.FocusArea,
                                     FocusLine: ThisItem.FocusLine,
                                     ObjectiveDescription: ThisItem.ObjectiveDescription,
-                                    IssueDescription: ThisItem.IssueDescription,
                                     ObjTargetDateTime: ThisItem.ObjTargetDateTime,
-                                    ObjectiveId:ThisItem.ObjectiveId
+                                    ObjectiveId:ThisItem.ObjectiveId,
+                                    ObjOwner:ThisItem.ObjOwner.DisplayName,
+                                    ObjCreateDate:Text(ThisItem.ObjCreatedDateTime,ShortDate),
+                                    IssueProgress:ThisItem.ObjProgress.Value,
+                                    IssueStatus:ThisItem.ObjStatus.Value
+                        
+                        
                                 }
                             ),
                             Collect(
-                                I4_0_DPMS_CSL_XXX_CINAC,
+                                I4_0_DPMS_CSL_XXX_CIS,
                                 {
-                                    ID: ThisItem.ID,
+                        
                                     FocusArea: ThisItem.FocusArea,
                                     FocusLine: ThisItem.FocusLine,
                                     ObjectiveDescription: ThisItem.ObjectiveDescription,
-                                    IssueDescription: ThisItem.IssueDescription,
                                     ObjTargetDateTime: ThisItem.ObjTargetDateTime,
-                                    ObjectiveId:ThisItem.ObjectiveId
+                                    ObjectiveId:ThisItem.ObjectiveId,
+                                    ObjOwner:ThisItem.ObjOwner.DisplayName,
+                                    ObjCreateDate:Text(ThisItem.ObjCreatedDateTime,ShortDate),
+                                    IssueProgress:ThisItem.ObjProgress.Value,
+                                    IssueStatus:ThisItem.ObjStatus.Value
                                 }
                             )
                         );
                     PressedBorderColor: =RGBA(0,0,0,0)
-                    Reset: =I4_0_DPMS_CSL_GnO_LVORSTCHKBK
+                    Reset: =//I4_0_DPMS_CSL_GnO_LVORSTCHKBK
                     Size: =13
                     Text: =""
-                    Tooltip: ="Shift 1 -" & Label2.Text 
+                    Tooltip: =//"Shift 1 -" & Label2.Text 
                     Width: =38
                     X: =4
                     Y: =9
                     ZIndex: =2
 
                 "'I4.0_DPMS_CSL_GnO_TL14_IN-1_1' As label":
-                    BorderColor: =RGBA(0, 18, 107, 1)
+                    BorderThickness: =1
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
-                    Height: =34
+                    Height: =48
                     OnSelect: =Select(Parent)
-                    Size: =13
+                    Size: =12
                     Text: =ThisItem.FocusArea
                     Width: =113
                     X: =56
                     ZIndex: =3
 
                 "'I4.0_DPMS_CSL_GnO_TL13_IN-1_1' As label":
-                    BorderColor: =RGBA(0, 18, 107, 1)
+                    BorderThickness: =1
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
-                    Height: =31
+                    Height: =48
                     OnSelect: =Select(Parent)
-                    Size: =13
+                    Size: =12
                     Text: =ThisItem.FocusLine
                     Width: =96
                     X: =170
                     ZIndex: =4
 
                 "'I4.0_DPMS_CSL_GnO_TL12_IN-1_1' As label":
-                    BorderColor: =RGBA(0, 18, 107, 1)
+                    BorderThickness: =1
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
-                    Height: =34
+                    Height: =48
                     OnSelect: =Select(Parent)
-                    Size: =13
+                    Size: =12
                     Text: =ThisItem.ObjectiveDescription
                     Width: =261
                     X: =266
                     ZIndex: =5
 
                 "'I4.0_DPMS_CSL_GnO_TL11_IN-1_1' As label":
-                    BorderColor: =RGBA(0, 18, 107, 1)
+                    BorderThickness: =1
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
-                    Height: =31
+                    Height: =48
                     OnSelect: =Select(Parent)
-                    Size: =13
+                    Size: =12
                     Text: =ThisItem.ObjOwner.DisplayName
                     Width: =133
                     X: =527
@@ -778,59 +786,59 @@
                     ZIndex: =6
 
                 "'I4.0_DPMS_CSL_GnO_TL10_IN-1_1' As label":
-                    BorderColor: =RGBA(0, 18, 107, 1)
+                    BorderThickness: =1
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
-                    Height: =34
+                    Height: =48
                     OnSelect: =Select(Parent)
-                    Size: =13
+                    Size: =12
                     Text: =ThisItem.ObjStatus.Value
                     Width: =133
                     X: =660
                     ZIndex: =7
 
                 "'I4.0_DPMS_CSL_GnO_TL9_IN-1_1' As label":
-                    BorderColor: =RGBA(0, 18, 107, 1)
+                    BorderThickness: =1
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
-                    Height: =34
+                    Height: =48
                     OnSelect: =Select(Parent)
-                    Size: =13
+                    Size: =12
                     Text: =ThisItem.ObjProgress.Value
                     Width: =99
                     X: =781
                     ZIndex: =8
 
                 "'I4.0_DPMS_CSL_GnO_TL9_IN-1_2' As label":
-                    BorderColor: =RGBA(0, 18, 107, 1)
+                    BorderThickness: =1
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
-                    Height: =34
+                    Height: =48
                     OnSelect: =Select(Parent)
-                    Size: =13
-                    Text: =ThisItem.ObjProgress.Value
+                    Size: =12
+                    Text: =Text(ThisItem.ObjTargetDateTime,ShortDate)
                     Width: =121
                     X: =880
                     ZIndex: =9
 
                 "'I4.0_DPMS_CSL_GnO_TL9_IN-1_3' As label":
-                    BorderColor: =RGBA(0, 18, 107, 1)
+                    BorderThickness: =1
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
-                    Height: =34
+                    Height: =48
                     OnSelect: =Select(Parent)
-                    Size: =13
+                    Size: =12
                     Text: =ThisItem.ObjectiveId
                     X: =1001
                     ZIndex: =10
 
                 "'I4.0_DPMS_CSL_GnO_TL9_IN-1_4' As label":
-                    BorderColor: =RGBA(0, 18, 107, 1)
+                    BorderThickness: =1
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
-                    Height: =34
+                    Height: =48
                     OnSelect: =Select(Parent)
-                    Size: =13
+                    Size: =12
                     Text: =Text(ThisItem.ObjCreatedDateTime,ShortDate)
                     Width: =114
                     X: =1137
