@@ -302,7 +302,7 @@
                 HoverDateFill: =RGBA(255, 211, 205, 1)
                 IconBackground: =Color
                 IconFill: =Color.Black
-                OnSelect: =If(TargetDatePicker.SelectedDate<Today(),Notify("Selected date cannot be before Today",Error));
+                OnSelect: =If(TargetDatePicker.SelectedDate<Today(),Notify("Past date cant be selected.",Error));
                 SelectedDateFill: =RGBA(211, 66, 9, 1)
                 Width: =200
                 X: =568
@@ -668,32 +668,6 @@
                 Y: =157
                 ZIndex: =22
 
-            ObjectiveDescription_1 As text:
-                Align: =Align.Justify
-                BorderThickness: =2
-                Clear: =true
-                Color: =RGBA(0, 0, 0, 1)
-                Default: =""
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                EnableSpellCheck: =true
-                FocusedBorderThickness: =4
-                Height: =110
-                HintText: ="Please enter your Deliverable description."
-                HoverBorderColor: =RGBA(0, 0, 0, 1)
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(255, 255, 255, 1)
-                LineHeight: =2
-                MaxLength: =200
-                Mode: =TextMode.MultiLine
-                PressedBorderColor: =RGBA(0, 0, 0, 1)
-                Size: =13
-                Width: =585
-                X: =45
-                Y: =325
-                ZIndex: =26
-
             Group1 As group:
                 Height: =5
                 Width: =5
@@ -759,7 +733,7 @@
                 Text: ="*"
                 Visible: |-
                     =If(
-                        IsBlank(ObjectiveDescription_1.Text),
+                        IsBlank(ObjectiveDescription_1.Text) && Checkbox1_10.Value = true,
                         true,
                         false
                     )
@@ -794,6 +768,7 @@
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =If(Checkbox1_11.Value = true , DisplayMode.Edit,DisplayMode.Disabled)
                 EnableSpellCheck: =true
                 FocusedBorderThickness: =4
                 Height: =110
@@ -833,7 +808,7 @@
                 Text: ="*"
                 Visible: |-
                     =If(
-                        IsBlank(ObjectiveDescription_2.Text),
+                        IsBlank(ObjectiveDescription_2.Text) && Checkbox1_11.Value = true,
                         true,
                         false
                     )
@@ -879,11 +854,11 @@
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                DisplayMode: |
-                    =DisplayMode.Edit
+                DisplayMode: =If(Checkbox1_12.Value = true , DisplayMode.Edit,DisplayMode.Disabled)
                 FocusedBorderThickness: =4
                 Format: =TextFormat.Number
                 Height: =35
+                HintText: ="Enter Number"
                 HoverBorderColor: =RGBA(0, 0, 0, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
@@ -909,7 +884,7 @@
                 Text: ="*"
                 Visible: |-
                     =If(
-                        IsBlank(dpOwner.SelectedText.Value),
+                        IsBlank(ProgressTI_2.Text) && Checkbox1_12.Value = true,
                         true,
                         false
                     )
@@ -972,6 +947,33 @@
                 X: =338
                 Y: =452
                 ZIndex: =39
+
+            ObjectiveDescription_1 As text:
+                Align: =Align.Justify
+                BorderThickness: =2
+                Clear: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =""
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =If(Checkbox1_11.Value = true , DisplayMode.Edit,DisplayMode.Disabled)
+                EnableSpellCheck: =true
+                FocusedBorderThickness: =4
+                Height: =110
+                HintText: ="Please enter your Deliverable."
+                HoverBorderColor: =RGBA(0, 0, 0, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                LineHeight: =2
+                MaxLength: =200
+                Mode: =TextMode.MultiLine
+                PressedBorderColor: =RGBA(0, 0, 0, 1)
+                Size: =13
+                Width: =585
+                X: =49
+                Y: =325
+                ZIndex: =40
 
     "'I4.0_DPMS_CSL_XXX_C_F_6' As 'I4.0_DPMS_CSL_XXX_C_F'":
         Height: =26
