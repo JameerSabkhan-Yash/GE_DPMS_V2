@@ -1,24 +1,6 @@
 NavigationDemo As screen:
-    Fill: =RGBA(255, 255, 0, 1)
     LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
 
     "'I4.0_DPMS_CSL_XXX_C_N_6' As 'I4.0_DPMS_CSL_XXX_C_N_3'":
         Height: =44
-
-    TargetDatePicker_1 As datepicker:
-        BorderThickness: =0
-        CalendarHeaderFill: =RGBA(211, 66, 9, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(165,42,42,1)
-        Height: =35
-        HoverDateFill: =RGBA(255, 211, 205, 1)
-        IconBackground: =Color
-        IconFill: =RGBA(165,42,42,1)
-        SelectedDateFill: =RGBA(211, 66, 9, 1)
-        Width: =200
-        X: =458
-        Y: =392
-        ZIndex: =2
 

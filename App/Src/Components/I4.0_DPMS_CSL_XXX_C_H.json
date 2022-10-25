@@ -44,7 +44,7 @@
         "Name": "Rectangle1_47",
         "Parent": "I4.0_DPMS_CSL_XXX_C_H",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 6,
+        "PublishOrderIndex": 416,
         "Rules": [
           {
             "Category": "Design",
@@ -252,7 +252,7 @@
         "Name": "Label1_29",
         "Parent": "I4.0_DPMS_CSL_XXX_C_H",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 7,
+        "PublishOrderIndex": 417,
         "Rules": [
           {
             "Category": "Data",
@@ -559,7 +559,7 @@
         "Name": "Image1_21",
         "Parent": "I4.0_DPMS_CSL_XXX_C_H",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 8,
+        "PublishOrderIndex": 418,
         "Rules": [
           {
             "Category": "Data",
@@ -856,7 +856,7 @@
         "Name": "Image2",
         "Parent": "I4.0_DPMS_CSL_XXX_C_H",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 9,
+        "PublishOrderIndex": 419,
         "Rules": [
           {
             "Category": "Data",
@@ -1168,7 +1168,7 @@
         "Name": "Label2",
         "Parent": "I4.0_DPMS_CSL_XXX_C_H",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 10,
+        "PublishOrderIndex": 420,
         "Rules": [
           {
             "Category": "Data",
@@ -1475,7 +1475,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638022937555155953",
+    "LastModifiedTimestamp": "638022988746247172",
     "Name": "I4.0_DPMS_CSL_XXX_C_H",
     "Rules": [
       {
@@ -1562,7 +1562,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638022937555155953",
+  "LastModifiedTimestamp": "638022988746247172",
   "Name": "663aaaf0dc584b51aa63534a92d5cbfa",
   "OverridableProperties": {},
   "TemplateOriginalName": "a1c2d962a61745d8b16a3e36b4bf2f13",

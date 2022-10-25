@@ -41,6 +41,9 @@
         Reset(ObjectiveDescription_2);
         Reset(ProgressTI_2);
         Reset(TargetDatePicker);
+        Reset(Checkbox1_12);
+        Reset(Checkbox1_11);
+        Reset(Checkbox1_10);
         
 
     "'I4.0_DPMS_CSL_GnO_R2_CI-2_7' As rectangle":

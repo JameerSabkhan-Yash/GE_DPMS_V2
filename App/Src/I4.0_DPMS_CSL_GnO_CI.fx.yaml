@@ -3,10 +3,25 @@
     LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
     OnVisible: |
         =//Collection for issue create operation
+        ClearCollect(
+            I4_0_DPMS_CSL_XXX_CIS,
+            {
+                FACode: "FA",
+                FLCode: "FL",
+                FA: "Reliability",
+                FL: "R1",
+                ObjCreateDate: "10/19/2022",
+                ObjectiveId: "ORG1BU1FA1FL1OB1",
+                IssueStatus: "No Started",
+                IssueProgress: "0%",
+                ObjOwner: "Jameer Kutubuddin Sabkhan",
+                ObjTargetDate: "10/19/2022"
+            }
+        );
         //Set the ObjId 
         Set(
             I4_0_DPMS_CSL_GnO_CI_LVOBJID,
-            First(I4_0_DPMS_CSL_XXX_CIS_Demo).ObjId
+            First(I4_0_DPMS_CSL_XXX_CIS).ObjectiveId
         );
         //local variables for IssueId & No
         Set(
@@ -427,7 +442,7 @@
             "'I4.0_DPMS_CSL_GnO_BHG_IN-1_2' As gallery.galleryVertical":
                 DisplayMode: =DisplayMode.View
                 Height: =54
-                Items: =I4_0_DPMS_CSL_XXX_CIS_Demo
+                Items: =I4_0_DPMS_CSL_XXX_CIS
                 Layout: =Layout.Vertical
                 OnSelect: =
                 ShowNavigation: =true
@@ -766,26 +781,26 @@
                             {
                                 ORG: I4_0_DPMS_CSL_XXX_GVORG,
                                 BU: I4_0_DPMS_CSL_XXX_GVBU,
-                                FocusAreaCode: First(I4_0_DPMS_CSL_XXX_CIS_Demo).FACode,
-                                FocusLineCode: First(I4_0_DPMS_CSL_XXX_CIS_Demo).FLCode,
-                                FocusArea: First(I4_0_DPMS_CSL_XXX_CIS_Demo).FA,
-                                FocusLine: First(I4_0_DPMS_CSL_XXX_CIS_Demo).FL,
-                                ObjCreateDate: DateValue(First(I4_0_DPMS_CSL_XXX_CIS_Demo).ObjCreateDate),
+                                FocusAreaCode: First(I4_0_DPMS_CSL_XXX_CIS).FACode,
+                                FocusLineCode: First(I4_0_DPMS_CSL_XXX_CIS).FLCode,
+                                FocusArea: First(I4_0_DPMS_CSL_XXX_CIS).FA,
+                                FocusLine: First(I4_0_DPMS_CSL_XXX_CIS).FL,
+                                ObjCreateDate: DateValue(First(I4_0_DPMS_CSL_XXX_CIS).ObjCreateDate),
                                 ObjectiveId: I4_0_DPMS_CSL_GnO_CI_LVOBJID,
                                 IssueOwner: {
                                     '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",
                                     Claims: "i:0#.f|membership|" & Last(
                                         Filter(
                                             I4_0_DPMS_CSL_XXX_CSPU,
-                                            Title = First(I4_0_DPMS_CSL_XXX_CIS_Demo).ObjOwner
+                                            Title = First(I4_0_DPMS_CSL_XXX_CIS).ObjOwner
                                         ).Email
                                     ).Email,
                                     Department: "",
-                                    DisplayName: First(I4_0_DPMS_CSL_XXX_CIS_Demo).ObjOwner,
+                                    DisplayName: First(I4_0_DPMS_CSL_XXX_CIS).ObjOwner,
                                     Email: Last(
                                         Filter(
                                             I4_0_DPMS_CSL_XXX_CSPU,
-                                            Title = First(I4_0_DPMS_CSL_XXX_CIS_Demo).ObjOwner
+                                            Title = First(I4_0_DPMS_CSL_XXX_CIS).ObjOwner
                                         ).Email
                                     ).Email,
                                     JobTitle: "",
@@ -800,8 +815,8 @@
                                     JobTitle: "",
                                     Picture: ""
                                 },
-                                IssueStatus: {Value: First(I4_0_DPMS_CSL_XXX_CIS_Demo).IssueStatus},
-                                IssueProgress: {Value: First(I4_0_DPMS_CSL_XXX_CIS_Demo).IssueProgress},
+                                IssueStatus: {Value: First(I4_0_DPMS_CSL_XXX_CIS).IssueStatus},
+                                IssueProgress: {Value: First(I4_0_DPMS_CSL_XXX_CIS).IssueProgress},
                                 IssueId: I4_0_DPMS_CSL_GnO_CI_LVISNI,
                                 IssueNo: I4_0_DPMS_CSL_GnO_CI_LVISNN,
                                 IssueCreatedDateTime: Today(),
@@ -877,8 +892,9 @@
                     Reset('I4.0_DPMS_CSL_GnO_TI_CI-2_2');
                     Reset('I4.0_DPMS_CSL_GnO_TI_CI-1_2');
                     Reset('I4.0_DPMS_CSL_GnO_TI1_CI-2_3');
-                    //Re-Configuration of the Issue Id & No
-                    Navigate('I4.0_DPMS_CSL_GnO_OD');
+                    
+                    //Navigation to Objective Overview
+                    //Navigate('I4.0_DPMS_CSL_GnO_OD');
                 Size: =15
                 Text: ="Create"
                 Width: =150
