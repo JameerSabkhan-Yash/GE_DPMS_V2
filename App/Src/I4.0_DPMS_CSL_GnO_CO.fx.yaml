@@ -1195,13 +1195,7 @@
             Y: =137
             ZIndex: =12
 
-    "'I4.0_DPMS_CSL_XXX_C_N_7' As 'I4.0_DPMS_CSL_XXX_C_N_3'":
-        Height: |-
-            =If(
-                IsBlank(Self.FlexibleHeight),
-                50,
-                Self.FlexibleHeight
-            )
-        Y: =83
+    "'I4.0_DPMS_CSL_XXX_C_N_10' As 'I4.0_DPMS_CSL_XXX_C_N_3'":
+        Y: =80
         ZIndex: =17
 
