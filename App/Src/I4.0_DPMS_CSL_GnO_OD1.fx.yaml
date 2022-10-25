@@ -651,7 +651,7 @@
 
             "'I4.0_DPMS_CSL_GnO_BHG_IN-1_3' As gallery.galleryVertical":
                 Height: =258
-                Items: =Search('I4_0_DPMS_CSL_GnO','I4.0_DPMS_CSL_GnO_TI1_IN-1_3'.Text,"FocusArea")
+                Items: =Search(I4_0_DPMS_CSL_GnO,'I4.0_DPMS_CSL_GnO_TI1_IN-1_3'.Text,"FocusArea")
                 Layout: =Layout.Vertical
                 OnSelect: =
                 ShowNavigation: =true
