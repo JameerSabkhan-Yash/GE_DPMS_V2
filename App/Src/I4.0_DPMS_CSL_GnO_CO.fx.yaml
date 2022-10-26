@@ -755,10 +755,10 @@
                                     JobTitle: "",
                                     Picture: ""
                                 },
-                                FocusArea: dpFocusArea_1.SelectedText.Value,
-                                FocusLine: dpFocusLine_1.SelectedText.Value,
+                                FocusArea: dpFocusArea.SelectedText.Value,
+                                FocusLine: dpFocusLine.SelectedText.Value,
                                 TopLineHeader: dpTopLine.SelectedText.Value,
-                                ObjectiveDescription: ObjectiveDescription_3.Text,
+                                ObjectiveDescription: ObjectiveDescription.Text,
                                 ObjCreatedDateTime: Today(),
                                 ObjTargetDateTime: TargetDatePicker.SelectedDate,
                                 ObjProgress: {Value: ProgressTI.Text},
@@ -782,7 +782,7 @@
                     Reset(dpFocusLine);
                     Reset(dpTopLine);
                     Reset(dpOwner);
-                    Reset(ObjectiveDescription_3);
+                    Reset(ObjectiveDescription);
                     Reset(DeliverableDescription);
                     Reset(MeasureDescription);
                     Reset(Weight);
