@@ -841,7 +841,7 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =192
+            Height: =226
             Width: =1280
             X: =0
             Y: =1
@@ -861,7 +861,7 @@
                 Text: ="Cancel"
                 Width: =150
                 X: =1085
-                Y: =127
+                Y: =167
                 ZIndex: =1
 
             "'I4.0_DPMS_CSL_GnO_TL_CI-1_3' As label":
@@ -1036,7 +1036,7 @@
                 Text: ="Create"
                 Width: =150
                 X: =907
-                Y: =127
+                Y: =167
                 ZIndex: =4
 
             Label1_7 As label:
@@ -1065,7 +1065,7 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 EnableSpellCheck: =true
                 FocusedBorderThickness: =4
-                Height: =67
+                Height: =98
                 HintText: ="Please enter your Issue Description."
                 HoverBorderColor: =RGBA(0, 0, 0, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
@@ -1078,8 +1078,8 @@
                 PaddingTop: =0
                 Size: =13
                 Width: =1222
-                X: =17
-                Y: =40
+                X: =13
+                Y: =41
                 ZIndex: =6
 
     "'I4.0_DPMS_CSL_XXX_C_N_9' As 'I4.0_DPMS_CSL_XXX_C_N_3'":
