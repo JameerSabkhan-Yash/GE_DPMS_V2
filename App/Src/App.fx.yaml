@@ -149,11 +149,11 @@ App As appinfo:
         //Global var for ORG & BU 
         Set(
             I4_0_DPMS_CSL_XXX_GVORG,
-            "ORG1"
+            "O1"
         );
         Set(
             I4_0_DPMS_CSL_XXX_GVBU,
-            "BU1"
+            "SO1"
         );
         //Collecting the sharepoint user
         Set(
