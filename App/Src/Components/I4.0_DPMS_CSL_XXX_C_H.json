@@ -44,7 +44,7 @@
         "Name": "Rectangle1_47",
         "Parent": "I4.0_DPMS_CSL_XXX_C_H",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 478,
+        "PublishOrderIndex": 429,
         "Rules": [
           {
             "Category": "Design",
@@ -252,7 +252,7 @@
         "Name": "Label1_29",
         "Parent": "I4.0_DPMS_CSL_XXX_C_H",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 479,
+        "PublishOrderIndex": 430,
         "Rules": [
           {
             "Category": "Data",
@@ -559,7 +559,7 @@
         "Name": "Image1_21",
         "Parent": "I4.0_DPMS_CSL_XXX_C_H",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 480,
+        "PublishOrderIndex": 431,
         "Rules": [
           {
             "Category": "Data",
@@ -856,7 +856,7 @@
         "Name": "Image2",
         "Parent": "I4.0_DPMS_CSL_XXX_C_H",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 481,
+        "PublishOrderIndex": 432,
         "Rules": [
           {
             "Category": "Data",
@@ -1168,7 +1168,7 @@
         "Name": "Label2",
         "Parent": "I4.0_DPMS_CSL_XXX_C_H",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 482,
+        "PublishOrderIndex": 433,
         "Rules": [
           {
             "Category": "Data",
