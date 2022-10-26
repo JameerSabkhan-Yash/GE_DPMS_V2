@@ -14,606 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 22,
-                  "charOffset": 71,
-                  "snippet": {
-                    "text": "'I4_0_DPMS_CSL_GnO-IN'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnVisible",
-                "module": "I4.0_DPMS_CSL_GnO_AC",
-                "type": "'I4.0_DPMS_CSL_GnO_AC'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "I4_0_DPMS_CSL_GnO-IN"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 4,
-                  "charOffset": 104,
-                  "snippet": {
-                    "text": "\"ID\""
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnVisible",
-                "module": "I4.0_DPMS_CSL_GnO_AC",
-                "type": "'I4.0_DPMS_CSL_GnO_AC'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ID"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrColDNE-Name",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 119,
-                  "snippet": {
-                    "text": "\"FocusArea\""
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnVisible",
-                "module": "I4.0_DPMS_CSL_GnO_AC",
-                "type": "'I4.0_DPMS_CSL_GnO_AC'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "FocusArea"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrColDNE-Name",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 141,
-                  "snippet": {
-                    "text": "\"FocusLine\""
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnVisible",
-                "module": "I4.0_DPMS_CSL_GnO_AC",
-                "type": "'I4.0_DPMS_CSL_GnO_AC'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "FocusLine"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrColDNE-Name",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 22,
-                  "charOffset": 163,
-                  "snippet": {
-                    "text": "\"ObjectiveDescription\""
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnVisible",
-                "module": "I4.0_DPMS_CSL_GnO_AC",
-                "type": "'I4.0_DPMS_CSL_GnO_AC'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ObjectiveDescription"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrColDNE-Name",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 18,
-                  "charOffset": 196,
-                  "snippet": {
-                    "text": "\"IssueDescription\""
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnVisible",
-                "module": "I4.0_DPMS_CSL_GnO_AC",
-                "type": "'I4.0_DPMS_CSL_GnO_AC'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "IssueDescription"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrColDNE-Name",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 19,
-                  "charOffset": 225,
-                  "snippet": {
-                    "text": "\"ObjTargetDateTime\""
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnVisible",
-                "module": "I4.0_DPMS_CSL_GnO_AC",
-                "type": "'I4.0_DPMS_CSL_GnO_AC'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ObjTargetDateTime"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrColDNE-Name",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 255,
-                  "snippet": {
-                    "text": "\"ObjectiveId\""
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnVisible",
-                "module": "I4.0_DPMS_CSL_GnO_AC",
-                "type": "'I4.0_DPMS_CSL_GnO_AC'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ObjectiveId"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrColDNE-Name",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 226,
-                  "charOffset": 49,
-                  "snippet": {
-                    "text": "ShowColumns(\r\n        'I4_0_DPMS_CSL_GnO-IN',\r\n        \"ID\",\r\n        \"FocusArea\",\r\n        \"FocusLine\",\r\n        \"ObjectiveDescription\",\r\n        \"IssueDescription\",\r\n        \"ObjTargetDateTime\",\r\n        \"ObjectiveId\"\r\n    )"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnVisible",
-                "module": "I4.0_DPMS_CSL_GnO_AC",
-                "type": "'I4.0_DPMS_CSL_GnO_AC'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ShowColumns"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.Label7_53.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.Label7_53.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 22,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": "'I4.0_DPMS_CSL_GnO_SC'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "I4.0_DPMS_CSL_GnO_AC",
-                "type": "'I4.0_DPMS_CSL_GnO_AC'.Label7_53"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "I4.0_DPMS_CSL_GnO_SC"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.Label7_54.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.Label7_54.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 22,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": "'I4.0_DPMS_CSL_GnO_SC'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "I4.0_DPMS_CSL_GnO_AC",
-                "type": "'I4.0_DPMS_CSL_GnO_AC'.Label7_54"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "I4.0_DPMS_CSL_GnO_SC"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.Label7_55.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.Label7_55.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 22,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": "'I4.0_DPMS_CSL_GnO_SC'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "I4.0_DPMS_CSL_GnO_AC",
-                "type": "'I4.0_DPMS_CSL_GnO_AC'.Label7_55"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "I4.0_DPMS_CSL_GnO_SC"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Label7_74.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Label7_74.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 22,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": "'I4.0_DPMS_CSL_GnO_SC'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "I4.0_DPMS_CSL_GnO_CI",
-                "type": "'I4.0_DPMS_CSL_GnO_CI'.Label7_74"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "I4.0_DPMS_CSL_GnO_SC"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Label7_75.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Label7_75.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 22,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": "'I4.0_DPMS_CSL_GnO_SC'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "I4.0_DPMS_CSL_GnO_CI",
-                "type": "'I4.0_DPMS_CSL_GnO_CI'.Label7_75"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "I4.0_DPMS_CSL_GnO_SC"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Label7_76.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Label7_76.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 22,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": "'I4.0_DPMS_CSL_GnO_SC'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "I4.0_DPMS_CSL_GnO_CI",
-                "type": "'I4.0_DPMS_CSL_GnO_CI'.Label7_76"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "I4.0_DPMS_CSL_GnO_SC"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'I4.0_DPMS_CSL_KPI_SC_PE_Breadcrumb'.Label7_28.OnSelect"
                 }
               ],
@@ -884,7 +284,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -961,7 +361,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -1038,7 +438,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -1118,7 +518,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrColDNE-Name",
-          "ruleIndex": 1
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1158,7 +558,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrColDNE-Name",
-          "ruleIndex": 1
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1198,7 +598,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrColDNE-Name",
-          "ruleIndex": 1
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1238,7 +638,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrColDNE-Name",
-          "ruleIndex": 1
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1278,7 +678,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrColDNE-Name",
-          "ruleIndex": 1
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1318,7 +718,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrColDNE-Name",
-          "ruleIndex": 1
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1358,7 +758,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrColDNE-Name",
-          "ruleIndex": 1
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1398,7 +798,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1598,7 +998,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1675,7 +1075,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -1752,7 +1152,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -1829,7 +1229,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -1906,7 +1306,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -1943,7 +1343,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -2020,7 +1420,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -2057,7 +1457,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -2134,7 +1534,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -2171,7 +1571,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -2248,7 +1648,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -2325,7 +1725,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -2482,7 +1882,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -2600,7 +2000,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -2677,7 +2077,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -2754,7 +2154,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -2831,7 +2231,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -2908,7 +2308,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -2985,7 +2385,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -3062,7 +2462,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -3139,7 +2539,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -3216,7 +2616,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -3293,7 +2693,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -3370,7 +2770,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -3447,7 +2847,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -3524,7 +2924,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -3601,7 +3001,487 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 22,
+                  "charOffset": 71,
+                  "snippet": {
+                    "text": "'I4_0_DPMS_CSL_GnO-IN'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "I4.0_DPMS_CSL_GnO_AC",
+                "type": "'I4.0_DPMS_CSL_GnO_AC'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "I4_0_DPMS_CSL_GnO-IN"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 104,
+                  "snippet": {
+                    "text": "\"ID\""
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "I4.0_DPMS_CSL_GnO_AC",
+                "type": "'I4.0_DPMS_CSL_GnO_AC'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ID"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrColDNE-Name",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 11,
+                  "charOffset": 119,
+                  "snippet": {
+                    "text": "\"FocusArea\""
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "I4.0_DPMS_CSL_GnO_AC",
+                "type": "'I4.0_DPMS_CSL_GnO_AC'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "FocusArea"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrColDNE-Name",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 11,
+                  "charOffset": 141,
+                  "snippet": {
+                    "text": "\"FocusLine\""
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "I4.0_DPMS_CSL_GnO_AC",
+                "type": "'I4.0_DPMS_CSL_GnO_AC'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "FocusLine"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrColDNE-Name",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 22,
+                  "charOffset": 163,
+                  "snippet": {
+                    "text": "\"ObjectiveDescription\""
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "I4.0_DPMS_CSL_GnO_AC",
+                "type": "'I4.0_DPMS_CSL_GnO_AC'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ObjectiveDescription"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrColDNE-Name",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 18,
+                  "charOffset": 196,
+                  "snippet": {
+                    "text": "\"IssueDescription\""
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "I4.0_DPMS_CSL_GnO_AC",
+                "type": "'I4.0_DPMS_CSL_GnO_AC'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "IssueDescription"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrColDNE-Name",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 19,
+                  "charOffset": 225,
+                  "snippet": {
+                    "text": "\"ObjTargetDateTime\""
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "I4.0_DPMS_CSL_GnO_AC",
+                "type": "'I4.0_DPMS_CSL_GnO_AC'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ObjTargetDateTime"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrColDNE-Name",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 255,
+                  "snippet": {
+                    "text": "\"ObjectiveId\""
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "I4.0_DPMS_CSL_GnO_AC",
+                "type": "'I4.0_DPMS_CSL_GnO_AC'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ObjectiveId"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrColDNE-Name",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 226,
+                  "charOffset": 49,
+                  "snippet": {
+                    "text": "ShowColumns(\r\n        'I4_0_DPMS_CSL_GnO-IN',\r\n        \"ID\",\r\n        \"FocusArea\",\r\n        \"FocusLine\",\r\n        \"ObjectiveDescription\",\r\n        \"IssueDescription\",\r\n        \"ObjTargetDateTime\",\r\n        \"ObjectiveId\"\r\n    )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "I4.0_DPMS_CSL_GnO_AC",
+                "type": "'I4.0_DPMS_CSL_GnO_AC'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ShowColumns"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
           "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.Label7_53.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.Label7_53.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 22,
+                  "charOffset": 9,
+                  "snippet": {
+                    "text": "'I4.0_DPMS_CSL_GnO_SC'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "I4.0_DPMS_CSL_GnO_AC",
+                "type": "'I4.0_DPMS_CSL_GnO_AC'.Label7_53"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "I4.0_DPMS_CSL_GnO_SC"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.Label7_54.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.Label7_54.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 22,
+                  "charOffset": 9,
+                  "snippet": {
+                    "text": "'I4.0_DPMS_CSL_GnO_SC'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "I4.0_DPMS_CSL_GnO_AC",
+                "type": "'I4.0_DPMS_CSL_GnO_AC'.Label7_54"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "I4.0_DPMS_CSL_GnO_SC"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.Label7_55.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.Label7_55.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 22,
+                  "charOffset": 9,
+                  "snippet": {
+                    "text": "'I4.0_DPMS_CSL_GnO_SC'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "I4.0_DPMS_CSL_GnO_AC",
+                "type": "'I4.0_DPMS_CSL_GnO_AC'.Label7_55"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "I4.0_DPMS_CSL_GnO_SC"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -4368,150 +4248,120 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2.AccessibleLabel"
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Label7_74.OnSelect"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2.AccessibleLabel",
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Label7_74.OnSelect",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 22,
+                  "charOffset": 9,
+                  "snippet": {
+                    "text": "'I4.0_DPMS_CSL_GnO_SC'"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "I4.0_DPMS_CSL_XXX_C_N_3",
-                "type": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2"
+                "member": "OnSelect",
+                "module": "I4.0_DPMS_CSL_GnO_CI",
+                "type": "'I4.0_DPMS_CSL_GnO_CI'.Label7_74"
               }
             }
           ],
           "message": {
+            "arguments": [
+              "I4.0_DPMS_CSL_GnO_SC"
+            ],
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2.TabIndex"
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Label7_75.OnSelect"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2.TabIndex",
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Label7_75.OnSelect",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 22,
+                  "charOffset": 9,
+                  "snippet": {
+                    "text": "'I4.0_DPMS_CSL_GnO_SC'"
+                  }
                 }
               },
               "properties": {
-                "member": "TabIndex",
-                "module": "I4.0_DPMS_CSL_XXX_C_N_3",
-                "type": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2"
+                "member": "OnSelect",
+                "module": "I4.0_DPMS_CSL_GnO_CI",
+                "type": "'I4.0_DPMS_CSL_GnO_CI'.Label7_75"
               }
             }
           ],
           "message": {
+            "arguments": [
+              "I4.0_DPMS_CSL_GnO_SC"
+            ],
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2.Gallery2_2.AccessibleLabel"
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Label7_76.OnSelect"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2.Gallery2_2.AccessibleLabel",
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Label7_76.OnSelect",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 22,
+                  "charOffset": 9,
+                  "snippet": {
+                    "text": "'I4.0_DPMS_CSL_GnO_SC'"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "I4.0_DPMS_CSL_XXX_C_N_3",
-                "type": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2.Gallery2_2"
+                "member": "OnSelect",
+                "module": "I4.0_DPMS_CSL_GnO_CI",
+                "type": "'I4.0_DPMS_CSL_GnO_CI'.Label7_76"
               }
             }
           ],
           "message": {
+            "arguments": [
+              "I4.0_DPMS_CSL_GnO_SC"
+            ],
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2.Gallery2_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2.Gallery2_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "I4.0_DPMS_CSL_XXX_C_N_3",
-                "type": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2.Gallery2_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2.Gallery2_2.Button5_2.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2.Gallery2_2.Button5_2.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "I4.0_DPMS_CSL_XXX_C_N_3",
-                "type": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2.Gallery2_2.Button5_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 7
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -4668,19 +4518,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.'I4.0_DPMS_CSL_GnO_CAN_IN-1_2'.'I4.0_DPMS_CSL_GnO_DC_IN-1_1'.'I4.0_DPMS_CSL_GnO_TI1_IN-1_1'.AccessibleLabel"
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.'I4.0_DPMS_CSL_GnO_CAN_IN-1_2'.'I4.0_DPMS_CSL_GnO_DC_IN-1_1'.'I4.0_DPMS_CSL_GnO_TI1_IN-1_1'.AccessibleLabel",
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "I4.0_DPMS_CSL_GnO_AC",
-                "type": "'I4.0_DPMS_CSL_GnO_AC'.'I4.0_DPMS_CSL_GnO_CAN_IN-1_2'.'I4.0_DPMS_CSL_GnO_DC_IN-1_1'.'I4.0_DPMS_CSL_GnO_TI1_IN-1_1'"
+                "module": "I4.0_DPMS_CSL_XXX_C_N_3",
+                "type": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2"
               }
             }
           ],
@@ -4698,79 +4548,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.'I4.0_DPMS_CSL_GnO_CAN_IN-1_2'.DataCard1.'I4.0_DPMS_CSL_GnO_TI1_IN-1_2'.AccessibleLabel"
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.'I4.0_DPMS_CSL_GnO_CAN_IN-1_2'.DataCard1.'I4.0_DPMS_CSL_GnO_TI1_IN-1_2'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "I4.0_DPMS_CSL_GnO_AC",
-                "type": "'I4.0_DPMS_CSL_GnO_AC'.'I4.0_DPMS_CSL_GnO_CAN_IN-1_2'.DataCard1.'I4.0_DPMS_CSL_GnO_TI1_IN-1_2'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_BHG_IN-1_2'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_BHG_IN-1_2'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "I4.0_DPMS_CSL_GnO_CI",
-                "type": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_BHG_IN-1_2'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_BHG_IN-1_2'.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_BHG_IN-1_2'.TabIndex",
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "I4.0_DPMS_CSL_GnO_CI",
-                "type": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_BHG_IN-1_2'"
+                "module": "I4.0_DPMS_CSL_XXX_C_N_3",
+                "type": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2"
               }
             }
           ],
@@ -4788,19 +4578,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI1_CI-2_4'.AccessibleLabel"
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2.Gallery2_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI1_CI-2_4'.AccessibleLabel",
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2.Gallery2_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "I4.0_DPMS_CSL_GnO_CI",
-                "type": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI1_CI-2_4'"
+                "module": "I4.0_DPMS_CSL_XXX_C_N_3",
+                "type": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2.Gallery2_2"
               }
             }
           ],
@@ -4818,199 +4608,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI1_CI-2_5'.AccessibleLabel"
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2.Gallery2_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI1_CI-2_5'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "I4.0_DPMS_CSL_GnO_CI",
-                "type": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI1_CI-2_5'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI_CI-3_2'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI_CI-3_2'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "I4.0_DPMS_CSL_GnO_CI",
-                "type": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI_CI-3_2'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI_CI-2_2'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI_CI-2_2'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "I4.0_DPMS_CSL_GnO_CI",
-                "type": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI_CI-2_2'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI_CI-1_2'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI_CI-1_2'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "I4.0_DPMS_CSL_GnO_CI",
-                "type": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI_CI-1_2'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard6.'I4.0_DPMS_CSL_GnO_TI1_CI-2_3'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard6.'I4.0_DPMS_CSL_GnO_TI1_CI-2_3'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "I4.0_DPMS_CSL_GnO_CI",
-                "type": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard6.'I4.0_DPMS_CSL_GnO_TI1_CI-2_3'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Icon1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Icon1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "I4.0_DPMS_CSL_GnO_CI",
-                "type": "'I4.0_DPMS_CSL_GnO_CI'.Icon1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Icon1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Icon1.TabIndex",
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2.Gallery2_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "I4.0_DPMS_CSL_GnO_CI",
-                "type": "'I4.0_DPMS_CSL_GnO_CI'.Icon1"
+                "module": "I4.0_DPMS_CSL_XXX_C_N_3",
+                "type": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2.Gallery2_2"
               }
             }
           ],
@@ -5022,6 +4632,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2.Gallery2_2.Button5_2.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2.Gallery2_2.Button5_2.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "I4.0_DPMS_CSL_XXX_C_N_3",
+                "type": "'I4.0_DPMS_CSL_XXX_C_N_3'.Gallery1_2.Gallery2_2.Button5_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -6001,6 +5641,66 @@
                 "member": "AccessibleLabel",
                 "module": "I4.0_DPMS_CSL_GnO_SC_IN-1",
                 "type": "'I4.0_DPMS_CSL_GnO_SC_IN-1'.Dropdown1_17"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.'I4.0_DPMS_CSL_GnO_CAN_IN-1_2'.'I4.0_DPMS_CSL_GnO_DC_IN-1_1'.'I4.0_DPMS_CSL_GnO_TI1_IN-1_1'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.'I4.0_DPMS_CSL_GnO_CAN_IN-1_2'.'I4.0_DPMS_CSL_GnO_DC_IN-1_1'.'I4.0_DPMS_CSL_GnO_TI1_IN-1_1'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "I4.0_DPMS_CSL_GnO_AC",
+                "type": "'I4.0_DPMS_CSL_GnO_AC'.'I4.0_DPMS_CSL_GnO_CAN_IN-1_2'.'I4.0_DPMS_CSL_GnO_DC_IN-1_1'.'I4.0_DPMS_CSL_GnO_TI1_IN-1_1'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.'I4.0_DPMS_CSL_GnO_CAN_IN-1_2'.DataCard1.'I4.0_DPMS_CSL_GnO_TI1_IN-1_2'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_AC'.'I4.0_DPMS_CSL_GnO_CAN_IN-1_2'.DataCard1.'I4.0_DPMS_CSL_GnO_TI1_IN-1_2'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "I4.0_DPMS_CSL_GnO_AC",
+                "type": "'I4.0_DPMS_CSL_GnO_AC'.'I4.0_DPMS_CSL_GnO_CAN_IN-1_2'.DataCard1.'I4.0_DPMS_CSL_GnO_TI1_IN-1_2'"
               }
             }
           ],
@@ -7008,6 +6708,336 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_BHG_IN-1_2'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_BHG_IN-1_2'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "I4.0_DPMS_CSL_GnO_CI",
+                "type": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_BHG_IN-1_2'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_BHG_IN-1_2'.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_BHG_IN-1_2'.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "I4.0_DPMS_CSL_GnO_CI",
+                "type": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_BHG_IN-1_2'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI1_CI-2_4'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI1_CI-2_4'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "I4.0_DPMS_CSL_GnO_CI",
+                "type": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI1_CI-2_4'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI1_CI-2_5'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI1_CI-2_5'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "I4.0_DPMS_CSL_GnO_CI",
+                "type": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI1_CI-2_5'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI_CI-3_2'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI_CI-3_2'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "I4.0_DPMS_CSL_GnO_CI",
+                "type": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI_CI-3_2'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI_CI-2_2'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI_CI-2_2'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "I4.0_DPMS_CSL_GnO_CI",
+                "type": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI_CI-2_2'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI_CI-1_2'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI_CI-1_2'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "I4.0_DPMS_CSL_GnO_CI",
+                "type": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard4_4.'I4.0_DPMS_CSL_GnO_TI_CI-1_2'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard6.'I4.0_DPMS_CSL_GnO_TI1_CI-2_3'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard6.'I4.0_DPMS_CSL_GnO_TI1_CI-2_3'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "I4.0_DPMS_CSL_GnO_CI",
+                "type": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard6.'I4.0_DPMS_CSL_GnO_TI1_CI-2_3'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Icon1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Icon1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "I4.0_DPMS_CSL_GnO_CI",
+                "type": "'I4.0_DPMS_CSL_GnO_CI'.Icon1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Icon1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Icon1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "I4.0_DPMS_CSL_GnO_CI",
+                "type": "'I4.0_DPMS_CSL_GnO_CI'.Icon1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.I4_0_DPMS_CSL_GnO_CO_LVOBPI"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.I4_0_DPMS_CSL_GnO_CO_LVOBPI",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "I4_0_DPMS_CSL_GnO_CO_LVOBPI",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.varOverView"
                 }
               ],
@@ -7139,36 +7169,6 @@
               },
               "properties": {
                 "member": "I4_0_DPMS_CSL_GnO_CI_LVISPI",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.I4_0_DPMS_CSL_GnO_CO_LVOBPI"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.I4_0_DPMS_CSL_GnO_CO_LVOBPI",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "I4_0_DPMS_CSL_GnO_CO_LVOBPI",
                 "module": "App",
                 "type": "App"
               }
@@ -7447,6 +7447,20 @@
               }
             },
             {
+              "id": "app-ErrInvalidDot",
+              "messageStrings": {
+                "issue": {
+                  "text": "Invalid use of '.'"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
               "id": "app-ErrColDNE-Name",
               "messageStrings": {
                 "issue": {
@@ -7465,20 +7479,6 @@
               "messageStrings": {
                 "issue": {
                   "text": "The function '{0}' has some invalid arguments."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrInvalidDot",
-              "messageStrings": {
-                "issue": {
-                  "text": "Invalid use of '.'"
                 }
               },
               "properties": {
