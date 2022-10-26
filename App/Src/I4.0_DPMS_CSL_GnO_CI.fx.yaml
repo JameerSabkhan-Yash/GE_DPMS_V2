@@ -1013,7 +1013,7 @@
                         I4_0_DPMS_CSL_GnO_CI_LVISNI,
                         Concatenate(
                             I4_0_DPMS_CSL_GnO_CI_LVOBJID,
-                            "IS",
+                            "_IS",
                             I4_0_DPMS_CSL_GnO_CI_LVISNN
                         )
                     );
