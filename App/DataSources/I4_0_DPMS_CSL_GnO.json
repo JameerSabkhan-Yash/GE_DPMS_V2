@@ -25,7 +25,7 @@
       "{VersionNumber}": "Version number",
       "Author": "Created By",
       "Author#Claims": "Created By Claims",
-      "BU": "BU",
+      "BU": "SORG",
       "ComplianceAssetId": "Compliance Asset Id",
       "Created": "Created",
       "CreatedBy": "ObjCreatedBy",
@@ -57,6 +57,8 @@
       "Team": "ObjTeam",
       "Team#Claims": "ObjTeam Claims",
       "Title": "Title",
+      "TopLineHeader": "TopLineHeader",
+      "TopLineHeaderCode": "TopLineHeaderCode",
       "Weight": "ObjWeight"
     },
     "DatasetName": "https://ytpl.sharepoint.com/sites/CustomOEEApplication",

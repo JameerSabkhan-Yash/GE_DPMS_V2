@@ -157,7 +157,7 @@
                         Last(
                             Filter(
                                 I4_0_DPMS_CSL_GnO,
-                                FocusArea = dpFocusArea_1.SelectedText.Value && FocusLine = dpFocusLine_1.SelectedText.Value && ORG = I4_0_DPMS_CSL_XXX_GVORG && BU = I4_0_DPMS_CSL_XXX_GVBU
+                                FocusArea = dpFocusArea_1.SelectedText.Value && FocusLine = dpFocusLine_1.SelectedText.Value && ORG = I4_0_DPMS_CSL_XXX_GVORG && SORG = I4_0_DPMS_CSL_XXX_GVBU
                             ).ObjectiveId
                         ).ObjectiveId
                     );
@@ -167,7 +167,7 @@
                         Last(
                             Filter(
                                 I4_0_DPMS_CSL_GnO,
-                                FocusArea = dpFocusArea_1.SelectedText.Value && FocusLine = dpFocusLine_1.SelectedText.Value && ORG = I4_0_DPMS_CSL_XXX_GVORG && BU = I4_0_DPMS_CSL_XXX_GVBU
+                                FocusArea = dpFocusArea_1.SelectedText.Value && FocusLine = dpFocusLine_1.SelectedText.Value && ORG = I4_0_DPMS_CSL_XXX_GVORG && SORG = I4_0_DPMS_CSL_XXX_GVBU
                             ).ObjNo
                         ).ObjNo
                     );
@@ -219,7 +219,7 @@
                         Last(
                             Filter(
                                 I4_0_DPMS_CSL_GnO,
-                                FocusArea = dpFocusArea_1.SelectedText.Value && FocusLine = dpFocusLine_1.SelectedText.Value && ORG = I4_0_DPMS_CSL_XXX_GVORG && BU = I4_0_DPMS_CSL_XXX_GVBU
+                                FocusArea = dpFocusArea_1.SelectedText.Value && FocusLine = dpFocusLine_1.SelectedText.Value && ORG = I4_0_DPMS_CSL_XXX_GVORG && SORG = I4_0_DPMS_CSL_XXX_GVBU
                             ).ObjectiveId
                         ).ObjectiveId
                     );
@@ -229,7 +229,7 @@
                         Last(
                             Filter(
                                 I4_0_DPMS_CSL_GnO,
-                                FocusArea = dpFocusArea_1.SelectedText.Value && FocusLine = dpFocusLine_1.SelectedText.Value && ORG = I4_0_DPMS_CSL_XXX_GVORG && BU = I4_0_DPMS_CSL_XXX_GVBU
+                                FocusArea = dpFocusArea_1.SelectedText.Value && FocusLine = dpFocusLine_1.SelectedText.Value && ORG = I4_0_DPMS_CSL_XXX_GVORG && SORG = I4_0_DPMS_CSL_XXX_GVBU
                             ).ObjNo
                         ).ObjNo
                     );
@@ -597,7 +597,7 @@
                                 FocusAreaCode: I4_0_DPMS_CSL_GnO_CO_LVFA,
                                 FocusLineCode: I4_0_DPMS_CSL_GnO_CO_LVFL,
                                 ORG: I4_0_DPMS_CSL_XXX_GVORG,
-                                BU: I4_0_DPMS_CSL_XXX_GVBU,
+                                SORG: I4_0_DPMS_CSL_XXX_GVBU,
                                 ObjCreatedBy: {
                                     '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",
                                     Claims: "i:0#.f|membership|" & User().Email,
