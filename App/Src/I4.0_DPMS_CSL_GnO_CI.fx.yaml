@@ -18,7 +18,7 @@
                 ObjTargetDate: "10/19/2022",
                 ObjWeight: 100,
                 ObjDescription: "DPMS Objective Description DPMS Objective Description ",
-                ObjMeasure: "DPMS Measure DPMS Measure DPMS Measure DPMS Measure DPMS " 
+                ObjMeasure: "DPMS Measure DPMS Measure DPMS Measure DPMS Measure DPMS "
             }
         );
         //Set the ObjId 
@@ -69,6 +69,15 @@
                 "_IS",
                 I4_0_DPMS_CSL_GnO_CI_LVISNN
             )
+        );
+        //Pop Variables
+        Set(
+            I4_0_DPMS_CSL_GnO_CI_LVPOPV,
+            false
+        );
+        Set(
+            I4_0_DPMS_CSL_GnO_CI_LVPOP,
+            ""
         );
         //Reset Checkbox
         Reset(Checkbox1_7);
@@ -227,6 +236,8 @@
                             NotificationType.Information
                         )
                     );
+                    //Set Pop Id for Msg
+                    Set(I4_0_DPMS_CSL_GnO_CI_LVPOP,I4_0_DPMS_CSL_GnO_CI_LVISNI);
                     //Reset all 
                     Reset('I4.0_DPMS_CSL_GnO_TI_CI-3_2');
                     Reset('I4.0_DPMS_CSL_GnO_TI_CI-2_2');
@@ -963,17 +974,27 @@
                                 IssueDescription: 'I4.0_DPMS_CSL_GnO_TI1_CI-2_3'.Text
                             }
                         );
-                        Notify(
-                            "Your Issue Id : " & I4_0_DPMS_CSL_GnO_CI_LVISNI & " is successfully created.",
-                            NotificationType.Success
-                        ),
-                        Notify(
-                            "Please enter all flieds",
-                            NotificationType.Information
+                        
+                    );
+                    //Set Error Message
+                    Set(
+                        I4_0_DPMS_CSL_GnO_CI_LVERR,
+                        First(Errors('I4_0_DPMS_CSL_GnO-IS'))
+                    );
+                    //Send the Message to Pop
+                    If(
+                        IsBlank(I4_0_DPMS_CSL_GnO_CI_LVERR),//Set Pop Id for Msg
+                        Set(
+                            I4_0_DPMS_CSL_GnO_CI_LVPOP,
+                            I4_0_DPMS_CSL_GnO_CI_LVISNI
                         )
                     );
-                    
-                    
+                    //Set Pop Id for Visible
+                    Set(
+                        I4_0_DPMS_CSL_GnO_CI_LVPOPV,
+                        true
+                    );
+                    //Configuration of Next Issue Id
                     Set(
                         I4_0_DPMS_CSL_GnO_CI_LVISPN,
                         Last(
@@ -1017,19 +1038,16 @@
                             I4_0_DPMS_CSL_GnO_CI_LVISNN
                         )
                     );
-                    
                     //Reset Checkbox
                     Reset(Checkbox1_7);
                     Reset(Checkbox1_8);
                     Reset(Checkbox1_9);
                     Reset('I4.0_DPMS_CSL_GnO_TI1_CI-2_3');
-                    
                     //Reset all 
                     Reset('I4.0_DPMS_CSL_GnO_TI_CI-3_2');
                     Reset('I4.0_DPMS_CSL_GnO_TI_CI-2_2');
                     Reset('I4.0_DPMS_CSL_GnO_TI_CI-1_2');
                     Reset('I4.0_DPMS_CSL_GnO_TI1_CI-2_3');
-                    
                     //Navigation to Objective Overview
                     //Navigate('I4.0_DPMS_CSL_GnO_OD');
                 Size: =15
@@ -1155,4 +1173,121 @@
             X: =310
             Y: =137
             ZIndex: =12
+
+    Group2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =26
+
+        PopRectangle As rectangle:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Fill: =RGBA(226, 223, 218, 0.5)
+            Height: =768
+            Visible: =I4_0_DPMS_CSL_GnO_CI_LVPOPV
+            Width: =1366
+            ZIndex: =17
+
+        Button1 As button:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Color: =
+            DisabledBorderColor: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(0, 0, 0, 1)
+            DisabledFill: =RGBA(255, 255, 255, 1)
+            DisplayMode: =DisplayMode.Disabled
+            Fill: =RGBA(226, 223, 218, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =248
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+            Size: =15
+            Text: =""
+            Visible: =I4_0_DPMS_CSL_GnO_CI_LVPOPV
+            Width: =536
+            X: =402
+            Y: =311
+            ZIndex: =18
+
+        Icon1 As icon.Cancel:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =36
+            Icon: =Icon.Cancel
+            OnSelect: =Set(I4_0_DPMS_CSL_GnO_CI_LVPOPV,false)
+            Visible: =I4_0_DPMS_CSL_GnO_CI_LVPOPV
+            Width: =30
+            X: =904
+            Y: =312
+            ZIndex: =19
+
+        Label3 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =74
+            Size: =20
+            Text: |
+                ="Entries Saved Succesfully !!!"
+            Visible: =I4_0_DPMS_CSL_GnO_CI_LVPOPV And IsBlank(I4_0_DPMS_CSL_GnO_CI_LVERR)
+            Width: =418
+            X: =461
+            Y: =314
+            ZIndex: =20
+
+        Image1 As image:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =68
+            Image: =completed
+            Visible: =I4_0_DPMS_CSL_GnO_CI_LVPOPV And IsBlank(I4_0_DPMS_CSL_GnO_CI_LVERR)
+            X: =620
+            Y: =399
+            ZIndex: =22
+
+        Label3_1 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =70
+            Size: =15
+            Text: |-
+                ="Escalation Id is : " & I4_0_DPMS_CSL_GnO_CI_LVPOP
+            Visible: =I4_0_DPMS_CSL_GnO_CI_LVPOPV And IsBlank(I4_0_DPMS_CSL_GnO_CI_LVERR)
+            Width: =536
+            X: =402
+            Y: =475
+            ZIndex: =23
+
+        Image3 As image:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =87
+            Image: =download
+            Visible: =I4_0_DPMS_CSL_GnO_CI_LVPOPV And !IsBlank(I4_0_DPMS_CSL_GnO_CI_LVERR)
+            X: =620
+            Y: =418
+            ZIndex: =24
+
+        Label3_5 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =74
+            Size: =20
+            Text: ="Please Try Again !!!"
+            Visible: =I4_0_DPMS_CSL_GnO_CI_LVPOPV And !IsBlank(I4_0_DPMS_CSL_GnO_CI_LVERR)
+            Width: =418
+            X: =481
+            Y: =344
+            ZIndex: =25
 
