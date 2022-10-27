@@ -3,30 +3,28 @@
     LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
     OnVisible: |-
         =//Collection for Objective pichart
-        ClearCollect(
-            Objective_status,
-            {Objective :"On Hold", status: Label_Onhold.Text},{Objective :"In Progress",status:Label_Inprrogress.Text},{Objective :"Completed", status :Label_Completedobj.Text});
+        Set(Offtrack,CountRows(Filter(I4_0_DPMS_CSL_GnO,ObjStatus.Value="Off Track")));
+        Set(Ontrack,CountRows(Filter(I4_0_DPMS_CSL_GnO,ObjStatus.Value="On Track")));
+        Set(Atrisk,CountRows(Filter(I4_0_DPMS_CSL_GnO,ObjStatus.Value="At Risk")));
+        Set(Completed,CountRows(Filter(I4_0_DPMS_CSL_GnO,ObjStatus.Value="Complete")));
+        Set(Notstart,CountRows(Filter(I4_0_DPMS_CSL_GnO,ObjStatus.Value="Not Started")));
+        Set(Quality,CountRows(Filter(I4_0_DPMS_CSL_GnO,FocusArea ="Quality")));
+        Set(Realibility,CountRows(Filter(I4_0_DPMS_CSL_GnO,FocusArea ="Reliability")));
+        Set(Inovation,CountRows(Filter(I4_0_DPMS_CSL_GnO,FocusArea ="Innovation")));
+        Set(People,CountRows(Filter(I4_0_DPMS_CSL_GnO,FocusArea ="People")));
+        Set(Safety,CountRows(Filter(I4_0_DPMS_CSL_GnO,FocusArea ="Safety")));
+        
+        ClearCollect(Objective_status,{Objective:"Off Track",status:Offtrack},{Objective:"On Track",status:Ontrack},{Objective:"At Risk",status:Atrisk},{Objective:"Completed",status:Completed},{Objective:"Not Started",status:Notstart});
         
         //Collection for Objective barchart
-        ClearCollect(
-            Objective_barchart,
-            {FocusArea :"Quality", status:"12"},{FocusArea :"Realibility",status:"10"},{FocusArea :"Inovation", status :"2"},{FocusArea :"Safety", status :"7"},{FocusArea :"People", status :"4"});
+        ClearCollect(Objective_barchart,
+        {FocusArea:"Quality",status:Quality},
+        {FocusArea:"Realibility",status:Realibility},
+        {FocusArea:"Inovation",status:Inovation},
+        {FocusArea:"Safety",status:Safety},
+        {FocusArea:"People",status:People});
         
-            ClearCollect(
-            I4_0_DPMS_CSL_XXX_CIS_Demo,
-            {
-                FACode: "",
-                FLCode: "",
-                FA: "",
-                FL: "",
-                ObjCreateDate: "",
-                ObjId: "",
-                IssueStatus: "",
-                IssueProgress: "",
-                ObjOwner: "",
-                ObjTargetDate:""
-            }
-        );
+        ClearCollect(I4_0_DPMS_CSL_XXX_CIS_Demo,{FACode:"",FLCode:"",FA:"",FL:"",ObjCreateDate:"",ObjId:"",IssueStatus:"",IssueProgress:"",ObjOwner:"",ObjTargetDate:""});
         Clear(I4_0_DPMS_CSL_XXX_CIS_Demo);
 
     "'14.0_DPMS_CSL_GnO_ObjD_Rec1' As rectangle":
@@ -125,60 +123,46 @@
                     Height: =43
                     Text: ="Objective Status"
                     Width: =392
-                    X: =15
-                    Y: =376
+                    X: =117
+                    Y: =403
                     ZIndex: =2
 
                 PieChart1 As pieChart:
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    Height: =363
-                    ItemColorSet: =[RGBA(49, 130, 93, 1),RGBA(48,166,103, 1), RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
-                    Items: =PieChartSample
-                    Width: =392
-                    X: =8
-                    Y: =10
-                    ZIndex: =4
+                    Height: =414
+                    ItemColorSet: =[RGBA(255,0,0,0.75),RGBA(48,166,103,1),RGBA(255,194,0,1),Blue,Gray]
+                    Items: =Objective_status
+                    Width: =571
+                    X: =28
+                    Y: =43
+                    ZIndex: =3
 
             ColumnChart1 As barChart:
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                Height: =340
+                Height: =352
                 ItemColorSet: =[RGBA(49, 130, 93, 1),RGBA(48,166,103, 1), RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
-                Items: =ColumnChartSample
+                Items: =Objective_barchart
                 Width: =587
                 X: =660
-                Y: =77
-                ZIndex: =5
-
-            Rectangle3 As rectangle:
-                BorderColor: =RGBA(0, 0, 0, 1)
-                BorderThickness: =2
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =61
-                Width: =227
-                X: =407
-                Y: =110
-                ZIndex: =6
-
-            Label1_1 As label:
-                BorderColor: =RGBA(0, 18, 107, 1)
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FontWeight: =FontWeight.Bold
-                Size: =20
-                Text: ="25"
-                Width: =171
-                X: =432
-                Y: =123
-                ZIndex: =7
-
-            Rectangle1_9 As rectangle:
-                BorderColor: =RGBA(0, 18, 107, 1)
-                Fill: |
-                    =RGBA(226, 223, 218, 1)
-                Height: =40
-                X: =417
                 Y: =83
-                ZIndex: =8
+                ZIndex: =4
+
+            Button3 As button:
+                AutoDisableOnSelect: =false
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(204, 204, 204, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =81
+                HoverColor: =
+                HoverFill: =
+                Size: =15
+                Text: =""
+                Width: =665
+                X: =28
+                Y: =25
+                ZIndex: =5
 
             Label1_3 As label:
                 BorderColor: =RGBA(0, 18, 107, 1)
@@ -186,105 +170,109 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Text: ="Total Objective"
                 Width: =171
-                X: =417
-                Y: =91
-                ZIndex: =9
-
-            Rectangle3_1 As rectangle:
-                BorderColor: =RGBA(0, 0, 0, 1)
-                BorderThickness: =2
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =61
-                Width: =227
-                X: =407
-                Y: =224
-                ZIndex: =10
-
-            Label1_4 As label:
-                BorderColor: =RGBA(0, 18, 107, 1)
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FontWeight: =FontWeight.Bold
-                Size: =20
-                Text: ="10"
-                Width: =171
-                X: =432
-                Y: =237
-                ZIndex: =11
-
-            Rectangle1_10 As rectangle:
-                BorderColor: =RGBA(0, 18, 107, 1)
-                Fill: |
-                    =RGBA(226, 223, 218, 1)
-                Height: =40
-                Width: =202
-                X: =417
-                Y: =197
-                ZIndex: =12
+                X: =49
+                Y: =25
+                ZIndex: =6
 
             Label1_5 As label:
                 BorderColor: =RGBA(0, 18, 107, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =52
-                Text: ="Completed Objective"
+                Text: ="Completed"
                 Width: =217
-                X: =417
-                Y: =197
-                ZIndex: =13
+                X: =215
+                Y: =13
+                ZIndex: =7
 
-            Rectangle3_2 As rectangle:
-                BorderColor: =RGBA(0, 0, 0, 1)
-                BorderThickness: =2
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =61
-                Width: =227
-                X: =407
-                Y: =349
-                ZIndex: =14
+            "'14.0_DPMS_CSL_GnO_ObjD_L1' As label":
+                BorderColor: =RGBA(0, 18, 107, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =52
+                Text: ="On Track"
+                Width: =230
+                X: =337
+                Y: =19
+                ZIndex: =8
 
-            Label1_6 As label:
+            "'14.0_DPMS_CSL_GnO_ObjD_L1_1' As label":
+                BorderColor: =RGBA(0, 18, 107, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =52
+                Text: ="Off Track"
+                Width: =230
+                X: =451
+                Y: =19
+                ZIndex: =9
+
+            Label_Total As label:
                 BorderColor: =RGBA(0, 18, 107, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Bold
                 Size: =20
-                Text: ="15"
+                Text: =CountRows(I4_0_DPMS_CSL_GnO)
                 Width: =171
-                X: =432
-                Y: =362
-                ZIndex: =15
+                X: =63
+                Y: =53
+                ZIndex: =10
 
-            Rectangle1_11 As rectangle:
+            Label_Completed As label:
                 BorderColor: =RGBA(0, 18, 107, 1)
-                Fill: |
-                    =RGBA(226, 223, 218, 1)
-                Height: =40
-                Width: =202
-                X: =417
-                Y: =322
-                ZIndex: =16
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =20
+                Text: =CountRows(Filter(I4_0_DPMS_CSL_GnO,ObjStatus.Value ="Complete" ))
+                Width: =171
+                X: =240
+                Y: =53
+                ZIndex: =11
 
-            Label1_8 As label:
+            Label_Inprrogress As label:
+                BorderColor: =RGBA(0, 18, 107, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =20
+                Text: =CountRows(Filter(I4_0_DPMS_CSL_GnO,ObjStatus.Value ="On Track" ))
+                Width: =171
+                X: =361
+                Y: =53
+                ZIndex: =12
+
+            Label5 As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: =CountRows(Filter(I4_0_DPMS_CSL_GnO,ObjStatus.Value ="At Risk" ))
+                X: =639
+                Y: =43
+                ZIndex: =13
+
+            Label_Onhold As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: =CountRows(Filter(I4_0_DPMS_CSL_GnO,ObjStatus.Value ="Off Track" ))
+                X: =471
+                Y: =53
+                ZIndex: =14
+
+            "'14.0_DPMS_CSL_GnO_ObjD_L1_2' As label":
                 BorderColor: =RGBA(0, 18, 107, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =52
-                Text: ="In Progress Objective"
+                Text: ="At Risk"
                 Width: =230
-                X: =418
-                Y: =323
-                ZIndex: =17
-
-            "'I4.0_DPMS_CSL_GnO_R2_CI-2_12' As rectangle":
-                BorderColor: =RGBA(0, 0, 0, 1)
-                BorderThickness: =1
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =342
-                Width: =582
-                X: =660
-                Y: =77
-                ZIndex: =18
+                X: =574
+                Y: =13
+                ZIndex: =15
 
         "'14.0_DPMS_CSL_GnO_ObjD_DC1' As dataCard.blankCard":
             BorderColor: =RGBA(0, 0, 0, 1)
