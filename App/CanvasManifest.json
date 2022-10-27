@@ -91,10 +91,10 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "f2366292-62a7-490d-9d94-d9123674f1f4",
-    "Id": "1a398690-23e3-4788-9491-4db069b6d03f",
+    "Id": "e423bd15-d128-4fb7-ad7b-a156e4f047fb",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "Name": "CSL_DPMS_201022_v2",
+    "Name": "CSL_DPMS_201022_v2.msapp",
     "OriginatingVersion": "1.326"
   },
   "PublishInfo": {
@@ -118,6 +118,7 @@
     "Deliverables",
     "I4.0_DPMS_CSL_GnO_CO",
     "Template",
+    "14.0_DPMS_CSL_GnO_ObjD",
     "I4.0_DPMS_CSL_GnO_OD",
     "sampleWidget",
     "NavigationDemo"
