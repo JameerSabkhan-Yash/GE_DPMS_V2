@@ -449,6 +449,22 @@
                     BorderThickness: =1
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
+                    Fill: |
+                        =Switch(
+                            ThisItem.ObjStatus.Value,
+                            "Not Started",
+                            Gray,
+                            "On Track",
+                            RGBA(48,166,103,1),
+                            "Off Track",
+                            RGBA(255,0,0,0.75),
+                            "Complete",
+                            Blue,
+                            "At Risk",
+                           RGBA(255,194,0,1),
+                            RGBA(0,0,0,0)
+                        )
+                    FontWeight: =FontWeight.Semibold
                     Height: =34
                     OnSelect: =Select(Parent)
                     Size: =11
