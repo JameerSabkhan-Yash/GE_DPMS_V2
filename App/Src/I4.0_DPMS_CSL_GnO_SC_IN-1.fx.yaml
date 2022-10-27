@@ -422,7 +422,6 @@
         Height: =32
         Size: =13
         Text: =CountRows(Filter('I4.0_DPMS_CSL_GnO_BHG_IN-1'.AllItems,'I4.0_DPMS_CSL_GnO_CB_IN-1'.Value))
-        Visible: =false
         X: =388
         Y: =224
         ZIndex: =10
