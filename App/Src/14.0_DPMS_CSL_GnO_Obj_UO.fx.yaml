@@ -1,0 +1,505 @@
+"'14.0_DPMS_CSL_GnO_Obj_UO' As screen":
+    Fill: =RGBA(226, 223, 218, 1)
+    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
+    OnVisible: |-
+        =//Pop Variables
+        Set(
+            I4_0_DPMS_CSL_XXX_XX_LVPOPV,
+            false
+        );
+        
+        //Pop Message
+        Set(
+            I4_0_DPMS_CSL_XXX_XX_LVPOP,
+            ""
+        );
+
+    Button2_2 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(211, 66, 9, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =118
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+        OnSelect: =Set(I4_0_DPMS_CSL_XXX_XX_LVPOPV,true)
+        Size: =30
+        Text: ="POP "
+        Width: =272
+        X: =542
+        Y: =68
+        ZIndex: =1
+
+    Button17_14 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 0, 0, 1)
+        FontWeight: =FontWeight.Semibold
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+        Size: =15
+        Text: ="Update"
+        Width: =150
+        X: =1143
+        Y: =510
+        ZIndex: =6
+
+    Label4 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =38
+        Size: =13
+        Text: ="Status"
+        Width: =80
+        X: =67
+        Y: =479
+        ZIndex: =7
+
+    Label4_1 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =38
+        Size: =13
+        Text: ="Progress"
+        Width: =83
+        X: =290
+        Y: =479
+        ZIndex: =8
+
+    Dropdown1 As dropdown:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        ChevronBackground: =RGBA(211, 66, 9, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =26
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 211, 205, 1)
+        Items: =DropDownSample
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(131, 24, 75, 1)
+        SelectionFill: =RGBA(211, 66, 9, 1)
+        Size: =13
+        Width: =114
+        X: =297
+        Y: =527
+        ZIndex: =9
+
+    Group2_3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =9
+
+        PopRectangle_3 As rectangle:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Fill: =RGBA(226, 223, 218, 0.5)
+            Height: =768
+            Visible: =I4_0_DPMS_CSL_XXX_XX_LVPOPV
+            Width: =1366
+            ZIndex: =2
+
+        Button1_26 As button:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Color: =
+            DisabledBorderColor: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(0, 0, 0, 1)
+            DisabledFill: =RGBA(255, 255, 255, 1)
+            DisplayMode: =DisplayMode.Disabled
+            Fill: =RGBA(226, 223, 218, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =450
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+            Size: =15
+            Text: =""
+            Visible: =I4_0_DPMS_CSL_XXX_XX_LVPOPV
+            Width: =1322
+            X: =24
+            Y: =121
+            ZIndex: =3
+
+        Icon1_5 As icon.Cancel:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =36
+            Icon: =Icon.Cancel
+            OnSelect: =Set(I4_0_DPMS_CSL_XXX_XX_LVPOPV,false)
+            Visible: =I4_0_DPMS_CSL_XXX_XX_LVPOPV
+            Width: =30
+            X: =1308
+            Y: =125
+            ZIndex: =4
+
+        Label3_11 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =74
+            Size: =18
+            Text: ="Update Objective"
+            Visible: =I4_0_DPMS_CSL_XXX_XX_LVPOPV
+            Width: =270
+            X: =15
+            Y: =109
+            ZIndex: =5
+
+    Dropdown1_1 As dropdown:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        ChevronBackground: =RGBA(211, 66, 9, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =26
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 211, 205, 1)
+        Items: =DropDownSample
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(131, 24, 75, 1)
+        SelectionFill: =RGBA(211, 66, 9, 1)
+        Size: =13
+        Width: =100
+        X: =123
+        Y: =527
+        ZIndex: =10
+
+    Rectangle3 As rectangle:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Fill: =RGBA(211, 66, 9, 1)
+        Height: =25
+        Width: =25
+        X: =72
+        Y: =527
+        ZIndex: =11
+
+    Label6 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
+        Text: |-
+            ="Objective Description
+            "
+        Width: =185
+        X: =72
+        Y: =297
+        ZIndex: =12
+
+    Label6_1 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
+        Text: ="Comments"
+        Width: =120
+        X: =701
+        Y: =297
+        ZIndex: =13
+
+    TextInput1 As text:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: ="Text input"
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Height: =132
+        HoverBorderColor: =RGBA(131, 24, 75, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 211, 205, 1)
+        Size: =13
+        Width: =590
+        X: =74
+        Y: =339
+        ZIndex: =14
+
+    TextInput1_1 As text:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: ="Text input"
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Height: =132
+        HoverBorderColor: =RGBA(131, 24, 75, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 211, 205, 1)
+        Size: =13
+        Width: =590
+        X: =704
+        Y: =339
+        ZIndex: =15
+
+    "'I4.0_DPMS_CSL_GnO_BHG_IN-1_5' As gallery.galleryVertical":
+        DisplayMode: =DisplayMode.View
+        Height: =50
+        Items: =I4_0_DPMS_CSL_XXX_CIS
+        Layout: =Layout.Vertical
+        OnSelect: =
+        ShowNavigation: =true
+        TemplateSize: =34
+        Width: =1244
+        X: =64
+        Y: =217
+        ZIndex: =16
+
+        "'I4.0_DPMS_CSL_GnO_R1_IN-2_2' As rectangle":
+            BorderColor: =RGBA(0, 0, 0, 0.7)
+            BorderThickness: =1
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =34
+            Width: =1222
+            ZIndex: =1
+
+        "'I4.0_DPMS_CSL_GnO_TL15_IN-2_2' As label":
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =34
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.ObjCreateDate
+            Width: =215
+            ZIndex: =3
+
+        "'I4.0_DPMS_CSL_GnO_TL14_IN-2_2' As label":
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =34
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.ObjTargetDate
+            Width: =220
+            X: =215
+            ZIndex: =4
+
+        "'I4.0_DPMS_CSL_GnO_TL13_IN-2_2' As label":
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =34
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.ObjectiveId
+            Width: =236
+            X: =435
+            ZIndex: =5
+
+        "'I4.0_DPMS_CSL_GnO_TL12_IN-2_2' As label":
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =34
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: |-
+                =First(
+                    Split(
+                        First(
+                            Split(
+                                ThisItem.ObjOwner,
+                                " "
+                            )
+                        ).Result,
+                        " "
+                    )
+                ).Result & " " & First(
+                    Split(
+                        Last(
+                            Split(
+                                ThisItem.ObjOwner,
+                                " "
+                            )
+                        ).Result,
+                        " "
+                    )
+                ).Result
+            Width: =171
+            X: =671
+            ZIndex: =6
+
+        "'I4.0_DPMS_CSL_GnO_TL11_IN-2_4' As label":
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =34
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.IssueProgress
+            Width: =131
+            X: =977
+            ZIndex: =8
+
+        "'I4.0_DPMS_CSL_GnO_TL11_IN-2_5' As label":
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =34
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.ObjWeight
+            Width: =112
+            X: =1108
+            ZIndex: =9
+
+        "'I4.0_DPMS_CSL_GnO_TL11_IN-2_6' As label":
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =34
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.IssueStatus
+            Width: =135
+            X: =842
+            ZIndex: =10
+
+        Circle1_1 As circle:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Fill: |-
+                =Switch(
+                    'I4.0_DPMS_CSL_GnO_TL11_IN-2_6'.Text,
+                    "Not Started",
+                    DimGrey,
+                    "On Track",
+                    Green,
+                    "Off Track",
+                    Red,
+                    "Complete",
+                    Blue,
+                    Black
+                )
+            Height: =19
+            OnSelect: =Select(Parent)
+            Width: =21
+            X: =952
+            Y: =7
+            ZIndex: =11
+
+    "'I4.0_DPMS_CSL_GnO_TL10_IN-2_2' As label":
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 0, 0, 0.7)
+        Height: =35
+        Size: =13
+        Text: =
+        Width: =1222
+        X: =67
+        Y: =186
+        ZIndex: =17
+
+    "'I4.0_DPMS_CSL_GnO_TL9_IN-2_2' As label":
+        BorderThickness: =1
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =34
+        Size: =13.5
+        Text: ="Objective Create Date"
+        Width: =215
+        X: =67
+        Y: =187
+        ZIndex: =18
+
+    "'I4.0_DPMS_CSL_GnO_TL8_IN-2_2' As label":
+        BorderThickness: =1
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =34
+        Size: =13.5
+        Text: ="Objective Target Date"
+        Width: =220
+        X: =282
+        Y: =187
+        ZIndex: =19
+
+    "'I4.0_DPMS_CSL_GnO_TL7_IN-2_2' As label":
+        BorderThickness: =1
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =34
+        Size: =13.5
+        Text: ="Objective ID"
+        Width: =236
+        X: =502
+        Y: =187
+        ZIndex: =20
+
+    "'I4.0_DPMS_CSL_GnO_TL6_IN-2_5' As label":
+        BorderThickness: =1
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =34
+        Size: =13.5
+        Text: ="Owner"
+        Width: =171
+        X: =738
+        Y: =187
+        ZIndex: =21
+
+    "'I4.0_DPMS_CSL_GnO_TL6_IN-2_6' As label":
+        BorderThickness: =1
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =34
+        Size: =13.5
+        Text: ="Progress"
+        Width: =131
+        X: =1044
+        Y: =187
+        ZIndex: =22
+
+    "'I4.0_DPMS_CSL_GnO_TL6_IN-2_7' As label":
+        BorderThickness: =1
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =34
+        Size: =13.5
+        Text: ="Weight"
+        Width: =112
+        X: =1176
+        Y: =187
+        ZIndex: =23
+
+    "'I4.0_DPMS_CSL_GnO_TL6_IN-2_8' As label":
+        BorderThickness: =1
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =34
+        Size: =13.5
+        Text: ="Status"
+        Width: =135
+        X: =909
+        Y: =187
+        ZIndex: =24
+
