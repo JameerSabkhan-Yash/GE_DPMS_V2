@@ -94,7 +94,7 @@
     "Id": "e423bd15-d128-4fb7-ad7b-a156e4f047fb",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "Name": "CSL_DPMS_201022_v2.msapp",
+    "Name": "CSL_DPMS_201022_v2",
     "OriginatingVersion": "1.326"
   },
   "PublishInfo": {
@@ -120,6 +120,7 @@
     "Template",
     "14.0_DPMS_CSL_GnO_ObjD",
     "sampleWidget",
-    "NavigationDemo"
+    "NavigationDemo",
+    "PopScreen"
   ]
 }
