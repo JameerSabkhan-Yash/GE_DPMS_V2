@@ -357,22 +357,35 @@
                     HoverBorderColor: =
                     HoverColor: =RGBA(0, 0, 0, 0)
                     OnCheck: |-
-                        =Clear(I4_0_DPMS_CSL_XXX_CIS);
-                         Collect(
-                                I4_0_DPMS_CSL_XXX_CIS,
-                                 {
-                                    FA: ThisItem.FocusArea,
-                                    FL: ThisItem.FocusLine,
-                                    ObjDescription:ThisItem.ObjectiveDescription,
-                                    ObjTargetDate: ThisItem.ObjTargetDateTime,
-                                    ObjectiveId:ThisItem.ObjectiveId,
-                                    Topline:ThisItem.TopLineHeader,
-                                    ObjOwner:ThisItem.ObjOwner.DisplayName,
-                                    IssueStatus:ThisItem.ObjStatus.Value,
-                                    IssueProgress:ThisItem.ObjProgress.Value,
-                                    ObjCreateDate:Text(ThisItem.ObjCreatedDateTime,ShortDate),
-                                    ObjWeight:ThisItem.ObjWeight
-                                })
+                        =//ClearCollection
+                        Clear(I4_0_DPMS_CSL_XXX_CIS);
+                        //Create Collection for Update/CreateIssue.
+                        Collect(
+                            I4_0_DPMS_CSL_XXX_CIS,
+                            {
+                                FA: ThisItem.FocusArea,
+                                FACode: ThisItem.FocusAreaCode,
+                                FL: ThisItem.FocusLine,
+                                FLCode: ThisItem.FocusLineCode,
+                                TopLine: ThisItem.TopLineHeader,
+                                ObjDescription: ThisItem.ObjectiveDescription,
+                                ObjTargetDate: Text(
+                                    ThisItem.ObjTargetDateTime,
+                                    ShortDate
+                                ),
+                                ObjectiveId: ThisItem.ObjectiveId,
+                                Topline: ThisItem.TopLineHeader,
+                                ObjOwner: ThisItem.ObjOwner.DisplayName,
+                                IssueStatus: ThisItem.ObjStatus.Value,
+                                IssueProgress: ThisItem.ObjProgress.Value,
+                                ObjCreateDate: Text(
+                                    ThisItem.ObjCreatedDateTime,
+                                    ShortDate
+                                ),
+                                ObjWeight: ThisItem.ObjWeight,
+                                ObjMeasure: ThisItem.ObjMeasure
+                            }
+                        )
                     PaddingBottom: =2
                     PressedBorderColor: =RGBA(0,0,0,0)
                     Reset: =
