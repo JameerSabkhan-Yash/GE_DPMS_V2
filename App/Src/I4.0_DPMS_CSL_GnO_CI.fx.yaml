@@ -849,7 +849,7 @@
                 HoverBorderColor: =RGBA(0, 0, 0, 0.7)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =RGBA(0, 0, 0, 0.7)
-                OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_OD');
+                OnSelect: =Navigate('14.0_DPMS_CSL_GnO_ObjD');
                 Size: =15
                 Text: ="Cancel"
                 Width: =150

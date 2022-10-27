@@ -2685,46 +2685,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard6.'I4.0_DPMS_CSL_GnO_B5_CI-2_3'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard6.'I4.0_DPMS_CSL_GnO_B5_CI-2_3'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 22,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": "'I4.0_DPMS_CSL_GnO_OD'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "I4.0_DPMS_CSL_GnO_CI",
-                "type": "'I4.0_DPMS_CSL_GnO_CI'.Canvas1_7.DataCard6.'I4.0_DPMS_CSL_GnO_B5_CI-2_3'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "I4.0_DPMS_CSL_GnO_OD"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'I4.0_DPMS_CSL_GnO_CO'.Label7_65.OnSelect"
                 }
               ],
