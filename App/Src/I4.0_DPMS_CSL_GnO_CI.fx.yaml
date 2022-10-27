@@ -122,7 +122,7 @@
             Set(varIssueDashboard,false);
             Set(varInsightDashboad,false);
         PaddingBottom: =23
-        Text: ="Create Issues"
+        Text: ="Create Escalation"
         Width: =172
         X: =55
         Y: =204
@@ -882,7 +882,7 @@
                 FontWeight: =FontWeight.Semibold
                 Height: =37
                 Size: =15
-                Text: ="Issue Description"
+                Text: ="Escalation Description"
                 Width: =250
                 X: =8
                 ZIndex: =2
@@ -902,7 +902,7 @@
                     )
                 Width: =41
                 Wrap: =false
-                X: =167
+                X: =217
                 Y: =2
                 ZIndex: =3
 
@@ -1084,7 +1084,7 @@
                 EnableSpellCheck: =true
                 FocusedBorderThickness: =4
                 Height: =98
-                HintText: ="Please enter your Issue Description."
+                HintText: ="Please enter your Escalation Description."
                 HoverBorderColor: =RGBA(0, 0, 0, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
