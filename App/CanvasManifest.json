@@ -111,6 +111,7 @@
   "ScreenOrder": [
     "I4.0_DPMS_CSL_GnO_AC",
     "I4.0_DPMS_CSL_GnO_SC_IN-1",
+    "I4.0_DPMS_CSL_GnO_SC_IN-1_1",
     "I4.0_DPMS_CSL_GnO_SC_IN-2",
     "I4.0_DPMS_CSL_KPI_SC_PE_Breadcrumb",
     "OverviewNew",
