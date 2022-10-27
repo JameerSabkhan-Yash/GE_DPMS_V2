@@ -2,25 +2,7 @@
     Fill: =RGBA(226, 223, 218, 1)
     LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
     OnVisible: |
-        =//Collection for issue create operation
-        ClearCollect(
-            I4_0_DPMS_CSL_XXX_CIS,
-            {
-                FACode: "FA",
-                FLCode: "FL",
-                FA: "Reliability",
-                FL: "R1",
-                ObjCreateDate: "10/19/2022",
-                ObjectiveId: "O1SO1FA2FL2TH2_OB1",
-                IssueStatus: "Not Started",
-                IssueProgress: "0%",
-                ObjOwner: "Jameer Kutubuddin Sabkhan",
-                ObjTargetDate: "10/19/2022",
-                ObjWeight: 100,
-                ObjDescription: "DPMS Objective Description DPMS Objective Description ",
-                ObjMeasure: "DPMS Measure DPMS Measure DPMS Measure DPMS Measure DPMS "
-            }
-        );
+        =
         //Set the ObjId 
         Set(
             I4_0_DPMS_CSL_GnO_CI_LVOBJID,

@@ -42,9 +42,10 @@
                 IssueProgress: "0%",
                 ObjOwner: "Jameer Kutubuddin Sabkhan",
                 ObjTargetDate: "10/19/2022",
-                ObjWeight: 100,
+                ObjWeight: "100",
                 ObjDescription: "DPMS Objective Description DPMS Objective Description ",
-                ObjMeasure: "DPMS Measure DPMS Measure DPMS Measure DPMS Measure DPMS "
+                ObjMeasure: "DPMS Measure DPMS Measure DPMS Measure DPMS Measure DPMS ",
+                Topline:"abc"
             }
         );
         Clear(I4_0_DPMS_CSL_XXX_CIS);
@@ -365,7 +366,7 @@
                     Color: =RGBA(0, 0, 0, 1)
                     DisplayMode: |-
                         =If(
-                            Self.Value || Value('I4.0_DPMS_CSL_GnO_TL-IN-1_2'.Text) = 0,
+                            Self.Value || Value(Checkbox.Text) = 0,
                             DisplayMode.Edit,
                             DisplayMode.View
                         )
@@ -374,46 +375,54 @@
                     HoverBorderColor: =
                     HoverColor: =RGBA(0, 0, 0, 0)
                     OnCheck: |
-                        =Clear(I4_0_DPMS_CSL_XXX_CINAC);
+                        =Clear(I4_0_DPMS_CSL_XXX_CIS);
                         If(
-                            ThisItem.ID in I4_0_DPMS_CSL_XXX_CINAC.ID,
+                            ThisItem.ObjectiveId in I4_0_DPMS_CSL_XXX_CIS.ObjectiveId,
                             Update(
-                                I4_0_DPMS_CSL_XXX_CINAC,
+                                I4_0_DPMS_CSL_XXX_CIS,
                                 First(
                                     Filter(
-                                        I4_0_DPMS_CSL_XXX_CINAC,
-                                        ID = ThisItem.ID
+                                        I4_0_DPMS_CSL_XXX_CIS,
+                                        ObjectiveId = ThisItem.ObjectiveId
                                     )
                                 ),
                                 {
-                                    ID: ThisItem.ID,
                                     FocusArea: ThisItem.FocusArea,
                                     FocusLine: ThisItem.FocusLine,
-                                    ObjectiveDescription: ThisItem.ObjectiveDescription,
-                                    IssueDescription: ThisItem.IssueDescription,
-                                    ObjTargetDateTime: ThisItem.ObjTargetDateTime,
-                                    ObjectiveId:ThisItem.ObjectiveId
+                                    ObjectiveDescription:ThisItem.ObjectiveDescription,
+                                    ObjTargetDate: ThisItem.ObjTargetDateTime,
+                                    ObjectiveId:ThisItem.ObjectiveId,
+                                    Topline:ThisItem.TopLineHeader,
+                                    ObjOwner:ThisItem.ObjOwner.DisplayName,
+                                    IssueStatus:ThisItem.ObjStatus.Value,
+                                    IssueProgress:ThisItem.ObjProgress.Value,
+                                    ObjCreateDate:Text(ThisItem.ObjCreatedDateTime,ShortDate)
+                                          
+                        
                                 }
                             ),
                             Collect(
-                                I4_0_DPMS_CSL_XXX_CINAC,
-                                {
-                                    ID: ThisItem.ID,
+                                I4_0_DPMS_CSL_XXX_CIS,
+                                 {
                                     FocusArea: ThisItem.FocusArea,
                                     FocusLine: ThisItem.FocusLine,
-                                    ObjectiveDescription: ThisItem.ObjectiveDescription,
-                                    IssueDescription: ThisItem.IssueDescription,
-                                    ObjTargetDateTime: ThisItem.ObjTargetDateTime,
-                                    ObjectiveId:ThisItem.ObjectiveId
+                                    ObjectiveDescription:ThisItem.ObjectiveDescription,
+                                    ObjTargetDate: ThisItem.ObjTargetDateTime,
+                                    ObjectiveId:ThisItem.ObjectiveId,
+                                    Topline:ThisItem.TopLineHeader,
+                                    ObjOwner:ThisItem.ObjOwner.DisplayName,
+                                    IssueStatus:ThisItem.ObjStatus.Value,
+                                    IssueProgress:ThisItem.ObjProgress.Value,
+                                    ObjCreateDate:Text(ThisItem.ObjCreatedDateTime,ShortDate)
                                 }
                             )
                         );
                     PaddingBottom: =2
                     PressedBorderColor: =RGBA(0,0,0,0)
-                    Reset: =I4_0_DPMS_CSL_GnO_LVORSTCHKBK
+                    Reset: =
                     Size: =13
                     Text: =""
-                    Tooltip: ="Shift 1 -" & Label2.Text 
+                    Tooltip: =
                     Width: =38
                     ZIndex: =2
 
@@ -562,7 +571,7 @@
                 Size: =13.5
                 Text: ="Focus Area"
                 Width: =116
-                X: =52
+                X: =57
                 Y: =121
                 ZIndex: =5
 
@@ -709,6 +718,21 @@
                 X: =986
                 Y: =121
                 ZIndex: =16
+
+            Checkbox As label:
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =41
+                Size: =13
+                Text: |+
+                    =CountRows(Filter('I4.0_DPMS_CSL_GnO_BHG_IN-1_4'.AllItems,'I4.0_DPMS_CSL_GnO_CB_IN-1_2'.Value))
+                    
+                Visible: =false
+                Width: =133
+                X: =390
+                Y: =63
+                ZIndex: =17
 
     "'I4.0_DPMS_CSL_XXX_C_F_3' As 'I4.0_DPMS_CSL_XXX_C_F'":
         Height: =26
