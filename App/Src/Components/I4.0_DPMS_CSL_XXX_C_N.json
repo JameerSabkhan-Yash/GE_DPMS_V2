@@ -26,7 +26,7 @@
             "Name": "galleryTemplate1_1",
             "Parent": "Gallery1_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 562,
+            "PublishOrderIndex": 14,
             "Rules": [
               {
                 "Category": "Design",
@@ -294,7 +294,7 @@
                 "Name": "Button5_1",
                 "Parent": "Gallery2_1",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 564,
+                "PublishOrderIndex": 17,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -572,7 +572,7 @@
                 "Name": "galleryTemplate2_1",
                 "Parent": "Gallery2_1",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 565,
+                "PublishOrderIndex": 18,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -733,7 +733,7 @@
             "Name": "Gallery2_1",
             "Parent": "Gallery1_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 563,
+            "PublishOrderIndex": 15,
             "Rules": [
               {
                 "Category": "Data",
@@ -1026,7 +1026,7 @@
             "Name": "Icon5_1",
             "Parent": "Gallery1_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 566,
+            "PublishOrderIndex": 16,
             "Rules": [
               {
                 "Category": "Design",
@@ -1314,7 +1314,7 @@
         "Name": "Gallery1_1",
         "Parent": "I4.0_DPMS_CSL_XXX_C_N",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 561,
+        "PublishOrderIndex": 12,
         "Rules": [
           {
             "Category": "Data",
@@ -1616,7 +1616,7 @@
         "Name": "Label7_1",
         "Parent": "I4.0_DPMS_CSL_XXX_C_N",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 567,
+        "PublishOrderIndex": 13,
         "Rules": [
           {
             "Category": "Data",
@@ -1922,7 +1922,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638024522691118732",
+    "LastModifiedTimestamp": "638024656580667144",
     "Name": "I4.0_DPMS_CSL_XXX_C_N",
     "Rules": [
       {
@@ -2009,7 +2009,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638024522691118732",
+  "LastModifiedTimestamp": "638024656580667144",
   "Name": "9cecd846700147afb00973285bf47f3c",
   "OverridableProperties": {},
   "TemplateOriginalName": "b84c574b812d4e68b5e6a43c2a120003",

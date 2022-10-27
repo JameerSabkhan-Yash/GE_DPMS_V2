@@ -218,7 +218,8 @@
       "I4_0_DPMS_CSL_CFG_FA",
       "I4_0_DPMS_CSL_CFG_FL",
       "createIssueDemo_5",
-      "I4_0_DPMS_CSL_CFG_TH"
+      "I4_0_DPMS_CSL_CFG_TH",
+      "createIssueDemoNewTrial_3"
     ],
     "dependencies": {},
     "dependents": [
