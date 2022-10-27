@@ -28,7 +28,7 @@ PopScreen As screen:
         Text: ="POP "
         Width: =272
         X: =542
-        Y: =378
+        Y: =68
         ZIndex: =1
 
     Group2_2 As group:
