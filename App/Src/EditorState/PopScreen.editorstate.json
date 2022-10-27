@@ -113,7 +113,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button1_24",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -371,7 +371,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button2",
-      "ParentIndex": 6,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -669,7 +669,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon1_4",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -859,7 +859,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image1_2",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1105,7 +1105,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_10",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1401,7 +1401,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_9",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

@@ -1505,7 +1505,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Checkbox1_8",
-      "ParentIndex": 20,
+      "ParentIndex": 19,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1822,7 +1822,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Checkbox1_9",
-      "ParentIndex": 23,
+      "ParentIndex": 22,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4061,7 +4061,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "I4.0_DPMS_CSL_GnO_TI_CI-2_2",
-      "ParentIndex": 21,
+      "ParentIndex": 20,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7126,7 +7126,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "I4.0_DPMS_CSL_GnO_TL_CI-2_2",
-      "ParentIndex": 22,
+      "ParentIndex": 21,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16385,7 +16385,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "DataCardKey1.Y",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "Y",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -16715,7 +16715,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "DataCardKey1.Y",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "Y",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -17428,7 +17428,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "StarVisible1_8",
-      "ParentIndex": 19,
+      "ParentIndex": 23,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
