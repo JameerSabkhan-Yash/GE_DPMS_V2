@@ -1,7 +1,7 @@
 "'14.0_DPMS_CSL_GnO_ObjD' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     Fill: =RGBA(226, 223, 218, 1)
     LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
-    OnVisible: |-
+    OnVisible: |
         =//Collection for Objective pichart
         Set(Offtrack,CountRows(Filter(I4_0_DPMS_CSL_GnO,ObjStatus.Value="Off Track")));
         Set(Ontrack,CountRows(Filter(I4_0_DPMS_CSL_GnO,ObjStatus.Value="On Track")));
@@ -28,27 +28,6 @@
         //Clear(I4_0_DPMS_CSL_XXX_CIS_Demo);
         
         //Collection for issue create operation
-        
-        ClearCollect(
-            I4_0_DPMS_CSL_XXX_CIS,
-            {
-                FACode: "FA",
-                FLCode: "FL",
-                FA: "Reliability",
-                FL: "R1",
-                ObjCreateDate: "10/19/2022",
-                ObjectiveId: "O1SO1FA2FL2TH2_OB1",
-                IssueStatus: "Not Started",
-                IssueProgress: "0%",
-                ObjOwner: "Jameer Kutubuddin Sabkhan",
-                ObjTargetDate: "10/19/2022",
-                ObjWeight: "100",
-                ObjDescription: "DPMS Objective Description DPMS Objective Description ",
-                ObjMeasure: "DPMS Measure DPMS Measure DPMS Measure DPMS Measure DPMS ",
-                Topline:"abc"
-            }
-        );
-        Clear(I4_0_DPMS_CSL_XXX_CIS);
 
     "'14.0_DPMS_CSL_GnO_ObjD_Rec1' As rectangle":
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -387,33 +366,33 @@
                                     )
                                 ),
                                 {
-                                    FocusArea: ThisItem.FocusArea,
-                                    FocusLine: ThisItem.FocusLine,
-                                    ObjectiveDescription:ThisItem.ObjectiveDescription,
+                                    FA: ThisItem.FocusArea,
+                                    FL: ThisItem.FocusLine,
+                                    ObjDescription:ThisItem.ObjectiveDescription,
                                     ObjTargetDate: ThisItem.ObjTargetDateTime,
                                     ObjectiveId:ThisItem.ObjectiveId,
                                     Topline:ThisItem.TopLineHeader,
                                     ObjOwner:ThisItem.ObjOwner.DisplayName,
                                     IssueStatus:ThisItem.ObjStatus.Value,
                                     IssueProgress:ThisItem.ObjProgress.Value,
-                                    ObjCreateDate:Text(ThisItem.ObjCreatedDateTime,ShortDate)
-                                          
-                        
+                                    ObjCreateDate:Text(ThisItem.ObjCreatedDateTime,ShortDate),
+                                    ObjWeight:ThisItem.ObjWeight
                                 }
                             ),
                             Collect(
                                 I4_0_DPMS_CSL_XXX_CIS,
                                  {
-                                    FocusArea: ThisItem.FocusArea,
-                                    FocusLine: ThisItem.FocusLine,
-                                    ObjectiveDescription:ThisItem.ObjectiveDescription,
+                                    FA: ThisItem.FocusArea,
+                                    FL: ThisItem.FocusLine,
+                                    ObjDescription:ThisItem.ObjectiveDescription,
                                     ObjTargetDate: ThisItem.ObjTargetDateTime,
                                     ObjectiveId:ThisItem.ObjectiveId,
                                     Topline:ThisItem.TopLineHeader,
                                     ObjOwner:ThisItem.ObjOwner.DisplayName,
                                     IssueStatus:ThisItem.ObjStatus.Value,
                                     IssueProgress:ThisItem.ObjProgress.Value,
-                                    ObjCreateDate:Text(ThisItem.ObjCreatedDateTime,ShortDate)
+                                    ObjCreateDate:Text(ThisItem.ObjCreatedDateTime,ShortDate),
+                                    ObjWeight:ThisItem.ObjWeight
                                 }
                             )
                         );
