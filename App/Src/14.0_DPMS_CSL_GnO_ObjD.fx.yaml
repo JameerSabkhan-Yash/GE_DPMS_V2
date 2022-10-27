@@ -374,7 +374,6 @@
                                     ShortDate
                                 ),
                                 ObjectiveId: ThisItem.ObjectiveId,
-                                Topline: ThisItem.TopLineHeader,
                                 ObjOwner: ThisItem.ObjOwner.DisplayName,
                                 IssueStatus: ThisItem.ObjStatus.Value,
                                 IssueProgress: ThisItem.ObjProgress.Value,
