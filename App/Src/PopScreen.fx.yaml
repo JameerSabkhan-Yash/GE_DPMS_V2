@@ -1,5 +1,5 @@
 PopScreen As screen:
-    Fill: =RGBA(255,255,255,1)
+    Fill: =RGBA(226, 223, 218, 1)
     LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
     OnVisible: |-
         =//Pop Variables
