@@ -59,6 +59,11 @@
                 }
             )
         );
+        //Pop Variables
+        Set(
+            I4_0_DPMS_CSL_GnO_LVPOPV_U,
+            false
+        );
 
     "'14.0_DPMS_CSL_GnO_ObjD_Rec1' As rectangle":
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1005,7 +1010,7 @@
                 FontWeight: =FontWeight.Semibold
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
-                OnSelect: =Set(I4_0_DPMS_CSL_Gno_LVPOP,true)
+                OnSelect: =Set(I4_0_DPMS_CSL_GnO_LVPOPV_U,true)
                 Size: =15
                 Text: ="Update"
                 Width: =167
@@ -1142,7 +1147,7 @@
             BorderColor: =RGBA(131, 24, 75, 1)
             Fill: =RGBA(226, 223, 218, 0.5)
             Height: =768
-            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
             Width: =1366
             ZIndex: =16
 
@@ -1161,7 +1166,7 @@
             HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
             Size: =15
             Text: =""
-            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
             Width: =1328
             X: =17
             Y: =190
@@ -1177,7 +1182,7 @@
             HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
             Size: =15
             Text: ="Update"
-            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
             Width: =150
             X: =1145
             Y: =579
@@ -1191,7 +1196,7 @@
             Height: =38
             Size: =13
             Text: ="Status"
-            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
             Width: =80
             X: =69
             Y: =548
@@ -1205,7 +1210,7 @@
             Height: =38
             Size: =13
             Text: ="Progress"
-            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
             Width: =83
             X: =292
             Y: =548
@@ -1215,7 +1220,7 @@
             BorderColor: =RGBA(131, 24, 75, 1)
             Fill: =RGBA(211, 66, 9, 1)
             Height: =25
-            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
             Width: =25
             X: =74
             Y: =596
@@ -1229,7 +1234,7 @@
             Text: |-
                 ="Objective Description
                 "
-            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
             Width: =185
             X: =74
             Y: =366
@@ -1241,7 +1246,7 @@
             DisabledColor: =RGBA(166, 166, 166, 1)
             Size: =13
             Text: ="Comments"
-            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
             Width: =120
             X: =703
             Y: =366
@@ -1261,7 +1266,7 @@
             HoverColor: =RGBA(0, 0, 0, 1)
             HoverFill: =RGBA(255, 211, 205, 1)
             Size: =13
-            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
             Width: =590
             X: =76
             Y: =408
@@ -1281,7 +1286,7 @@
             HoverColor: =RGBA(0, 0, 0, 1)
             HoverFill: =RGBA(255, 211, 205, 1)
             Size: =13
-            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
             Width: =590
             X: =706
             Y: =408
@@ -1295,7 +1300,7 @@
             OnSelect: =
             ShowNavigation: =true
             TemplateSize: =34
-            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
             Width: =1244
             X: =64
             Y: =284
@@ -1436,7 +1441,7 @@
             Height: =35
             Size: =13
             Text: =
-            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
             Width: =1222
             X: =69
             Y: =255
@@ -1450,7 +1455,7 @@
             Height: =34
             Size: =13.5
             Text: ="Objective Create Date"
-            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
             Width: =215
             X: =69
             Y: =256
@@ -1464,7 +1469,7 @@
             Height: =34
             Size: =13.5
             Text: ="Objective Target Date"
-            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
             Width: =220
             X: =284
             Y: =256
@@ -1478,7 +1483,7 @@
             Height: =34
             Size: =13.5
             Text: ="Objective ID"
-            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
             Width: =236
             X: =504
             Y: =256
@@ -1492,7 +1497,7 @@
             Height: =34
             Size: =13.5
             Text: ="Owner"
-            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
             Width: =171
             X: =740
             Y: =256
@@ -1506,7 +1511,7 @@
             Height: =34
             Size: =13.5
             Text: ="Progress"
-            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
             Width: =131
             X: =1046
             Y: =256
@@ -1520,7 +1525,7 @@
             Height: =34
             Size: =13.5
             Text: ="Weight"
-            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
             Width: =113
             X: =1177
             Y: =256
@@ -1534,7 +1539,7 @@
             Height: =34
             Size: =13.5
             Text: ="Status"
-            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
             Width: =135
             X: =911
             Y: =256
@@ -1546,8 +1551,8 @@
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =36
             Icon: =Icon.Cancel
-            OnSelect: =Set(I4_0_DPMS_CSL_Gno_LVPOP,false)
-            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            OnSelect: =Set(I4_0_DPMS_CSL_GnO_LVPOPV_U,false)
+            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
             Width: =30
             X: =1310
             Y: =194
@@ -1562,7 +1567,7 @@
             Height: =74
             Size: =18
             Text: ="Update Objective"
-            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
             Width: =270
             X: =17
             Y: =178
@@ -1713,7 +1718,7 @@
             PressedFill: =RGBA(219, 219, 219, 1)
             SelectionFill: =RGBA(202, 202, 202, 1)
             Size: =13
-            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
             Width: =183
             X: =74
             Y: =591
@@ -1864,7 +1869,7 @@
             PressedFill: =RGBA(219, 219, 219, 1)
             SelectionFill: =RGBA(202, 202, 202, 1)
             Size: =13
-            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
             Width: =172
             X: =305
             Y: =591
