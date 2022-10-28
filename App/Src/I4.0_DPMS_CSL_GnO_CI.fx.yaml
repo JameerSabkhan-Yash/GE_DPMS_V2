@@ -763,6 +763,7 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =DisplayMode.View
                 EnableSpellCheck: =true
+                Fill: =RGBA(181, 177, 177, 0.55)
                 FocusedBorderThickness: =4
                 Height: =106
                 HintText: ="Please enter your Issue Description."
@@ -805,6 +806,7 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =DisplayMode.View
                 EnableSpellCheck: =true
+                Fill: =RGBA(181, 177, 177, 0.55)
                 FocusedBorderThickness: =4
                 Height: =106
                 HintText: ="Please enter your Issue Description."
@@ -1059,7 +1061,7 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 EnableSpellCheck: =true
                 FocusedBorderThickness: =4
-                Height: =98
+                Height: =106
                 HintText: ="Please enter your Escalation Description."
                 HoverBorderColor: =RGBA(0, 0, 0, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
