@@ -121,6 +121,7 @@
         ZIndex: =14
 
     Canvas1_7 As fluidGrid.fluidGridWithBlankCard:
+        AcceptsFocus: =true
         BorderThickness: =0
         Fill: =RGBA(226, 223, 218, 1)
         Height: =448
