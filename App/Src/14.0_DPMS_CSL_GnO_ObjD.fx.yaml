@@ -592,7 +592,12 @@
                                 FL: ThisItem.FocusLine,
                                 FLCode: ThisItem.FocusLineCode,
                                 TopLine: ThisItem.TopLineHeader,
+                                TopLineCode: ThisItem.TopLineHeaderCode,
                                 ObjDescription: ThisItem.ObjectiveDescription,
+                                ObjCreateDate: Text(
+                                    ThisItem.ObjCreatedDateTime,
+                                    ShortDate
+                                ),
                                 ObjTargetDate: Text(
                                     ThisItem.ObjTargetDateTime,
                                     ShortDate
@@ -602,12 +607,9 @@
                                 ObjOwner: ThisItem.ObjOwner.DisplayName,
                                 IssueStatus: ThisItem.ObjStatus.Value,
                                 IssueProgress: ThisItem.ObjProgress.Value,
-                                ObjCreateDate: Text(
-                                    ThisItem.ObjCreatedDateTime,
-                                    ShortDate
-                                ),
                                 ObjWeight: ThisItem.ObjWeight,
-                                ObjMeasure: ThisItem.ObjMeasure
+                                ObjMeasure: ThisItem.ObjMeasure,
+                                DeliverableDescription: ThisItem.DeliverableDescription
                             }
                         )
                     PaddingBottom: =2
@@ -1533,6 +1535,7 @@
                         I4_0_DPMS_CSL_GnO_H,
                         Defaults(I4_0_DPMS_CSL_GnO_H),
                         {
+                         ORG:   
                          ObjectiveId: First(I4_0_DPMS_CSL_XXX_CIS).ObjectiveId,
                          ObjectiveNo:10,
                          FocusArea:"",
