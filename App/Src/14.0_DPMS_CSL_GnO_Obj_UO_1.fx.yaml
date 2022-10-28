@@ -691,7 +691,12 @@
             Height: =33
             Size: =15
             Text: ="*"
-            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U && IsEmpty(dpStatus.SelectedText.Value)
+            Visible: |-
+                =If(
+                    I4_0_DPMS_CSL_GnO_LVPOPV_U && IsBlank(dpStatus_1.SelectedText.Value),
+                    true,
+                    false
+                )
             Width: =31
             Wrap: =false
             X: =130
@@ -705,7 +710,12 @@
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =22
             Icon: =Icon.CheckBadge
-            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U && !IsBlank(dpStatus.SelectedText.Value)
+            Visible: |-
+                =If(
+                    I4_0_DPMS_CSL_GnO_LVPOPV_U && IsBlank(dpStatus_1.SelectedText.Value),
+                    false,
+                    true
+                )
             Width: =36
             X: =138
             Y: =540
@@ -718,7 +728,12 @@
             Height: =33
             Size: =15
             Text: ="*"
-            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U && IsBlank(dpStatus.SelectedText.Value)
+            Visible: |-
+                =If(
+                    I4_0_DPMS_CSL_GnO_LVPOPV_U && IsBlank(dpProgress_1.SelectedText.Value),
+                    true,
+                    false
+                )
             Width: =31
             Wrap: =false
             X: =776
@@ -732,7 +747,12 @@
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =22
             Icon: =Icon.CheckBadge
-            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U && !IsBlank(dpStatus.SelectedText.Value)
+            Visible: |-
+                =If(
+                    I4_0_DPMS_CSL_GnO_LVPOPV_U && IsBlank(dpProgress_1.SelectedText.Value),
+                    false,
+                    true
+                )
             Width: =36
             X: =784
             Y: =536
