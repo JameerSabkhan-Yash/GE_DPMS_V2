@@ -60,6 +60,9 @@
           "I4_0_DPMS_CSL_CFG_FL": {
             "tableName": "21ed4dda-a17e-48f2-93b3-1ac9f756c937"
           },
+          "I4_0_DPMS_CSL_CFG_S": {
+            "tableName": "2782cae6-8995-493b-8cf2-5d40f24778e6"
+          },
           "I4_0_DPMS_CSL_CFG_TH": {
             "tableName": "13868b08-6b94-42d3-a81b-c6f9ce685042"
           },
@@ -73,9 +76,6 @@
       },
       "https://ytpl.sharepoint.com/sites/OEEData": {
         "dataSources": {
-          "Insight_1": {
-            "tableName": "f124cd40-272c-4918-a9d7-39511863da61"
-          },
           "Insight_2": {
             "tableName": "f124cd40-272c-4918-a9d7-39511863da61"
           }
@@ -163,12 +163,6 @@
           "Insights123": {
             "tableName": "422c805b-4bed-4c7b-a1a0-5010e32ef33d"
           },
-          "leadingActions": {
-            "tableName": "f0287b4d-a8ea-47ca-b01c-b3cd2bd9f9f8"
-          },
-          "loginCredentials": {
-            "tableName": "39231811-8192-445c-82a4-f67c8032aa4e"
-          },
           "submitCreateIssue": {
             "tableName": "95b7a8ef-5a45-4d2e-a313-42f665d7e013"
           },
@@ -184,11 +178,9 @@
     "dataSources": [
       "Friday_Demolist",
       "Friday_Demolist_1",
-      "loginCredentials",
       "criticalIssues",
       "criticalIssues_1",
       "criticalIssues_2",
-      "leadingActions",
       "Insights123",
       "createIssueDemo",
       "createIssueDemo_1",
@@ -212,13 +204,13 @@
       "Block_1",
       "Block_2",
       "Insight_2",
-      "Insight_1",
       "I4_0_DPMS_CSL_GnO",
       "I4_0_DPMS_CSL_GnO-IS",
       "I4_0_DPMS_CSL_CFG_FA",
       "I4_0_DPMS_CSL_CFG_FL",
       "createIssueDemo_5",
-      "I4_0_DPMS_CSL_CFG_TH"
+      "I4_0_DPMS_CSL_CFG_TH",
+      "I4_0_DPMS_CSL_CFG_S"
     ],
     "dependencies": {},
     "dependents": [

@@ -247,6 +247,14 @@ App As appinfo:
                 FoucsArea
             )
         );
+        //Collection for Status
+        ClearCollect(
+            I4_0_DPMS_CSL_XXX_CS,
+            Distinct(
+                I4_0_DPMS_CSL_CFG_S,
+                FoucsArea
+            )
+        );
         //local variables for user group
         Set(
             I4_0_DPMS_CSL_XXX_GVUGN,
