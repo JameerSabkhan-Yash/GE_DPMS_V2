@@ -517,6 +517,7 @@
 
             "'I4.0_DPMS_CSL_GnO_BHG_IN-1_4' As gallery.galleryVertical":
                 BorderThickness: =2
+                FocusedBorderThickness: =2
                 Height: =315
                 Items: |-
                     =Search(
