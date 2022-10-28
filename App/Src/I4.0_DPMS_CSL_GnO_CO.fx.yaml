@@ -89,7 +89,7 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =716
+            Height: =678
             Width: =1280
             X: =0
             Y: =0
@@ -106,7 +106,7 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 EnableSpellCheck: =true
                 FocusedBorderThickness: =4
-                Height: =80
+                Height: =110
                 HintText: ="Please enter your objective description."
                 HoverBorderColor: =RGBA(0, 0, 0, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
@@ -463,7 +463,7 @@
                 Width: =46
                 Wrap: =false
                 X: =425
-                Y: =486
+                Y: =526
                 ZIndex: =36
 
             Label1_10 As label:
@@ -621,7 +621,7 @@
                 Text: ="Owner"
                 Width: =130
                 X: =50
-                Y: =493
+                Y: =533
                 ZIndex: =46
 
             StatusLabel As label:
@@ -634,7 +634,7 @@
                 Text: ="Status"
                 Width: =112
                 X: =803
-                Y: =493
+                Y: =533
                 ZIndex: =47
 
             Progress As label:
@@ -647,7 +647,7 @@
                 Text: ="Progress"
                 Width: =130
                 X: =1031
-                Y: =493
+                Y: =533
                 ZIndex: =48
 
             TargetLabel As label:
@@ -660,7 +660,7 @@
                 Text: ="Target Date"
                 Width: =130
                 X: =568
-                Y: =493
+                Y: =533
                 ZIndex: =49
 
             dpOwner As dropdown:
@@ -695,7 +695,7 @@
                 Size: =13
                 Width: =250
                 X: =50
-                Y: =538
+                Y: =578
                 ZIndex: =50
 
             Button17_15 As button:
@@ -829,7 +829,7 @@
                 SelectedDateFill: =RGBA(211, 66, 9, 1)
                 Width: =200
                 X: =568
-                Y: =538
+                Y: =578
                 ZIndex: =53
 
             OwnerStar_2 As label:
@@ -848,7 +848,7 @@
                 Width: =46
                 Wrap: =false
                 X: =117
-                Y: =495
+                Y: =535
                 ZIndex: =54
 
             ProgressTI As text:
@@ -878,7 +878,7 @@
                 Size: =13
                 Width: =200
                 X: =1031
-                Y: =538
+                Y: =578
                 ZIndex: =55
 
             StatusGroup As group:
@@ -927,7 +927,7 @@
                     Size: =13
                     Width: =200
                     X: =803
-                    Y: =538
+                    Y: =578
                     ZIndex: =56
 
                 Circle1_6 As circle:
@@ -951,7 +951,7 @@
                     Height: =22
                     Width: =22
                     X: =816
-                    Y: =546
+                    Y: =586
                     ZIndex: =57
 
             DeliverableDescriptionLabel As label:
@@ -964,7 +964,7 @@
                 Text: ="Deliverable Description"
                 Width: =266
                 X: =68
-                Y: =330
+                Y: =370
                 ZIndex: =59
 
             DevliverableStar As label:
@@ -983,7 +983,7 @@
                 Width: =31
                 Wrap: =false
                 X: =305
-                Y: =330
+                Y: =370
                 ZIndex: =60
 
             DeliverableDescriptionLength As label:
@@ -999,7 +999,7 @@
                     ="(Max Characters : " & Len(DeliverableDescription.Text) &"/200)"
                 Width: =218
                 X: =409
-                Y: =336
+                Y: =376
                 ZIndex: =61
 
             MeasureDescription As text:
@@ -1026,7 +1026,7 @@
                 Size: =13
                 Width: =585
                 X: =650
-                Y: =368
+                Y: =408
                 ZIndex: =62
 
             MeasureLabel As label:
@@ -1039,7 +1039,7 @@
                 Text: ="Measure"
                 Width: =105
                 X: =676
-                Y: =330
+                Y: =370
                 ZIndex: =63
 
             MeasureStar As label:
@@ -1058,7 +1058,7 @@
                 Width: =31
                 Wrap: =false
                 X: =763
-                Y: =330
+                Y: =370
                 ZIndex: =64
 
             MeasureDescriptionLenth As label:
@@ -1074,7 +1074,7 @@
                     ="(Max Characters : " & Len(MeasureDescription.Text) &"/200)"
                 Width: =218
                 X: =1031
-                Y: =336
+                Y: =376
                 ZIndex: =65
 
             WeightLabel As label:
@@ -1087,7 +1087,7 @@
                 Text: ="Weight"
                 Width: =117
                 X: =368
-                Y: =493
+                Y: =533
                 ZIndex: =66
 
             Weight As text:
@@ -1115,7 +1115,7 @@
                 Size: =13
                 Width: =200
                 X: =340
-                Y: =538
+                Y: =578
                 ZIndex: =67
 
             DeliverableCheckBox As checkbox:
@@ -1133,7 +1133,7 @@
                 Text: =""
                 Width: =37
                 X: =40
-                Y: =331
+                Y: =371
                 ZIndex: =68
 
             MeasureCheckbox As checkbox:
@@ -1151,7 +1151,7 @@
                 Text: =""
                 Width: =37
                 X: =649
-                Y: =331
+                Y: =371
                 ZIndex: =69
 
             WeightCheckBox As checkbox:
@@ -1169,7 +1169,7 @@
                 Text: =""
                 Width: =37
                 X: =338
-                Y: =495
+                Y: =535
                 ZIndex: =70
 
             DeliverableDescription As text:
@@ -1195,7 +1195,7 @@
                 Size: =13
                 Width: =585
                 X: =49
-                Y: =368
+                Y: =408
                 ZIndex: =71
 
             Label47_51 As label:
@@ -1214,7 +1214,7 @@
                     )
                 Width: =156
                 X: =50
-                Y: =548
+                Y: =588
                 ZIndex: =72
 
             TargetLabelWorng As label:
@@ -1227,7 +1227,7 @@
                 Text: =varWorngDate
                 Width: =218
                 X: =570
-                Y: =572
+                Y: =612
                 ZIndex: =73
 
             Button17_24 As button:
