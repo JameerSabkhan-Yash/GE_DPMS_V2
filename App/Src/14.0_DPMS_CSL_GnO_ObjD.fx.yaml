@@ -453,7 +453,22 @@
             "'I4.0_DPMS_CSL_GnO_BHG_IN-1_4' As gallery.galleryVertical":
                 BorderThickness: =2
                 Height: =294
-                Items: =Search(I4_0_DPMS_CSL_GnO,'I4.0_DPMS_CSL_GnO_TI1_IN-1_4'.Text,"FocusArea","FocusLine","TopLineHeader","ObjectiveDescription","ObjectiveId")
+                Items: |-
+                    =Search(
+                        AddColumns(
+                            I4_0_DPMS_CSL_GnO,
+                            "ObjStatusC",
+                            ObjStatus.Value,
+                            "ObjProgressC",
+                            ObjProgress.Value
+                        ),
+                        'I4.0_DPMS_CSL_GnO_TI1_IN-1_5'.Text,
+                        "FocusArea",
+                        "FocusLine",
+                        "TopLineHeader",
+                        "ObjStatusC",
+                        "ObjProgressC"
+                    )
                 Layout: =Layout.Vertical
                 OnSelect: =
                 ShowNavigation: =true
