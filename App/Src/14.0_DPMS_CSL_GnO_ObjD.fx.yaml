@@ -994,7 +994,7 @@
                 FontWeight: =FontWeight.Semibold
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
-                OnSelect: =
+                OnSelect: =Navigate('14.0_DPMS_CSL_GnO_Obj_H',Fade)
                 Size: =15
                 Text: ="History"
                 Width: =167
