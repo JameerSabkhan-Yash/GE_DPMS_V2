@@ -64,33 +64,7 @@
             "'I4.0_DPMS_CSL_GnO_BHG_IN-1_5' As gallery.galleryVertical":
                 BorderThickness: =2
                 Height: =315
-                Items: |-
-                    =Search(
-                        AddColumns(
-                            I4_0_DPMS_CSL_GnO,
-                            "ObjStatusC",
-                            ObjStatus.Value,
-                            "ObjProgressC",
-                            ObjProgress.Value,
-                            "CreateDate",
-                            Text(
-                                DateValue(ObjTargetDateTime),
-                                DateTimeFormat.ShortDate
-                            ),
-                            "Date",
-                            Text(
-                                DateValue(ObjCreatedDateTime),
-                                DateTimeFormat.ShortDate
-                            )
-                        ),
-                        'I4.0_DPMS_CSL_GnO_TI1_IN-1_4'.Text,
-                        "FocusArea",
-                        "FocusLine",
-                        "TopLineHeader",
-                        "ObjStatusC",
-                        "ObjProgressC",
-                        "CreateDate"
-                    )
+                Items: =Filter(I4_0_DPMS_CSL_GnO_H,ObjectiveId = First(I4_0_DPMS_CSL_XXX_CIS).ObjectiveId)
                 Layout: =Layout.Vertical
                 OnSelect: =
                 ShowNavigation: =true
@@ -265,7 +239,7 @@
                 Height: =35
                 Size: =13
                 Text: =
-                Width: =1221
+                Width: =1222
                 X: =26
                 Y: =40
                 ZIndex: =3
@@ -304,7 +278,7 @@
                 Height: =34
                 Size: =13.5
                 Text: ="Last Update"
-                Width: =178
+                Width: =179
                 X: =1069
                 Y: =41
                 ZIndex: =6
