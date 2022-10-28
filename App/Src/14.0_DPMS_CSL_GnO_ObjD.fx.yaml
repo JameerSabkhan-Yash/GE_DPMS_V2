@@ -1,35 +1,64 @@
 "'14.0_DPMS_CSL_GnO_ObjD' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     Fill: =RGBA(226, 223, 218, 1)
     LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
-    OnVisible: |+
+    OnVisible: |
         =//Collection for Objective pichart
-        Set(Offtrack,CountRows(Filter(I4_0_DPMS_CSL_GnO,ObjStatus.Value="Off Track")));
-        Set(Ontrack,CountRows(Filter(I4_0_DPMS_CSL_GnO,ObjStatus.Value="On Track")));
-        Set(Atrisk,CountRows(Filter(I4_0_DPMS_CSL_GnO,ObjStatus.Value="At Risk")));
-        Set(Completed,CountRows(Filter(I4_0_DPMS_CSL_GnO,ObjStatus.Value="Complete")));
-        Set(Notstart,CountRows(Filter(I4_0_DPMS_CSL_GnO,ObjStatus.Value="Not Started")));
-        Set(Quality,CountRows(Filter(I4_0_DPMS_CSL_GnO,FocusArea ="Quality")));
-        Set(Realibility,CountRows(Filter(I4_0_DPMS_CSL_GnO,FocusArea ="Reliability")));
-        Set(Inovation,CountRows(Filter(I4_0_DPMS_CSL_GnO,FocusArea ="Innovation")));
-        Set(People,CountRows(Filter(I4_0_DPMS_CSL_GnO,FocusArea ="People")));
-        Set(Safety,CountRows(Filter(I4_0_DPMS_CSL_GnO,FocusArea ="Safety")));
+        ClearCollect(
+            I4_0_DPMS_CSL_OB_C_SCount,
+            {
+                Status: "",
+                ObjectiveCount: 0
+            }
+        );
         
-        ClearCollect(Objective_status,{Objective:"Off Track",status:Offtrack},{Objective:"On Track",status:Ontrack},{Objective:"At Risk",status:Atrisk},{Objective:"Completed",status:Completed},{Objective:"Not Started",status:Notstart});
+        Clear(I4_0_DPMS_CSL_OB_C_SCount);
+        
+        // Data for Objective Count with respect to Focus Area 
+        ForAll(
+            I4_0_DPMS_CSL_XXX_CS,
+            Patch(
+                I4_0_DPMS_CSL_OB_C_SCount,
+                Defaults(I4_0_DPMS_CSL_OB_C_SCount),
+                {
+                    Status: Result,
+                    ObjectiveCount: CountRows(
+                        Filter(
+                            I4_0_DPMS_CSL_GnO,
+                            ObjStatus.Value = Result
+                        )
+                    )
+                }
+            )
+        );
         
         //Collection for Objective barchart
-        ClearCollect(Objective_barchart,
-        {FocusArea:"Quality",status:Quality},
-        {FocusArea:"Realibility",status:Realibility},
-        {FocusArea:"Inovation",status:Inovation},
-        {FocusArea:"Safety",status:Safety},
-        {FocusArea:"People",status:People});
+        ClearCollect(
+            I4_0_DPMS_CSL_OB_C_ObjCount,
+            {
+                FocusArea: "",
+                ObjectiveCount: 0
+            }
+        );
         
-        //ClearCollect(I4_0_DPMS_CSL_XXX_CIS_Demo,{FACode:"",FLCode:"",FA:"",FL:"",ObjCreateDate:"",ObjId:"",IssueStatus:"",IssueProgress:"",ObjOwner:"",ObjTargetDate:""});
-        //Clear(I4_0_DPMS_CSL_XXX_CIS_Demo);
+        Clear(I4_0_DPMS_CSL_OB_C_ObjCount);
         
-        //Collection for issue create operation
-        //Reset('I4.0_DPMS_CSL_GnO_CB_IN-1_2')
-        
+        // Data for Objective Count with respect to Focus Area 
+        ForAll(
+            I4_0_DPMS_CSL_XXX_CFA,
+            Patch(
+                I4_0_DPMS_CSL_OB_C_ObjCount,
+                Defaults(I4_0_DPMS_CSL_OB_C_ObjCount),
+                {
+                    FocusArea: Result,
+                    ObjectiveCount: CountRows(
+                        Filter(
+                            I4_0_DPMS_CSL_GnO,
+                            FocusArea = Result
+                        )
+                    )
+                }
+            )
+        );
 
     "'14.0_DPMS_CSL_GnO_ObjD_Rec1' As rectangle":
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -134,8 +163,34 @@
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     Height: =415
                     ItemBorderColor: =RGBA(0, 0, 0, 0.37)
-                    ItemColorSet: =[RGBA(255,0,0,0.75),RGBA(48,166,103,1),RGBA(255,194,0,1),Blue,Gray]
-                    Items: =Objective_status
+                    ItemColorSet: |-
+                        =[
+                            Gray,
+                            //Not Started
+                        RGBA(
+                                48,
+                                166,
+                                103,
+                                1
+                            ),
+                            //On Track
+                        RGBA(
+                                255,
+                                194,
+                                0,
+                                1
+                            ),
+                            //At Risk
+                        RGBA(
+                                255,
+                                0,
+                                0,
+                                0.75
+                            ),
+                            //Off Track
+                        Blue//Completed
+                        ]
+                    Items: =I4_0_DPMS_CSL_OB_C_SCount
                     Width: =694
                     Y: =61
                     ZIndex: =3
@@ -389,7 +444,7 @@
                 GridStyle: =GridStyle.All
                 Height: =351
                 ItemColorSet: =[RGBA(49, 130, 93, 1),RGBA(48,166,103, 1), RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
-                Items: =Objective_barchart
+                Items: =I4_0_DPMS_CSL_OB_C_ObjCount
                 MinimumBarWidth: =20
                 Width: =577
                 X: =718

@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2022-08-04T16:47:50.9090000Z",
+      "LastChangedTimeString": "2022-10-24T18:14:37.9850000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -29,15 +29,17 @@
       "Created": "Created",
       "Editor": "Modified By",
       "Editor#Claims": "Modified By Claims",
+      "FocusAreaCode": "StatusCode",
+      "FoucsArea": "Status",
       "ID": "ID",
       "Modified": "Modified",
       "Title": "Title"
     },
-    "DatasetName": "https://ytpl-my.sharepoint.com/personal/anand_arya_yash_com",
+    "DatasetName": "https://ytpl.sharepoint.com/sites/CustomOEEApplication",
     "EncodeDataset": true,
     "IsSampleData": false,
     "IsWritable": true,
-    "Name": "SO_1",
+    "Name": "I4_0_DPMS_CSL_CFG_S",
     "Type": "ConnectedDataSourceInfo"
   }
 ]

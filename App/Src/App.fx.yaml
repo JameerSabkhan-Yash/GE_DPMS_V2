@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: |+
+    OnStart: |
         =ClearCollect(
             colHorizontalMenu,
             {
@@ -231,13 +231,28 @@ App As appinfo:
                 "(""Id"":(?<Id>[^""]*),""Title"":""(?<Title>[^""]*)"",""Email"":""(?<Email>[^""]*)"",""GroupId"":""(?<GroupId>[^""]*)"",""GroupName"":""(?<GroupName>[^""]*)"")"
             )
         );
-        
         //Collection for sharepoint group
         ClearCollect(
             I4_0_DPMS_CSL_XXX_CSPG,
             Distinct(
                 I4_0_DPMS_CSL_XXX_CSPU,
                 GroupName
+            )
+        );
+        //Collection for FocusArea
+        ClearCollect(
+            I4_0_DPMS_CSL_XXX_CFA,
+            Distinct(
+                I4_0_DPMS_CSL_CFG_FA,
+                FoucsArea
+            )
+        );
+        //Collection for Status
+        ClearCollect(
+            I4_0_DPMS_CSL_XXX_CS,
+            Distinct(
+                I4_0_DPMS_CSL_CFG_S,
+                FoucsArea
             )
         );
         //local variables for user group
@@ -248,8 +263,7 @@ App As appinfo:
                     I4_0_DPMS_CSL_XXX_CSPU,
                     Title = User().FullName
                 ).GroupName
-            ).GroupName 
+            ).GroupName
         );
-        
     StartScreen: =
 

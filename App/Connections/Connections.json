@@ -225,37 +225,5 @@
       "85796ba0-4392-4ab9-b132-482d5d5c3c9b"
     ],
     "id": "9d19dcc2-1e96-48d1-bced-a5544abf9feb"
-  },
-  "a61c2783-dccb-4dd7-bc73-52a4cb75784b": {
-    "connectionParameters": {
-      "sku": "Enterprise"
-    },
-    "connectionRef": {
-      "apiTier": "Standard",
-      "displayName": "SharePoint",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1591/1.0.1591.2961/sharepointonline/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
-      "parameterHints": {},
-      "parameterHintsV2": {}
-    },
-    "datasets": {
-      "https://ytpl-my.sharepoint.com/personal/singh_harsh_yash_com": {
-        "dataSources": {
-          "createIssueDemo_5": {
-            "tableName": "926c7349-5150-4e1f-9fa8-ee93e14fecd8"
-          },
-          "createIssueDemoNewTrial_3": {
-            "tableName": "475b7892-cb74-4618-8303-825849c045be"
-          }
-        }
-      }
-    },
-    "dataSources": [
-      "createIssueDemo_5",
-      "createIssueDemoNewTrial_3"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "a61c2783-dccb-4dd7-bc73-52a4cb75784b"
   }
 }
