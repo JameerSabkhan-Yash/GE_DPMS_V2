@@ -455,16 +455,27 @@
                 Height: =294
                 Items: |-
                     =//Search(I4_0_DPMS_CSL_GnO,'I4.0_DPMS_CSL_GnO_TI1_IN-1_5'.Text,"FocusArea","FocusLine","TopLineHeader","ObjectiveDescription",//"ObjectiveId")
-                    
                     Search(
-                            AddColumns(I4_0_DPMS_CSL_GnO,"ObjStatusC", ObjStatus.Value , "ObjProgressC",ObjProgress.Value),
-                           'I4.0_DPMS_CSL_GnO_TI1_IN-1_5'.Text,
-                            "FocusArea",
-                            "FocusLine",
-                            "TopLineHeader",
+                        AddColumns(
+                            I4_0_DPMS_CSL_GnO,
                             "ObjStatusC",
-                            "ObjProgressC"
-                        )
+                            ObjStatus.Value,
+                            "ObjProgressC",
+                            ObjProgress.Value,
+                            "Date",
+                            Text(
+                                DateValue(ObjCreatedDateTime),
+                                DateTimeFormat.ShortDate
+                            )
+                        ),
+                        'I4.0_DPMS_CSL_GnO_TI1_IN-1_5'.Text,
+                        "FocusArea",
+                        "FocusLine",
+                        "TopLineHeader",
+                        "ObjStatusC",
+                        "ObjProgressC",
+                        "Date"
+                    )
                 Layout: =Layout.Vertical
                 OnSelect: =
                 ShowNavigation: =true
@@ -502,10 +513,10 @@
                     HoverColor: =RGBA(0, 0, 0, 0)
                     OnCheck: |-
                         =//ClearCollection
-                        Clear(I4_0_DPMS_CSL_XXX_CIS);
+                        Clear(I4_0_DPMS_CSL_XXX_CIS1);
                         //Create Collection for Update/CreateIssue.
                         Collect(
-                            I4_0_DPMS_CSL_XXX_CIS,
+                            I4_0_DPMS_CSL_XXX_CIS1,
                             {
                                 FA: ThisItem.FocusArea,
                                 FACode: ThisItem.FocusAreaCode,

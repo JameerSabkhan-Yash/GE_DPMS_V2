@@ -508,6 +508,22 @@
                     BorderThickness: =1
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
+                    Fill: |
+                        =Switch(
+                             'I4.0_DPMS_CSL_GnO_TL11_IN-2_3'.Text,
+                            "Not Started",
+                            Gray,
+                            "On Track",
+                            RGBA(48,166,103,1),
+                            "Off Track",
+                            RGBA(255,0,0,0.75),
+                            "Complete",
+                            Blue,
+                            "At Risk",
+                           RGBA(255,194,0,1),
+                            RGBA(0,0,0,0)
+                        )
+                    FontWeight: =FontWeight.Semibold
                     Height: =34
                     OnSelect: =Select(Parent)
                     Size: =13
@@ -515,28 +531,6 @@
                     Width: =135
                     X: =842
                     ZIndex: =10
-
-                Circle1 As circle:
-                    BorderColor: =RGBA(131, 24, 75, 1)
-                    Fill: |-
-                        =Switch(
-                            'I4.0_DPMS_CSL_GnO_TL11_IN-2_3'.Text,
-                            "Not Started",
-                            DimGrey,
-                            "On Track",
-                            Green,
-                            "Off Track",
-                            Red,
-                            "Complete",
-                            Blue,
-                            Black
-                        )
-                    Height: =19
-                    OnSelect: =Select(Parent)
-                    Width: =21
-                    X: =952
-                    Y: =7
-                    ZIndex: =11
 
             "'I4.0_DPMS_CSL_GnO_TL10_IN-2_1' As label":
                 BorderColor: =RGBA(131, 24, 75, 1)
@@ -769,6 +763,7 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =DisplayMode.View
                 EnableSpellCheck: =true
+                Fill: =RGBA(181, 177, 177, 0.55)
                 FocusedBorderThickness: =4
                 Height: =106
                 HintText: ="Please enter your Issue Description."
@@ -811,6 +806,7 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =DisplayMode.View
                 EnableSpellCheck: =true
+                Fill: =RGBA(181, 177, 177, 0.55)
                 FocusedBorderThickness: =4
                 Height: =106
                 HintText: ="Please enter your Issue Description."
@@ -1065,7 +1061,7 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 EnableSpellCheck: =true
                 FocusedBorderThickness: =4
-                Height: =98
+                Height: =106
                 HintText: ="Please enter your Escalation Description."
                 HoverBorderColor: =RGBA(0, 0, 0, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
