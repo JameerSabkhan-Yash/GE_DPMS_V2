@@ -1,35 +1,148 @@
 "'14.0_DPMS_CSL_GnO_ObjD_1' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     Fill: =RGBA(226, 223, 218, 1)
     LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
-    OnVisible: |+
+    OnVisible: |
         =//Collection for Objective pichart
-        Set(Offtrack,CountRows(Filter(I4_0_DPMS_CSL_GnO,ObjStatus.Value="Off Track")));
-        Set(Ontrack,CountRows(Filter(I4_0_DPMS_CSL_GnO,ObjStatus.Value="On Track")));
-        Set(Atrisk,CountRows(Filter(I4_0_DPMS_CSL_GnO,ObjStatus.Value="At Risk")));
-        Set(Completed,CountRows(Filter(I4_0_DPMS_CSL_GnO,ObjStatus.Value="Complete")));
-        Set(Notstart,CountRows(Filter(I4_0_DPMS_CSL_GnO,ObjStatus.Value="Not Started")));
-        Set(Quality,CountRows(Filter(I4_0_DPMS_CSL_GnO,FocusArea ="Quality")));
-        Set(Realibility,CountRows(Filter(I4_0_DPMS_CSL_GnO,FocusArea ="Reliability")));
-        Set(Inovation,CountRows(Filter(I4_0_DPMS_CSL_GnO,FocusArea ="Innovation")));
-        Set(People,CountRows(Filter(I4_0_DPMS_CSL_GnO,FocusArea ="People")));
-        Set(Safety,CountRows(Filter(I4_0_DPMS_CSL_GnO,FocusArea ="Safety")));
-        
-        ClearCollect(Objective_status,{Objective:"Off Track",status:Offtrack},{Objective:"On Track",status:Ontrack},{Objective:"At Risk",status:Atrisk},{Objective:"Completed",status:Completed},{Objective:"Not Started",status:Notstart});
-        
+        Set(
+            Offtrack,
+            CountRows(
+                Filter(
+                    I4_0_DPMS_CSL_GnO,
+                    ObjStatus.Value = "Off Track"
+                )
+            )
+        );
+        Set(
+            Ontrack,
+            CountRows(
+                Filter(
+                    I4_0_DPMS_CSL_GnO,
+                    ObjStatus.Value = "On Track"
+                )
+            )
+        );
+        Set(
+            Atrisk,
+            CountRows(
+                Filter(
+                    I4_0_DPMS_CSL_GnO,
+                    ObjStatus.Value = "At Risk"
+                )
+            )
+        );
+        Set(
+            Completed,
+            CountRows(
+                Filter(
+                    I4_0_DPMS_CSL_GnO,
+                    ObjStatus.Value = "Complete"
+                )
+            )
+        );
+        Set(
+            Notstart,
+            CountRows(
+                Filter(
+                    I4_0_DPMS_CSL_GnO,
+                    ObjStatus.Value = "Not Started"
+                )
+            )
+        );
+        Set(
+            Quality,
+            CountRows(
+                Filter(
+                    I4_0_DPMS_CSL_GnO,
+                    FocusArea = "Quality"
+                )
+            )
+        );
+        Set(
+            Realibility,
+            CountRows(
+                Filter(
+                    I4_0_DPMS_CSL_GnO,
+                    FocusArea = "Reliability"
+                )
+            )
+        );
+        Set(
+            Inovation,
+            CountRows(
+                Filter(
+                    I4_0_DPMS_CSL_GnO,
+                    FocusArea = "Innovation"
+                )
+            )
+        );
+        Set(
+            People,
+            CountRows(
+                Filter(
+                    I4_0_DPMS_CSL_GnO,
+                    FocusArea = "People"
+                )
+            )
+        );
+        Set(
+            Safety,
+            CountRows(
+                Filter(
+                    I4_0_DPMS_CSL_GnO,
+                    FocusArea = "Safety"
+                )
+            )
+        );
+        ClearCollect(
+            Objective_status,
+            {
+                Objective: "Off Track",
+                status: Offtrack
+            },
+            {
+                Objective: "On Track",
+                status: Ontrack
+            },
+            {
+                Objective: "At Risk",
+                status: Atrisk
+            },
+            {
+                Objective: "Completed",
+                status: Completed
+            },
+            {
+                Objective: "Not Started",
+                status: Notstart
+            }
+        );
         //Collection for Objective barchart
-        ClearCollect(Objective_barchart,
-        {FocusArea:"Quality",status:Quality},
-        {FocusArea:"Realibility",status:Realibility},
-        {FocusArea:"Inovation",status:Inovation},
-        {FocusArea:"Safety",status:Safety},
-        {FocusArea:"People",status:People});
-        
-        //ClearCollect(I4_0_DPMS_CSL_XXX_CIS_Demo,{FACode:"",FLCode:"",FA:"",FL:"",ObjCreateDate:"",ObjId:"",IssueStatus:"",IssueProgress:"",ObjOwner:"",ObjTargetDate:""});
-        //Clear(I4_0_DPMS_CSL_XXX_CIS_Demo);
-        
-        //Collection for issue create operation
-        //Reset('I4.0_DPMS_CSL_GnO_CB_IN-1_3')
-        
+        ClearCollect(
+            I4_0_DPMS_CSL_XXX_CFAChart,
+            {
+                FocusArea: "Test",
+                status: 0
+            }
+        );
+        //Create a Collection
+        ///For Function with distinct Filter
+        Clear(I4_0_DPMS_CSL_XXX_CFAChart);
+        ForAll(
+            I4_0_DPMS_CSL_XXX_CFA,
+            Patch(
+                I4_0_DPMS_CSL_XXX_CFAChart,
+                Defaults(I4_0_DPMS_CSL_XXX_CFAChart),
+                {
+                    FocusArea: Result,
+                    status: CountRows(
+                        Filter(
+                            I4_0_DPMS_CSL_GnO,
+                            FocusArea = Result
+                        )
+                    )
+                }
+            )
+        );
 
     "'14.0_DPMS_CSL_GnO_ObjD_Rec1_1' As rectangle":
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1084,7 +1197,7 @@
             ZIndex: =12
 
     "'I4.0_DPMS_CSL_XXX_C_N_11' As 'I4.0_DPMS_CSL_XXX_C_N_3'":
-        Height: =Self.FlexibleHeight
+        Height: =57
         Y: =90
         ZIndex: =17
 
