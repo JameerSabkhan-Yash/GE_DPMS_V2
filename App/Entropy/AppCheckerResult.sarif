@@ -4504,9 +4504,9 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 814,
+                  "charOffset": 127,
                   "snippet": {
-                    "text": ","
+                    "text": ":"
                   }
                 }
               },
@@ -4518,12 +4518,16 @@
             }
           ],
           "message": {
+            "arguments": [
+              "Colon",
+              "CurlyClose"
+            ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrColonExpected",
+          "ruleId": "app-ErrExpectedFound-Ex-Fnd",
           "ruleIndex": 7
         },
         {
@@ -4541,9 +4545,9 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 838,
+                  "charOffset": 127,
                   "snippet": {
-                    "text": "}"
+                    "text": ":"
                   }
                 }
               },
@@ -4556,8 +4560,8 @@
           ],
           "message": {
             "arguments": [
-              "CurlyClose",
-              "Ident"
+              "Colon",
+              "ParenClose"
             ],
             "id": "issue"
           },
@@ -4565,6 +4569,43 @@
             "level": "High"
           },
           "ruleId": "app-ErrExpectedFound-Ex-Fnd",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'14.0_DPMS_CSL_GnO_ObjD'.'I4.0_DPMS_CSL_GnO_B5_CI-2_6'.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'14.0_DPMS_CSL_GnO_ObjD'.'I4.0_DPMS_CSL_GnO_B5_CI-2_6'.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 127,
+                  "snippet": {
+                    "text": ":"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "14.0_DPMS_CSL_GnO_ObjD",
+                "type": "'14.0_DPMS_CSL_GnO_ObjD'.'I4.0_DPMS_CSL_GnO_B5_CI-2_6'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadToken",
           "ruleIndex": 8
         },
         {
@@ -4581,10 +4622,50 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 846,
-                  "charOffset": 0,
+                  "charLength": 11,
+                  "charOffset": 116,
                   "snippet": {
-                    "text": "Patch(\r\n        I4_0_DPMS_CSL_GnO_H,\r\n        Defaults(I4_0_DPMS_CSL_GnO_H),\r\n        {\r\n         ORG:I4_0_DPMS_CSL_XXX_GVORG,\r\n         SORG: I4_0_DPMS_CSL_XXX_GVBU,\r\n         ObjectiveId: First(I4_0_DPMS_CSL_XXX_CIS).ObjectiveId,\r\n         ObjectiveNo:First(I4_0_DPMS_CSL_XXX_CIS).ObjNo,\r\n         FocusArea:First(I4_0_DPMS_CSL_XXX_CIS).FA,\r\n         FocusAreaCode:First(I4_0_DPMS_CSL_XXX_CIS).FACode,\r\n         FocusLine:First(I4_0_DPMS_CSL_XXX_CIS).FLCode,\r\n         TopLineHeaderCode:First(I4_0_DPMS_CSL_XXX_CIS).TopLineCode,\r\n         TopLineHeader:First(I4_0_DPMS_CSL_XXX_CIS).TopLine,\r\n         ObjectiveDescription:First(I4_0_DPMS_CSL_XXX_CIS).ObjDescription,\r\n         DeliverableDescription:First(I4_0_DPMS_CSL_XXX_CIS).DeliverableDescription,\r\n         ObjWeight:First(I4_0_DPMS_CSL_XXX_CIS).ObjMeasure,\r\n\r\n         \r\n        }\r\n    )"
+                    "text": "ObjectiveId"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "14.0_DPMS_CSL_GnO_ObjD",
+                "type": "'14.0_DPMS_CSL_GnO_ObjD'.'I4.0_DPMS_CSL_GnO_B5_CI-2_6'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ObjectiveId"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'14.0_DPMS_CSL_GnO_ObjD'.'I4.0_DPMS_CSL_GnO_B5_CI-2_6'.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'14.0_DPMS_CSL_GnO_ObjD'.'I4.0_DPMS_CSL_GnO_B5_CI-2_6'.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 5,
+                  "snippet": {
+                    "text": "("
                   }
                 }
               },
@@ -4621,10 +4702,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 753,
+                  "charLength": 1,
                   "charOffset": 86,
                   "snippet": {
-                    "text": "{\r\n         ORG:I4_0_DPMS_CSL_XXX_GVORG,\r\n         SORG: I4_0_DPMS_CSL_XXX_GVBU,\r\n         ObjectiveId: First(I4_0_DPMS_CSL_XXX_CIS).ObjectiveId,\r\n         ObjectiveNo:First(I4_0_DPMS_CSL_XXX_CIS).ObjNo,\r\n         FocusArea:First(I4_0_DPMS_CSL_XXX_CIS).FA,\r\n         FocusAreaCode:First(I4_0_DPMS_CSL_XXX_CIS).FACode,\r\n         FocusLine:First(I4_0_DPMS_CSL_XXX_CIS).FLCode,\r\n         TopLineHeaderCode:First(I4_0_DPMS_CSL_XXX_CIS).TopLineCode,\r\n         TopLineHeader:First(I4_0_DPMS_CSL_XXX_CIS).TopLine,\r\n         ObjectiveDescription:First(I4_0_DPMS_CSL_XXX_CIS).ObjDescription,\r\n         DeliverableDescription:First(I4_0_DPMS_CSL_XXX_CIS).DeliverableDescription,\r\n         ObjWeight:First(I4_0_DPMS_CSL_XXX_CIS).ObjMeasure,\r\n\r\n         \r\n        }"
+                    "text": "{"
                   }
                 }
               },
@@ -4637,9 +4718,9 @@
           ],
           "message": {
             "arguments": [
-              "Weight",
-              "Number",
-              "Text"
+              "ORG",
+              "Text",
+              "Error"
             ],
             "id": "issue"
           },
@@ -11560,23 +11641,6 @@
               }
             },
             {
-              "id": "app-ErrColonExpected",
-              "messageStrings": {
-                "issue": {
-                  "text": "Expected colon. We expect a colon (:) at this point in the formula."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Edit your formula so that it includes a colon."
-                ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
               "id": "app-ErrExpectedFound-Ex-Fnd",
               "messageStrings": {
                 "issue": {
@@ -11587,6 +11651,23 @@
                 "componentType": "app",
                 "howToFix": [
                   "Remove or replace the unexpected characters with an expected character."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrBadToken",
+              "messageStrings": {
+                "issue": {
+                  "text": "Unexpected characters. Characters are used in the formula in an unexpected way."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove or replace the unexpected characters."
                 ],
                 "level": "High",
                 "primaryCategory": "formula",
