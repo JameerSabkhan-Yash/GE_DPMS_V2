@@ -45,6 +45,8 @@
       "ObjectiveId": "ObjectiveId",
       "ObjectiveName": "ObjectiveNo",
       "ObjTargetDateTime": "ObjTargetDateTime",
+      "ObjUpdateBy": "ObjUpdateBy",
+      "ObjUpdateBy#Claims": "ObjUpdateBy Claims",
       "ObjUpdateDateTime": "ObjUpdateDateTime",
       "Owner": "ObjOwner",
       "Owner#Claims": "ObjOwner Claims",
@@ -56,7 +58,7 @@
       "Team#Claims": "ObjTeam Claims",
       "Title": "Title",
       "TopLineHeader": "TopLineHeader",
-      "TopLineHeaderCode": "TopLineHeader Code",
+      "TopLineHeaderCode": "TopLineHeaderCode",
       "Weight": "ObjWeight"
     },
     "DatasetName": "https://ytpl.sharepoint.com/sites/CustomOEEApplication",

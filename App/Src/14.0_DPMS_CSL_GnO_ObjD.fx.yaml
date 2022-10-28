@@ -598,6 +598,7 @@
                                     ShortDate
                                 ),
                                 ObjectiveId: ThisItem.ObjectiveId,
+                                ObjNo: ThisItem.ObjNo,
                                 ObjOwner: ThisItem.ObjOwner.DisplayName,
                                 IssueStatus: ThisItem.ObjStatus.Value,
                                 IssueProgress: ThisItem.ObjProgress.Value,
@@ -1532,50 +1533,25 @@
                         I4_0_DPMS_CSL_GnO_H,
                         Defaults(I4_0_DPMS_CSL_GnO_H),
                         {
-                            ObjectiveId: I4_0_DPMS_CSL_GnO_CO_LVOBNI,
-                            ObjNo: I4_0_DPMS_CSL_GnO_LVOBNN,
-                            FocusAreaCode: I4_0_DPMS_CSL_GnO_CO_LVFA,
-                            FocusLineCode: I4_0_DPMS_CSL_GnO_CO_LVFL,
-                            TopLineHeaderCode: I4_0_DPMS_CSL_GnO_CO_LVTH,
-                            ORG: I4_0_DPMS_CSL_XXX_GVORG,
-                            SORG: I4_0_DPMS_CSL_XXX_GVBU,
-                            ObjCreatedBy: {
-                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",
-                                Claims: "i:0#.f|membership|" & User().Email,
-                                Department: "",
-                                DisplayName: User().FullName,
-                                Email: User().Email,
-                                JobTitle: "",
-                                Picture: ""
-                            },
-                            ObjOwner: {
-                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",
-                                Claims: "i:0#.f|membership|" & Last(
-                                    Filter(
-                                        I4_0_DPMS_CSL_XXX_CSPU,
-                                        Title = dpOwner.SelectedText.Value
-                                    ).Email
-                                ).Email,
-                                Department: "",
-                                DisplayName: User().FullName,
-                                Email: User().Email,
-                                JobTitle: "",
-                                Picture: ""
-                            },
-                            FocusArea: dpFocusArea.SelectedText.Value,
-                            FocusLine: dpFocusLine.SelectedText.Value,
-                            TopLineHeader: dpTopLine.SelectedText.Value,
-                            ObjectiveDescription: ObjectiveDescription.Text,
-                            ObjCreatedDateTime: Today(),
-                            ObjTargetDateTime: TargetDatePicker.SelectedDate,
-                            ObjProgress: {Value: ProgressTI.Text},
-                            ObjStatus: {Value: "Not Started"},
-                            DeliverableDescription: DeliverableDescription.Text,
-                            ObjMeasure: MeasureDescription.Text,
-                            ObjWeight: Value(Weight.Text)
-                        //ObjStatus : "Red" 
+                         ObjectiveId: First(I4_0_DPMS_CSL_XXX_CIS).ObjectiveId,
+                         ObjectiveNo:10,
+                         FocusArea:"",
+                         FocusAreaCode:"",
+                         FocusLineCode:"",
+                         FocusLine:"",
+                         TopLineHeader:"",
+                         TopLineHeaderCode:"",
+                         ObjectiveDescription:"",
+                         DeliverableDescription:"",
+                         ObjMeasure:"",
+                         ObjWeight:100,
+                         ObjStatus:"",
+                         ObjProgress:"",
+                         ObjOwner:,
+                         ObjCreate:
                         }
                     );
+                    
                 //Set the pop varaible
                 Set(I4_0_DPMS_CSL_XXX_XX_LVPOPV_U,false);
                 //Navigate to Home Screen
@@ -1648,7 +1624,7 @@
             Height: =38
             Size: =12
             Text: ="Status."
-            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U && !IsBlank(dpStatus.SelectedText.Value)
+            Visible: =If( I4_0_DPMS_CSL_GnO_LVPOPV_U && IsBlank(dpStatus_2.SelectedText.Value),true,false)
             Width: =72
             X: =150
             Y: =587
@@ -1744,7 +1720,7 @@
             Height: =36
             Size: =12
             Text: ="Progress."
-            Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U && !IsBlank(dpProgress.SelectedText.Value)
+            Visible: =If( I4_0_DPMS_CSL_GnO_LVPOPV_U && IsBlank(dpProgress_2.SelectedText.Value),true,false)
             Width: =106
             X: =714
             Y: =585
