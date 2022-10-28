@@ -1084,7 +1084,7 @@
             ZIndex: =12
 
     "'I4.0_DPMS_CSL_XXX_C_N_11' As 'I4.0_DPMS_CSL_XXX_C_N_3'":
-        Height: =Self.FlexibleHeight
+        Height: =48
         Y: =90
         ZIndex: =17
 
