@@ -81,8 +81,24 @@
           }
         }
       },
+      "https://ytpl-my.sharepoint.com/personal/anand_arya_yash_com": {
+        "dataSources": {
+          "Block_1": {
+            "tableName": "48fd3a64-2d63-4ca7-b4c0-02e4e67b0ee1"
+          },
+          "Block_2": {
+            "tableName": "48fd3a64-2d63-4ca7-b4c0-02e4e67b0ee1"
+          }
+        }
+      },
       "https://ytpl-my.sharepoint.com/personal/nehul_patel_yash_com": {
         "dataSources": {
+          "Friday_Demolist": {
+            "tableName": "a33de993-e544-42ec-8992-f23fc73ab33e"
+          },
+          "Friday_Demolist_1": {
+            "tableName": "a33de993-e544-42ec-8992-f23fc73ab33e"
+          },
           "popup": {
             "tableName": "09901aa9-920d-4318-ac1d-1865654f92eb"
           }
@@ -90,19 +106,111 @@
       },
       "https://ytpl-my.sharepoint.com/personal/singh_harsh_yash_com": {
         "dataSources": {
+          "createIssueDemo": {
+            "tableName": "926c7349-5150-4e1f-9fa8-ee93e14fecd8"
+          },
+          "createIssueDemo_1": {
+            "tableName": "926c7349-5150-4e1f-9fa8-ee93e14fecd8"
+          },
+          "createIssueDemo_2": {
+            "tableName": "926c7349-5150-4e1f-9fa8-ee93e14fecd8"
+          },
+          "createIssueDemo_3": {
+            "tableName": "926c7349-5150-4e1f-9fa8-ee93e14fecd8"
+          },
+          "createIssueDemo_4": {
+            "tableName": "926c7349-5150-4e1f-9fa8-ee93e14fecd8"
+          },
+          "createIssueDemo_6": {
+            "tableName": "926c7349-5150-4e1f-9fa8-ee93e14fecd8"
+          },
+          "createIssueDemoNewTrial": {
+            "tableName": "475b7892-cb74-4618-8303-825849c045be"
+          },
+          "createIssueDemoNewTrial_1": {
+            "tableName": "475b7892-cb74-4618-8303-825849c045be"
+          },
+          "createIssueDemoNewTrial_2": {
+            "tableName": "475b7892-cb74-4618-8303-825849c045be"
+          },
+          "createIssueDemoNewTrial_4": {
+            "tableName": "475b7892-cb74-4618-8303-825849c045be"
+          },
+          "createIssueDemoNewTrial_5": {
+            "tableName": "475b7892-cb74-4618-8303-825849c045be"
+          },
+          "criticalIssues": {
+            "tableName": "e2b36f1a-8ef8-41fb-b846-fbc06bbf478c"
+          },
+          "criticalIssues_1": {
+            "tableName": "e2b36f1a-8ef8-41fb-b846-fbc06bbf478c"
+          },
+          "criticalIssues_2": {
+            "tableName": "e2b36f1a-8ef8-41fb-b846-fbc06bbf478c"
+          },
+          "ExportDemo": {
+            "tableName": "07b6a76f-8026-4231-a6c8-0156e5e61b4b"
+          },
+          "ExportDemo_1": {
+            "tableName": "07b6a76f-8026-4231-a6c8-0156e5e61b4b"
+          },
+          "exportIssueDataList": {
+            "tableName": "e1a06fa1-8db8-497e-8136-4761d066d60e"
+          },
+          "FormSubmitDropdowns": {
+            "tableName": "dac90fa2-3c61-4bfb-bb8a-18e9f97072cd"
+          },
+          "Insights123": {
+            "tableName": "422c805b-4bed-4c7b-a1a0-5010e32ef33d"
+          },
           "leadingActions": {
             "tableName": "f0287b4d-a8ea-47ca-b01c-b3cd2bd9f9f8"
           },
           "loginCredentials": {
             "tableName": "39231811-8192-445c-82a4-f67c8032aa4e"
+          },
+          "submitCreateIssue": {
+            "tableName": "95b7a8ef-5a45-4d2e-a313-42f665d7e013"
+          },
+          "submitCreateIssue_1": {
+            "tableName": "95b7a8ef-5a45-4d2e-a313-42f665d7e013"
+          },
+          "submitCreateIssue_2": {
+            "tableName": "95b7a8ef-5a45-4d2e-a313-42f665d7e013"
           }
         }
       }
     },
     "dataSources": [
+      "Friday_Demolist",
+      "Friday_Demolist_1",
       "loginCredentials",
+      "criticalIssues",
+      "criticalIssues_1",
+      "criticalIssues_2",
       "leadingActions",
+      "Insights123",
+      "createIssueDemo",
+      "createIssueDemo_1",
+      "createIssueDemo_2",
+      "createIssueDemo_3",
+      "createIssueDemo_4",
+      "exportIssueDataList",
+      "createIssueDemoNewTrial",
+      "createIssueDemoNewTrial_1",
+      "createIssueDemoNewTrial_2",
+      "createIssueDemoNewTrial_4",
+      "createIssueDemoNewTrial_5",
+      "ExportDemo",
+      "ExportDemo_1",
       "popup",
+      "FormSubmitDropdowns",
+      "submitCreateIssue",
+      "submitCreateIssue_1",
+      "submitCreateIssue_2",
+      "createIssueDemo_6",
+      "Block_1",
+      "Block_2",
       "Insight_2",
       "Insight_1",
       "I4_0_DPMS_CSL_GnO",

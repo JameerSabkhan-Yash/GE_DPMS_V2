@@ -950,7 +950,7 @@
                 FontWeight: =FontWeight.Semibold
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
-                OnSelect: =
+                OnSelect: =Set(I4_0_DPMS_CSL_Gno_LVPOP,true)
                 Size: =15
                 Text: ="Update"
                 Width: =167
@@ -1002,7 +1002,7 @@
         ZIndex: =14
 
     "'I4.0_DPMS_CSL_XXX_C_N_5' As 'I4.0_DPMS_CSL_XXX_C_N_3'":
-        Height: =Self.FlexibleHeight
+        Height: =46
         Y: =90
         ZIndex: =15
 
@@ -1075,4 +1075,742 @@
             X: =330
             Y: =137
             ZIndex: =12
+
+    "'14.0_DPMS_CSL_GnO_ObjD_POP' As group":
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =41
+
+        PopRectangle_4 As rectangle:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Fill: =RGBA(226, 223, 218, 0.5)
+            Height: =768
+            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Width: =1366
+            ZIndex: =16
+
+        Button1_31 As button:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Color: =
+            DisabledBorderColor: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(0, 0, 0, 1)
+            DisabledFill: =RGBA(255, 255, 255, 1)
+            DisplayMode: =DisplayMode.Disabled
+            Fill: =RGBA(163, 129, 62, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =450
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+            Size: =15
+            Text: =""
+            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Width: =1328
+            X: =17
+            Y: =190
+            ZIndex: =17
+
+        Button17_24 As button:
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            FontWeight: =FontWeight.Semibold
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+            Size: =15
+            Text: ="Update"
+            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Width: =150
+            X: =1145
+            Y: =579
+            ZIndex: =18
+
+        Label4_2 As label:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =38
+            Size: =13
+            Text: ="Status"
+            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Width: =80
+            X: =69
+            Y: =548
+            ZIndex: =19
+
+        Label4_3 As label:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =38
+            Size: =13
+            Text: ="Progress"
+            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Width: =83
+            X: =292
+            Y: =548
+            ZIndex: =20
+
+        Rectangle3_1 As rectangle:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Fill: =RGBA(211, 66, 9, 1)
+            Height: =25
+            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Width: =25
+            X: =74
+            Y: =596
+            ZIndex: =23
+
+        Label6_3 As label:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Size: =13
+            Text: |-
+                ="Objective Description
+                "
+            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Width: =185
+            X: =74
+            Y: =366
+            ZIndex: =24
+
+        Label6_4 As label:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Size: =13
+            Text: ="Comments"
+            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Width: =120
+            X: =703
+            Y: =366
+            ZIndex: =25
+
+        TextInput1_2 As text:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderThickness: =2
+            Color: =RGBA(0, 0, 0, 1)
+            Default: ="Text input"
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            FocusedBorderThickness: =4
+            Height: =132
+            HoverBorderColor: =RGBA(131, 24, 75, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(255, 211, 205, 1)
+            Size: =13
+            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Width: =590
+            X: =76
+            Y: =408
+            ZIndex: =26
+
+        TextInput1_5 As text:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderThickness: =2
+            Color: =RGBA(0, 0, 0, 1)
+            Default: ="Text input"
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            FocusedBorderThickness: =4
+            Height: =132
+            HoverBorderColor: =RGBA(131, 24, 75, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(255, 211, 205, 1)
+            Size: =13
+            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Width: =590
+            X: =706
+            Y: =408
+            ZIndex: =27
+
+        "'I4.0_DPMS_CSL_GnO_BHG_IN-1_7' As gallery.galleryVertical":
+            DisplayMode: =DisplayMode.View
+            Height: =50
+            Items: =I4_0_DPMS_CSL_XXX_CIS
+            Layout: =Layout.Vertical
+            OnSelect: =
+            ShowNavigation: =true
+            TemplateSize: =34
+            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Width: =1244
+            X: =64
+            Y: =284
+            ZIndex: =28
+
+            "'I4.0_DPMS_CSL_GnO_R1_IN-2_3' As rectangle":
+                BorderColor: =RGBA(0, 0, 0, 0.7)
+                BorderThickness: =1
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =34
+                Width: =1222
+                ZIndex: =1
+
+            "'I4.0_DPMS_CSL_GnO_TL15_IN-2_3' As label":
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                OnSelect: =Select(Parent)
+                Size: =13
+                Text: =ThisItem.ObjCreateDate
+                Width: =215
+                ZIndex: =3
+
+            "'I4.0_DPMS_CSL_GnO_TL14_IN-2_3' As label":
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                OnSelect: =Select(Parent)
+                Size: =13
+                Text: =ThisItem.ObjTargetDate
+                Width: =220
+                X: =215
+                ZIndex: =4
+
+            "'I4.0_DPMS_CSL_GnO_TL13_IN-2_3' As label":
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                OnSelect: =Select(Parent)
+                Size: =13
+                Text: =ThisItem.ObjectiveId
+                Width: =236
+                X: =435
+                ZIndex: =5
+
+            "'I4.0_DPMS_CSL_GnO_TL12_IN-2_3' As label":
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                OnSelect: =Select(Parent)
+                Size: =13
+                Text: |-
+                    =First(
+                        Split(
+                            First(
+                                Split(
+                                    ThisItem.ObjOwner,
+                                    " "
+                                )
+                            ).Result,
+                            " "
+                        )
+                    ).Result & " " & First(
+                        Split(
+                            Last(
+                                Split(
+                                    ThisItem.ObjOwner,
+                                    " "
+                                )
+                            ).Result,
+                            " "
+                        )
+                    ).Result
+                Width: =171
+                X: =671
+                ZIndex: =6
+
+            "'I4.0_DPMS_CSL_GnO_TL11_IN-2_8' As label":
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                OnSelect: =Select(Parent)
+                Size: =13
+                Text: =ThisItem.IssueProgress
+                Width: =131
+                X: =977
+                ZIndex: =8
+
+            "'I4.0_DPMS_CSL_GnO_TL11_IN-2_9' As label":
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                OnSelect: =Select(Parent)
+                Size: =13
+                Text: =ThisItem.ObjWeight
+                Width: =113
+                X: =1108
+                ZIndex: =9
+
+            "'I4.0_DPMS_CSL_GnO_TL11_IN-2_7' As label":
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Fill: |
+                    =Switch(
+                        ThisItem.IssueStatus,
+                        "Not Started",
+                        Gray,
+                        "On Track",
+                        RGBA(48,166,103,1),
+                        "Off Track",
+                        RGBA(255,0,0,0.75),
+                        "Complete",
+                        Blue,
+                        "At Risk",
+                       RGBA(255,194,0,1),
+                        RGBA(0,0,0,0)
+                    )
+                Height: =34
+                OnSelect: =Select(Parent)
+                Size: =13
+                Text: =ThisItem.IssueStatus
+                Width: =135
+                X: =842
+                ZIndex: =10
+
+        "'I4.0_DPMS_CSL_GnO_TL10_IN-2_3' As label":
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(0, 0, 0, 0.7)
+            Height: =35
+            Size: =13
+            Text: =
+            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Width: =1222
+            X: =69
+            Y: =255
+            ZIndex: =29
+
+        "'I4.0_DPMS_CSL_GnO_TL9_IN-2_3' As label":
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =34
+            Size: =13.5
+            Text: ="Objective Create Date"
+            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Width: =215
+            X: =69
+            Y: =256
+            ZIndex: =30
+
+        "'I4.0_DPMS_CSL_GnO_TL8_IN-2_3' As label":
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =34
+            Size: =13.5
+            Text: ="Objective Target Date"
+            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Width: =220
+            X: =284
+            Y: =256
+            ZIndex: =31
+
+        "'I4.0_DPMS_CSL_GnO_TL7_IN-2_3' As label":
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =34
+            Size: =13.5
+            Text: ="Objective ID"
+            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Width: =236
+            X: =504
+            Y: =256
+            ZIndex: =32
+
+        "'I4.0_DPMS_CSL_GnO_TL6_IN-2_9' As label":
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =34
+            Size: =13.5
+            Text: ="Owner"
+            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Width: =171
+            X: =740
+            Y: =256
+            ZIndex: =33
+
+        "'I4.0_DPMS_CSL_GnO_TL6_IN-2_10' As label":
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =34
+            Size: =13.5
+            Text: ="Progress"
+            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Width: =131
+            X: =1046
+            Y: =256
+            ZIndex: =34
+
+        "'I4.0_DPMS_CSL_GnO_TL6_IN-2_11' As label":
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =34
+            Size: =13.5
+            Text: ="Weight"
+            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Width: =113
+            X: =1177
+            Y: =256
+            ZIndex: =35
+
+        "'I4.0_DPMS_CSL_GnO_TL6_IN-2_12' As label":
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =34
+            Size: =13.5
+            Text: ="Status"
+            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Width: =135
+            X: =911
+            Y: =256
+            ZIndex: =36
+
+        Icon1_6 As icon.Cancel:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =36
+            Icon: =Icon.Cancel
+            OnSelect: =Set(I4_0_DPMS_CSL_Gno_LVPOP,false)
+            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Width: =30
+            X: =1310
+            Y: =194
+            ZIndex: =37
+
+        Label3_12 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =74
+            Size: =18
+            Text: ="Update Objective"
+            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Width: =270
+            X: =17
+            Y: =178
+            ZIndex: =38
+
+        dpFocusLine_1 As dropdown:
+            AllowEmptySelection: =true
+            BorderColor: =RGBA(0, 0, 0, 1)
+            ChevronBackground: =RGBA(0, 0, 0, 0.7)
+            ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+            ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+            ChevronHoverBackground: =
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =35
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(219, 219, 219, 1)
+            Items: =Filter(I4_0_DPMS_CSL_CFG_FL,FocusArea = dpFocusArea.SelectedText.Value).FocusLine
+            OnChange: |-
+                =//Set the Focus area code 
+                Set(
+                    I4_0_DPMS_CSL_GnO_CO_LVFA,
+                    Last(
+                        Filter(
+                            I4_0_DPMS_CSL_CFG_FL,
+                            FocusArea = dpFocusArea.SelectedText.Value
+                        ).FocusAreaCode
+                    ).FocusAreaCode
+                );
+                //Set the Focus Line code
+                Set(
+                    I4_0_DPMS_CSL_GnO_CO_LVFL,
+                    Last(
+                        Filter(
+                            I4_0_DPMS_CSL_CFG_FL,
+                            FocusLine = dpFocusLine_1.SelectedText.Value
+                        ).FocusLineCode
+                    ).FocusLineCode
+                );
+                
+                //Set the Objective Pre Id
+                Set(
+                    I4_0_DPMS_CSL_GnO_CO_LVOBPI,
+                    Last(
+                        Filter(
+                            I4_0_DPMS_CSL_GnO,
+                            FocusArea = dpFocusArea.SelectedText.Value && FocusLine = dpFocusLine_1.SelectedText.Value && ORG = I4_0_DPMS_CSL_XXX_GVORG && SORG = I4_0_DPMS_CSL_XXX_GVBU
+                        ).ObjectiveId
+                    ).ObjectiveId
+                );
+                //Set the Objective Pre No
+                Set(
+                    I4_0_DPMS_CSL_GnO_CO_LVOBPN,
+                    Last(
+                        Filter(
+                            I4_0_DPMS_CSL_GnO,
+                            FocusArea = dpFocusArea.SelectedText.Value && FocusLine = dpFocusLine_1.SelectedText.Value && ORG = I4_0_DPMS_CSL_XXX_GVORG && SORG = I4_0_DPMS_CSL_XXX_GVBU
+                        ).ObjNo
+                    ).ObjNo
+                );
+                //Set the Objective Next No
+                Set(
+                    I4_0_DPMS_CSL_GnO_LVOBNN,
+                    I4_0_DPMS_CSL_GnO_CO_LVOBPN + 1
+                );
+                //Set the Objective Next Id
+                If(
+                    IsBlank(I4_0_DPMS_CSL_GnO_CO_LVFL),
+                    "",
+                    Set(
+                        I4_0_DPMS_CSL_GnO_CO_LVOBNI,
+                        Concatenate(
+                            I4_0_DPMS_CSL_XXX_GVORG,
+                            I4_0_DPMS_CSL_XXX_GVBU,
+                            I4_0_DPMS_CSL_GnO_CO_LVFA,
+                            I4_0_DPMS_CSL_GnO_CO_LVFL,
+                            "_OB",
+                            I4_0_DPMS_CSL_GnO_LVOBNN
+                        )
+                    )
+                )
+            OnSelect: |-
+                =//Set the Focus area code 
+                Set(
+                    I4_0_DPMS_CSL_GnO_CO_LVFA,
+                    Last(
+                        Filter(
+                            I4_0_DPMS_CSL_CFG_FL,
+                            FocusArea = dpFocusArea.SelectedText.Value
+                        ).FocusAreaCode
+                    ).FocusAreaCode
+                );
+                //Set the Focus Line code
+                Set(
+                    I4_0_DPMS_CSL_GnO_CO_LVFL,
+                    Last(
+                        Filter(
+                            I4_0_DPMS_CSL_CFG_FL,
+                            FocusLine = dpFocusLine_1.SelectedText.Value
+                        ).FocusLineCode
+                    ).FocusLineCode
+                );
+                
+                //Set the Objective Pre Id
+                Set(
+                    I4_0_DPMS_CSL_GnO_CO_LVOBPI,
+                    Last(
+                        Filter(
+                            I4_0_DPMS_CSL_GnO,
+                            FocusArea = dpFocusArea.SelectedText.Value && FocusLine = dpFocusLine_1.SelectedText.Value && ORG = I4_0_DPMS_CSL_XXX_GVORG && SORG = I4_0_DPMS_CSL_XXX_GVBU
+                        ).ObjectiveId
+                    ).ObjectiveId
+                );
+                //Set the Objective Pre No
+                Set(
+                    I4_0_DPMS_CSL_GnO_CO_LVOBPN,
+                    Last(
+                        Filter(
+                            I4_0_DPMS_CSL_GnO,
+                            FocusArea = dpFocusArea.SelectedText.Value && FocusLine = dpFocusLine_1.SelectedText.Value && ORG = I4_0_DPMS_CSL_XXX_GVORG && SORG = I4_0_DPMS_CSL_XXX_GVBU
+                        ).ObjNo
+                    ).ObjNo
+                );
+                //Set the Objective Next No
+                Set(
+                    I4_0_DPMS_CSL_GnO_LVOBNN,
+                    I4_0_DPMS_CSL_GnO_CO_LVOBPN + 1
+                );
+                //Set the Objective Next Id
+                If(
+                    IsBlank(I4_0_DPMS_CSL_GnO_CO_LVFL),
+                    "",
+                    Set(
+                        I4_0_DPMS_CSL_GnO_CO_LVOBNI,
+                        Concatenate(
+                            I4_0_DPMS_CSL_XXX_GVORG,
+                            I4_0_DPMS_CSL_XXX_GVBU,
+                            I4_0_DPMS_CSL_GnO_CO_LVFA,
+                            I4_0_DPMS_CSL_GnO_CO_LVFL,
+                            "_OB",
+                            I4_0_DPMS_CSL_GnO_LVOBNN
+                        )
+                    )
+                )
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(219, 219, 219, 1)
+            SelectionFill: =RGBA(202, 202, 202, 1)
+            Size: =13
+            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Width: =183
+            X: =74
+            Y: =591
+            ZIndex: =39
+
+        dpFocusLine_2 As dropdown:
+            AllowEmptySelection: =true
+            BorderColor: =RGBA(0, 0, 0, 1)
+            ChevronBackground: =RGBA(0, 0, 0, 0.7)
+            ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+            ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+            ChevronHoverBackground: =
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =35
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(219, 219, 219, 1)
+            Items: =Filter(I4_0_DPMS_CSL_CFG_FL,FocusArea = dpFocusArea.SelectedText.Value).FocusLine
+            OnChange: |-
+                =//Set the Focus area code 
+                Set(
+                    I4_0_DPMS_CSL_GnO_CO_LVFA,
+                    Last(
+                        Filter(
+                            I4_0_DPMS_CSL_CFG_FL,
+                            FocusArea = dpFocusArea.SelectedText.Value
+                        ).FocusAreaCode
+                    ).FocusAreaCode
+                );
+                //Set the Focus Line code
+                Set(
+                    I4_0_DPMS_CSL_GnO_CO_LVFL,
+                    Last(
+                        Filter(
+                            I4_0_DPMS_CSL_CFG_FL,
+                            FocusLine = dpFocusLine_2.SelectedText.Value
+                        ).FocusLineCode
+                    ).FocusLineCode
+                );
+                
+                //Set the Objective Pre Id
+                Set(
+                    I4_0_DPMS_CSL_GnO_CO_LVOBPI,
+                    Last(
+                        Filter(
+                            I4_0_DPMS_CSL_GnO,
+                            FocusArea = dpFocusArea.SelectedText.Value && FocusLine = dpFocusLine_2.SelectedText.Value && ORG = I4_0_DPMS_CSL_XXX_GVORG && SORG = I4_0_DPMS_CSL_XXX_GVBU
+                        ).ObjectiveId
+                    ).ObjectiveId
+                );
+                //Set the Objective Pre No
+                Set(
+                    I4_0_DPMS_CSL_GnO_CO_LVOBPN,
+                    Last(
+                        Filter(
+                            I4_0_DPMS_CSL_GnO,
+                            FocusArea = dpFocusArea.SelectedText.Value && FocusLine = dpFocusLine_2.SelectedText.Value && ORG = I4_0_DPMS_CSL_XXX_GVORG && SORG = I4_0_DPMS_CSL_XXX_GVBU
+                        ).ObjNo
+                    ).ObjNo
+                );
+                //Set the Objective Next No
+                Set(
+                    I4_0_DPMS_CSL_GnO_LVOBNN,
+                    I4_0_DPMS_CSL_GnO_CO_LVOBPN + 1
+                );
+                //Set the Objective Next Id
+                If(
+                    IsBlank(I4_0_DPMS_CSL_GnO_CO_LVFL),
+                    "",
+                    Set(
+                        I4_0_DPMS_CSL_GnO_CO_LVOBNI,
+                        Concatenate(
+                            I4_0_DPMS_CSL_XXX_GVORG,
+                            I4_0_DPMS_CSL_XXX_GVBU,
+                            I4_0_DPMS_CSL_GnO_CO_LVFA,
+                            I4_0_DPMS_CSL_GnO_CO_LVFL,
+                            "_OB",
+                            I4_0_DPMS_CSL_GnO_LVOBNN
+                        )
+                    )
+                )
+            OnSelect: |-
+                =//Set the Focus area code 
+                Set(
+                    I4_0_DPMS_CSL_GnO_CO_LVFA,
+                    Last(
+                        Filter(
+                            I4_0_DPMS_CSL_CFG_FL,
+                            FocusArea = dpFocusArea.SelectedText.Value
+                        ).FocusAreaCode
+                    ).FocusAreaCode
+                );
+                //Set the Focus Line code
+                Set(
+                    I4_0_DPMS_CSL_GnO_CO_LVFL,
+                    Last(
+                        Filter(
+                            I4_0_DPMS_CSL_CFG_FL,
+                            FocusLine = dpFocusLine_2.SelectedText.Value
+                        ).FocusLineCode
+                    ).FocusLineCode
+                );
+                
+                //Set the Objective Pre Id
+                Set(
+                    I4_0_DPMS_CSL_GnO_CO_LVOBPI,
+                    Last(
+                        Filter(
+                            I4_0_DPMS_CSL_GnO,
+                            FocusArea = dpFocusArea.SelectedText.Value && FocusLine = dpFocusLine_2.SelectedText.Value && ORG = I4_0_DPMS_CSL_XXX_GVORG && SORG = I4_0_DPMS_CSL_XXX_GVBU
+                        ).ObjectiveId
+                    ).ObjectiveId
+                );
+                //Set the Objective Pre No
+                Set(
+                    I4_0_DPMS_CSL_GnO_CO_LVOBPN,
+                    Last(
+                        Filter(
+                            I4_0_DPMS_CSL_GnO,
+                            FocusArea = dpFocusArea.SelectedText.Value && FocusLine = dpFocusLine_2.SelectedText.Value && ORG = I4_0_DPMS_CSL_XXX_GVORG && SORG = I4_0_DPMS_CSL_XXX_GVBU
+                        ).ObjNo
+                    ).ObjNo
+                );
+                //Set the Objective Next No
+                Set(
+                    I4_0_DPMS_CSL_GnO_LVOBNN,
+                    I4_0_DPMS_CSL_GnO_CO_LVOBPN + 1
+                );
+                //Set the Objective Next Id
+                If(
+                    IsBlank(I4_0_DPMS_CSL_GnO_CO_LVFL),
+                    "",
+                    Set(
+                        I4_0_DPMS_CSL_GnO_CO_LVOBNI,
+                        Concatenate(
+                            I4_0_DPMS_CSL_XXX_GVORG,
+                            I4_0_DPMS_CSL_XXX_GVBU,
+                            I4_0_DPMS_CSL_GnO_CO_LVFA,
+                            I4_0_DPMS_CSL_GnO_CO_LVFL,
+                            "_OB",
+                            I4_0_DPMS_CSL_GnO_LVOBNN
+                        )
+                    )
+                )
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(219, 219, 219, 1)
+            SelectionFill: =RGBA(202, 202, 202, 1)
+            Size: =13
+            Visible: =I4_0_DPMS_CSL_Gno_LVPOP
+            Width: =172
+            X: =305
+            Y: =591
+            ZIndex: =40
 
