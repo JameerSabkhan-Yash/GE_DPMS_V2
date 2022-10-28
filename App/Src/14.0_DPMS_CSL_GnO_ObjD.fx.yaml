@@ -1173,8 +1173,8 @@
             Size: =15
             Text: =""
             Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
-            Width: =1328
-            X: =17
+            Width: =1257
+            X: =53
             Y: =190
             ZIndex: =17
 
@@ -1382,8 +1382,8 @@
             Size: =13
             Text: =
             Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
-            Width: =1222
-            X: =69
+            Width: =1224
+            X: =68
             Y: =255
             ZIndex: =23
 
@@ -1466,7 +1466,7 @@
             Size: =13.5
             Text: ="Weight"
             Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
-            Width: =113
+            Width: =114
             X: =1177
             Y: =256
             ZIndex: =29
@@ -1494,23 +1494,22 @@
             OnSelect: =Set(I4_0_DPMS_CSL_GnO_LVPOPV_U,false)
             Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
             Width: =30
-            X: =1310
-            Y: =194
+            X: =1278
+            Y: =192
             ZIndex: =31
 
         Label3_14 As label:
-            Align: =Align.Center
             BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            FontWeight: =FontWeight.Semibold
-            Height: =74
-            Size: =18
+            FontWeight: =FontWeight.Bold
+            Height: =58
+            Size: =20
             Text: ="Update Objective"
             Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
             Width: =270
-            X: =17
-            Y: =178
+            X: =67
+            Y: =194
             ZIndex: =32
 
         "'I4.0_DPMS_CSL_GnO_B5_CI-2_6' As button":
