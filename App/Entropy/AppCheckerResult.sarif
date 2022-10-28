@@ -8926,36 +8926,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'14.0_DPMS_CSL_GnO_ObjD'.'14.0_DPMS_CSL_GnO_ObjD_CAN1'.'14.0_DPMS_CSL_GnO_ObjD_DC1'.'I4.0_DPMS_CSL_GnO_BHG_IN-1_4'.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'14.0_DPMS_CSL_GnO_ObjD'.'14.0_DPMS_CSL_GnO_ObjD_CAN1'.'14.0_DPMS_CSL_GnO_ObjD_DC1'.'I4.0_DPMS_CSL_GnO_BHG_IN-1_4'.Items",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "14.0_DPMS_CSL_GnO_ObjD",
-                "type": "'14.0_DPMS_CSL_GnO_ObjD'.'14.0_DPMS_CSL_GnO_ObjD_CAN1'.'14.0_DPMS_CSL_GnO_ObjD_DC1'.'I4.0_DPMS_CSL_GnO_BHG_IN-1_4'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 13
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'14.0_DPMS_CSL_GnO_ObjD_1'.'14.0_DPMS_CSL_GnO_ObjD_CAN1_1'.'14.0_DPMS_CSL_GnO_ObjD_DC1_1'.Checkbox_1.Text"
                 }
               ],

@@ -462,7 +462,7 @@
                             "ObjProgressC",
                             ObjProgress.Value
                         ),
-                        'I4.0_DPMS_CSL_GnO_TI1_IN-1_5'.Text,
+                        'I4.0_DPMS_CSL_GnO_TI1_IN-1_4'.Text,
                         "FocusArea",
                         "FocusLine",
                         "TopLineHeader",
