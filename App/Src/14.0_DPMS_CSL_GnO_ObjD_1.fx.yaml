@@ -4,27 +4,27 @@
     OnVisible: |
         =//Collection for Objective pichart
         ClearCollect(
-            I4_0_DPMS_CSL_OB_C_SCount,
+            I4_0_DPMS_CSL_OB_C_SCount1,
             {
                 Status: "Test",
                 ObjectiveCount: 0
             }
         );
         
-        Clear(I4_0_DPMS_CSL_OB_C_SCount);
+        Clear(I4_0_DPMS_CSL_OB_C_SCount1);
         
         // Data for Objective Count with respect to Focus Area 
         ForAll(
             I4_0_DPMS_CSL_XXX_CS,
             Patch(
-                I4_0_DPMS_CSL_OB_C_SCount,
-                Defaults(I4_0_DPMS_CSL_OB_C_SCount),
+                I4_0_DPMS_CSL_OB_C_SCount1,
+                Defaults(I4_0_DPMS_CSL_OB_C_SCount1),
                 {
                     Status: Result,
                     ObjectiveCount: CountRows(
                         Filter(
                             I4_0_DPMS_CSL_GnO,
-                            FocusArea = Result
+                            ObjStatus.Value = Result
                         )
                     )
                 }
@@ -33,21 +33,21 @@
         
         //Collection for Objective barchart
         ClearCollect(
-            I4_0_DPMS_CSL_OB_C_ObjCount,
+            I4_0_DPMS_CSL_OB_C_ObjCount1,
             {
                 FocusArea: "Test",
                 ObjectiveCount: 0
             }
         );
         
-        Clear(I4_0_DPMS_CSL_OB_C_ObjCount);
+        Clear(I4_0_DPMS_CSL_OB_C_ObjCount1);
         
         // Data for Objective Count with respect to Focus Area 
         ForAll(
             I4_0_DPMS_CSL_XXX_CFA,
             Patch(
-                I4_0_DPMS_CSL_OB_C_ObjCount,
-                Defaults(I4_0_DPMS_CSL_OB_C_ObjCount),
+                I4_0_DPMS_CSL_OB_C_ObjCount1,
+                Defaults(I4_0_DPMS_CSL_OB_C_ObjCount1),
                 {
                     FocusArea: Result,
                     ObjectiveCount: CountRows(
@@ -163,7 +163,7 @@
                     Height: =414
                     ItemBorderColor: =RGBA(0, 0, 0, 0.37)
                     ItemColorSet: =[RGBA(255,0,0,0.75),RGBA(48,166,103,1),RGBA(255,194,0,1),Blue,Gray]
-                    Items: =Objective_status
+                    Items: =I4_0_DPMS_CSL_OB_C_SCount
                     Width: =475
                     X: =32
                     Y: =61
@@ -413,7 +413,7 @@
                 GridStyle: =GridStyle.All
                 Height: =432
                 ItemColorSet: =[RGBA(49, 130, 93, 1),RGBA(48,166,103, 1), RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
-                Items: =Objective_barchart
+                Items: =I4_0_DPMS_CSL_OB_C_ObjCount
                 MinimumBarWidth: =20
                 Width: =577
                 X: =718

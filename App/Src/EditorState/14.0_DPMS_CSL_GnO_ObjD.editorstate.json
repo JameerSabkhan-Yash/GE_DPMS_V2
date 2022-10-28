@@ -6567,7 +6567,7 @@
       "Properties": [
         {
           "Category": "Data",
-          "NameMap": "{\"Labels\":\"FocusArea\",\"Series1\":\"status\",\"Series2\":\"status\",\"Series3\":\"status\",\"Series4\":\"status\",\"Series5\":\"status\",\"Series6\":\"status\",\"Series7\":\"status\",\"Series8\":\"status\",\"Series9\":\"status\"}",
+          "NameMap": "{\"Labels\":\"FocusArea\",\"Series1\":\"ObjectiveCount\",\"Series2\":\"ObjectiveCount\",\"Series3\":\"ObjectiveCount\",\"Series4\":\"ObjectiveCount\",\"Series5\":\"ObjectiveCount\",\"Series6\":\"ObjectiveCount\",\"Series7\":\"ObjectiveCount\",\"Series8\":\"ObjectiveCount\",\"Series9\":\"ObjectiveCount\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },
@@ -26455,7 +26455,7 @@
       "Properties": [
         {
           "Category": "Data",
-          "NameMap": "{\"Labels\":\"Objective\",\"Series\":\"status\"}",
+          "NameMap": "{\"Labels\":\"Status\",\"Series\":\"ObjectiveCount\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },

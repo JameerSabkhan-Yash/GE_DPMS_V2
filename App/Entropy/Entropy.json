@@ -744,7 +744,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/28/2022 10:00:32",
+  "HeaderLastSavedDateTimeUTC": "10/28/2022 10:11:46",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "85796ba0-4392-4ab9-b132-482d5d5c3c9b": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/d1dd3771234a4bc596091d3795d2f98d-b64ce0da7962d0b1\"",
@@ -798,7 +798,9 @@
     "I4_0_DPMS_CSL_GnO": 9,
     "I4_0_DPMS_CSL_GnO-IS": 8,
     "I4_0_DPMS_CSL_OB_C_ObjCount": 19,
+    "I4_0_DPMS_CSL_OB_C_ObjCount1": 25,
     "I4_0_DPMS_CSL_OB_C_SCount": 27,
+    "I4_0_DPMS_CSL_OB_C_SCount1": 26,
     "I4_0_DPMS_CSL_XXX_CFA": 18,
     "I4_0_DPMS_CSL_XXX_CINAC": 20,
     "I4_0_DPMS_CSL_XXX_CIS": 21,
@@ -808,8 +810,6 @@
     "I4_0_DPMS_CSL_XXX_CSPU": 24,
     "LegendSample": 10,
     "LineChartSample": 11,
-    "Objective_barchart": 25,
-    "Objective_status": 26,
     "PieChartSample": 13,
     "popup": 14,
     "PowerApp->RequestType,GroupIs,Condition,SendanHTTPrequesttoS...": 0,
@@ -1821,7 +1821,7 @@
       "toggleSwitch": 2
     },
     "DeserializationLoadTime": 7.2768105,
-    "ErrorCount": 163
+    "ErrorCount": 155
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
