@@ -460,14 +460,25 @@
                             "ObjStatusC",
                             ObjStatus.Value,
                             "ObjProgressC",
-                            ObjProgress.Value
+                            ObjProgress.Value,
+                            "CreateDate",
+                            Text(
+                                DateValue(ObjCreatedDateTime),
+                                DateTimeFormat.ShortDate
+                            ),
+                            "Date",
+                            Text(
+                                DateValue(ObjTargetDateTime),
+                                DateTimeFormat.ShortDate
+                            )
                         ),
                         'I4.0_DPMS_CSL_GnO_TI1_IN-1_4'.Text,
                         "FocusArea",
                         "FocusLine",
                         "TopLineHeader",
                         "ObjStatusC",
-                        "ObjProgressC"
+                        "ObjProgressC",
+                        "CreateDate"
                     )
                 Layout: =Layout.Vertical
                 OnSelect: =
