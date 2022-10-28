@@ -858,9 +858,10 @@
                 Default: ="0%"
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisabledFill: =RGBA(181, 177, 177, 0.55)
                 DisplayMode: |
                     =DisplayMode.View
+                Fill: =RGBA(181, 177, 177, 0.55)
                 FocusedBorderThickness: =4
                 Height: =35
                 HoverBorderColor: =RGBA(131, 24, 75, 1)
@@ -895,9 +896,24 @@
                     Default: ="Not Started"
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisabledFill: =RGBA(181, 177, 177, 0.55)
                     DisplayMode: |
                         =DisplayMode.View
+                    Fill: |
+                        =Switch(
+                             ProgressTI_8.Text,
+                            "Not Started",
+                            Gray,
+                            "On Track",
+                            RGBA(48,166,103,1),
+                            "Off Track",
+                            RGBA(255,0,0,0.75),
+                            "Complete",
+                            Blue,
+                            "At Risk",
+                           RGBA(255,194,0,1),
+                            RGBA(0,0,0,0)
+                        )
                     FocusedBorderThickness: =4
                     Height: =35
                     HoverBorderColor: =RGBA(131, 24, 75, 1)
@@ -916,7 +932,22 @@
 
                 Circle1_6 As circle:
                     BorderColor: =RGBA(131, 24, 75, 1)
-                    Fill: =RGBA(153, 153, 153, 1)
+                    DisabledFill: =RGBA(181, 177, 177, 0.55)
+                    Fill: |
+                        =Switch(
+                             ProgressTI_8.Text,
+                            "Not Started",
+                            Gray,
+                            "On Track",
+                            RGBA(48,166,103,1),
+                            "Off Track",
+                            RGBA(255,0,0,0.75),
+                            "Complete",
+                            Blue,
+                            "At Risk",
+                           RGBA(255,194,0,1),
+                            RGBA(0,0,0,0)
+                        )
                     Height: =22
                     Width: =22
                     X: =816
@@ -979,7 +1010,7 @@
                 Default: =""
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisabledFill: =RGBA(181, 177, 177, 0.55)
                 DisplayMode: =If(MeasureCheckbox.Value = true , DisplayMode.Edit,DisplayMode.Disabled)
                 EnableSpellCheck: =true
                 FocusedBorderThickness: =4
@@ -1065,7 +1096,7 @@
                 Default: =
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisabledFill: =RGBA(181, 177, 177, 0.55)
                 DisplayMode: =If(WeightCheckBox.Value = true , DisplayMode.Edit,DisplayMode.Disabled)
                 FocusedBorderThickness: =4
                 Format: =TextFormat.Number
@@ -1148,7 +1179,7 @@
                 Default: =""
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisabledFill: =RGBA(181, 177, 177, 0.55)
                 DisplayMode: =If(DeliverableCheckBox.Value = true , DisplayMode.Edit,DisplayMode.Disabled)
                 EnableSpellCheck: =true
                 FocusedBorderThickness: =4
@@ -1198,6 +1229,30 @@
                 X: =570
                 Y: =572
                 ZIndex: =73
+
+            Button17_24 As button:
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: |-
+                    =If(
+                        FocusAreadStar.Visible = true || MeasureStar.Visible = true || WeightStar.Visible = true || FocusLineStar.Visible = true || ObjectiveDescriptionStar.Visible = true || MeasureStar.Visible = true || OwnerStar_2.Visible = true 
+                    //|| TopLineStar.Visible = true 
+                    || DevliverableStar.Visible = true || !IsBlank(TargetLabelWorng.Text),
+                        DisplayMode.Disabled,
+                        DisplayMode.Edit
+                    )
+                Fill: =RGBA(255, 0, 0, 1)
+                FontWeight: =FontWeight.Semibold
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+                OnSelect: =Navigate('14.0_DPMS_CSL_GnO_ObjD',Fade)
+                Size: =15
+                Text: ="Cancel"
+                Width: =150
+                X: =1081
+                Y: =630
+                ZIndex: =74
 
     "'I4.0_DPMS_CSL_XXX_C_F_6' As 'I4.0_DPMS_CSL_XXX_C_F'":
         Height: =26
@@ -1339,6 +1394,7 @@
             ZIndex: =12
 
     "'I4.0_DPMS_CSL_XXX_C_N_10' As 'I4.0_DPMS_CSL_XXX_C_N_3'":
+        Height: =56
         Y: =80
         ZIndex: =17
 
