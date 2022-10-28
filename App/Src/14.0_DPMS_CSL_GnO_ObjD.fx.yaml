@@ -44,6 +44,7 @@
     Button1_7 As button:
         AutoDisableOnSelect: =false
         BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =3
         Color: =RGBA(0, 0, 0, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -123,20 +124,19 @@
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
-                    Height: =44
+                    Height: =48
                     Text: ="Objective Status"
-                    Width: =345
-                    Y: =413
+                    Width: =225
+                    Y: =398
                     ZIndex: =2
 
                 PieChart1 As pieChart:
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    Height: =414
+                    Height: =415
                     ItemBorderColor: =RGBA(0, 0, 0, 0.37)
                     ItemColorSet: =[RGBA(255,0,0,0.75),RGBA(48,166,103,1),RGBA(255,194,0,1),Blue,Gray]
                     Items: =Objective_status
-                    Width: =475
-                    X: =32
+                    Width: =694
                     Y: =61
                     ZIndex: =3
 
@@ -159,6 +159,7 @@
 
             Button3_1 As button:
                 AutoDisableOnSelect: =false
+                BorderThickness: =3
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -176,6 +177,7 @@
 
             Button3_2 As button:
                 AutoDisableOnSelect: =false
+                BorderThickness: =3
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -193,6 +195,7 @@
 
             Button3_3 As button:
                 AutoDisableOnSelect: =false
+                BorderThickness: =3
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -210,6 +213,7 @@
 
             Button3_4 As button:
                 AutoDisableOnSelect: =false
+                BorderThickness: =3
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -227,6 +231,7 @@
 
             Button3_5 As button:
                 AutoDisableOnSelect: =false
+                BorderThickness: =3
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -367,7 +372,7 @@
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(204, 204, 204, 1)
+                Fill: =RGBA(204, 204, 204, 0.5)
                 FontWeight: =FontWeight.Semibold
                 Height: =421
                 HoverColor: =
@@ -382,14 +387,14 @@
             ColumnChart1 As barChart:
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 GridStyle: =GridStyle.All
-                Height: =432
+                Height: =351
                 ItemColorSet: =[RGBA(49, 130, 93, 1),RGBA(48,166,103, 1), RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
                 Items: =Objective_barchart
                 MinimumBarWidth: =20
                 Width: =577
                 X: =718
                 XLabelAngle: =20
-                Y: =25
+                Y: =106
                 ZIndex: =21
 
         "'14.0_DPMS_CSL_GnO_ObjD_DC1' As dataCard.blankCard":
@@ -414,7 +419,7 @@
                 Fill: =RGBA(0, 0, 0, 0)
                 FocusedBorderThickness: =3
                 FontWeight: =FontWeight.Semibold
-                Height: =457
+                Height: =447
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =
                 OnSelect: =
@@ -452,7 +457,7 @@
 
             "'I4.0_DPMS_CSL_GnO_BHG_IN-1_4' As gallery.galleryVertical":
                 BorderThickness: =2
-                Height: =294
+                Height: =315
                 Items: =Search(I4_0_DPMS_CSL_GnO,'I4.0_DPMS_CSL_GnO_TI1_IN-1_4'.Text,"FocusArea","FocusLine","TopLineHeader","ObjectiveDescription","ObjectiveId")
                 Layout: =Layout.Vertical
                 OnSelect: =
@@ -953,51 +958,6 @@
         Y: =20
         ZIndex: =16
 
-        Dropdown1_21 As dropdown:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            ChevronBackground: =RGBA(149, 149, 149, 1)
-            ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-            ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-            ChevronHoverBackground: =ColorFade(RGBA(242, 19, 19, 1), -20%)
-            ChevronHoverFill: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(219, 219, 219, 1)
-            Height: =30
-            HoverColor: =RGBA(242, 19, 19, 1)
-            HoverFill: =RGBA(255, 211, 205, 1)
-            Items: =Friday_Demolist
-            PressedColor: =RGBA(255, 255, 255, 1)
-            PressedFill: =RGBA(131, 24, 75, 1)
-            SelectionFill: =RGBA(242, 19, 19, 1)
-            Size: =13
-            Width: =182
-            X: =1052
-            Y: =147
-            ZIndex: =6
-
-        Button1_15 As button:
-            Color: =RGBA(237, 237, 237, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(255, 0, 0, 1)
-            FontWeight: =FontWeight.Semibold
-            Height: =30
-            HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =ColorFade(RGBA(242, 19, 19, 1), -20%)
-            RadiusBottomLeft: =5
-            RadiusBottomRight: =5
-            RadiusTopLeft: =5
-            RadiusTopRight: =5
-            Size: =10
-            Text: ="Search"
-            Width: =88
-            X: =1257
-            Y: =147
-            ZIndex: =7
-
         Label7_71 As label:
             BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(0, 0, 0, 1)
@@ -1055,8 +1015,8 @@
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Semibold
             OnSelect: =
-            Text: ="Action Dashboard"
-            Width: =190
+            Text: ="Objective Dashboard"
+            Width: =213
             X: =330
             Y: =137
             ZIndex: =12
@@ -1068,6 +1028,7 @@
 
     Button1_13 As button:
         BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =3
         Color: =RGBA(0, 0, 0, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)

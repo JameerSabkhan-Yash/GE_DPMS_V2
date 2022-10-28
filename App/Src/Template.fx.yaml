@@ -62,6 +62,7 @@
     Button1_3 As button:
         AutoDisableOnSelect: =false
         BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =3
         Color: =RGBA(0, 0, 0, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -89,6 +90,7 @@
 
     Button1_2 As button:
         BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =3
         Color: =RGBA(0, 0, 0, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -247,6 +249,7 @@
 
     Button1_4 As button:
         BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =3
         Color: =RGBA(0, 0, 0, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -273,6 +276,7 @@
 
     Button1_6 As button:
         BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =3
         Color: =RGBA(0, 0, 0, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)

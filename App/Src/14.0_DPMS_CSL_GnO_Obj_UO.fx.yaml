@@ -27,8 +27,8 @@
         Size: =30
         Text: ="POP "
         Width: =272
-        X: =542
-        Y: =68
+        X: =646
+        Y: =65
         ZIndex: =1
 
     Button17_14 As button:
