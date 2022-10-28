@@ -69,6 +69,9 @@
           "I4_0_DPMS_CSL_GnO": {
             "tableName": "91d349df-f337-4f2b-bab2-5faba9c0ea12"
           },
+          "I4_0_DPMS_CSL_GnO_H": {
+            "tableName": "f6831973-4b54-4d51-9dab-3acc645e7957"
+          },
           "I4_0_DPMS_CSL_GnO-IS": {
             "tableName": "8527139f-8e97-431b-9e7f-8477c35e9b5b"
           }
@@ -210,7 +213,8 @@
       "I4_0_DPMS_CSL_CFG_FL",
       "createIssueDemo_5",
       "I4_0_DPMS_CSL_CFG_TH",
-      "I4_0_DPMS_CSL_CFG_S"
+      "I4_0_DPMS_CSL_CFG_S",
+      "I4_0_DPMS_CSL_GnO_H"
     ],
     "dependencies": {},
     "dependents": [

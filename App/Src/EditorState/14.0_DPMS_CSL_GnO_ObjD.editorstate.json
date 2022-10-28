@@ -2527,7 +2527,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button1_33",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -22742,7 +22742,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon1_8",
-      "ParentIndex": 10,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -25014,7 +25014,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_14",
-      "ParentIndex": 8,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
