@@ -3,138 +3,54 @@
     LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
     OnVisible: |
         =//Collection for Objective pichart
-        Set(
-            Offtrack,
-            CountRows(
-                Filter(
-                    I4_0_DPMS_CSL_GnO,
-                    ObjStatus.Value = "Off Track"
-                )
-            )
-        );
-        Set(
-            Ontrack,
-            CountRows(
-                Filter(
-                    I4_0_DPMS_CSL_GnO,
-                    ObjStatus.Value = "On Track"
-                )
-            )
-        );
-        Set(
-            Atrisk,
-            CountRows(
-                Filter(
-                    I4_0_DPMS_CSL_GnO,
-                    ObjStatus.Value = "At Risk"
-                )
-            )
-        );
-        Set(
-            Completed,
-            CountRows(
-                Filter(
-                    I4_0_DPMS_CSL_GnO,
-                    ObjStatus.Value = "Complete"
-                )
-            )
-        );
-        Set(
-            Notstart,
-            CountRows(
-                Filter(
-                    I4_0_DPMS_CSL_GnO,
-                    ObjStatus.Value = "Not Started"
-                )
-            )
-        );
-        Set(
-            Quality,
-            CountRows(
-                Filter(
-                    I4_0_DPMS_CSL_GnO,
-                    FocusArea = "Quality"
-                )
-            )
-        );
-        Set(
-            Realibility,
-            CountRows(
-                Filter(
-                    I4_0_DPMS_CSL_GnO,
-                    FocusArea = "Reliability"
-                )
-            )
-        );
-        Set(
-            Inovation,
-            CountRows(
-                Filter(
-                    I4_0_DPMS_CSL_GnO,
-                    FocusArea = "Innovation"
-                )
-            )
-        );
-        Set(
-            People,
-            CountRows(
-                Filter(
-                    I4_0_DPMS_CSL_GnO,
-                    FocusArea = "People"
-                )
-            )
-        );
-        Set(
-            Safety,
-            CountRows(
-                Filter(
-                    I4_0_DPMS_CSL_GnO,
-                    FocusArea = "Safety"
-                )
-            )
-        );
         ClearCollect(
-            Objective_status,
+            I4_0_DPMS_CSL_OB_C_SCount,
             {
-                Objective: "Off Track",
-                status: Offtrack
-            },
-            {
-                Objective: "On Track",
-                status: Ontrack
-            },
-            {
-                Objective: "At Risk",
-                status: Atrisk
-            },
-            {
-                Objective: "Completed",
-                status: Completed
-            },
-            {
-                Objective: "Not Started",
-                status: Notstart
+                Status: "Test",
+                ObjectiveCount: 0
             }
         );
+        
+        Clear(I4_0_DPMS_CSL_OB_C_SCount);
+        
+        // Data for Objective Count with respect to Focus Area 
+        ForAll(
+            I4_0_DPMS_CSL_XXX_CS,
+            Patch(
+                I4_0_DPMS_CSL_OB_C_SCount,
+                Defaults(I4_0_DPMS_CSL_OB_C_SCount),
+                {
+                    Status: Result,
+                    ObjectiveCount: CountRows(
+                        Filter(
+                            I4_0_DPMS_CSL_GnO,
+                            FocusArea = Result
+                        )
+                    )
+                }
+            )
+        );
+        
         //Collection for Objective barchart
         ClearCollect(
-            I4_0_DPMS_CSL_XXX_CFAChart,
+            I4_0_DPMS_CSL_OB_C_ObjCount,
             {
                 FocusArea: "Test",
-                status: 0
+                ObjectiveCount: 0
             }
         );
-        //Create a Collection
-        ///For Function with distinct Filter
-        Clear(I4_0_DPMS_CSL_XXX_CFAChart);
+        
+        Clear(I4_0_DPMS_CSL_OB_C_ObjCount);
+        
+        // Data for Objective Count with respect to Focus Area 
         ForAll(
             I4_0_DPMS_CSL_XXX_CFA,
             Patch(
-                I4_0_DPMS_CSL_XXX_CFAChart,
-                Defaults(I4_0_DPMS_CSL_XXX_CFAChart),
+                I4_0_DPMS_CSL_OB_C_ObjCount,
+                Defaults(I4_0_DPMS_CSL_OB_C_ObjCount),
                 {
                     FocusArea: Result,
-                    status: CountRows(
+                    ObjectiveCount: CountRows(
                         Filter(
                             I4_0_DPMS_CSL_GnO,
                             FocusArea = Result
