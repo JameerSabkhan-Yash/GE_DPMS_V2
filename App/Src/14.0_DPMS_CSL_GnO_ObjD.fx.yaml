@@ -1535,30 +1535,27 @@
                         I4_0_DPMS_CSL_GnO_H,
                         Defaults(I4_0_DPMS_CSL_GnO_H),
                         {
-                         ORG:   
+                         ORG:I4_0_DPMS_CSL_XXX_GVORG,
+                         SORG: I4_0_DPMS_CSL_XXX_GVBU,
                          ObjectiveId: First(I4_0_DPMS_CSL_XXX_CIS).ObjectiveId,
-                         ObjectiveNo:10,
-                         FocusArea:"",
-                         FocusAreaCode:"",
-                         FocusLineCode:"",
-                         FocusLine:"",
-                         TopLineHeader:"",
-                         TopLineHeaderCode:"",
-                         ObjectiveDescription:"",
-                         DeliverableDescription:"",
-                         ObjMeasure:"",
-                         ObjWeight:100,
-                         ObjStatus:"",
-                         ObjProgress:"",
-                         ObjOwner:,
-                         ObjCreate:
+                         ObjectiveNo:First(I4_0_DPMS_CSL_XXX_CIS).ObjNo,
+                         FocusArea:First(I4_0_DPMS_CSL_XXX_CIS).FA,
+                         FocusAreaCode:First(I4_0_DPMS_CSL_XXX_CIS).FACode,
+                         FocusLine:First(I4_0_DPMS_CSL_XXX_CIS).FLCode,
+                         TopLineHeaderCode:First(I4_0_DPMS_CSL_XXX_CIS).TopLineCode,
+                         TopLineHeader:First(I4_0_DPMS_CSL_XXX_CIS).TopLine,
+                         ObjectiveDescription:First(I4_0_DPMS_CSL_XXX_CIS).ObjDescription,
+                         DeliverableDescription:First(I4_0_DPMS_CSL_XXX_CIS).DeliverableDescription,
+                         ObjWeight:First(I4_0_DPMS_CSL_XXX_CIS).ObjMeasure,
+                
+                         
                         }
                     );
                     
                 //Set the pop varaible
                 Set(I4_0_DPMS_CSL_XXX_XX_LVPOPV_U,false);
                 //Navigate to Home Screen
-                Navigate('14.0_DPMS_CSL_GnO_ObjD');
+                Navigate('14.0_DPMS_CSL_GnO_ObjD')
             Size: =15
             Text: ="Update"
             Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
