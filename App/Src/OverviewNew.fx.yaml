@@ -7,15 +7,15 @@
         BorderThickness: =2
         Fill: =RGBA(226, 223, 218, 1)
         Height: =499
-        Width: =1323.04
-        X: =24.05
+        Width: =1859.62
+        X: =33.80
         Y: =101
         ZIndex: =1
 
     "'I4.0_DPMS_CSL_XXX_C_N_4' As 'I4.0_DPMS_CSL_XXX_C_N'":
         Height: =56
-        Width: =1352.07
-        X: =7.00
+        Width: =1900.42
+        X: =9.84
         Y: =91
         ZIndex: =2
 
@@ -23,8 +23,8 @@
         BorderThickness: =0
         Fill: =RGBA(226, 223, 218, 1)
         Height: =476
-        Width: =1281.97
-        X: =41.07
+        Width: =1801.89
+        X: =57.73
         Y: =124
         ZIndex: =3
 
@@ -34,7 +34,7 @@
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =469
-            Width: =1281.97
+            Width: =1801.89
             X: =0.00
             Y: =0
             ZIndex: =1
@@ -52,11 +52,11 @@
                     Height: =375
                     ItemColorSet: =[RGBA(49, 130, 93, 1),RGBA(48,166,103, 1), RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
                     Items: =ColumnChartSample
-                    PaddingRight: =50.07
+                    PaddingRight: =70.38
                     PaddingTop: =0.00
-                    Size: =10.01
-                    Width: =1094.69
-                    X: =64.10
+                    Size: =14.07
+                    Width: =1538.66
+                    X: =90.10
                     Y: =40
                     ZIndex: =2
 
@@ -65,9 +65,9 @@
                     Height: =75
                     ItemColorSet: =ColumnChart4_4.ItemColorSet
                     Items: =ColumnChart4_4.SeriesLabels
-                    Size: =11.01
-                    Width: =128.19
-                    X: =61.09
+                    Size: =15.48
+                    Width: =180.18
+                    X: =85.87
                     Y: =33
                     ZIndex: =3
 
@@ -76,8 +76,8 @@
                 BorderThickness: =2
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =402
-                Width: =1241.89
-                X: =18.04
+                Width: =1745.56
+                X: =25.36
                 Y: =33
                 ZIndex: =4
 
@@ -87,7 +87,7 @@
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =833
-            Width: =1281.97
+            Width: =1801.89
             X: =0.00
             Y: =1
             ZIndex: =2
@@ -97,8 +97,8 @@
                 BorderThickness: =2
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =361
-                Width: =1251.92
-                X: =1.00
+                Width: =1759.65
+                X: =1.41
                 Y: =62
                 ZIndex: =1
 
@@ -109,12 +109,12 @@
                 Fill: =RGBA(226, 223, 218, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =30
-                PaddingRight: =5.00
-                PaddingTop: =5.00
-                Size: =14.04
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =19.73
                 Text: ="Critical Issues"
-                Width: =133.69
-                X: =40.06
+                Width: =187.91
+                X: =56.31
                 Y: =46
                 ZIndex: =2
 
@@ -145,9 +145,9 @@
                 PrimaryColor3: =RGBA(255, 211, 205, 1)
                 SelectedColor: =RGBA(0, 0, 0, 1)
                 SelectedFill: =RGBA(211, 66, 9, .2)
-                Size: =13.02
-                Width: =1216.85
-                X: =18.53
+                Size: =18.30
+                Width: =1710.36
+                X: =26.05
                 Y: =94
                 ZIndex: =3
 
@@ -160,7 +160,7 @@
                     LayoutHeight: =Parent.Height
                     Order: =1
                     Text: =ThisItem.Title
-                    Width: =100.16
+                    Width: =140.78
                     X: =0.00
                     Y: =0
                     ZIndex: =6
@@ -174,7 +174,7 @@
                     LayoutHeight: =Parent.Height
                     Order: =2
                     Text: =ThisItem.'Focus Area'
-                    Width: =100.16
+                    Width: =140.78
                     X: =0.00
                     Y: =0
                     ZIndex: =7
@@ -188,7 +188,7 @@
                     LayoutHeight: =Parent.Height
                     Order: =3
                     Text: =ThisItem.'Focus Line'
-                    Width: =100.16
+                    Width: =140.78
                     X: =0.00
                     Y: =0
                     ZIndex: =8
@@ -202,7 +202,7 @@
                     LayoutHeight: =Parent.Height
                     Order: =4
                     Text: =ThisItem.Assigned
-                    Width: =100.16
+                    Width: =140.78
                     X: =0.00
                     Y: =0
                     ZIndex: =9
@@ -216,7 +216,7 @@
                     LayoutHeight: =Parent.Height
                     Order: =5
                     Text: =ThisItem.'Progress (%)'
-                    Width: =100.16
+                    Width: =140.78
                     X: =0.00
                     Y: =0
                     ZIndex: =10
@@ -248,9 +248,9 @@
                 PrimaryColor3: =RGBA(255, 211, 205, 1)
                 SelectedColor: =RGBA(0, 0, 0, 1)
                 SelectedFill: =RGBA(211, 66, 9, .2)
-                Size: =13.02
-                Width: =1216.85
-                X: =18.04
+                Size: =18.30
+                Width: =1710.36
+                X: =25.36
                 Y: =515
                 ZIndex: =4
 
@@ -263,7 +263,7 @@
                     LayoutHeight: =Parent.Height
                     Order: =1
                     Text: =ThisItem.Title
-                    Width: =100.16
+                    Width: =140.78
                     X: =0.00
                     Y: =0
                     ZIndex: =6
@@ -277,7 +277,7 @@
                     LayoutHeight: =Parent.Height
                     Order: =2
                     Text: =ThisItem.'Focus Area'
-                    Width: =100.16
+                    Width: =140.78
                     X: =0.00
                     Y: =0
                     ZIndex: =7
@@ -291,7 +291,7 @@
                     LayoutHeight: =Parent.Height
                     Order: =3
                     Text: =ThisItem.'Focus Line'
-                    Width: =100.16
+                    Width: =140.78
                     X: =0.00
                     Y: =0
                     ZIndex: =8
@@ -305,7 +305,7 @@
                     LayoutHeight: =Parent.Height
                     Order: =4
                     Text: =ThisItem.Assigned
-                    Width: =100.16
+                    Width: =140.78
                     X: =0.00
                     Y: =0
                     ZIndex: =9
@@ -319,7 +319,7 @@
                     LayoutHeight: =Parent.Height
                     Order: =5
                     Text: =ThisItem.'Progress (%)'
-                    Width: =100.16
+                    Width: =140.78
                     X: =0.00
                     Y: =0
                     ZIndex: =10
@@ -329,8 +329,8 @@
                 BorderThickness: =2
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =1
-                Width: =290.45
-                X: =19.02
+                Width: =408.25
+                X: =26.73
                 Y: =494
                 ZIndex: =5
 
@@ -340,12 +340,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Fill: =RGBA(226, 223, 218, 1)
                 FontWeight: =FontWeight.Semibold
-                PaddingRight: =5.00
-                PaddingTop: =5.00
-                Size: =13.02
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.30
                 Text: ="Leading Actions"
-                Width: =142.23
-                X: =40.06
+                Width: =199.91
+                X: =56.31
                 Y: =472.5
                 ZIndex: =6
 
@@ -355,7 +355,7 @@
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =427
-            Width: =1281.97
+            Width: =1801.89
             X: =0.00
             Y: =2
             ZIndex: =3
@@ -387,9 +387,9 @@
                 PrimaryColor3: =RGBA(255, 211, 205, 1)
                 SelectedColor: =RGBA(0, 0, 0, 1)
                 SelectedFill: =RGBA(211, 66, 9, .2)
-                Size: =13.02
-                Width: =1216.85
-                X: =19.02
+                Size: =18.30
+                Width: =1710.36
+                X: =26.73
                 Y: =94
                 ZIndex: =1
 
@@ -402,7 +402,7 @@
                     LayoutHeight: =Parent.Height
                     Order: =1
                     Text: =ThisItem.Title
-                    Width: =100.16
+                    Width: =140.78
                     X: =0.00
                     Y: =0
                     ZIndex: =6
@@ -416,7 +416,7 @@
                     LayoutHeight: =Parent.Height
                     Order: =2
                     Text: =ThisItem.'Focus Area'
-                    Width: =100.16
+                    Width: =140.78
                     X: =0.00
                     Y: =0
                     ZIndex: =7
@@ -430,7 +430,7 @@
                     LayoutHeight: =Parent.Height
                     Order: =3
                     Text: =ThisItem.'Focus Line'
-                    Width: =100.16
+                    Width: =140.78
                     X: =0.00
                     Y: =0
                     ZIndex: =8
@@ -444,7 +444,7 @@
                     LayoutHeight: =Parent.Height
                     Order: =4
                     Text: =ThisItem.Assigned
-                    Width: =100.16
+                    Width: =140.78
                     X: =0.00
                     Y: =0
                     ZIndex: =9
@@ -458,7 +458,7 @@
                     LayoutHeight: =Parent.Height
                     Order: =5
                     Text: =ThisItem.'Progress (%)'
-                    Width: =100.16
+                    Width: =140.78
                     X: =0.00
                     Y: =0
                     ZIndex: =10
@@ -477,14 +477,14 @@
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 211, 205, 1)
                 Items: =DropDownSample
-                PaddingRight: =10.01
-                PaddingTop: =10.01
+                PaddingRight: =14.07
+                PaddingTop: =14.07
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(131, 24, 75, 1)
                 SelectionFill: =RGBA(211, 66, 9, 1)
-                Size: =13.02
-                Width: =87.12
-                X: =156.24
+                Size: =18.30
+                Width: =122.45
+                X: =219.61
                 Y: =46
                 ZIndex: =2
 
@@ -497,12 +497,12 @@
                 Height: =35
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
-                PaddingRight: =5.00
-                PaddingTop: =5.00
-                Size: =14.04
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =19.73
                 Text: ="Create Issue"
-                Width: =150.23
-                X: =1084.66
+                Width: =211.16
+                X: =1524.56
                 Y: =44
                 ZIndex: =3
 
@@ -514,8 +514,8 @@
                 Icon: =Icon.Filter
                 PaddingRight: =0.00
                 PaddingTop: =0.00
-                Width: =28.05
-                X: =120.18
+                Width: =39.43
+                X: =168.92
                 Y: =40
                 ZIndex: =4
 
@@ -525,12 +525,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =26
-                PaddingRight: =5.00
-                PaddingTop: =5.00
-                Size: =16.04
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =22.55
                 Text: ="Insights"
-                Width: =91.14
-                X: =19.02
+                Width: =128.10
+                X: =26.73
                 Y: =44
                 ZIndex: =5
 
@@ -561,12 +561,12 @@
             Set(varActionDashbaord,false);
             Set(varIssueDashboard,false);
             Set(varInsightDashboad,false);
-        PaddingRight: =5.00
-        PaddingTop: =5.00
-        Size: =13.02
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =18.30
         Text: ="Overview"
-        Width: =114.17
-        X: =43.07
+        Width: =160.47
+        X: =60.54
         Y: =197
         ZIndex: =16
 
@@ -588,11 +588,11 @@
             Height: =30
             HoverDateFill: =RGBA(255, 211, 205, 1)
             IconBackground: =RGBA(149, 149, 149, 1)
-            PaddingRight: =5.00
+            PaddingRight: =7.03
             PaddingTop: =0.00
             SelectedDateFill: =RGBA(211, 66, 9, 1)
-            Size: =14.04
-            Width: =1366.00
+            Size: =19.73
+            Width: =1920.00
             X: =0.00
             Y: =147
             ZIndex: =6
@@ -612,13 +612,13 @@
             HoverColor: =RGBA(242, 19, 19, 1)
             HoverFill: =RGBA(255, 211, 205, 1)
             Items: =Friday_Demolist
-            PaddingRight: =10.01
-            PaddingTop: =10.01
+            PaddingRight: =14.07
+            PaddingTop: =14.07
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =RGBA(131, 24, 75, 1)
             SelectionFill: =RGBA(242, 19, 19, 1)
-            Size: =13.02
-            Width: =1366.00
+            Size: =18.30
+            Width: =1920.00
             X: =0.00
             Y: =147
             ZIndex: =7
@@ -633,15 +633,15 @@
             Height: =30
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(242, 19, 19, 1), -20%)
-            PaddingRight: =5.00
-            PaddingTop: =5.00
+            PaddingRight: =7.03
+            PaddingTop: =7.03
             RadiusBottomLeft: =5
             RadiusBottomRight: =5
             RadiusTopLeft: =5
             RadiusTopRight: =5
-            Size: =10.01
+            Size: =14.07
             Text: ="Search"
-            Width: =1366.00
+            Width: =1920.00
             X: =0.00
             Y: =147
             ZIndex: =8
@@ -654,11 +654,11 @@
             Height: =37
             HoverColor: =RGBA(5, 21, 242, 100)
             OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
-            PaddingRight: =5.00
-            PaddingTop: =5.00
-            Size: =15.02
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.11
             Text: ="Home"
-            Width: =1366.00
+            Width: =1920.00
             X: =0.00
             Y: =136
             ZIndex: =9
@@ -671,11 +671,11 @@
             Height: =37
             HoverColor: =RGBA(5, 21, 242, 100)
             OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
-            PaddingRight: =5.00
-            PaddingTop: =5.00
-            Size: =14.04
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =19.73
             Text: ="Goals & Objective"
-            Width: =1366.00
+            Width: =1920.00
             X: =0.00
             Y: =138
             ZIndex: =10
@@ -688,7 +688,7 @@
             Icon: =Icon.ChevronRight
             PaddingRight: =0.00
             PaddingTop: =0.00
-            Width: =1366.00
+            Width: =1920.00
             X: =0.00
             Y: =147
             ZIndex: =11
@@ -701,7 +701,7 @@
             Icon: =Icon.ChevronRight
             PaddingRight: =0.00
             PaddingTop: =0.00
-            Width: =1366.00
+            Width: =1920.00
             X: =0.00
             Y: =147
             ZIndex: =12
@@ -712,11 +712,11 @@
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Semibold
             OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
-            PaddingRight: =5.00
-            PaddingTop: =5.00
-            Size: =14.04
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =19.73
             Text: ="Overview"
-            Width: =1366.00
+            Width: =1920.00
             X: =0.00
             Y: =137
             ZIndex: =13
@@ -737,12 +737,12 @@
             Set(varActionDashbaord,false);
             Set(varIssueDashboard,false);
             Set(varInsightDashboad,false);
-        PaddingRight: =5.00
-        PaddingTop: =5.00
-        Size: =13.02
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =18.30
         Text: ="Issue Dashboard"
-        Width: =168.26
-        X: =360.55
+        Width: =236.50
+        X: =506.78
         Y: =197
         ZIndex: =17
 
@@ -762,12 +762,12 @@
             Set(varActionDashbaord,false);
             Set(varIssueDashboard,false);
             Set(varInsightDashboad,false);
-        PaddingRight: =5.00
-        PaddingTop: =5.00
-        Size: =13.02
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =18.30
         Text: ="Insight Dashboard"
-        Width: =176.27
-        X: =544.84
+        Width: =247.76
+        X: =765.81
         Y: =197
         ZIndex: =18
 
@@ -776,8 +776,8 @@
         Fill: |
             =RGBA(226, 223, 218, 1)
         Height: =16
-        Width: =125.19
-        X: =34.06
+        Width: =175.96
+        X: =47.87
         Y: =233.95
         ZIndex: =19
 
@@ -797,12 +797,12 @@
             Set(varActionDashbaord,false);
             Set(varIssueDashboard,false);
             Set(varInsightDashboad,false);
-        PaddingRight: =5.00
-        PaddingTop: =5.00
-        Size: =13.02
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =18.30
         Text: ="Action Dashboard"
-        Width: =168.26
-        X: =175.27
+        Width: =236.50
+        X: =246.35
         Y: =197
         ZIndex: =20
 

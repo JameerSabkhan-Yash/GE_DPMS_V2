@@ -7,15 +7,15 @@
         BorderThickness: =2
         Fill: =RGBA(226, 223, 218, 1)
         Height: =499
-        Width: =1323.04
-        X: =24.05
+        Width: =1859.62
+        X: =33.80
         Y: =101
         ZIndex: =1
 
     "'I4.0_DPMS_CSL_XXX_C_N_1' As 'I4.0_DPMS_CSL_XXX_C_N'":
         Height: =56
-        Width: =1352.07
-        X: =7.00
+        Width: =1900.42
+        X: =9.84
         Y: =91
         ZIndex: =2
 
@@ -23,8 +23,8 @@
         BorderThickness: =0
         Fill: =RGBA(226, 223, 218, 1)
         Height: =448
-        Width: =1281.97
-        X: =41.07
+        Width: =1801.89
+        X: =57.73
         Y: =152
         ZIndex: =3
 
@@ -34,7 +34,7 @@
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =469
-            Width: =1281.97
+            Width: =1801.89
             X: =0.00
             Y: =0
             ZIndex: =1
@@ -45,7 +45,7 @@
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =192
-            Width: =1281.97
+            Width: =1801.89
             X: =0.00
             Y: =1
             ZIndex: =2
@@ -80,16 +80,16 @@
             Set(varIssueDashboard,false);
             Set(varInsightDashboad,false);
         PaddingBottom: =23
-        PaddingRight: =5.00
-        PaddingTop: =5.00
+        PaddingRight: =7.03
+        PaddingTop: =7.03
         RadiusBottomLeft: =7
         RadiusBottomRight: =7
         RadiusTopLeft: =7
         RadiusTopRight: =7
-        Size: =13.02
+        Size: =18.30
         Text: ="Action Dashboard"
-        Width: =172.27
-        X: =173.26
+        Width: =242.14
+        X: =243.53
         Y: =202
         ZIndex: =15
 
@@ -110,16 +110,16 @@
             Set(varActionDashbaord,false);
             Set(varIssueDashboard,false);
             Set(varInsightDashboad,false);
-        PaddingRight: =5.00
-        PaddingTop: =5.00
+        PaddingRight: =7.03
+        PaddingTop: =7.03
         RadiusBottomLeft: =7
         RadiusBottomRight: =7
         RadiusTopLeft: =7
         RadiusTopRight: =7
-        Size: =13.02
+        Size: =18.30
         Text: ="Overview"
-        Width: =114.17
-        X: =41.07
+        Width: =160.47
+        X: =57.73
         Y: =204
         ZIndex: =16
 
@@ -141,11 +141,11 @@
             Height: =30
             HoverDateFill: =RGBA(255, 211, 205, 1)
             IconBackground: =RGBA(149, 149, 149, 1)
-            PaddingRight: =5.00
+            PaddingRight: =7.03
             PaddingTop: =0.00
             SelectedDateFill: =RGBA(211, 66, 9, 1)
-            Size: =14.04
-            Width: =1366.00
+            Size: =19.73
+            Width: =1920.00
             X: =0.00
             Y: =147
             ZIndex: =6
@@ -165,13 +165,13 @@
             HoverColor: =RGBA(242, 19, 19, 1)
             HoverFill: =RGBA(255, 211, 205, 1)
             Items: =Friday_Demolist
-            PaddingRight: =10.01
-            PaddingTop: =10.01
+            PaddingRight: =14.07
+            PaddingTop: =14.07
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =RGBA(131, 24, 75, 1)
             SelectionFill: =RGBA(242, 19, 19, 1)
-            Size: =13.02
-            Width: =1366.00
+            Size: =18.30
+            Width: =1920.00
             X: =0.00
             Y: =147
             ZIndex: =7
@@ -186,15 +186,15 @@
             Height: =30
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(242, 19, 19, 1), -20%)
-            PaddingRight: =5.00
-            PaddingTop: =5.00
+            PaddingRight: =7.03
+            PaddingTop: =7.03
             RadiusBottomLeft: =5
             RadiusBottomRight: =5
             RadiusTopLeft: =5
             RadiusTopRight: =5
-            Size: =10.01
+            Size: =14.07
             Text: ="Search"
-            Width: =1366.00
+            Width: =1920.00
             X: =0.00
             Y: =147
             ZIndex: =8
@@ -207,11 +207,11 @@
             Height: =37
             HoverColor: =RGBA(5, 21, 242, 100)
             OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
-            PaddingRight: =5.00
-            PaddingTop: =5.00
-            Size: =15.02
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.11
             Text: ="Home"
-            Width: =1366.00
+            Width: =1920.00
             X: =0.00
             Y: =136
             ZIndex: =9
@@ -224,11 +224,11 @@
             Height: =37
             HoverColor: =RGBA(5, 21, 242, 100)
             OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
-            PaddingRight: =5.00
-            PaddingTop: =5.00
-            Size: =14.04
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =19.73
             Text: ="GOALS & OBJECTIVES"
-            Width: =1366.00
+            Width: =1920.00
             X: =0.00
             Y: =138
             ZIndex: =10
@@ -241,7 +241,7 @@
             Icon: =Icon.ChevronRight
             PaddingRight: =0.00
             PaddingTop: =0.00
-            Width: =1366.00
+            Width: =1920.00
             X: =0.00
             Y: =147
             ZIndex: =11
@@ -254,7 +254,7 @@
             Icon: =Icon.ChevronRight
             PaddingRight: =0.00
             PaddingTop: =0.00
-            Width: =1366.00
+            Width: =1920.00
             X: =0.00
             Y: =147
             ZIndex: =12
@@ -265,11 +265,11 @@
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Semibold
             OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
-            PaddingRight: =5.00
-            PaddingTop: =5.00
-            Size: =14.04
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =19.73
             Text: ="Action Dashboard"
-            Width: =1366.00
+            Width: =1920.00
             X: =0.00
             Y: =137
             ZIndex: =13
@@ -291,16 +291,16 @@
             Set(varActionDashbaord,false);
             Set(varIssueDashboard,false);
             Set(varInsightDashboad,false);
-        PaddingRight: =5.00
-        PaddingTop: =5.00
+        PaddingRight: =7.03
+        PaddingTop: =7.03
         RadiusBottomLeft: =7
         RadiusBottomRight: =7
         RadiusTopLeft: =7
         RadiusTopRight: =7
-        Size: =13.02
+        Size: =18.30
         Text: ="Issue Dashboard"
-        Width: =168.26
-        X: =366.57
+        Width: =236.50
+        X: =515.24
         Y: =204
         ZIndex: =17
 
@@ -321,16 +321,16 @@
             Set(varActionDashbaord,false);
             Set(varIssueDashboard,false);
             Set(varInsightDashboad,false);
-        PaddingRight: =5.00
-        PaddingTop: =5.00
+        PaddingRight: =7.03
+        PaddingTop: =7.03
         RadiusBottomLeft: =7
         RadiusBottomRight: =7
         RadiusTopLeft: =7
         RadiusTopRight: =7
-        Size: =13.02
+        Size: =18.30
         Text: ="Insight Dashboard"
-        Width: =176.27
-        X: =551.84
+        Width: =247.76
+        X: =775.65
         Y: =204
         ZIndex: =18
 
@@ -339,8 +339,8 @@
         Fill: |
             =RGBA(226, 223, 218, 1)
         Height: =37
-        Width: =175.77
-        X: =171.26
+        Width: =247.06
+        X: =240.72
         Y: =233.95
         ZIndex: =19
 

@@ -19,7 +19,7 @@
         Fill: =RGBA(226, 223, 218, 0.7)
         Height: =600
         Visible: =I4_0_DPMS_CSL_XXX_XX_LVPOPV_U
-        Width: =1366.00
+        Width: =1920.00
         X: =0.00
         ZIndex: =1
 
@@ -35,13 +35,13 @@
         Height: =474
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
-        PaddingRight: =5.00
-        PaddingTop: =5.00
-        Size: =15.02
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =21.11
         Text: =""
         Visible: =I4_0_DPMS_CSL_XXX_XX_LVPOPV
-        Width: =1283.97
-        X: =44.07
+        Width: =1804.70
+        X: =61.94
         Y: =126
         ZIndex: =2
 
@@ -60,12 +60,12 @@
             Reset(dpProgress);
             Reset(CommentUpdate);
             Reset(ObjectiveDescriptionUpdate);
-        PaddingRight: =5.00
-        PaddingTop: =5.00
-        Size: =30.05
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =42.24
         Text: ="POP "
-        Width: =272.42
-        X: =514.78
+        Width: =382.90
+        X: =723.56
         Y: =19
         ZIndex: =3
 
@@ -81,12 +81,12 @@
         OnSelect: |-
             =Set(I4_0_DPMS_CSL_XXX_XX_LVPOPV_U,false);
             Navigate('14.0_DPMS_CSL_GnO_ObjD');
-        PaddingRight: =5.00
-        PaddingTop: =5.00
-        Size: =15.02
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =21.11
         Text: ="Update"
-        Width: =150.23
-        X: =1139.74
+        Width: =211.16
+        X: =1601.98
         Y: =538
         ZIndex: =23
 
@@ -107,9 +107,9 @@
                RGBA(255,194,0,1),
                 Gray
             )
-        Height: =31.04
-        Width: =38.06
-        X: =74.11
+        Height: =43.63
+        Width: =53.50
+        X: =104.17
         Y: =541
         ZIndex: =24
 
@@ -130,15 +130,15 @@
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(219, 219, 219, 1)
         Items: =Distinct(I4_0_DPMS_CSL_CFG_S,Status)
-        PaddingRight: =10.01
-        PaddingTop: =10.01
+        PaddingRight: =14.07
+        PaddingTop: =14.07
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(202, 202, 202, 1)
         SelectionFill: =RGBA(202, 202, 202, 1)
-        Size: =13.02
+        Size: =18.30
         Tooltip: ="Please Slect the focus Area"
-        Width: =250.39
-        X: =131.20
+        Width: =351.94
+        X: =184.41
         Y: =538
         ZIndex: =25
 
@@ -148,9 +148,9 @@
         DisabledColor: =RGBA(166, 166, 166, 1)
         FontWeight: =FontWeight.Semibold
         Height: =33
-        PaddingRight: =5.00
-        PaddingTop: =5.00
-        Size: =12.02
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =16.89
         Text: ="Please select Status."
         Visible: |-
             =If(
@@ -158,8 +158,8 @@
                 true,
                 false
             )
-        Width: =223.34
-        X: =131.20
+        Width: =313.92
+        X: =184.41
         Y: =540
         ZIndex: =26
 
@@ -180,15 +180,15 @@
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(219, 219, 219, 1)
         Items: =["0%","25%","50%","75%","100%"]
-        PaddingRight: =10.01
-        PaddingTop: =10.01
+        PaddingRight: =14.07
+        PaddingTop: =14.07
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(202, 202, 202, 1)
         SelectionFill: =RGBA(202, 202, 202, 1)
-        Size: =13.02
+        Size: =18.30
         Tooltip: ="Please Slect the focus Area"
-        Width: =250.39
-        X: =705.09
+        Width: =351.94
+        X: =991.05
         Y: =541
         ZIndex: =27
 
@@ -211,12 +211,12 @@
         LineHeight: =2
         MaxLength: =200
         Mode: =TextMode.MultiLine
-        PaddingRight: =5.00
-        PaddingTop: =5.00
+        PaddingRight: =7.03
+        PaddingTop: =7.03
         PressedBorderColor: =RGBA(0, 0, 0, 1)
-        Size: =13.02
-        Width: =555.85
-        X: =72.11
+        Size: =18.30
+        Width: =781.28
+        X: =101.36
         Y: =339
         ZIndex: =28
 
@@ -239,12 +239,12 @@
         LineHeight: =2
         MaxLength: =200
         Mode: =TextMode.MultiLine
-        PaddingRight: =5.00
-        PaddingTop: =5.00
+        PaddingRight: =7.03
+        PaddingTop: =7.03
         PressedBorderColor: =RGBA(0, 0, 0, 1)
-        Size: =13.02
-        Width: =584.89
-        X: =705.09
+        Size: =18.30
+        Width: =822.10
+        X: =991.05
         Y: =336
         ZIndex: =29
 
@@ -254,9 +254,9 @@
         DisabledColor: =RGBA(166, 166, 166, 1)
         FontWeight: =FontWeight.Semibold
         Height: =33
-        PaddingRight: =5.00
-        PaddingTop: =5.00
-        Size: =12.02
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =16.89
         Text: ="Please select Progress."
         Visible: |-
             =If(
@@ -264,8 +264,8 @@
                 true,
                 false
             )
-        Width: =223.34
-        X: =705.09
+        Width: =313.92
+        X: =991.05
         Y: =545
         ZIndex: =30
 
@@ -274,9 +274,9 @@
         Color: =RGBA(255, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Height: =33
-        PaddingRight: =5.00
-        PaddingTop: =5.00
-        Size: =15.02
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =21.11
         Text: ="*"
         Visible: |-
             =If(
@@ -284,9 +284,9 @@
                 true,
                 false
             )
-        Width: =31.04
+        Width: =43.63
         Wrap: =false
-        X: =282.43
+        X: =396.97
         Y: =291
         ZIndex: =31
 
@@ -298,13 +298,13 @@
         DisabledColor: =RGBA(166, 166, 166, 1)
         FontWeight: =FontWeight.Semibold
         Height: =42
-        PaddingRight: =5.00
-        PaddingTop: =5.00
-        Size: =12.02
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =16.89
         Text: |-
             ="(Max Characters : " & Len(ObjectiveDescriptionUpdate.Text) &"/200)"
-        Width: =218.34
-        X: =439.67
+        Width: =306.89
+        X: =617.98
         Y: =287
         ZIndex: =32
 
@@ -313,9 +313,9 @@
         Color: =RGBA(255, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Height: =33
-        PaddingRight: =5.00
-        PaddingTop: =5.00
-        Size: =15.02
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =21.11
         Text: ="*"
         Visible: |-
             =If(
@@ -323,9 +323,9 @@
                 true,
                 false
             )
-        Width: =31.04
+        Width: =43.63
         Wrap: =false
-        X: =814.24
+        X: =1144.47
         Y: =291
         ZIndex: =33
 
@@ -337,13 +337,13 @@
         DisabledColor: =RGBA(166, 166, 166, 1)
         FontWeight: =FontWeight.Semibold
         Height: =42
-        PaddingRight: =5.00
-        PaddingTop: =5.00
-        Size: =12.02
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =16.89
         Text: |-
             ="(Max Characters : " & Len(CommentUpdate.Text) &"/200)"
-        Width: =218.34
-        X: =1091.66
+        Width: =306.89
+        X: =1534.40
         Y: =287
         ZIndex: =34
 
@@ -355,8 +355,8 @@
         Icon: =Icon.Check
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =64.10
-        X: =313.47
+        Width: =90.10
+        X: =440.60
         Y: =260
         ZIndex: =35
 
