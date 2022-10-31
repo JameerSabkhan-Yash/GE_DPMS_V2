@@ -14,7 +14,7 @@
         BorderColor: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(226, 223, 218, 1)
         Height: =76
-        Width: =1922.94
+        Width: =1368.09
         X: =0.00
         ZIndex: =1
 
@@ -26,8 +26,8 @@
         Image: =CSL_LogoTM_RGB
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =167.52
-        X: =1.41
+        Width: =119.18
+        X: =1.00
         ZIndex: =4
 
     Label1_29 As label:
@@ -37,13 +37,13 @@
         DisabledColor: =RGBA(166, 166, 166, 1)
         FontWeight: =FontWeight.Semibold
         Height: =71
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =28.17
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =20.04
         Text: |-
             ="Global Engineering 
             Digital Performance Management System"
-        Width: =1922.94
+        Width: =1368.09
         X: =0.00
         ZIndex: =5
 
@@ -61,8 +61,8 @@
         RadiusTopLeft: =25
         RadiusTopRight: =25
         Tooltip: =User().FullName
-        Width: =88.71
-        X: =1823.00
+        Width: =63.11
+        X: =1296.99
         ZIndex: =6
 
     Label2 As label:
@@ -72,12 +72,12 @@
         DisabledColor: =RGBA(166, 166, 166, 1)
         FontWeight: =FontWeight.Bold
         Height: =10
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =7.73
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =5.50
         Text: =First( Split( First( Split( User().FullName, " " ) ).Result, " " ) ).Result & " " & First( Split( Last( Split( User().FullName, " " ) ).Result, " " ) ).Result
-        Width: =109.80
-        X: =1813.13
+        Width: =78.12
+        X: =1289.97
         Y: =67
         ZIndex: =7
 

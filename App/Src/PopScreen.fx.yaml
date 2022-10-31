@@ -24,12 +24,12 @@ PopScreen As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
         OnSelect: =Set(I4_0_DPMS_CSL_XXX_XX_LVPOPV,true)
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =42.24
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =30.05
         Text: ="POP "
-        Width: =382.90
-        X: =763.00
+        Width: =272.42
+        X: =542.84
         Y: =68
         ZIndex: =1
 
@@ -45,7 +45,7 @@ PopScreen As screen:
             Fill: =RGBA(226, 223, 218, 0.5)
             Height: =600
             Visible: =I4_0_DPMS_CSL_XXX_XX_LVPOPV
-            Width: =1920.00
+            Width: =1366.00
             X: =0.00
             ZIndex: =2
 
@@ -61,13 +61,13 @@ PopScreen As screen:
             Height: =600
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =21.11
+            PaddingRight: =5.00
+            PaddingTop: =5.00
+            Size: =15.02
             Text: =""
             Visible: =I4_0_DPMS_CSL_XXX_XX_LVPOPV
-            Width: =1354.09
-            X: =565.91
+            Width: =963.38
+            X: =402.62
             ZIndex: =3
 
         Icon1_4 As icon.Cancel:
@@ -80,8 +80,8 @@ PopScreen As screen:
             PaddingRight: =0.00
             PaddingTop: =0.00
             Visible: =I4_0_DPMS_CSL_XXX_XX_LVPOPV
-            Width: =647.42
-            X: =1272.58
+            Width: =460.61
+            X: =905.39
             ZIndex: =4
 
         Label3_9 As label:
@@ -91,14 +91,14 @@ PopScreen As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
             Height: =600
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =28.17
+            PaddingRight: =5.00
+            PaddingTop: =5.00
+            Size: =20.04
             Text: |
                 ="Entries Saved Succesfully !!!"
             Visible: =I4_0_DPMS_CSL_XXX_XX_LVPOPV
-            Width: =1271.05
-            X: =648.95
+            Width: =904.30
+            X: =461.70
             ZIndex: =5
 
         Image1_2 As image:
@@ -110,8 +110,8 @@ PopScreen As screen:
             PaddingRight: =0.00
             PaddingTop: =0.00
             Visible: =I4_0_DPMS_CSL_XXX_XX_LVPOPV
-            Width: =1047.22
-            X: =872.78
+            Width: =745.05
+            X: =620.95
             ZIndex: =6
 
         Label3_10 As label:
@@ -121,13 +121,13 @@ PopScreen As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Semibold
             Height: =600
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =21.11
+            PaddingRight: =5.00
+            PaddingTop: =5.00
+            Size: =15.02
             Text: |-
                 ="Escalation Id is : " & I4_0_DPMS_CSL_GnO_CI_LVPOP
             Visible: =I4_0_DPMS_CSL_XXX_XX_LVPOPV
-            Width: =1354.09
-            X: =565.91
+            Width: =963.38
+            X: =402.62
             ZIndex: =7
 

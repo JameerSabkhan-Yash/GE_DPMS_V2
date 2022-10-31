@@ -7,12 +7,12 @@ sampleWidget As screen:
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Height: =43
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =18.30
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =13.02
         Text: ="Label"
-        Width: =236.50
-        X: =235.09
+        Width: =168.26
+        X: =167.26
         Y: =10
         ZIndex: =1
 
@@ -20,11 +20,11 @@ sampleWidget As screen:
         BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =18.30
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =13.02
         Text: ="Text Label"
-        Width: =211.16
+        Width: =150.23
         X: =0.00
         Y: =13
         ZIndex: =2
@@ -33,8 +33,8 @@ sampleWidget As screen:
         BorderColor: =RGBA(131, 24, 75, 1)
         Fill: =RGBA(0, 0, 0, 1)
         Height: =600
-        Width: =1.41
-        X: =757.35
+        Width: =1.00
+        X: =538.82
         ZIndex: =3
 
     TextInput7 As text:
@@ -49,11 +49,11 @@ sampleWidget As screen:
         HoverBorderColor: =RGBA(131, 24, 75, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(255, 211, 205, 1)
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =18.30
-        Width: =343.51
-        X: =235.09
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =13.02
+        Width: =244.39
+        X: =167.26
         Y: =104
         ZIndex: =4
 
@@ -61,11 +61,11 @@ sampleWidget As screen:
         BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =18.30
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =13.02
         Text: ="Text input"
-        Width: =211.16
+        Width: =150.23
         X: =0.00
         Y: =104
         ZIndex: =5
@@ -78,12 +78,12 @@ sampleWidget As screen:
         FontWeight: =FontWeight.Semibold
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =21.11
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =15.02
         Text: ="Submit"
-        Width: =225.23
-        X: =235.09
+        Width: =160.24
+        X: =167.26
         Y: =202
         ZIndex: =6
 
@@ -95,12 +95,12 @@ sampleWidget As screen:
         FontWeight: =FontWeight.Semibold
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =21.11
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =15.02
         Text: ="Cancel"
-        Width: =225.23
-        X: =492.71
+        Width: =160.24
+        X: =350.54
         Y: =204
         ZIndex: =7
 
@@ -108,11 +108,11 @@ sampleWidget As screen:
         BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =18.30
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =13.02
         Text: ="Buttons"
-        Width: =211.16
+        Width: =150.23
         X: =0.00
         Y: =204
         ZIndex: =8
@@ -126,12 +126,12 @@ sampleWidget As screen:
         Fill: =RGBA(0, 0, 0, 0)
         HoverDateFill: =RGBA(255, 211, 205, 1)
         IconBackground: =RGBA(211, 66, 9, 1)
-        PaddingRight: =7.03
+        PaddingRight: =5.00
         PaddingTop: =0.00
         SelectedDateFill: =RGBA(211, 66, 9, 1)
-        Size: =19.73
-        Width: =461.74
-        X: =235.09
+        Size: =14.04
+        Width: =328.51
+        X: =167.26
         Y: =304
         ZIndex: =9
 
@@ -139,11 +139,11 @@ sampleWidget As screen:
         BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =18.30
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =13.02
         Text: ="Date picker"
-        Width: =211.16
+        Width: =150.23
         X: =0.00
         Y: =304
         ZIndex: =10
@@ -153,10 +153,10 @@ sampleWidget As screen:
         Color: =RGBA(0, 0, 0, 1)
         FalseFill: =RGBA(255, 0, 0, 1)
         HandleFill: =RGBA(255, 255, 255, 1)
-        Size: =18.30
+        Size: =13.02
         TrueFill: =RGBA(54, 176, 75, 1)
-        Width: =129.52
-        X: =235.09
+        Width: =92.15
+        X: =167.26
         Y: =405
         ZIndex: =11
 
@@ -165,10 +165,10 @@ sampleWidget As screen:
         Color: =RGBA(0, 0, 0, 1)
         FalseFill: =RGBA(255, 0, 0, 1)
         HandleFill: =RGBA(255, 255, 255, 1)
-        Size: =18.30
+        Size: =13.02
         TrueFill: =RGBA(54, 176, 75, 1)
-        Width: =129.52
-        X: =235.09
+        Width: =92.15
+        X: =167.26
         Y: =458
         ZIndex: =12
 
@@ -176,13 +176,13 @@ sampleWidget As screen:
         BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =18.30
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =13.02
         Text: |-
             ="Toggle Off
             "
-        Width: =211.16
+        Width: =150.23
         X: =0.00
         Y: =399
         ZIndex: =13
@@ -191,11 +191,11 @@ sampleWidget As screen:
         BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =18.30
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =13.02
         Text: ="Toggle On"
-        Width: =211.16
+        Width: =150.23
         X: =0.00
         Y: =452
         ZIndex: =14
@@ -206,8 +206,8 @@ sampleWidget As screen:
         HandleFill: =RGBA(255, 255, 255, 1)
         RailFill: =RGBA(0, 0, 0, 1)
         ValueFill: =RGBA(184, 0, 0, 1)
-        Width: =450.48
-        X: =235.09
+        Width: =320.50
+        X: =167.26
         Y: =535
         ZIndex: =15
 
@@ -215,13 +215,13 @@ sampleWidget As screen:
         BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =18.30
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =13.02
         Text: |-
             ="Slider
             "
-        Width: =211.16
+        Width: =150.23
         X: =0.00
         Y: =535
         ZIndex: =16
@@ -232,11 +232,11 @@ sampleWidget As screen:
         HoverColor: =RGBA(131, 24, 75, 1)
         Items: =RadioSample
         PaddingRight: =0.00
-        PaddingTop: =14.07
+        PaddingTop: =10.01
         RadioSelectionFill: =RGBA(184, 0, 0, 1)
-        Size: =18.30
-        Width: =225.23
-        X: =235.09
+        Size: =13.02
+        Width: =160.24
+        X: =167.26
         Y: =500
         ZIndex: =17
 
@@ -244,11 +244,11 @@ sampleWidget As screen:
         BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =18.30
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =13.02
         Text: ="Radio Buttons"
-        Width: =211.16
+        Width: =150.23
         X: =0.00
         Y: =560
         ZIndex: =18
@@ -257,11 +257,11 @@ sampleWidget As screen:
         Fill: =RGBA(255, 0, 0, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(255, 0, 0, 100), -20%)
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =18.30
-        Width: =225.23
-        X: =1095.22
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =13.02
+        Width: =160.24
+        X: =779.20
         Y: =13
         ZIndex: =19
 
@@ -269,20 +269,20 @@ sampleWidget As screen:
         BorderColor: =RGBA(131, 24, 75, 1)
         Fill: =RGBA(0, 0, 0, 1)
         Height: =600
-        Width: =1.41
-        X: =1373.92
+        Width: =1.00
+        X: =977.49
         ZIndex: =20
 
     Label28_8 As label:
         BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =18.30
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =13.02
         Text: ="Timer"
-        Width: =211.16
-        X: =758.74
+        Width: =150.23
+        X: =539.81
         Y: =13
         ZIndex: =21
 
@@ -300,14 +300,14 @@ sampleWidget As screen:
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(255, 211, 205, 1)
         Items: =DropDownSample
-        PaddingRight: =14.07
-        PaddingTop: =14.07
+        PaddingRight: =10.01
+        PaddingTop: =10.01
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(131, 24, 75, 1)
         SelectionFill: =RGBA(211, 66, 9, 1)
-        Size: =18.30
-        Width: =223.81
-        X: =1096.61
+        Size: =13.02
+        Width: =159.23
+        X: =780.19
         Y: =110
         ZIndex: =22
 
@@ -315,23 +315,23 @@ sampleWidget As screen:
         BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =18.30
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =13.02
         Text: |-
             ="Drop down
             "
-        Width: =211.16
-        X: =758.74
+        Width: =150.23
+        X: =539.81
         Y: =104
         ZIndex: =23
 
     Arrow1 As arrow.backArrow:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(184, 0, 0, 1)
-        Height: =70.38
-        Width: =70.38
-        X: =1096.61
+        Height: =50.07
+        Width: =50.07
+        X: =780.19
         Y: =202
         ZIndex: =24
 
@@ -339,9 +339,9 @@ sampleWidget As screen:
         BorderColor: =RGBA(131, 24, 75, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(184, 0, 0, 1)
-        Height: =70.38
-        Width: =70.38
-        X: =1095.22
+        Height: =50.07
+        Width: =50.07
+        X: =779.20
         Y: =304
         ZIndex: =25
 
@@ -349,14 +349,14 @@ sampleWidget As screen:
         BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =18.30
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =13.02
         Text: |-
             ="Back arrow
             "
-        Width: =211.16
-        X: =757.35
+        Width: =150.23
+        X: =538.82
         Y: =207
         ZIndex: =26
 
@@ -364,41 +364,41 @@ sampleWidget As screen:
         BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =18.30
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =13.02
         Text: |-
             ="Next arrow
             "
-        Width: =211.16
-        X: =763.00
+        Width: =150.23
+        X: =542.84
         Y: =305
         ZIndex: =27
 
     Circle5 As circle:
         BorderColor: =RGBA(131, 24, 75, 1)
         Fill: =RGBA(255, 0, 0, 1)
-        Height: =35.20
-        Width: =35.20
-        X: =1096.61
+        Height: =25.04
+        Width: =25.04
+        X: =780.19
         Y: =406
         ZIndex: =28
 
     Circle5_1 As circle:
         BorderColor: =RGBA(131, 24, 75, 1)
         Fill: =RGBA(54, 176, 75, 1)
-        Height: =35.20
-        Width: =35.20
-        X: =1096.61
+        Height: =25.04
+        Width: =25.04
+        X: =780.19
         Y: =459
         ZIndex: =29
 
     Circle5_2 As circle:
         BorderColor: =RGBA(131, 24, 75, 1)
         Fill: =RGBA(255, 191, 0, 1)
-        Height: =35.20
-        Width: =35.20
-        X: =1095.22
+        Height: =25.04
+        Width: =25.04
+        X: =779.20
         Y: =515
         ZIndex: =30
 
