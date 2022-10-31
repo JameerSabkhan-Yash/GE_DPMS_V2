@@ -163,24 +163,6 @@
                 Y: =25
                 ZIndex: =2
 
-            Button3_1 As button:
-                AutoDisableOnSelect: =false
-                BorderThickness: =3
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(153, 153, 153, 1)
-                FontWeight: =FontWeight.Semibold
-                Height: =63
-                HoverColor: =
-                HoverFill: =
-                Size: =15
-                Text: =""
-                Width: =135
-                X: =40
-                Y: =34
-                ZIndex: =3
-
             CompositePieChart1 As group:
                 Height: =5
                 Width: =5
@@ -234,6 +216,24 @@
                     Width: =771
                     Y: =61
                     ZIndex: =21
+
+            Button3_1 As button:
+                AutoDisableOnSelect: =false
+                BorderThickness: =3
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(153, 153, 153, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =63
+                HoverColor: =
+                HoverFill: =
+                Size: =15
+                Text: =""
+                Width: =135
+                X: =40
+                Y: =34
+                ZIndex: =3
 
             Button3_2 As button:
                 AutoDisableOnSelect: =false
@@ -1120,7 +1120,7 @@
         ZIndex: =12
 
     "'I4.0_DPMS_CSL_XXX_C_N_5' As 'I4.0_DPMS_CSL_XXX_C_N_3'":
-        Height: =46
+        Height: =Self.FlexibleHeight
         Y: =90
         ZIndex: =13
 
@@ -1554,7 +1554,7 @@
             BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            FontWeight: =FontWeight.Bold
+            FontWeight: =FontWeight.Semibold
             Height: =58
             Size: =20
             Text: ="Update Objective"
