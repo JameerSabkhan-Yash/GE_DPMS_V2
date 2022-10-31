@@ -22,13 +22,15 @@
             Set(varActionDashbaord,false);
             Set(varIssueDashboard,false);
             Set(varInsightDashboad,false);
+        PaddingRight: =7.03
+        PaddingTop: =7.03
         RadiusTopLeft: =0
         RadiusTopRight: |
             =0
-        Size: =15.5
+        Size: =21.83
         Text: ="Create Action"
-        Width: =1338
-        X: =12
+        Width: =1883.51
+        X: =16.89
         Y: =148
         ZIndex: =1
 
@@ -37,18 +39,18 @@
         BorderThickness: =2
         Fill: =RGBA(226, 223, 218, 1)
         Height: =573
-        Width: =1338
-        X: =12
-        Y: =195
+        Width: =1883.51
+        X: =16.89
+        Y: =27
         ZIndex: =5
 
     "'I4.0_DPMS_CSL_GnO_CAN_IN-2' As fluidGrid.fluidGridWithBlankCard":
         BorderThickness: =0
         Fill: =RGBA(226, 223, 218, 1)
         Height: =514
-        Width: =1324
-        X: =21
-        Y: =203
+        Width: =1863.81
+        X: =29.56
+        Y: =86
         ZIndex: =10
 
         "'I4.0_DPMS_CSL_GnO_DC_IN-2' As dataCard":
@@ -58,8 +60,8 @@
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =506
-            Width: =1324
-            X: =0
+            Width: =1863.81
+            X: =0.00
             Y: =0
             ZIndex: =1
 
@@ -78,13 +80,13 @@
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 211, 205, 1)
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =13
-                Width: =578.5
-                X: =41
+                Size: =18.30
+                Width: =814.37
+                X: =57.73
                 Y: =187
                 ZIndex: =1
 
@@ -106,14 +108,16 @@
                 HoverFill: =RGBA(240, 158, 144, 0.9)
                 Items: =["In Progress", "Not Started","Hold","Completed" ]
                 OnSelect: =
+                PaddingRight: =14.07
+                PaddingTop: =14.07
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(131, 24, 75, 1)
                 SelectionColor: =RGBA(0, 0, 0, 1)
                 SelectionFill: =RGBA(203, 102, 102, 1)
-                Size: =13
+                Size: =18.30
                 Tooltip: ="Value Stream"
-                Width: =218
-                X: =1073
+                Width: =306.89
+                X: =1510.47
                 Y: =379
                 ZIndex: =2
 
@@ -125,10 +129,12 @@
                 Fill: =RGBA(0, 0, 0, 0.7)
                 Font: =Font.'Lato Black'
                 Height: =30
-                Size: =13
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.30
                 Text: ="Objective Desciption"
-                Width: =581
-                X: =40
+                Width: =817.88
+                X: =56.31
                 Y: =156
                 ZIndex: =3
 
@@ -140,8 +146,8 @@
                 OnSelect: =
                 ShowNavigation: =true
                 TemplateSize: =34
-                Width: =1258
-                X: =40
+                Width: =1770.90
+                X: =56.31
                 Y: =83
                 ZIndex: =5
 
@@ -150,7 +156,8 @@
                     BorderThickness: =1
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =34
-                    Width: =1247
+                    Width: =1755.44
+                    X: =0.00
                     ZIndex: =1
 
                 "'I4.0_DPMS_CSL_GnO_TL15_IN-2' As label":
@@ -159,9 +166,12 @@
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Height: =34
                     OnSelect: =Select(Parent)
-                    Size: =13
+                    PaddingRight: =7.03
+                    PaddingTop: =7.03
+                    Size: =18.30
                     Text: =ThisItem.FocusArea
-                    Width: =114
+                    Width: =160.47
+                    X: =0.00
                     ZIndex: =3
 
                 "'I4.0_DPMS_CSL_GnO_TL14_IN-2' As label":
@@ -170,10 +180,12 @@
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Height: =34
                     OnSelect: =Select(Parent)
-                    Size: =13
+                    PaddingRight: =7.03
+                    PaddingTop: =7.03
+                    Size: =18.30
                     Text: =ThisItem.FocusLine
-                    Width: =322
-                    X: =166
+                    Width: =453.29
+                    X: =233.69
                     ZIndex: =4
 
                 "'I4.0_DPMS_CSL_GnO_TL13_IN-2' As label":
@@ -182,10 +194,12 @@
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Height: =34
                     OnSelect: =Select(Parent)
-                    Size: =13
+                    PaddingRight: =7.03
+                    PaddingTop: =7.03
+                    Size: =18.30
                     Text: =ThisItem.ObjectiveId
-                    Width: =389
-                    X: =492
+                    Width: =547.61
+                    X: =692.61
                     ZIndex: =5
 
                 "'I4.0_DPMS_CSL_GnO_TL12_IN-2' As label":
@@ -194,10 +208,12 @@
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Height: =34
                     OnSelect: =Select(Parent)
-                    Size: =13
+                    PaddingRight: =7.03
+                    PaddingTop: =7.03
+                    Size: =18.30
                     Text: =ThisItem.ObjTargetDateTime
-                    Width: =298
-                    X: =717
+                    Width: =419.50
+                    X: =1009.34
                     ZIndex: =6
 
                 "'I4.0_DPMS_CSL_GnO_TL11_IN-2' As label":
@@ -206,10 +222,12 @@
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Height: =34
                     OnSelect: =Select(Parent)
-                    Size: =13
+                    PaddingRight: =7.03
+                    PaddingTop: =7.03
+                    Size: =18.30
                     Text: =ThisItem.ObjectiveId & "AC1"
-                    Width: =230
-                    X: =1015
+                    Width: =323.77
+                    X: =1428.83
                     ZIndex: =8
 
             "'I4.0_DPMS_CSL_GnO_TL10_IN-2' As label":
@@ -218,10 +236,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Fill: =RGBA(0, 0, 0, 0.7)
                 Height: =36
-                Size: =13
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.30
                 Text: =
-                Width: =1249
-                X: =44
+                Width: =1758.23
+                X: =61.94
                 Y: =51
                 ZIndex: =6
 
@@ -231,10 +251,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =13.5
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =19.00
                 Text: ="Focus Area"
-                Width: =169
-                X: =44
+                Width: =237.91
+                X: =61.94
                 Y: =52
                 ZIndex: =7
 
@@ -244,10 +266,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =13.5
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =19.00
                 Text: ="Focus Line"
-                Width: =326
-                X: =213
+                Width: =458.92
+                X: =299.85
                 Y: =52
                 ZIndex: =8
 
@@ -257,10 +281,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =13.5
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =19.00
                 Text: ="Objective ID"
-                Width: =223
-                X: =539
+                Width: =313.92
+                X: =758.74
                 Y: =52
                 ZIndex: =9
 
@@ -270,10 +296,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =13.5
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =19.00
                 Text: ="Action Id"
-                Width: =232
-                X: =1059
+                Width: =326.60
+                X: =1490.75
                 Y: =52
                 ZIndex: =10
 
@@ -284,10 +312,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =13.5
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =19.00
                 Text: ="Objective Target Date"
-                Width: =297
-                X: =762
+                Width: =418.08
+                X: =1072.67
                 Y: =52
                 ZIndex: =11
 
@@ -306,13 +336,13 @@
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 211, 205, 1)
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =13
-                Width: =578.5
-                X: =714
+                Size: =18.30
+                Width: =814.37
+                X: =1005.09
                 Y: =187
                 ZIndex: =12
 
@@ -324,10 +354,12 @@
                 Fill: =RGBA(0, 0, 0, 0.7)
                 Font: =Font.'Lato Black'
                 Height: =30
-                Size: =13
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.30
                 Text: ="Issue Desciption"
-                Width: =581
-                X: =713
+                Width: =817.88
+                X: =1003.68
                 Y: =156
                 ZIndex: =13
 
@@ -345,13 +377,13 @@
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(240, 158, 144, 0.9)
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =13
-                Width: =578.5
-                X: =45
+                Size: =18.30
+                Width: =814.37
+                X: =63.35
                 Y: =362
                 ZIndex: =14
 
@@ -363,10 +395,12 @@
                 Fill: =RGBA(0, 0, 0, 0.7)
                 Font: =Font.'Lato Black'
                 Height: =30
-                Size: =13
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.30
                 Text: ="Action Desciption"
-                Width: =581
-                X: =44
+                Width: =817.88
+                X: =61.94
                 Y: =331
                 ZIndex: =15
 
@@ -378,10 +412,12 @@
                 Fill: =RGBA(0, 0, 0, 0.7)
                 Font: =Font.'Lato Black'
                 Height: =30
-                Size: =13
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.30
                 Text: ="Action Owner"
-                Width: =218
-                X: =743
+                Width: =306.89
+                X: =1045.94
                 Y: =332
                 ZIndex: =16
 
@@ -393,10 +429,12 @@
                 Fill: =RGBA(0, 0, 0, 0.7)
                 Font: =Font.'Lato Black'
                 Height: =30
-                Size: =13
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.30
                 Text: ="Action Status"
-                Width: =218
-                X: =1073
+                Width: =306.89
+                X: =1510.47
                 Y: =332
                 ZIndex: =17
 
@@ -417,14 +455,16 @@
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =RGBA(240, 158, 144, 0.9)
                 Items: =["User 1","User 2","User 3"]
+                PaddingRight: =14.07
+                PaddingTop: =14.07
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(131, 24, 75, 1)
                 SelectionColor: =RGBA(0, 0, 0, 1)
                 SelectionFill: =RGBA(220, 153, 153, 1)
-                Size: =13
+                Size: =18.30
                 Tooltip: ="Value Stream"
-                Width: =218
-                X: =743
+                Width: =306.89
+                X: =1045.94
                 Y: =379
                 ZIndex: =18
 
@@ -444,9 +484,12 @@
                     );
                     UpdateContext({I4_0_DPMS_CSL_GnO_LVORSTCHKBK: false});
                     UpdateContext({I4_0_DPMS_CSL_GnO_LVORSTCHKBK: true});
-                Size: =14
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =19.73
                 Text: ="Create Action "
-                X: =900
+                Width: =225.23
+                X: =1266.95
                 Y: =452
                 ZIndex: =19
 
@@ -466,24 +509,30 @@
                     );
                     UpdateContext({I4_0_DPMS_CSL_GnO_LVORSTCHKBK: false});
                     UpdateContext({I4_0_DPMS_CSL_GnO_LVORSTCHKBK: true});
-                Size: =14
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =19.73
                 Text: ="Cancel"
-                X: =1112
+                Width: =225.23
+                X: =1565.38
                 Y: =452
                 ZIndex: =20
 
     "'I4.0_DPMS_CSL_XXX_C_H_IN-2' As 'I4.0_DPMS_CSL_XXX_C_H'":
         Height: =71
+        X: =0.00
         ZIndex: =15
 
     "'I4.0_DPMS_CSL_XXX_C_F_IN-2' As 'I4.0_DPMS_CSL_XXX_C_F'":
         Height: =22
-        Width: =1366
-        Y: =746
+        Width: =1920.00
+        X: =0.00
+        Y: =578
         ZIndex: =16
 
     "'I4.0_DPMS_CSL_XXX_C_N_IN-2' As 'I4.0_DPMS_CSL_XXX_C_N'":
         Height: =36
+        X: =0.00
         Y: =72
         ZIndex: =17
 
@@ -498,7 +547,8 @@
             BorderColor: =RGBA(0, 0, 0, 1)
             Fill: =RGBA(226, 223, 218, 1)
             Height: =64
-            Width: =1366
+            Width: =1920
+            X: =0.00
             Y: =102
             ZIndex: =18
 
@@ -513,9 +563,11 @@
             Height: =30
             HoverDateFill: =RGBA(255, 211, 205, 1)
             IconBackground: =RGBA(149, 149, 149, 1)
+            PaddingRight: =7.03
+            PaddingTop: =0.00
             SelectedDateFill: =RGBA(211, 66, 9, 1)
-            Width: =265
-            X: =671
+            Size: =19.73
+            Width: =1920
             Y: =115
             ZIndex: =19
 
@@ -534,12 +586,13 @@
             HoverColor: =RGBA(242, 19, 19, 1)
             HoverFill: =RGBA(255, 211, 205, 1)
             Items: =Friday_Demolist
+            PaddingRight: =14.07
+            PaddingTop: =14.07
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =RGBA(131, 24, 75, 1)
             SelectionFill: =RGBA(242, 19, 19, 1)
-            Size: =13
-            Width: =246
-            X: =936
+            Size: =18.30
+            Width: =1920
             Y: =115
             ZIndex: =20
 
@@ -553,14 +606,15 @@
             Height: =22
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(242, 19, 19, 1), -20%)
+            PaddingRight: =7.03
+            PaddingTop: =7.03
             RadiusBottomLeft: =5
             RadiusBottomRight: =5
             RadiusTopLeft: =5
             RadiusTopRight: =5
-            Size: =10
+            Size: =14.07
             Text: ="Search"
-            Width: =88
-            X: =1240
+            Width: =1920
             Y: =123
             ZIndex: =21
 
@@ -579,9 +633,12 @@
             Height: =37
             HoverColor: =RGBA(5, 21, 242, 100)
             OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.11
             Text: ="Home"
-            Width: =92
+            Width: =129.52
+            X: =0.00
             Y: =97
             ZIndex: =22
 
@@ -593,10 +650,12 @@
             Height: =37
             HoverColor: =RGBA(5, 21, 242, 100)
             OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.11
             Text: ="Goals & Objective"
-            Width: =274
-            X: =101
+            Width: =385.71
+            X: =142.19
             Y: =99
             ZIndex: =23
 
@@ -606,8 +665,10 @@
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =21
             Icon: =Icon.ChevronRight
-            Width: =23
-            X: =69
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =32.37
+            X: =97.15
             Y: =108
             ZIndex: =24
 
@@ -617,8 +678,10 @@
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =21
             Icon: =Icon.ChevronRight
-            Width: =23
-            X: =299
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =32.37
+            X: =420.90
             Y: =108
             ZIndex: =25
 
@@ -628,10 +691,12 @@
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Semibold
             OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.11
             Text: ="Create Action"
-            Width: =190
-            X: =325
+            Width: =267.46
+            X: =457.51
             Y: =98
             ZIndex: =26
 

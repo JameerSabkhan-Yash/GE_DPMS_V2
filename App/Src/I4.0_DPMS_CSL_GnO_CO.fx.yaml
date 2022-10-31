@@ -70,18 +70,18 @@
         BorderThickness: =2
         Fill: =RGBA(226, 223, 218, 1)
         Height: =499
-        Width: =1321
-        X: =24
-        Y: =233
+        Width: =1859.62
+        X: =33.80
+        Y: =101
         ZIndex: =1
 
     Canvas1_3 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
         Fill: =RGBA(226, 223, 218, 1)
         Height: =431
-        Width: =1280
-        X: =41
-        Y: =265
+        Width: =1801.89
+        X: =57.73
+        Y: =169
         ZIndex: =2
 
         DataCard4_1 As dataCard.blankCard:
@@ -90,8 +90,8 @@
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =678
-            Width: =1280
-            X: =0
+            Width: =1801.89
+            X: =0.00
             Y: =0
             ZIndex: =1
 
@@ -114,10 +114,12 @@
                 LineHeight: =2
                 MaxLength: =200
                 Mode: =TextMode.MultiLine
+                PaddingRight: =7.03
+                PaddingTop: =7.03
                 PressedBorderColor: =RGBA(0, 0, 0, 1)
-                Size: =13
-                Width: =1187
-                X: =50
+                Size: =18.30
+                Width: =1670.96
+                X: =70.38
                 Y: =239
                 ZIndex: =1
 
@@ -127,10 +129,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =32
-                Size: =15
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =21.11
                 Text: ="Objective Description"
-                Width: =266
-                X: =45
+                Width: =374.46
+                X: =63.35
                 Y: =202
                 ZIndex: =7
 
@@ -275,12 +279,14 @@
                             )
                         )
                     )
+                PaddingRight: =14.07
+                PaddingTop: =14.07
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(219, 219, 219, 1)
                 SelectionFill: =RGBA(202, 202, 202, 1)
-                Size: =13
-                Width: =1060
-                X: =175
+                Size: =18.30
+                Width: =1492.17
+                X: =246.35
                 Y: =80
                 ZIndex: =11
 
@@ -302,13 +308,15 @@
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(219, 219, 219, 1)
                 Items: =Distinct(I4_0_DPMS_CSL_CFG_FA,FoucsArea)
+                PaddingRight: =14.07
+                PaddingTop: =14.07
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(202, 202, 202, 1)
                 SelectionFill: =RGBA(202, 202, 202, 1)
-                Size: =13
+                Size: =18.30
                 Tooltip: ="Please Slect the focus Area"
-                Width: =1060
-                X: =175
+                Width: =1492.17
+                X: =246.35
                 Y: =20
                 ZIndex: =12
 
@@ -317,7 +325,9 @@
                 Color: =RGBA(255, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =35
-                Size: =15
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =21.11
                 Text: ="*"
                 Visible: |-
                     =If(
@@ -325,9 +335,9 @@
                         true,
                         false
                     )
-                Width: =33
+                Width: =46.44
                 Wrap: =false
-                X: =146
+                X: =205.54
                 Y: =9
                 ZIndex: =13
 
@@ -336,7 +346,9 @@
                 Color: =RGBA(255, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =35
-                Size: =15
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =21.11
                 Text: ="*"
                 Visible: |-
                     =If(
@@ -344,9 +356,9 @@
                         true,
                         false
                     )
-                Width: =31
+                Width: =43.63
                 Wrap: =false
-                X: =146
+                X: =205.54
                 Y: =74
                 ZIndex: =14
 
@@ -356,7 +368,9 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =33
-                Size: =12
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =16.89
                 Text: ="Please select Focus Area."
                 Visible: |-
                     =If(
@@ -364,8 +378,8 @@
                         true,
                         false
                     )
-                Width: =223
-                X: =175
+                Width: =313.92
+                X: =246.35
                 Y: =22
                 ZIndex: =15
 
@@ -375,7 +389,9 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =36
-                Size: =12
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =16.89
                 Text: ="Please select Focus Line."
                 Visible: |-
                     =If(
@@ -383,8 +399,8 @@
                         true,
                         false
                     )
-                Width: =248
-                X: =175
+                Width: =349.13
+                X: =246.35
                 Y: =79
                 ZIndex: =16
 
@@ -393,7 +409,9 @@
                 Color: =RGBA(255, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =33
-                Size: =15
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =21.11
                 Text: ="*"
                 Visible: |-
                     =If(
@@ -401,9 +419,9 @@
                         true,
                         false
                     )
-                Width: =31
+                Width: =43.63
                 Wrap: =false
-                X: =255
+                X: =358.97
                 Y: =201
                 ZIndex: =17
 
@@ -413,9 +431,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =35
-                Size: =15
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =21.11
                 Text: ="Focus Line"
-                X: =45
+                Width: =211.16
+                X: =63.35
                 Y: =80
                 ZIndex: =20
 
@@ -425,9 +446,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =35
-                Size: =15
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =21.11
                 Text: ="Focus Area"
-                X: =45
+                Width: =211.16
+                X: =63.35
                 Y: =20
                 ZIndex: =21
 
@@ -439,11 +463,13 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =32
-                Size: =12
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =16.89
                 Text: |-
                     ="(Max Characters : " & Len(ObjectiveDescription.Text) &"/200)"
-                Width: =218
-                X: =1026
+                Width: =306.89
+                X: =1444.32
                 Y: =207
                 ZIndex: =22
 
@@ -452,7 +478,9 @@
                 Color: =RGBA(255, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =31
-                Size: =15
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =21.11
                 Text: ="*"
                 Visible: |-
                     =If(
@@ -460,9 +488,9 @@
                         true,
                         false
                     )
-                Width: =46
+                Width: =64.75
                 Wrap: =false
-                X: =425
+                X: =598.29
                 Y: =526
                 ZIndex: =36
 
@@ -472,10 +500,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =32
-                Size: =10
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =14.07
                 Text: =varWorngDate
-                Width: =218
-                X: =570
+                Width: =306.89
+                X: =802.39
                 Y: =530
                 ZIndex: =41
 
@@ -552,12 +582,14 @@
                             )
                         )
                     )
+                PaddingRight: =14.07
+                PaddingTop: =14.07
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(219, 219, 219, 1)
                 SelectionFill: =RGBA(202, 202, 202, 1)
-                Size: =13
-                Width: =1060
-                X: =175
+                Size: =18.30
+                Width: =1492.17
+                X: =246.35
                 Y: =136
                 ZIndex: =42
 
@@ -566,7 +598,9 @@
                 Color: =RGBA(255, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =35
-                Size: =15
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =21.11
                 Text: ="*"
                 Visible: |-
                     =If(
@@ -574,9 +608,9 @@
                         true,
                         false
                     )
-                Width: =31
+                Width: =43.63
                 Wrap: =false
-                X: =131
+                X: =184.41
                 Y: =130
                 ZIndex: =43
 
@@ -586,7 +620,9 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =36
-                Size: =12
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =16.89
                 Text: ="Please select Top Line."
                 Visible: |-
                     =If(
@@ -594,8 +630,8 @@
                         true,
                         false
                     )
-                Width: =248
-                X: =180
+                Width: =349.13
+                X: =253.40
                 Y: =135
                 ZIndex: =44
 
@@ -605,9 +641,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =35
-                Size: =15
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =21.11
                 Text: ="Top Line"
-                X: =45
+                Width: =211.16
+                X: =63.35
                 Y: =136
                 ZIndex: =45
 
@@ -617,10 +656,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =35
-                Size: =15
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =21.11
                 Text: ="Owner"
-                Width: =130
-                X: =50
+                Width: =182.99
+                X: =70.38
                 Y: =533
                 ZIndex: =46
 
@@ -630,10 +671,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =35
-                Size: =15
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =21.11
                 Text: ="Status"
-                Width: =112
-                X: =803
+                Width: =157.68
+                X: =1130.40
                 Y: =533
                 ZIndex: =47
 
@@ -643,10 +686,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =35
-                Size: =15
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =21.11
                 Text: ="Progress"
-                Width: =130
-                X: =1031
+                Width: =182.99
+                X: =1451.36
                 Y: =533
                 ZIndex: =48
 
@@ -656,10 +701,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =35
-                Size: =15
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =21.11
                 Text: ="Target Date"
-                Width: =130
-                X: =568
+                Width: =182.99
+                X: =799.58
                 Y: =533
                 ZIndex: =49
 
@@ -689,12 +736,14 @@
                             Result & ","
                         ) && Title <> User().FullName
                     ).Title
+                PaddingRight: =14.07
+                PaddingTop: =14.07
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 SelectionFill: =RGBA(202, 202, 202, 1)
-                Size: =13
-                Width: =250
-                X: =50
+                Size: =18.30
+                Width: =351.94
+                X: =70.38
                 Y: =578
                 ZIndex: =50
 
@@ -797,10 +846,12 @@
                     Reset(DeliverableCheckBox);
                     Reset(MeasureCheckbox);
                     Reset(WeightCheckBox);
-                Size: =15
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =21.11
                 Text: ="Create"
-                Width: =150
-                X: =888
+                Width: =211.16
+                X: =1250.04
                 Y: =630
                 ZIndex: =52
 
@@ -826,9 +877,12 @@
                             ""
                         )
                     );
+                PaddingRight: =7.03
+                PaddingTop: =0.00
                 SelectedDateFill: =RGBA(211, 66, 9, 1)
-                Width: =200
-                X: =568
+                Size: =19.73
+                Width: =281.53
+                X: =799.58
                 Y: =578
                 ZIndex: =53
 
@@ -837,7 +891,9 @@
                 Color: =RGBA(255, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =31
-                Size: =15
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =21.11
                 Text: ="*"
                 Visible: |-
                     =If(
@@ -845,9 +901,9 @@
                         true,
                         false
                     )
-                Width: =46
+                Width: =64.75
                 Wrap: =false
-                X: =117
+                X: =164.70
                 Y: =535
                 ZIndex: =54
 
@@ -867,6 +923,8 @@
                 HoverBorderColor: =RGBA(131, 24, 75, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 211, 205, 1)
+                PaddingRight: =7.03
+                PaddingTop: =7.03
                 RadiusBottomLeft: |
                     =0
                 RadiusBottomRight: |
@@ -875,9 +933,9 @@
                     =0
                 RadiusTopRight: |
                     =0
-                Size: =13
-                Width: =200
-                X: =1031
+                Size: =18.30
+                Width: =281.53
+                X: =1451.36
                 Y: =578
                 ZIndex: =55
 
@@ -919,14 +977,16 @@
                     HoverBorderColor: =RGBA(131, 24, 75, 1)
                     HoverColor: =RGBA(0, 0, 0, 1)
                     HoverFill: =RGBA(255, 211, 205, 1)
+                    PaddingRight: =7.03
+                    PaddingTop: =7.03
                     RadiusBottomLeft: =0
                     RadiusBottomRight: |
                         =0
                     RadiusTopLeft: =0
                     RadiusTopRight: =0
-                    Size: =13
-                    Width: =200
-                    X: =803
+                    Size: =18.30
+                    Width: =281.53
+                    X: =1130.40
                     Y: =578
                     ZIndex: =56
 
@@ -948,9 +1008,9 @@
                            RGBA(255,194,0,1),
                             RGBA(0,0,0,0)
                         )
-                    Height: =22
-                    Width: =22
-                    X: =816
+                    Height: =30.98
+                    Width: =30.98
+                    X: =1148.71
                     Y: =586
                     ZIndex: =57
 
@@ -960,10 +1020,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =32
-                Size: =15
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =21.11
                 Text: ="Deliverable Description"
-                Width: =266
-                X: =68
+                Width: =374.46
+                X: =95.72
                 Y: =370
                 ZIndex: =59
 
@@ -972,7 +1034,9 @@
                 Color: =RGBA(255, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =33
-                Size: =15
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =21.11
                 Text: ="*"
                 Visible: |-
                     =If(
@@ -980,9 +1044,9 @@
                         true,
                         false
                     )
-                Width: =31
+                Width: =43.63
                 Wrap: =false
-                X: =305
+                X: =429.34
                 Y: =370
                 ZIndex: =60
 
@@ -994,11 +1058,13 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =32
-                Size: =12
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =16.89
                 Text: |-
                     ="(Max Characters : " & Len(DeliverableDescription.Text) &"/200)"
-                Width: =218
-                X: =409
+                Width: =306.89
+                X: =575.75
                 Y: =376
                 ZIndex: =61
 
@@ -1022,10 +1088,12 @@
                 LineHeight: =2
                 MaxLength: =200
                 Mode: =TextMode.MultiLine
+                PaddingRight: =7.03
+                PaddingTop: =7.03
                 PressedBorderColor: =RGBA(0, 0, 0, 1)
-                Size: =13
-                Width: =585
-                X: =650
+                Size: =18.30
+                Width: =823.51
+                X: =915.01
                 Y: =408
                 ZIndex: =62
 
@@ -1035,10 +1103,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =33
-                Size: =15
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =21.11
                 Text: ="Measure"
-                Width: =105
-                X: =676
+                Width: =147.81
+                X: =951.62
                 Y: =370
                 ZIndex: =63
 
@@ -1047,7 +1117,9 @@
                 Color: =RGBA(255, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =33
-                Size: =15
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =21.11
                 Text: ="*"
                 Visible: |-
                     =If(
@@ -1055,9 +1127,9 @@
                         true,
                         false
                     )
-                Width: =31
+                Width: =43.63
                 Wrap: =false
-                X: =763
+                X: =1074.08
                 Y: =370
                 ZIndex: =64
 
@@ -1069,11 +1141,13 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =32
-                Size: =12
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =16.89
                 Text: |-
                     ="(Max Characters : " & Len(MeasureDescription.Text) &"/200)"
-                Width: =218
-                X: =1031
+                Width: =306.89
+                X: =1451.36
                 Y: =376
                 ZIndex: =65
 
@@ -1083,10 +1157,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =37
-                Size: =15
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =21.11
                 Text: ="Weight"
-                Width: =117
-                X: =368
+                Width: =164.70
+                X: =518.05
                 Y: =533
                 ZIndex: =66
 
@@ -1105,6 +1181,8 @@
                 HoverBorderColor: =RGBA(0, 0, 0, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
+                PaddingRight: =7.03
+                PaddingTop: =7.03
                 RadiusBottomLeft: =0
                 RadiusBottomRight: |
                     =0
@@ -1112,9 +1190,9 @@
                     =0
                 RadiusTopRight: |
                     =0
-                Size: =13
-                Width: =200
-                X: =340
+                Size: =18.30
+                Width: =281.53
+                X: =478.62
                 Y: =578
                 ZIndex: =67
 
@@ -1126,13 +1204,15 @@
                 Height: =30
                 HoverColor: =RGBA(0, 18, 107, 1)
                 OnUncheck: =Reset(DeliverableDescription);
+                PaddingRight: =0.00
+                PaddingTop: =0.00
                 PressedBorderColor: =RGBA(0,0,0,0)
                 PressedColor: =RGBA(0,0,0,0)
                 Reset: =
-                Size: =10
+                Size: =14.07
                 Text: =""
-                Width: =37
-                X: =40
+                Width: =52.08
+                X: =56.31
                 Y: =371
                 ZIndex: =68
 
@@ -1144,13 +1224,15 @@
                 Height: =30
                 HoverColor: =RGBA(0, 18, 107, 1)
                 OnUncheck: =Reset(MeasureDescription);
+                PaddingRight: =0.00
+                PaddingTop: =0.00
                 PressedBorderColor: =RGBA(0,0,0,0)
                 PressedColor: =RGBA(0,0,0,0)
                 Reset: =
-                Size: =10
+                Size: =14.07
                 Text: =""
-                Width: =37
-                X: =649
+                Width: =52.08
+                X: =913.62
                 Y: =371
                 ZIndex: =69
 
@@ -1162,13 +1244,15 @@
                 Height: =30
                 HoverColor: =RGBA(0, 18, 107, 1)
                 OnUncheck: =Reset(Weight);
+                PaddingRight: =0.00
+                PaddingTop: =0.00
                 PressedBorderColor: =RGBA(0,0,0,0)
                 PressedColor: =RGBA(0,0,0,0)
                 Reset: =
-                Size: =10
+                Size: =14.07
                 Text: =""
-                Width: =37
-                X: =338
+                Width: =52.08
+                X: =475.78
                 Y: =535
                 ZIndex: =70
 
@@ -1191,10 +1275,12 @@
                 LineHeight: =2
                 MaxLength: =200
                 Mode: =TextMode.MultiLine
+                PaddingRight: =7.03
+                PaddingTop: =7.03
                 PressedBorderColor: =RGBA(0, 0, 0, 1)
-                Size: =13
-                Width: =585
-                X: =49
+                Size: =18.30
+                Width: =823.51
+                X: =68.99
                 Y: =408
                 ZIndex: =71
 
@@ -1204,7 +1290,9 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =35
-                Size: =12
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =16.89
                 Text: ="Select User."
                 Visible: |-
                     =If(
@@ -1212,8 +1300,8 @@
                         true,
                         false
                     )
-                Width: =112
-                X: =50
+                Width: =157.68
+                X: =70.38
                 Y: =578
                 ZIndex: =72
 
@@ -1223,10 +1311,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =32
-                Size: =11
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =15.48
                 Text: =varWorngDate
-                Width: =218
-                X: =570
+                Width: =306.89
+                X: =802.39
                 Y: =612
                 ZIndex: =73
 
@@ -1321,20 +1411,26 @@
                     Reset(DeliverableCheckBox);
                     Reset(MeasureCheckbox);
                     Reset(WeightCheckBox);
-                Size: =15
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =21.11
                 Text: ="Cancel"
-                Width: =150
-                X: =1081
+                Width: =211.16
+                X: =1521.73
                 Y: =630
                 ZIndex: =74
 
     "'I4.0_DPMS_CSL_XXX_C_F_6' As 'I4.0_DPMS_CSL_XXX_C_F'":
         Height: =26
-        Y: =742
+        Width: =1920.00
+        X: =0.00
+        Y: =574
         ZIndex: =3
 
     "'I4.0_DPMS_CSL_XXX_C_H_6' As 'I4.0_DPMS_CSL_XXX_C_H'":
         Height: =77
+        Width: =1920.00
+        X: =0.00
         ZIndex: =4
 
     Button1_16 As button:
@@ -1355,13 +1451,16 @@
             Set(varIssueDashboard,false);
             Set(varInsightDashboad,false);
         PaddingBottom: =23
+        PaddingRight: =7.03
+        PaddingTop: =7.03
         RadiusBottomLeft: =7
         RadiusBottomRight: =7
         RadiusTopLeft: =7
         RadiusTopRight: =7
+        Size: =18.30
         Text: ="Create Objective"
-        Width: =172
-        X: =249
+        Width: =242.14
+        X: =350.52
         Y: =204
         ZIndex: =13
 
@@ -1377,13 +1476,16 @@
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
         OnSelect: =
+        PaddingRight: =7.03
+        PaddingTop: =7.03
         RadiusBottomLeft: =7
         RadiusBottomRight: =7
         RadiusTopLeft: =7
         RadiusTopRight: =7
+        Size: =18.30
         Text: ="Objective Dashboard"
-        Width: =190
-        X: =41
+        Width: =267.46
+        X: =57.73
         Y: =205
         ZIndex: =14
 
@@ -1392,8 +1494,8 @@
         Fill: |
             =RGBA(226, 223, 218, 1)
         Height: =32
-        Width: =195
-        X: =237
+        Width: =274.52
+        X: =333.62
         Y: =233.95
         ZIndex: =16
 
@@ -1412,10 +1514,12 @@
             Height: =37
             HoverColor: =RGBA(5, 21, 242, 100)
             OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.11
             Text: ="Home"
-            Width: =92
-            X: =7
+            Width: =129.52
+            X: =9.84
             Y: =136
             ZIndex: =8
 
@@ -1427,9 +1531,12 @@
             Height: =37
             HoverColor: =RGBA(5, 21, 242, 100)
             OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =19.73
             Text: ="Goals & Objective"
-            Width: =240
-            X: =102
+            Width: =337.87
+            X: =143.59
             Y: =138
             ZIndex: =9
 
@@ -1439,8 +1546,10 @@
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =20
             Icon: =Icon.ChevronRight
-            Width: =23
-            X: =75
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =32.37
+            X: =105.57
             Y: =147
             ZIndex: =10
 
@@ -1450,8 +1559,10 @@
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =20
             Icon: =Icon.ChevronRight
-            Width: =23
-            X: =280
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =32.37
+            X: =394.16
             Y: =147
             ZIndex: =11
 
@@ -1461,14 +1572,19 @@
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Semibold
             OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =19.73
             Text: ="Create Objective"
-            Width: =190
-            X: =305
+            Width: =267.46
+            X: =429.34
             Y: =137
             ZIndex: =12
 
     "'I4.0_DPMS_CSL_XXX_C_N_10' As 'I4.0_DPMS_CSL_XXX_C_N_3'":
         Height: =93
+        Width: =1920.00
+        X: =0.00
         Y: =80
         ZIndex: =17
 
@@ -1482,9 +1598,10 @@
         PopRectangle_1 As rectangle:
             BorderColor: =RGBA(131, 24, 75, 1)
             Fill: =RGBA(226, 223, 218, 0.5)
-            Height: =768
+            Height: =600
             Visible: =I4_0_DPMS_CSL_GnO_CO_LVPOPV
-            Width: =1366
+            Width: =1920.00
+            X: =0.00
             ZIndex: =18
 
         Button1_1 As button:
@@ -1496,28 +1613,30 @@
             DisplayMode: =DisplayMode.Disabled
             Fill: =RGBA(226, 223, 218, 1)
             FontWeight: =FontWeight.Semibold
-            Height: =248
+            Height: =600
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.11
             Text: =""
             Visible: =I4_0_DPMS_CSL_GnO_CO_LVPOPV
-            Width: =536
-            X: =402
-            Y: =311
+            Width: =1920.00
+            X: =0.00
             ZIndex: =19
 
         Icon1_2 As icon.Cancel:
             BorderColor: =RGBA(131, 24, 75, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =36
+            Height: =600
             Icon: =Icon.Cancel
             OnSelect: =Set(I4_0_DPMS_CSL_GnO_CO_LVPOPV,false)
+            PaddingRight: =0.00
+            PaddingTop: =0.00
             Visible: =I4_0_DPMS_CSL_GnO_CO_LVPOPV
-            Width: =30
-            X: =904
-            Y: =312
+            Width: =1920.00
+            X: =0.00
             ZIndex: =20
 
         Label3_6 As label:
@@ -1526,25 +1645,28 @@
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
-            Height: =74
-            Size: =20
+            Height: =600
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =28.17
             Text: |
                 ="Entries Saved Succesfully !!!"
             Visible: =I4_0_DPMS_CSL_GnO_CO_LVPOPV And IsBlank(I4_0_DPMS_CSL_GnO_CO_LVERR)
-            Width: =418
-            X: =461
-            Y: =314
+            Width: =1920.00
+            X: =0.00
             ZIndex: =21
 
         Image1_1 As image:
             BorderColor: =RGBA(131, 24, 75, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
-            Height: =68
+            Height: =600
             Image: =completed
+            PaddingRight: =0.00
+            PaddingTop: =0.00
             Visible: =I4_0_DPMS_CSL_GnO_CO_LVPOPV And IsBlank(I4_0_DPMS_CSL_GnO_CO_LVERR)
-            X: =620
-            Y: =399
+            Width: =1920.00
+            X: =0.00
             ZIndex: =22
 
         Label3_7 As label:
@@ -1553,25 +1675,28 @@
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Semibold
-            Height: =70
-            Size: =15
+            Height: =600
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.11
             Text: |-
                 ="Objective Id is : " & I4_0_DPMS_CSL_GnO_CO_LVPOP
             Visible: =I4_0_DPMS_CSL_GnO_CO_LVPOPV And IsBlank(I4_0_DPMS_CSL_GnO_CO_LVERR)
-            Width: =536
-            X: =402
-            Y: =475
+            Width: =1920.00
+            X: =0.00
             ZIndex: =23
 
         Image3_1 As image:
             BorderColor: =RGBA(131, 24, 75, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
-            Height: =87
+            Height: =600
             Image: =download
+            PaddingRight: =0.00
+            PaddingTop: =0.00
             Visible: =I4_0_DPMS_CSL_GnO_CO_LVPOPV And !IsBlank(I4_0_DPMS_CSL_GnO_CO_LVERR)
-            X: =620
-            Y: =418
+            Width: =1920.00
+            X: =0.00
             ZIndex: =24
 
         Label3_8 As label:
@@ -1580,12 +1705,13 @@
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
-            Height: =74
-            Size: =20
+            Height: =600
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =28.17
             Text: ="Please Try Again !!!"
             Visible: =I4_0_DPMS_CSL_GnO_CO_LVPOPV And !IsBlank(I4_0_DPMS_CSL_GnO_CO_LVERR)
-            Width: =418
-            X: =481
-            Y: =344
+            Width: =1920.00
+            X: =0.00
             ZIndex: =25
 

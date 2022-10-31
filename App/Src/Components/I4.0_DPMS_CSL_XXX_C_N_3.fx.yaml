@@ -15,9 +15,10 @@
         Height: =436
         Items: = GroupBy(Filter(colHorizontalMenu, Id = varTabSelected || ParentTab = "") ,"Id","GroupMenu")
         ShowScrollbar: =false
-        TemplatePadding: =0
-        TemplateSize: =277
-        Width: =1366
+        TemplatePadding: =0.00
+        TemplateSize: =389.95
+        Width: =1922.94
+        X: =0.00
         ZIndex: =1
 
         Gallery2_2 As gallery.variableTemplateHeightGallery:
@@ -29,7 +30,8 @@
             TemplatePadding: =0
             TemplateSize: =40
             Transition: =Transition.Pop
-            Width: =277
+            Width: =389.95
+            X: =0.00
             ZIndex: =1
 
             Button5_2 As button:
@@ -45,15 +47,16 @@
                 OnSelect: =If(varTabSelected=ThisItem.Id,Set(varTabSelected,0),Set(varTabSelected,ThisItem.Id));Navigate(ThisItem.Screen)
                 PaddingBottom: =0
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =16
+                Size: =22.55
                 Text: =ThisItem.Title
-                Width: =277
+                Width: =389.95
+                X: =0.00
                 ZIndex: =1
 
         Icon5_2 As icon.ChevronDown:
@@ -65,10 +68,11 @@
             Height: =20
             Icon: =Icon.ChevronDown
             OnSelect: =Select(Parent)
-            PaddingTop: =6
+            PaddingRight: =0.00
+            PaddingTop: =8.43
             Visible: =CountRows(Gallery2_2.AllItems) > 1
-            Width: =20
-            X: =250
+            Width: =28.17
+            X: =351.94
             Y: =10
             ZIndex: =2
 
@@ -80,9 +84,9 @@
         Height: =53
         PaddingBottom: =0
         PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =21
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =29.56
         Text: |-
             =//If(varTabSelected = 0, 48, App.Height);
             Switch(
@@ -102,6 +106,7 @@
                 48
             )
         Visible: =false
-        Width: =49
+        Width: =68.99
+        X: =0.00
         ZIndex: =2
 

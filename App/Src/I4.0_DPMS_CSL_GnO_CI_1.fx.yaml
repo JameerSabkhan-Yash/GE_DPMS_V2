@@ -1,4 +1,4 @@
-"'I4.0_DPMS_CSL_GnO_CI' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+"'I4.0_DPMS_CSL_GnO_CI_1' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     Fill: =RGBA(116, 116, 116, 1)
     LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
     OnVisible: |
@@ -62,35 +62,35 @@
             ""
         );
         //Reset Checkbox
-        Reset(Checkbox1_7);
-        Reset(Checkbox1_8);
-        Reset(Checkbox1_9);
-        Reset('I4.0_DPMS_CSL_GnO_TI1_CI-2_3');
+        Reset(Checkbox1_10);
+        Reset(Checkbox1_11);
+        Reset(Checkbox1_12);
+        Reset('I4.0_DPMS_CSL_GnO_TI1_CI-2_8');
 
-    "'I4.0_DPMS_CSL_GnO_R2_CI-2_10' As rectangle":
+    "'I4.0_DPMS_CSL_GnO_R2_CI-2_11' As rectangle":
         BorderColor: =RGBA(0, 0, 0, 1)
         BorderThickness: =2
         Fill: =RGBA(226, 223, 218, 1)
         Height: =499
         Width: =1859.62
         X: =33.80
-        Y: =101
+        Y: =152
         ZIndex: =1
 
-    "'I4.0_DPMS_CSL_XXX_C_F_9' As 'I4.0_DPMS_CSL_XXX_C_F'":
+    "'I4.0_DPMS_CSL_XXX_C_F_11' As 'I4.0_DPMS_CSL_XXX_C_F'":
         Height: =26
         Width: =1920.00
         X: =0.00
-        Y: =574
+        Y: =625
         ZIndex: =3
 
-    "'I4.0_DPMS_CSL_XXX_C_H_9' As 'I4.0_DPMS_CSL_XXX_C_H'":
+    "'I4.0_DPMS_CSL_XXX_C_H_11' As 'I4.0_DPMS_CSL_XXX_C_H'":
         Height: =77
         Width: =1920.00
         X: =0.00
         ZIndex: =4
 
-    Button1_35 As button:
+    Button1_38 As button:
         AutoDisableOnSelect: =false
         BorderColor: =RGBA(0, 0, 0, 1)
         Color: =RGBA(0, 0, 0, 1)
@@ -117,7 +117,7 @@
         Y: =204
         ZIndex: =13
 
-    Rectangle1_6 As rectangle:
+    Rectangle1_9 As rectangle:
         BorderColor: =RGBA(131, 24, 75, 1)
         Fill: |
             =RGBA(226, 223, 218, 1)
@@ -127,17 +127,17 @@
         Y: =234
         ZIndex: =14
 
-    Canvas1_7 As fluidGrid.fluidGridWithBlankCard:
+    Canvas1_8 As fluidGrid.fluidGridWithBlankCard:
         AcceptsFocus: =true
         BorderThickness: =0
         Fill: =RGBA(226, 223, 218, 1)
         Height: =448
         Width: =1801.89
         X: =57.73
-        Y: =152
+        Y: =203
         ZIndex: =15
 
-        DataCard4_4 As dataCard.blankCard:
+        DataCard4_6 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
@@ -148,13 +148,13 @@
             Y: =0
             ZIndex: =1
 
-            "'I4.0_DPMS_CSL_GnO_B4_CI-2_3' As button":
+            "'I4.0_DPMS_CSL_GnO_B4_CI-2_4' As button":
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(255, 0, 0, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: |-
                     =If(
-                        !IsBlank('I4.0_DPMS_CSL_GnO_TI1_CI-2_3'.Text),
+                        !IsBlank('I4.0_DPMS_CSL_GnO_TI1_CI-2_8'.Text),
                         DisplayMode.Edit,
                         DisplayMode.Disabled
                     )
@@ -165,7 +165,7 @@
                 HoverFill: =RGBA(0, 0, 0, 0.7)
                 OnSelect: |
                     =If(
-                        !IsBlank('I4.0_DPMS_CSL_GnO_TI1_CI-2_3'.Text),
+                        !IsBlank('I4.0_DPMS_CSL_GnO_TI1_CI-2_8'.Text),
                         Patch(
                             'I4_0_DPMS_CSL_GnO-IS',
                             Defaults('I4_0_DPMS_CSL_GnO-IS'),
@@ -211,10 +211,10 @@
                                 IssueId: I4_0_DPMS_CSL_GnO_CI_LVISNI,
                                 IssueNo: I4_0_DPMS_CSL_GnO_CI_LVISNN,
                                 IssueCreatedDateTime: Today(),
-                                PICost: 'I4.0_DPMS_CSL_GnO_TI_CI-3_2'.Text,
-                                PIQuality: 'I4.0_DPMS_CSL_GnO_TI_CI-2_2'.Text,
-                                PISchedule: 'I4.0_DPMS_CSL_GnO_TI_CI-1_2'.Text,
-                                IssueDescription: 'I4.0_DPMS_CSL_GnO_TI1_CI-2_3'.Text
+                                PICost: 'I4.0_DPMS_CSL_GnO_TI_CI-3_3'.Text,
+                                PIQuality: 'I4.0_DPMS_CSL_GnO_TI_CI-2_3'.Text,
+                                PISchedule: 'I4.0_DPMS_CSL_GnO_TI_CI-1_3'.Text,
+                                IssueDescription: 'I4.0_DPMS_CSL_GnO_TI1_CI-2_8'.Text
                             }
                         );
                         Notify(
@@ -229,10 +229,10 @@
                     //Set Pop Id for Msg
                     Set(I4_0_DPMS_CSL_GnO_CI_LVPOP,I4_0_DPMS_CSL_GnO_CI_LVISNI);
                     //Reset all 
-                    Reset('I4.0_DPMS_CSL_GnO_TI_CI-3_2');
-                    Reset('I4.0_DPMS_CSL_GnO_TI_CI-2_2');
-                    Reset('I4.0_DPMS_CSL_GnO_TI_CI-1_2');
-                    Reset('I4.0_DPMS_CSL_GnO_TI1_CI-2_3');
+                    Reset('I4.0_DPMS_CSL_GnO_TI_CI-3_3');
+                    Reset('I4.0_DPMS_CSL_GnO_TI_CI-2_3');
+                    Reset('I4.0_DPMS_CSL_GnO_TI_CI-1_3');
+                    Reset('I4.0_DPMS_CSL_GnO_TI1_CI-2_8');
                     //Re-Configuration of the Issue Id & No
                     Set(
                         I4_0_DPMS_CSL_GnO_CI_LVISPN,
@@ -287,7 +287,7 @@
                 Y: =414
                 ZIndex: =10
 
-            "'I4.0_DPMS_CSL_GnO_TL_CI-4_2' As label":
+            "'I4.0_DPMS_CSL_GnO_TL_CI-4_3' As label":
                 BorderColor: =RGBA(131, 24, 75, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -302,7 +302,7 @@
                 Y: =290
                 ZIndex: =13
 
-            "'I4.0_DPMS_CSL_GnO_TL_CI-2_2' As label":
+            "'I4.0_DPMS_CSL_GnO_TL_CI-2_3' As label":
                 BorderColor: =RGBA(131, 24, 75, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -317,7 +317,7 @@
                 Y: =339
                 ZIndex: =14
 
-            "'I4.0_DPMS_CSL_GnO_TL_CI-3_2' As label":
+            "'I4.0_DPMS_CSL_GnO_TL_CI-3_3' As label":
                 BorderColor: =RGBA(131, 24, 75, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -332,7 +332,7 @@
                 Y: =386
                 ZIndex: =15
 
-            "'I4.0_DPMS_CSL_GnO_TL_CI-1_2' As label":
+            "'I4.0_DPMS_CSL_GnO_TL_CI-1_8' As label":
                 BorderColor: =RGBA(131, 24, 75, 1)
                 Color: =RGBA(255, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -347,14 +347,14 @@
                 Y: =245
                 ZIndex: =16
 
-            "'I4.0_DPMS_CSL_GnO_TI_CI-3_2' As text":
+            "'I4.0_DPMS_CSL_GnO_TI_CI-3_3' As text":
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =""
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(181, 177, 177, 0.55)
-                DisplayMode: =If(Checkbox1_7.Value = true , DisplayMode.Edit,DisplayMode.Disabled)
+                DisplayMode: =If(Checkbox1_10.Value = true , DisplayMode.Edit,DisplayMode.Disabled)
                 FocusedBorderThickness: =4
                 Height: =39
                 HintText: ="Impact on Cost"
@@ -370,14 +370,14 @@
                 Y: =282
                 ZIndex: =17
 
-            "'I4.0_DPMS_CSL_GnO_TI_CI-2_2' As text":
+            "'I4.0_DPMS_CSL_GnO_TI_CI-2_3' As text":
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =""
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(181, 177, 177, 0.55)
-                DisplayMode: =If(Checkbox1_8.Value = true , DisplayMode.Edit,DisplayMode.Disabled)
+                DisplayMode: =If(Checkbox1_11.Value = true , DisplayMode.Edit,DisplayMode.Disabled)
                 FocusedBorderThickness: =4
                 Height: =39
                 HintText: ="Impact on Schedule"
@@ -393,14 +393,14 @@
                 Y: =335
                 ZIndex: =18
 
-            "'I4.0_DPMS_CSL_GnO_TI_CI-1_2' As text":
+            "'I4.0_DPMS_CSL_GnO_TI_CI-1_3' As text":
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =""
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(181, 177, 177, 0.55)
-                DisplayMode: =If(Checkbox1_9.Value = true , DisplayMode.Edit,DisplayMode.Disabled)
+                DisplayMode: =If(Checkbox1_12.Value = true , DisplayMode.Edit,DisplayMode.Disabled)
                 FocusedBorderThickness: =4
                 Height: =39
                 HintText: ="Impact on Quality"
@@ -415,7 +415,7 @@
                 Y: =390
                 ZIndex: =19
 
-            "'I4.0_DPMS_CSL_GnO_BHG_IN-1_2' As gallery.galleryVertical":
+            "'I4.0_DPMS_CSL_GnO_BHG_IN-1_6' As gallery.galleryVertical":
                 DisplayMode: =DisplayMode.View
                 Height: =54
                 Items: =I4_0_DPMS_CSL_XXX_CIS
@@ -428,7 +428,7 @@
                 Y: =39
                 ZIndex: =20
 
-                "'I4.0_DPMS_CSL_GnO_R1_IN-2_1' As rectangle":
+                "'I4.0_DPMS_CSL_GnO_R1_IN-2_2' As rectangle":
                     BorderColor: =RGBA(0, 0, 0, 0.7)
                     BorderThickness: =1
                     Fill: =RGBA(0, 0, 0, 0)
@@ -437,7 +437,7 @@
                     X: =0.00
                     ZIndex: =1
 
-                "'I4.0_DPMS_CSL_GnO_TL15_IN-2_1' As label":
+                "'I4.0_DPMS_CSL_GnO_TL15_IN-2_2' As label":
                     BorderThickness: =1
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
@@ -451,7 +451,7 @@
                     X: =0.00
                     ZIndex: =3
 
-                "'I4.0_DPMS_CSL_GnO_TL14_IN-2_1' As label":
+                "'I4.0_DPMS_CSL_GnO_TL14_IN-2_2' As label":
                     BorderThickness: =1
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
@@ -465,7 +465,7 @@
                     X: =302.67
                     ZIndex: =4
 
-                "'I4.0_DPMS_CSL_GnO_TL13_IN-2_1' As label":
+                "'I4.0_DPMS_CSL_GnO_TL13_IN-2_2' As label":
                     BorderThickness: =1
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
@@ -479,7 +479,7 @@
                     X: =612.36
                     ZIndex: =5
 
-                "'I4.0_DPMS_CSL_GnO_TL12_IN-2_1' As label":
+                "'I4.0_DPMS_CSL_GnO_TL12_IN-2_2' As label":
                     BorderThickness: =1
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
@@ -514,7 +514,7 @@
                     X: =944.58
                     ZIndex: =6
 
-                "'I4.0_DPMS_CSL_GnO_TL11_IN-2_1' As label":
+                "'I4.0_DPMS_CSL_GnO_TL11_IN-2_4' As label":
                     BorderThickness: =1
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
@@ -528,7 +528,7 @@
                     X: =1376.05
                     ZIndex: =8
 
-                "'I4.0_DPMS_CSL_GnO_TL11_IN-2_2' As label":
+                "'I4.0_DPMS_CSL_GnO_TL11_IN-2_5' As label":
                     BorderThickness: =1
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
@@ -542,13 +542,13 @@
                     X: =1561.17
                     ZIndex: =9
 
-                "'I4.0_DPMS_CSL_GnO_TL11_IN-2_3' As label":
+                "'I4.0_DPMS_CSL_GnO_TL11_IN-2_6' As label":
                     BorderThickness: =1
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Fill: |
                         =Switch(
-                             'I4.0_DPMS_CSL_GnO_TL11_IN-2_3'.Text,
+                             'I4.0_DPMS_CSL_GnO_TL11_IN-2_6'.Text,
                             "Not Started",
                             Gray,
                             "On Track",
@@ -572,7 +572,7 @@
                     X: =1185.31
                     ZIndex: =10
 
-            "'I4.0_DPMS_CSL_GnO_TL10_IN-2_1' As label":
+            "'I4.0_DPMS_CSL_GnO_TL10_IN-2_2' As label":
                 BorderColor: =RGBA(131, 24, 75, 1)
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -587,7 +587,7 @@
                 Y: =9
                 ZIndex: =21
 
-            "'I4.0_DPMS_CSL_GnO_TL9_IN-2_1' As label":
+            "'I4.0_DPMS_CSL_GnO_TL9_IN-2_2' As label":
                 BorderThickness: =1
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -602,7 +602,7 @@
                 Y: =10
                 ZIndex: =22
 
-            "'I4.0_DPMS_CSL_GnO_TL8_IN-2_1' As label":
+            "'I4.0_DPMS_CSL_GnO_TL8_IN-2_2' As label":
                 BorderThickness: =1
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -617,7 +617,7 @@
                 Y: =10
                 ZIndex: =23
 
-            "'I4.0_DPMS_CSL_GnO_TL7_IN-2_1' As label":
+            "'I4.0_DPMS_CSL_GnO_TL7_IN-2_2' As label":
                 BorderThickness: =1
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -632,7 +632,7 @@
                 Y: =10
                 ZIndex: =24
 
-            "'I4.0_DPMS_CSL_GnO_TL6_IN-2_1' As label":
+            "'I4.0_DPMS_CSL_GnO_TL6_IN-2_5' As label":
                 BorderThickness: =1
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -647,7 +647,7 @@
                 Y: =10
                 ZIndex: =25
 
-            "'I4.0_DPMS_CSL_GnO_TL6_IN-2_2' As label":
+            "'I4.0_DPMS_CSL_GnO_TL6_IN-2_7' As label":
                 BorderThickness: =1
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -662,7 +662,7 @@
                 Y: =10
                 ZIndex: =26
 
-            "'I4.0_DPMS_CSL_GnO_TL6_IN-2_3' As label":
+            "'I4.0_DPMS_CSL_GnO_TL6_IN-2_8' As label":
                 BorderThickness: =1
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -677,13 +677,13 @@
                 Y: =10
                 ZIndex: =27
 
-            Checkbox1_7 As checkbox:
+            Checkbox1_10 As checkbox:
                 BorderColor: =RGBA(0,0,0,0)
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =
                 Height: =40
                 HoverColor: =RGBA(0, 18, 107, 1)
-                OnUncheck: =Reset('I4.0_DPMS_CSL_GnO_TI_CI-3_2');
+                OnUncheck: =Reset('I4.0_DPMS_CSL_GnO_TI_CI-3_3');
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 PressedBorderColor: =RGBA(0,0,0,0)
@@ -696,13 +696,13 @@
                 Y: =285
                 ZIndex: =28
 
-            Checkbox1_8 As checkbox:
+            Checkbox1_11 As checkbox:
                 BorderColor: =RGBA(0,0,0,0)
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =
                 Height: =40
                 HoverColor: =RGBA(0, 18, 107, 1)
-                OnUncheck: =Reset('I4.0_DPMS_CSL_GnO_TI_CI-2_2');
+                OnUncheck: =Reset('I4.0_DPMS_CSL_GnO_TI_CI-2_3');
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 Reset: =
@@ -713,13 +713,13 @@
                 Y: =334
                 ZIndex: =29
 
-            Checkbox1_9 As checkbox:
+            Checkbox1_12 As checkbox:
                 BorderColor: =RGBA(0,0,0,0)
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =
                 Height: =40
                 HoverColor: =RGBA(0, 18, 107, 1)
-                OnUncheck: =Reset('I4.0_DPMS_CSL_GnO_TI_CI-1_2');
+                OnUncheck: =Reset('I4.0_DPMS_CSL_GnO_TI_CI-1_3');
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 Reset: =
@@ -730,7 +730,7 @@
                 Y: =381
                 ZIndex: =30
 
-            StarVisible1_5 As label:
+            StarVisible1_9 As label:
                 Align: =Align.Center
                 Color: =RGBA(255, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -741,7 +741,7 @@
                 Text: ="*"
                 Visible: |-
                     =If(
-                        IsBlank('I4.0_DPMS_CSL_GnO_TI_CI-3_2'.Text) &&  Checkbox1_7.Value = true,
+                        IsBlank('I4.0_DPMS_CSL_GnO_TI_CI-3_3'.Text) &&  Checkbox1_10.Value = true,
                         true,
                         false
                     )
@@ -751,7 +751,7 @@
                 Y: =290
                 ZIndex: =32
 
-            StarVisible1_6 As label:
+            StarVisible1_10 As label:
                 Align: =Align.Center
                 Color: =RGBA(255, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -762,7 +762,7 @@
                 Text: ="*"
                 Visible: |-
                     =If(
-                        IsBlank('I4.0_DPMS_CSL_GnO_TI_CI-2_2'.Text) &&  Checkbox1_8.Value = true,
+                        IsBlank('I4.0_DPMS_CSL_GnO_TI_CI-2_3'.Text) &&  Checkbox1_11.Value = true,
                         true,
                         false
                     )
@@ -772,7 +772,7 @@
                 Y: =330
                 ZIndex: =33
 
-            StarVisible1_8 As label:
+            StarVisible1_11 As label:
                 Align: =Align.Center
                 Color: =RGBA(255, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -783,7 +783,7 @@
                 Text: ="*"
                 Visible: |-
                     =If(
-                        IsBlank('I4.0_DPMS_CSL_GnO_TI_CI-1_2'.Text) &&  Checkbox1_9.Value = true,
+                        IsBlank('I4.0_DPMS_CSL_GnO_TI_CI-1_3'.Text) &&  Checkbox1_12.Value = true,
                         true,
                         false
                     )
@@ -793,7 +793,7 @@
                 Y: =381
                 ZIndex: =34
 
-            "'I4.0_DPMS_CSL_GnO_TL6_IN-2_4' As label":
+            "'I4.0_DPMS_CSL_GnO_TL6_IN-2_6' As label":
                 BorderThickness: =1
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -808,7 +808,7 @@
                 Y: =10
                 ZIndex: =44
 
-            "'I4.0_DPMS_CSL_GnO_TL_CI-1_4' As label":
+            "'I4.0_DPMS_CSL_GnO_TL_CI-1_6' As label":
                 BorderColor: =RGBA(131, 24, 75, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -823,7 +823,7 @@
                 Y: =94
                 ZIndex: =45
 
-            "'I4.0_DPMS_CSL_GnO_TI1_CI-2_4' As text":
+            "'I4.0_DPMS_CSL_GnO_TI1_CI-2_6' As text":
                 BorderThickness: =2
                 Clear: =true
                 Color: =RGBA(0, 0, 0, 1)
@@ -853,7 +853,7 @@
                 Y: =134
                 ZIndex: =46
 
-            "'I4.0_DPMS_CSL_GnO_TL_CI-1_5' As label":
+            "'I4.0_DPMS_CSL_GnO_TL_CI-1_7' As label":
                 BorderColor: =RGBA(131, 24, 75, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -868,7 +868,7 @@
                 Y: =94
                 ZIndex: =47
 
-            "'I4.0_DPMS_CSL_GnO_TI1_CI-2_5' As text":
+            "'I4.0_DPMS_CSL_GnO_TI1_CI-2_7' As text":
                 BorderThickness: =2
                 Clear: =true
                 Color: =RGBA(0, 0, 0, 1)
@@ -897,7 +897,7 @@
                 Y: =134
                 ZIndex: =48
 
-        DataCard6 As dataCard.blankCard:
+        DataCard6_1 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
@@ -908,7 +908,7 @@
             Y: =1
             ZIndex: =2
 
-            "'I4.0_DPMS_CSL_GnO_B5_CI-2_3' As button":
+            "'I4.0_DPMS_CSL_GnO_B5_CI-2_7' As button":
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(255, 0, 0, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -927,7 +927,7 @@
                 Y: =167
                 ZIndex: =1
 
-            "'I4.0_DPMS_CSL_GnO_TL_CI-1_3' As label":
+            "'I4.0_DPMS_CSL_GnO_TL_CI-1_9' As label":
                 BorderColor: =RGBA(131, 24, 75, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -941,7 +941,7 @@
                 X: =11.26
                 ZIndex: =2
 
-            StarVisible1_7 As label:
+            StarVisible1_12 As label:
                 Align: =Align.Center
                 Color: =RGBA(255, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -952,7 +952,7 @@
                 Text: ="*"
                 Visible: |-
                     =If(
-                        IsBlank('I4.0_DPMS_CSL_GnO_TI1_CI-2_3'.Text),
+                        IsBlank('I4.0_DPMS_CSL_GnO_TI1_CI-2_8'.Text),
                         true,
                         false
                     )
@@ -962,13 +962,13 @@
                 Y: =2
                 ZIndex: =3
 
-            Button17_17 As button:
+            Button17_21 As button:
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: |-
                     =If(
-                        StarVisible1_8.Visible = true || StarVisible1_7.Visible = true || StarVisible1_6.Visible = true || StarVisible1_5.Visible = true,
+                        StarVisible1_11.Visible = true || StarVisible1_12.Visible = true || StarVisible1_10.Visible = true || StarVisible1_9.Visible = true,
                         DisplayMode.Disabled,
                         DisplayMode.Edit
                     )
@@ -978,7 +978,7 @@
                 HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                 OnSelect: |
                     =If(
-                        !IsBlank('I4.0_DPMS_CSL_GnO_TI1_CI-2_3'.Text),
+                        !IsBlank('I4.0_DPMS_CSL_GnO_TI1_CI-2_8'.Text),
                         Patch(
                             'I4_0_DPMS_CSL_GnO-IS',
                             Defaults('I4_0_DPMS_CSL_GnO-IS'),
@@ -1024,10 +1024,10 @@
                                 IssueId: I4_0_DPMS_CSL_GnO_CI_LVISNI,
                                 IssueNo: I4_0_DPMS_CSL_GnO_CI_LVISNN,
                                 IssueCreatedDateTime: Today(),
-                                PICost: 'I4.0_DPMS_CSL_GnO_TI_CI-3_2'.Text,
-                                PIQuality: 'I4.0_DPMS_CSL_GnO_TI_CI-2_2'.Text,
-                                PISchedule: 'I4.0_DPMS_CSL_GnO_TI_CI-1_2'.Text,
-                                IssueDescription: 'I4.0_DPMS_CSL_GnO_TI1_CI-2_3'.Text
+                                PICost: 'I4.0_DPMS_CSL_GnO_TI_CI-3_3'.Text,
+                                PIQuality: 'I4.0_DPMS_CSL_GnO_TI_CI-2_3'.Text,
+                                PISchedule: 'I4.0_DPMS_CSL_GnO_TI_CI-1_3'.Text,
+                                IssueDescription: 'I4.0_DPMS_CSL_GnO_TI1_CI-2_8'.Text
                             }
                         );
                         
@@ -1095,15 +1095,15 @@
                         )
                     );
                     //Reset Checkbox
-                    Reset(Checkbox1_7);
-                    Reset(Checkbox1_8);
-                    Reset(Checkbox1_9);
-                    Reset('I4.0_DPMS_CSL_GnO_TI1_CI-2_3');
+                    Reset(Checkbox1_10);
+                    Reset(Checkbox1_11);
+                    Reset(Checkbox1_12);
+                    Reset('I4.0_DPMS_CSL_GnO_TI1_CI-2_8');
                     //Reset all 
-                    Reset('I4.0_DPMS_CSL_GnO_TI_CI-3_2');
-                    Reset('I4.0_DPMS_CSL_GnO_TI_CI-2_2');
-                    Reset('I4.0_DPMS_CSL_GnO_TI_CI-1_2');
-                    Reset('I4.0_DPMS_CSL_GnO_TI1_CI-2_3');
+                    Reset('I4.0_DPMS_CSL_GnO_TI_CI-3_3');
+                    Reset('I4.0_DPMS_CSL_GnO_TI_CI-2_3');
+                    Reset('I4.0_DPMS_CSL_GnO_TI_CI-1_3');
+                    Reset('I4.0_DPMS_CSL_GnO_TI1_CI-2_8');
                     //Navigation to Objective Overview
                     //Navigate('I4.0_DPMS_CSL_GnO_OD');
                 PaddingRight: =7.03
@@ -1115,11 +1115,11 @@
                 Y: =167
                 ZIndex: =4
 
-            Label1_7 As label:
+            Label1_8 As label:
                 BorderColor: =RGBA(131, 24, 75, 1)
                 Color: |-
                     =//RGBA(0, 0, 0, 1) 
-                    If(Len('I4.0_DPMS_CSL_GnO_TI1_CI-2_3'.Text) >= 200 , Red,Black)
+                    If(Len('I4.0_DPMS_CSL_GnO_TI1_CI-2_8'.Text) >= 200 , Red,Black)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =32
@@ -1127,13 +1127,13 @@
                 PaddingTop: =7.03
                 Size: =16.89
                 Text: |-
-                    ="(Max Characters : " & Len('I4.0_DPMS_CSL_GnO_TI1_CI-2_3'.Text) &"/200)"
+                    ="(Max Characters : " & Len('I4.0_DPMS_CSL_GnO_TI1_CI-2_8'.Text) &"/200)"
                 Width: =306.89
                 X: =1461.20
                 Y: =9
                 ZIndex: =5
 
-            "'I4.0_DPMS_CSL_GnO_TI1_CI-2_3' As text":
+            "'I4.0_DPMS_CSL_GnO_TI1_CI-2_8' As text":
                 BorderThickness: =2
                 Clear: =true
                 Color: =RGBA(0, 0, 0, 1)
@@ -1160,21 +1160,21 @@
                 Y: =41
                 ZIndex: =6
 
-    "'I4.0_DPMS_CSL_XXX_C_N_9' As 'I4.0_DPMS_CSL_XXX_C_N_3'":
+    "'I4.0_DPMS_CSL_XXX_C_N_11' As 'I4.0_DPMS_CSL_XXX_C_N_3'":
         Height: =40
         Width: =1920.00
         X: =0.00
         Y: =80
         ZIndex: =16
 
-    BreadcrumbBar_12 As group:
+    BreadcrumbBar_14 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =20
         ZIndex: =16
 
-        Label7_74 As label:
+        Label7_80 As label:
             BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -1191,7 +1191,7 @@
             Y: =136
             ZIndex: =8
 
-        Label7_76 As label:
+        Label7_82 As label:
             BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -1208,7 +1208,7 @@
             Y: =138
             ZIndex: =9
 
-        Icon2_32 As icon.ChevronRight:
+        Icon2_36 As icon.ChevronRight:
             BorderColor: =RGBA(131, 24, 75, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -1221,7 +1221,7 @@
             Y: =147
             ZIndex: =10
 
-        Icon2_33 As icon.ChevronRight:
+        Icon2_37 As icon.ChevronRight:
             BorderColor: =RGBA(131, 24, 75, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -1234,7 +1234,7 @@
             Y: =147
             ZIndex: =11
 
-        Label7_75 As label:
+        Label7_81 As label:
             BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(255, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -1249,23 +1249,23 @@
             Y: =137
             ZIndex: =12
 
-    Group2 As group:
+    Group2_3 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =26
 
-        PopRectangle As rectangle:
+        PopRectangle_3 As rectangle:
             BorderColor: =RGBA(131, 24, 75, 1)
             Fill: =RGBA(226, 223, 218, 0.5)
-            Height: =600
+            Height: =651
             Visible: =I4_0_DPMS_CSL_GnO_CI_LVPOPV
-            Width: =1920
+            Width: =1920.00
             X: =0.00
             ZIndex: =17
 
-        Button1 As button:
+        Button1_15 As button:
             BorderColor: =RGBA(0, 0, 0, 1)
             Color: =
             DisabledBorderColor: =RGBA(0, 0, 0, 1)
@@ -1274,7 +1274,7 @@
             DisplayMode: =DisplayMode.Disabled
             Fill: =RGBA(226, 223, 218, 1)
             FontWeight: =FontWeight.Semibold
-            Height: =600
+            Height: =248
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
             PaddingRight: =7.03
@@ -1282,90 +1282,104 @@
             Size: =21.11
             Text: =""
             Visible: =I4_0_DPMS_CSL_GnO_CI_LVPOPV
-            Width: =1920
+            Width: =754.53
+            X: =565.91
+            Y: =311
             ZIndex: =18
 
-        Icon1 As icon.Cancel:
+        Icon1_3 As icon.Cancel:
             BorderColor: =RGBA(131, 24, 75, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =600
+            Height: =36
             Icon: =Icon.Cancel
             OnSelect: =Set(I4_0_DPMS_CSL_GnO_CI_LVPOPV,false)
             PaddingRight: =0.00
             PaddingTop: =0.00
             Visible: =I4_0_DPMS_CSL_GnO_CI_LVPOPV
-            Width: =1920
+            Width: =42.24
+            X: =1272.58
+            Y: =312
             ZIndex: =19
 
-        Label3 As label:
+        Label3_11 As label:
             Align: =Align.Center
             BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
-            Height: =600
+            Height: =74
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =28.17
             Text: |
                 ="Entries Saved Succesfully !!!"
             Visible: =I4_0_DPMS_CSL_GnO_CI_LVPOPV And IsBlank(I4_0_DPMS_CSL_GnO_CI_LVERR)
-            Width: =1920
+            Width: =588.43
+            X: =648.95
+            Y: =314
             ZIndex: =20
 
-        Image1 As image:
+        Image1_3 As image:
             BorderColor: =RGBA(131, 24, 75, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
-            Height: =600
+            Height: =68
             Image: =completed
             PaddingRight: =0.00
             PaddingTop: =0.00
             Visible: =I4_0_DPMS_CSL_GnO_CI_LVPOPV And IsBlank(I4_0_DPMS_CSL_GnO_CI_LVERR)
-            Width: =1920
+            Width: =140.78
+            X: =872.78
+            Y: =399
             ZIndex: =22
 
-        Label3_1 As label:
+        Label3_15 As label:
             Align: =Align.Center
             BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Semibold
-            Height: =600
+            Height: =70
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =21.11
             Text: |-
                 ="Escalation Id is : " & I4_0_DPMS_CSL_GnO_CI_LVPOP
             Visible: =I4_0_DPMS_CSL_GnO_CI_LVPOPV And IsBlank(I4_0_DPMS_CSL_GnO_CI_LVERR)
-            Width: =1920
+            Width: =754.53
+            X: =565.91
+            Y: =475
             ZIndex: =23
 
-        Image3 As image:
+        Image3_2 As image:
             BorderColor: =RGBA(131, 24, 75, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
-            Height: =600
+            Height: =87
             Image: =download
             PaddingRight: =0.00
             PaddingTop: =0.00
             Visible: =I4_0_DPMS_CSL_GnO_CI_LVPOPV And !IsBlank(I4_0_DPMS_CSL_GnO_CI_LVERR)
-            Width: =1920
+            Width: =140.78
+            X: =872.78
+            Y: =418
             ZIndex: =24
 
-        Label3_5 As label:
+        Label3_12 As label:
             Align: =Align.Center
             BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
-            Height: =600
+            Height: =74
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =28.17
             Text: ="Please Try Again !!!"
             Visible: =I4_0_DPMS_CSL_GnO_CI_LVPOPV And !IsBlank(I4_0_DPMS_CSL_GnO_CI_LVERR)
-            Width: =1920
+            Width: =588.43
+            X: =677.10
+            Y: =344
             ZIndex: =25
 

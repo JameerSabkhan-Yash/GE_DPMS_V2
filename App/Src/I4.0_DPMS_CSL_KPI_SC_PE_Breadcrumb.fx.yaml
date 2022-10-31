@@ -3,15 +3,16 @@
     LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
 
     "'Nav_bar_horizontal comp_28' As 'I4.0_DPMS_CSL_XXX_C_N'":
-        Height: =671
-        Width: =1366
-        Y: =77
+        Height: =600
+        Width: =1920.00
+        X: =0.00
 
     RectQuickActionBar1_5 As rectangle:
         BorderColor: =RGBA(131, 24, 75, 1)
         Fill: =RGBA(211, 66, 9, 1)
         Height: =76
-        Width: =Parent.Width
+        Width: =211.16
+        X: =0.00
         ZIndex: =2
 
     LblAppName1_5 As label:
@@ -19,16 +20,19 @@
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Height: =76
-        Size: =18
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =25.36
         Text: ="[Title]"
-        Width: =Parent.Width
+        Width: =211.16
+        X: =0.00
         ZIndex: =3
 
     Canvas1_5 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =620
-        Width: =Parent.Width
-        Y: =147
+        Height: =600
+        Width: =281.53
+        X: =0.00
         ZIndex: =4
 
         DataCard1_5 As dataCard:
@@ -38,8 +42,8 @@
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(226, 223, 218, 1)
             Height: =618
-            Width: =1366
-            X: =0
+            Width: =1922.94
+            X: =0.00
             Y: =0
             ZIndex: =1
 
@@ -47,7 +51,8 @@
                 BorderColor: =RGBA(128, 128, 128, 1)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =558
-                Width: =1334
+                Width: =1877.89
+                X: =0.00
                 ZIndex: =1
 
             Label7_15 As label:
@@ -55,11 +60,14 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
-                Size: =13
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.30
                 Text: |-
                     ="Fiscal Year
                     "
-                X: =45
+                Width: =211.16
+                X: =63.35
                 Y: =128
                 ZIndex: =2
 
@@ -68,9 +76,12 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
-                Size: =13
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.30
                 Text: ="Select Month"
-                X: =45
+                Width: =211.16
+                X: =63.35
                 Y: =175
                 ZIndex: =3
 
@@ -79,10 +90,12 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
-                Size: =13
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.30
                 Text: ="Enter Product Two Yield {g/L}"
-                Width: =280
-                X: =45
+                Width: =394.16
+                X: =63.35
                 Y: =292
                 ZIndex: =5
 
@@ -91,10 +104,12 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
-                Size: =13
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.30
                 Text: ="Enter Product Three Yield {g/L}"
-                Width: =290
-                X: =45
+                Width: =408.25
+                X: =63.35
                 Y: =352
                 ZIndex: =6
 
@@ -103,10 +118,12 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
-                Size: =13
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.30
                 Text: ="Enter Product Four Yield {g/L}"
-                Width: =280
-                X: =45
+                Width: =394.16
+                X: =63.35
                 Y: =412
                 ZIndex: =7
 
@@ -115,10 +132,12 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
-                Size: =13
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.30
                 Text: ="IgG Overall Network Yield"
-                Width: =250
-                X: =45
+                Width: =351.94
+                X: =63.35
                 Y: =462
                 ZIndex: =8
 
@@ -136,12 +155,14 @@
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 211, 205, 1)
                 Items: =DropDownSample
+                PaddingRight: =14.07
+                PaddingTop: =14.07
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(131, 24, 75, 1)
                 SelectionFill: =RGBA(211, 66, 9, 1)
-                Size: =13
-                Width: =234
-                X: =1084
+                Size: =18.30
+                Width: =329.39
+                X: =1525.96
                 Y: =143
                 ZIndex: =9
 
@@ -157,9 +178,11 @@
                 HoverBorderColor: =RGBA(131, 24, 75, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 211, 205, 1)
-                Size: =13
-                Width: =234
-                X: =1084
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.30
+                Width: =329.39
+                X: =1525.96
                 Y: =205
                 ZIndex: =10
 
@@ -175,9 +198,11 @@
                 HoverBorderColor: =RGBA(131, 24, 75, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 211, 205, 1)
-                Size: =13
-                Width: =234
-                X: =1084
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.30
+                Width: =329.39
+                X: =1525.96
                 Y: =266
                 ZIndex: =11
 
@@ -193,9 +218,11 @@
                 HoverBorderColor: =RGBA(131, 24, 75, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 211, 205, 1)
-                Size: =13
-                Width: =234
-                X: =1084
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.30
+                Width: =329.39
+                X: =1525.96
                 Y: =334
                 ZIndex: =12
 
@@ -211,9 +238,11 @@
                 HoverBorderColor: =RGBA(131, 24, 75, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 211, 205, 1)
-                Size: =13
-                Width: =234
-                X: =1084
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.30
+                Width: =329.39
+                X: =1525.96
                 Y: =405
                 ZIndex: =13
 
@@ -225,9 +254,12 @@
                 FontWeight: =FontWeight.Semibold
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(255, 0, 0, 100), -20%)
-                Size: =15
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =21.11
                 Text: ="Save Entries"
-                X: =1158
+                Width: =225.23
+                X: =1630.12
                 Y: =508
                 ZIndex: =15
 
@@ -237,10 +269,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =41
-                Size: =13
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.30
                 Text: ="Enter Product One Yield {g/L}"
-                Width: =281
-                X: =45
+                Width: =395.57
+                X: =63.35
                 Y: =235
                 ZIndex: =16
 
@@ -256,9 +290,11 @@
                 HoverBorderColor: =RGBA(131, 24, 75, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 211, 205, 1)
-                Size: =13
-                Width: =234
-                X: =1084
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.30
+                Width: =329.39
+                X: =1525.96
                 Y: =82
                 ZIndex: =17
 
@@ -269,9 +305,12 @@
                 Fill: =RGBA(226, 223, 218, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =22
-                Size: =13
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.30
                 Text: ="Product Yield"
-                X: =44
+                Width: =211.16
+                X: =61.94
                 Y: =88
                 ZIndex: =18
 
@@ -281,9 +320,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =44
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =19.73
                 Text: ="Calculated Value"
-                Width: =182
-                X: =1149
+                Width: =256.21
+                X: =1617.47
                 Y: =455
                 ZIndex: =19
 
@@ -291,7 +333,8 @@
         BorderColor: =RGBA(131, 24, 75, 1)
         Fill: =RGBA(226, 223, 218, 1)
         Height: =76
-        Width: =1366
+        Width: =1920.00
+        X: =0.00
         ZIndex: =5
 
     Image1_6 As image:
@@ -300,8 +343,10 @@
         DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =76
         Image: ='MicrosoftTeams-image (2)'
-        Width: =119
-        X: =28
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =167.52
+        X: =39.43
         ZIndex: =6
 
     Label1_31 As label:
@@ -311,17 +356,20 @@
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.'Lato Black'
         Height: =76
-        Size: =30
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =42.24
         Text: ="Digital Performance Management System"
-        Width: =1219
-        X: =73
+        Width: =1716.02
+        X: =102.77
         ZIndex: =7
 
     Rectangle1_50 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(226, 223, 218, 1)
         Height: =64
-        Width: =1366
+        Width: =1920.00
+        X: =0.00
         Y: =124
         ZIndex: =8
 
@@ -340,12 +388,14 @@
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(255, 211, 205, 1)
         Items: =Friday_Demolist
+        PaddingRight: =14.07
+        PaddingTop: =14.07
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(131, 24, 75, 1)
         SelectionFill: =RGBA(242, 19, 19, 1)
-        Size: =13
-        Width: =170
-        X: =1180
+        Size: =18.30
+        Width: =239.33
+        X: =1661.11
         Y: =12
         ZIndex: =9
 
@@ -355,10 +405,12 @@
         DisabledColor: =RGBA(166, 166, 166, 1)
         FontWeight: =FontWeight.Semibold
         Height: =22
-        Size: =13
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =18.30
         Text: ="Admin"
-        Width: =137
-        X: =1182
+        Width: =192.84
+        X: =1663.92
         Y: =46
         ZIndex: =10
 
@@ -373,9 +425,12 @@
         Height: =30
         HoverDateFill: =RGBA(255, 211, 205, 1)
         IconBackground: =RGBA(149, 149, 149, 1)
+        PaddingRight: =7.03
+        PaddingTop: =0.00
         SelectedDateFill: =RGBA(211, 66, 9, 1)
-        Width: =265
-        X: =671
+        Size: =19.73
+        Width: =373.06
+        X: =944.58
         Y: =140
         ZIndex: =11
 
@@ -394,12 +449,14 @@
         HoverColor: =RGBA(242, 19, 19, 1)
         HoverFill: =RGBA(255, 211, 205, 1)
         Items: =Friday_Demolist
+        PaddingRight: =14.07
+        PaddingTop: =14.07
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(131, 24, 75, 1)
         SelectionFill: =RGBA(242, 19, 19, 1)
-        Size: =13
-        Width: =246
-        X: =936
+        Size: =18.30
+        Width: =346.32
+        X: =1317.60
         Y: =140
         ZIndex: =12
 
@@ -413,14 +470,16 @@
         Height: =22
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(242, 19, 19, 1), -20%)
+        PaddingRight: =7.03
+        PaddingTop: =7.03
         RadiusBottomLeft: =5
         RadiusBottomRight: =5
         RadiusTopLeft: =5
         RadiusTopRight: =5
-        Size: =10
+        Size: =14.07
         Text: ="Search"
-        Width: =88
-        X: =1240
+        Width: =123.89
+        X: =1745.56
         Y: =148
         ZIndex: =13
 
@@ -429,10 +488,12 @@
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Height: =37
-        Size: =23
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =32.37
         Text: =">"
-        Width: =41
-        X: =85
+        Width: =57.73
+        X: =119.64
         Y: =135
         ZIndex: =19
 
@@ -441,10 +502,12 @@
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Height: =37
-        Size: =23
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =32.37
         Text: =">"
-        Width: =41
-        X: =158
+        Width: =57.73
+        X: =222.42
         Y: =137
         ZIndex: =20
 
@@ -463,11 +526,13 @@
             Height: =37
             HoverColor: =RGBA(5, 21, 242, 100)
             OnSelect: =Navigate(HomeScreen, Fade)
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.11
             Text: ="Home"
             Underline: =true
-            Width: =92
-            X: =12
+            Width: =129.52
+            X: =16.89
             Y: =135
             ZIndex: =14
 
@@ -478,10 +543,13 @@
             FontWeight: =FontWeight.Semibold
             HoverColor: =RGBA(5, 21, 242, 100)
             OnSelect: =Navigate(KPI_Screen, Fade)
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.11
             Text: ="KPI"
             Underline: =true
-            X: =113
+            Width: =211.16
+            X: =159.08
             Y: =135
             ZIndex: =15
 
@@ -490,10 +558,13 @@
             Color: =RGBA(255, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Semibold
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.11
             Text: ="Performance"
             Underline: =true
-            X: =197
+            Width: =211.16
+            X: =277.33
             Y: =136
             ZIndex: =18
 

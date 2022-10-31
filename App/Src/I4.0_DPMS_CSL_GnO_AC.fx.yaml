@@ -34,12 +34,14 @@
             Set(varActionDashbaord,false);
             Set(varIssueDashboard,false);
             Set(varInsightDashboad,false);
+        PaddingRight: =7.03
+        PaddingTop: =7.03
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Size: =15.5
+        Size: =21.83
         Text: ="Action Dashboard"
-        Width: =1343
-        X: =15
+        Width: =1890.57
+        X: =21.11
         Y: =156
         ZIndex: =1
 
@@ -48,18 +50,18 @@
         BorderThickness: =2
         Fill: =RGBA(226, 223, 218, 1)
         Height: =541
-        Width: =1343
-        X: =15
-        Y: =192
+        Width: =1890.57
+        X: =21.11
+        Y: =59
         ZIndex: =2
 
     "'I4.0_DPMS_CSL_GnO_CAN_IN-1_2' As fluidGrid.fluidGridWithBlankCard":
         BorderThickness: =0
         Fill: =RGBA(226, 223, 218, 1)
         Height: =539
-        Width: =1314
-        X: =27
-        Y: =212
+        Width: =1849.74
+        X: =38.01
+        Y: =61
         ZIndex: =5
 
         "'I4.0_DPMS_CSL_GnO_DC_IN-1_1' As dataCard":
@@ -69,8 +71,8 @@
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =419
-            Width: =1314
-            X: =0
+            Width: =1849.74
+            X: =0.00
             Y: =0
             ZIndex: =1
 
@@ -143,9 +145,9 @@
                 PrimaryColor3: =RGBA(255, 211, 205, 1)
                 SelectedColor: =RGBA(0, 0, 0, 1)
                 SelectedFill: =RGBA(211, 66, 9, .2)
-                Size: =13
-                Width: =1254
-                X: =15
+                Size: =18.30
+                Width: =1765.28
+                X: =21.11
                 Y: =123
                 ZIndex: =1
 
@@ -158,8 +160,8 @@
                     LayoutHeight: =Parent.Height
                     Order: =1
                     Text: =ThisItem.Select
-                    Width: =100
-                    X: =0
+                    Width: =278.72
+                    X: =0.00
                     Y: =0
                     ZIndex: =20
 
@@ -170,10 +172,12 @@
                         Fill: =RGBA(255, 255, 255, 1)
                         Height: =22
                         HoverColor: =RGBA(131, 24, 75, 1)
-                        Size: =13
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        Size: =18.30
                         Text: =
-                        Width: =32
-                        X: =90
+                        Width: =45.05
+                        X: =126.71
                         Y: =50
                         ZIndex: =1
 
@@ -183,10 +187,12 @@
                         Color: =RGBA(0, 0, 0, 1)
                         Height: =22
                         HoverColor: =RGBA(131, 24, 75, 1)
-                        Size: =13
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        Size: =18.30
                         Text: =
-                        Width: =32
-                        X: =96
+                        Width: =45.05
+                        X: =135.14
                         Y: =210
                         ZIndex: =2
 
@@ -200,8 +206,8 @@
                     LayoutHeight: =Parent.Height
                     Order: =2
                     Text: =ThisItem.Action_Description
-                    Width: =440
-                    X: =113
+                    Width: =619.40
+                    X: =278.72
                     Y: =0
                     ZIndex: =21
 
@@ -215,8 +221,8 @@
                     LayoutHeight: =Parent.Height
                     Order: =3
                     Text: =ThisItem.Action_Owner
-                    Width: =137
-                    X: =635
+                    Width: =192.84
+                    X: =898.11
                     Y: =21
                     ZIndex: =22
 
@@ -230,8 +236,8 @@
                     LayoutHeight: =Parent.Height
                     Order: =4
                     Text: =ThisItem.Action_Status
-                    Width: =130
-                    X: =763
+                    Width: =182.99
+                    X: =1090.98
                     Y: =0
                     ZIndex: =23
 
@@ -244,8 +250,8 @@
                     LayoutHeight: =Parent.Height
                     Order: =5
                     Text: =ThisItem.Action_UID
-                    Width: =100
-                    X: =0
+                    Width: =278.72
+                    X: =1273.97
                     Y: =0
                     ZIndex: =24
 
@@ -259,8 +265,8 @@
                     LayoutHeight: =Parent.Height
                     Order: =6
                     Text: =ThisItem.Create_Date
-                    Width: =139
-                    X: =1077
+                    Width: =195.70
+                    X: =1552.73
                     Y: =0
                     ZIndex: =25
 
@@ -275,7 +281,11 @@
                 HoverBorderColor: =RGBA(203, 102, 102, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 161, 161, 1)
-                X: =15
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =19.73
+                Width: =450.48
+                X: =21.11
                 Y: =71
                 ZIndex: =2
 
@@ -293,7 +303,9 @@
                         'I4.0_DPMS_CSL_GnO_SC_IN-2',
                         Fade
                     );
-                Size: =14
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =19.73
                 Text: ="Create Action "
                 Visible: |-
                     =If(
@@ -301,7 +313,8 @@
                         false,
                         true
                     )
-                X: =944
+                Width: =225.23
+                X: =1328.89
                 Y: =11
                 ZIndex: =3
 
@@ -314,7 +327,9 @@
                 HoverBorderColor: =RGBA(0, 0, 0, 0.7)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =RGBA(0, 0, 0, 0.7)
-                Size: =14
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =19.73
                 Text: ="Ignore"
                 Visible: |-
                     =If(
@@ -322,7 +337,8 @@
                         false,
                         true
                     )
-                X: =1120
+                Width: =225.23
+                X: =1576.65
                 Y: =11
                 ZIndex: =4
 
@@ -331,8 +347,10 @@
                 DisabledColor: =RGBA(244, 244, 244, 1)
                 Height: =40
                 Icon: =Icon.Filter
-                Width: =34
-                X: =297
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Width: =47.87
+                X: =418.08
                 Y: =71
                 ZIndex: =5
 
@@ -344,9 +362,12 @@
                 FontWeight: =FontWeight.Semibold
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
-                Size: =15
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =21.11
                 Text: ="Update"
-                X: =1107
+                Width: =225.23
+                X: =1558.35
                 Y: =74
                 ZIndex: =6
 
@@ -356,10 +377,12 @@
                 Color: =RGBA(0, 0, 0, 1)
                 Height: =22
                 HoverColor: =RGBA(131, 24, 75, 1)
-                Size: =13
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =18.30
                 Text: =
-                Width: =32
-                X: =96
+                Width: =45.05
+                X: =135.14
                 Y: =210
                 ZIndex: =7
 
@@ -369,10 +392,12 @@
                 Color: =RGBA(0, 0, 0, 1)
                 Height: =22
                 HoverColor: =RGBA(131, 24, 75, 1)
-                Size: =13
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =18.30
                 Text: =
-                Width: =32
-                X: =96
+                Width: =45.05
+                X: =135.14
                 Y: =250
                 ZIndex: =8
 
@@ -382,10 +407,12 @@
                 Color: =RGBA(0, 0, 0, 1)
                 Height: =22
                 HoverColor: =RGBA(131, 24, 75, 1)
-                Size: =13
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =18.30
                 Text: =
-                Width: =32
-                X: =96
+                Width: =45.05
+                X: =135.14
                 Y: =290
                 ZIndex: =9
 
@@ -395,10 +422,12 @@
                 Color: =RGBA(0, 0, 0, 1)
                 Height: =22
                 HoverColor: =RGBA(131, 24, 75, 1)
-                Size: =13
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =18.30
                 Text: =
-                Width: =32
-                X: =96
+                Width: =45.05
+                X: =135.14
                 Y: =330
                 ZIndex: =10
 
@@ -408,8 +437,8 @@
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =569
-            Width: =1314
-            X: =0
+            Width: =1849.74
+            X: =0.00
             Y: =1
             ZIndex: =2
 
@@ -482,9 +511,9 @@
                 PrimaryColor3: =RGBA(255, 211, 205, 1)
                 SelectedColor: =RGBA(0, 0, 0, 1)
                 SelectedFill: =RGBA(211, 66, 9, .2)
-                Size: =13
-                Width: =1258
-                X: =16
+                Size: =18.30
+                Width: =1770.90
+                X: =22.55
                 Y: =129
                 ZIndex: =1
 
@@ -497,8 +526,8 @@
                     LayoutHeight: =Parent.Height
                     Order: =1
                     Text: =ThisItem.Select
-                    Width: =100
-                    X: =15
+                    Width: =411.06
+                    X: =0.00
                     Y: =0
                     ZIndex: =26
 
@@ -508,10 +537,12 @@
                         Color: =RGBA(0, 0, 0, 1)
                         Height: =22
                         HoverColor: =RGBA(131, 24, 75, 1)
-                        Size: =13
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        Size: =18.30
                         Text: =
-                        Width: =32
-                        X: =96
+                        Width: =45.05
+                        X: =135.14
                         Y: =210
                         ZIndex: =1
 
@@ -524,8 +555,8 @@
                     LayoutHeight: =Parent.Height
                     Order: =2
                     Text: =ThisItem.Action_Description
-                    Width: =100
-                    X: =0
+                    Width: =411.06
+                    X: =411.06
                     Y: =0
                     ZIndex: =27
 
@@ -539,8 +570,8 @@
                     LayoutHeight: =Parent.Height
                     Order: =3
                     Text: =ThisItem.Action_Owner
-                    Width: =138
-                    X: =504
+                    Width: =194.28
+                    X: =822.10
                     Y: =0
                     ZIndex: =28
 
@@ -554,8 +585,8 @@
                     LayoutHeight: =Parent.Height
                     Order: =4
                     Text: =ThisItem.Action_Status
-                    Width: =173
-                    X: =655
+                    Width: =243.53
+                    X: =1016.36
                     Y: =0
                     ZIndex: =29
 
@@ -569,8 +600,8 @@
                     LayoutHeight: =Parent.Height
                     Order: =5
                     Text: =ThisItem.Action_UID
-                    Width: =191
-                    X: =843
+                    Width: =268.88
+                    X: =1259.91
                     Y: =12
                     ZIndex: =30
 
@@ -584,8 +615,8 @@
                     LayoutHeight: =Parent.Height
                     Order: =6
                     Text: =ThisItem.Create_Date
-                    Width: =159
-                    X: =1086
+                    Width: =223.81
+                    X: =1528.78
                     Y: =0
                     ZIndex: =31
 
@@ -600,7 +631,11 @@
                 HoverBorderColor: =RGBA(203, 102, 102, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 161, 161, 1)
-                X: =22
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =19.73
+                Width: =450.48
+                X: =30.98
                 Y: =78
                 ZIndex: =2
 
@@ -612,9 +647,12 @@
                 FontWeight: =FontWeight.Semibold
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
-                Size: =15
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =21.11
                 Text: ="Update"
-                X: =1118
+                Width: =225.23
+                X: =1573.84
                 Y: =78
                 ZIndex: =3
 
@@ -623,19 +661,24 @@
                 DisabledColor: =RGBA(244, 244, 244, 1)
                 Height: =40
                 Icon: =Icon.Filter
-                Width: =34
-                X: =304
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Width: =47.87
+                X: =427.94
                 Y: =78
                 ZIndex: =4
 
     "'I4.0_DPMS_CSL_XXX_C_F_IN-1_2' As 'I4.0_DPMS_CSL_XXX_C_F'":
         Height: =22
-        Width: =1366
-        Y: =746
+        Width: =1920.00
+        X: =0.00
+        Y: =578
         ZIndex: =8
 
     "'I4.0_DPMS_CSL_XXX_C_H_IN-1_2' As 'I4.0_DPMS_CSL_XXX_C_H'":
         Height: =71
+        Width: =1920.00
+        X: =0.00
         ZIndex: =9
 
     "'I4.0_DPMS_CSL_GnO_TL-IN-1_1' As label":
@@ -643,14 +686,19 @@
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Height: =32
-        Size: =13
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =18.30
         Text: =CountRows(Filter('I4.0_DPMS_CSL_GnO_BHG_IN-1_2'.AllItems,'I4.0_DPMS_CSL_GnO_CB_IN-1'.Value))
         Visible: =false
-        X: =388
+        Width: =211.16
+        X: =546.19
         Y: =224
         ZIndex: =10
 
     "'I4.0_DPMS_CSL_Gno_AC' As 'I4.0_DPMS_CSL_XXX_C_N'":
+        Width: =1920.00
+        X: =0.00
         Y: =72
         ZIndex: =11
 
@@ -658,7 +706,8 @@
         BorderColor: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(226, 223, 218, 1)
         Height: =39
-        Width: =1366
+        Width: =1920.00
+        X: =0.00
         Y: =117
         ZIndex: =12
 
@@ -677,9 +726,12 @@
             Height: =37
             HoverColor: =RGBA(5, 21, 242, 100)
             OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.11
             Text: ="Home"
-            Width: =92
+            Width: =129.52
+            X: =0.00
             Y: =115
             ZIndex: =16
 
@@ -691,10 +743,12 @@
             Height: =37
             HoverColor: =RGBA(5, 21, 242, 100)
             OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.11
             Text: ="Goals & Objective"
-            Width: =274
-            X: =101
+            Width: =385.71
+            X: =142.19
             Y: =117
             ZIndex: =17
 
@@ -704,8 +758,10 @@
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =21
             Icon: =Icon.ChevronRight
-            Width: =23
-            X: =69
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =32.37
+            X: =97.15
             Y: =126
             ZIndex: =18
 
@@ -715,8 +771,10 @@
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =21
             Icon: =Icon.ChevronRight
-            Width: =23
-            X: =289
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =32.37
+            X: =406.85
             Y: =126
             ZIndex: =19
 
@@ -726,10 +784,12 @@
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Semibold
             OnSelect: =Navigate('I4.0_DPMS_CSL_GnO_SC', Fade)
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.11
             Text: ="Insight Dashboard"
-            Width: =190
-            X: =325
+            Width: =267.46
+            X: =457.51
             Y: =116
             ZIndex: =20
 
