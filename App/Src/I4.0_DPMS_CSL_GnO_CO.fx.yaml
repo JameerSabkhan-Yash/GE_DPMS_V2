@@ -687,7 +687,7 @@
                                 Value(Result) >= Value(I4_0_DPMS_CSL_XXX_GVUGN) //&& Result <> varUserGroup
                             ).Result,
                             Result & ","
-                        ) //&& Title = User().FullName
+                        ) && Title <> User().FullName
                     ).Title
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 0, 0, 0)
@@ -1203,18 +1203,18 @@
                 Color: =RGBA(0, 0, 0, 0.5)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
-                Height: =22
+                Height: =35
                 Size: =12
-                Text: ="Please select user."
+                Text: ="Select User."
                 Visible: |-
                     =If(
                         IsBlank(dpOwner.SelectedText.Value),
                         true,
                         false
                     )
-                Width: =156
+                Width: =112
                 X: =50
-                Y: =588
+                Y: =578
                 ZIndex: =72
 
             TargetLabelWorng As label:
