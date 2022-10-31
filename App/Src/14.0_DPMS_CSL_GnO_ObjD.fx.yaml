@@ -146,6 +146,23 @@
                 Y: =10
                 ZIndex: =1
 
+            Button3 As button:
+                AutoDisableOnSelect: =false
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(204, 204, 204, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =81
+                HoverColor: =
+                HoverFill: =
+                Size: =15
+                Text: =""
+                Width: =1228
+                X: =28
+                Y: =25
+                ZIndex: =2
+
             CompositePieChart1 As group:
                 Height: =5
                 Width: =5
@@ -160,9 +177,9 @@
                     FontWeight: =FontWeight.Semibold
                     Height: =48
                     Text: ="Objective Status"
-                    Width: =225
+                    Width: =333
                     Y: =398
-                    ZIndex: =2
+                    ZIndex: =20
 
                 PieChart1 As pieChart:
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -196,26 +213,9 @@
                         Blue//Completed
                         ]
                     Items: =I4_0_DPMS_CSL_OB_C_SCount
-                    Width: =694
+                    Width: =771
                     Y: =61
-                    ZIndex: =3
-
-            Button3 As button:
-                AutoDisableOnSelect: =false
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(204, 204, 204, 1)
-                FontWeight: =FontWeight.Semibold
-                Height: =81
-                HoverColor: =
-                HoverFill: =
-                Size: =15
-                Text: =""
-                Width: =701
-                X: =28
-                Y: =25
-                ZIndex: =4
+                    ZIndex: =21
 
             Button3_1 As button:
                 AutoDisableOnSelect: =false
@@ -233,7 +233,7 @@
                 Width: =135
                 X: =40
                 Y: =34
-                ZIndex: =5
+                ZIndex: =3
 
             Button3_2 As button:
                 AutoDisableOnSelect: =false
@@ -251,7 +251,7 @@
                 Width: =114
                 X: =598
                 Y: =34
-                ZIndex: =6
+                ZIndex: =4
 
             Button3_3 As button:
                 AutoDisableOnSelect: =false
@@ -269,7 +269,7 @@
                 Width: =114
                 X: =331
                 Y: =34
-                ZIndex: =7
+                ZIndex: =5
 
             Button3_4 As button:
                 AutoDisableOnSelect: =false
@@ -287,7 +287,7 @@
                 Width: =114
                 X: =196
                 Y: =34
-                ZIndex: =8
+                ZIndex: =6
 
             Button3_5 As button:
                 AutoDisableOnSelect: =false
@@ -305,7 +305,7 @@
                 Width: =114
                 X: =466
                 Y: =34
-                ZIndex: =9
+                ZIndex: =7
 
             Label1_3 As label:
                 BorderColor: =RGBA(0, 18, 107, 1)
@@ -316,7 +316,7 @@
                 Text: ="Total Objective"
                 X: =46
                 Y: =33
-                ZIndex: =10
+                ZIndex: =8
 
             Label1_5 As label:
                 BorderColor: =RGBA(0, 18, 107, 1)
@@ -328,7 +328,7 @@
                 Width: =112
                 X: =606
                 Y: =38
-                ZIndex: =11
+                ZIndex: =9
 
             "'14.0_DPMS_CSL_GnO_ObjD_L1' As label":
                 BorderColor: =RGBA(0, 18, 107, 1)
@@ -340,7 +340,7 @@
                 Width: =91
                 X: =352
                 Y: =39
-                ZIndex: =12
+                ZIndex: =10
 
             "'14.0_DPMS_CSL_GnO_ObjD_L1_1' As label":
                 BorderColor: =RGBA(0, 18, 107, 1)
@@ -352,7 +352,7 @@
                 Width: =107
                 X: =210
                 Y: =38
-                ZIndex: =13
+                ZIndex: =11
 
             Label_Total As label:
                 BorderColor: =RGBA(0, 18, 107, 1)
@@ -364,7 +364,7 @@
                 Width: =64
                 X: =89
                 Y: =61
-                ZIndex: =14
+                ZIndex: =12
 
             Label_Completed As label:
                 BorderColor: =RGBA(0, 18, 107, 1)
@@ -376,7 +376,7 @@
                 Width: =43
                 X: =641
                 Y: =61
-                ZIndex: =15
+                ZIndex: =13
 
             Label_Inprrogress As label:
                 BorderColor: =RGBA(0, 18, 107, 1)
@@ -389,7 +389,7 @@
                 Width: =51
                 X: =372
                 Y: =65
-                ZIndex: =16
+                ZIndex: =14
 
             Label5 As label:
                 BorderColor: =RGBA(131, 24, 75, 1)
@@ -401,7 +401,7 @@
                 Width: =33
                 X: =507
                 Y: =61
-                ZIndex: =17
+                ZIndex: =15
 
             Label_Onhold As label:
                 BorderColor: =RGBA(131, 24, 75, 1)
@@ -413,7 +413,7 @@
                 Width: =43
                 X: =236
                 Y: =61
-                ZIndex: =18
+                ZIndex: =16
 
             "'14.0_DPMS_CSL_GnO_ObjD_L1_2' As label":
                 BorderColor: =RGBA(0, 18, 107, 1)
@@ -425,7 +425,7 @@
                 Width: =79
                 X: =492
                 Y: =38
-                ZIndex: =19
+                ZIndex: =17
 
             Button3_6 As button:
                 AutoDisableOnSelect: =false
@@ -434,28 +434,73 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 Fill: =RGBA(204, 204, 204, 0.5)
                 FontWeight: =FontWeight.Semibold
-                Height: =421
+                Height: =325
                 HoverColor: =
                 HoverFill: =
                 Size: =15
                 Text: =""
-                Width: =500
-                X: =756
-                Y: =25
-                ZIndex: =20
+                Width: =1228
+                X: =28
+                Y: =122
+                ZIndex: =18
 
             ColumnChart1 As barChart:
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 GridStyle: =GridStyle.All
                 Height: =351
-                ItemColorSet: =[RGBA(49, 130, 93, 1),RGBA(48,166,103, 1), RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
+                ItemColorSet: =[ RGBA(118, 154, 204, 1), RGBA(118, 154, 204, 1),RGBA(118, 154, 204, 1), RGBA(118, 154, 204, 1),RGBA(49, 130, 93, 1),RGBA(48,166,103, 1), RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1),  RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
                 Items: =I4_0_DPMS_CSL_OB_C_ObjCount
                 MinimumBarWidth: =20
-                Width: =577
-                X: =718
+                Width: =634
+                X: =661
                 XLabelAngle: =20
-                Y: =106
-                ZIndex: =21
+                Y: =109
+                ZIndex: =19
+
+            "Gallery2 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
+                BorderColor: =RGBA(131, 24, 75, 1)
+                Height: =67
+                Items: =I4_0_DPMS_CSL_OB_C_ObjCount
+                TemplatePadding: =0
+                TemplateSize: =107
+                Width: =561
+                X: =745
+                Y: =33
+                ZIndex: =22
+
+                Title8 As label:
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =Self.Size * 1.8
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =20
+                    Text: =ThisItem.ObjectiveCount
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =Parent.TemplateWidth - 64
+                    X: =29
+                    Y: =31
+                    ZIndex: =2
+
+                Subtitle7 As label:
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =24
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =12
+                    Text: =ThisItem.FocusArea
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =107
+                    Y: =10
+                    ZIndex: =3
 
         "'14.0_DPMS_CSL_GnO_ObjD_DC1' As dataCard.blankCard":
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -498,9 +543,9 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 FocusedBorderThickness: =4
-                HoverBorderColor: =RGBA(203, 102, 102, 1)
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(255, 161, 161, 1)
+                HoverBorderColor: =RGBA(255, 255, 255, 1)
+                HoverColor: =
+                HoverFill: =RGBA(255, 255, 255, 1)
                 X: =24
                 Y: =35
                 ZIndex: =2
@@ -1048,7 +1093,7 @@
         Width: =211
         X: =53
         Y: =234
-        ZIndex: =13
+        ZIndex: =11
 
     Button1_13 As button:
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1072,12 +1117,12 @@
         Width: =168
         X: =264
         Y: =204
-        ZIndex: =14
+        ZIndex: =12
 
     "'I4.0_DPMS_CSL_XXX_C_N_5' As 'I4.0_DPMS_CSL_XXX_C_N_3'":
         Height: =Self.FlexibleHeight
         Y: =90
-        ZIndex: =15
+        ZIndex: =13
 
     BreadcrumbBar_7 As group:
         Height: =5
@@ -1099,7 +1144,7 @@
             Width: =92
             X: =7
             Y: =136
-            ZIndex: =8
+            ZIndex: =6
 
         Label7_73 As label:
             BorderColor: =RGBA(131, 24, 75, 1)
@@ -1113,7 +1158,7 @@
             Width: =274
             X: =102
             Y: =138
-            ZIndex: =9
+            ZIndex: =7
 
         Icon2_30 As icon.ChevronRight:
             BorderColor: =RGBA(131, 24, 75, 1)
@@ -1124,7 +1169,7 @@
             Width: =23
             X: =75
             Y: =147
-            ZIndex: =10
+            ZIndex: =8
 
         Icon2_31 As icon.ChevronRight:
             BorderColor: =RGBA(131, 24, 75, 1)
@@ -1135,7 +1180,7 @@
             Width: =23
             X: =305
             Y: =147
-            ZIndex: =11
+            ZIndex: =9
 
         Label7_72 As label:
             BorderColor: =RGBA(131, 24, 75, 1)
@@ -1147,7 +1192,7 @@
             Width: =213
             X: =330
             Y: =137
-            ZIndex: =12
+            ZIndex: =10
 
     Group3_1 As group:
         Height: =5
@@ -1162,7 +1207,7 @@
             Height: =768
             Visible: =I4_0_DPMS_CSL_GnO_LVPOPV_U
             Width: =1366
-            ZIndex: =16
+            ZIndex: =14
 
         Button1_33 As button:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -1183,7 +1228,7 @@
             Width: =1257
             X: =53
             Y: =190
-            ZIndex: =17
+            ZIndex: =15
 
         Label4_7 As label:
             BorderColor: =RGBA(131, 24, 75, 1)
@@ -1196,7 +1241,7 @@
             Width: =92
             X: =74
             Y: =538
-            ZIndex: =18
+            ZIndex: =16
 
         Label4_6 As label:
             BorderColor: =RGBA(131, 24, 75, 1)
@@ -1209,7 +1254,7 @@
             Width: =95
             X: =703
             Y: =538
-            ZIndex: =19
+            ZIndex: =17
 
         Label6_8 As label:
             BorderColor: =RGBA(131, 24, 75, 1)
@@ -1224,7 +1269,7 @@
             Width: =213
             X: =74
             Y: =356
-            ZIndex: =20
+            ZIndex: =18
 
         Label6_7 As label:
             BorderColor: =RGBA(131, 24, 75, 1)
@@ -1237,7 +1282,7 @@
             Width: =138
             X: =703
             Y: =356
-            ZIndex: =21
+            ZIndex: =19
 
         "'I4.0_DPMS_CSL_GnO_BHG_IN-1_9' As gallery.galleryVertical":
             DisplayMode: =DisplayMode.View
@@ -1251,7 +1296,7 @@
             Width: =1244
             X: =64
             Y: =284
-            ZIndex: =22
+            ZIndex: =20
 
             "'I4.0_DPMS_CSL_GnO_R1_IN-2_5' As rectangle":
                 BorderColor: =RGBA(0, 0, 0, 0.7)
@@ -1392,7 +1437,7 @@
             Width: =1224
             X: =68
             Y: =255
-            ZIndex: =23
+            ZIndex: =21
 
         "'I4.0_DPMS_CSL_GnO_TL9_IN-2_5' As label":
             BorderThickness: =1
@@ -1406,7 +1451,7 @@
             Width: =215
             X: =69
             Y: =256
-            ZIndex: =24
+            ZIndex: =22
 
         "'I4.0_DPMS_CSL_GnO_TL8_IN-2_5' As label":
             BorderThickness: =1
@@ -1420,7 +1465,7 @@
             Width: =220
             X: =284
             Y: =256
-            ZIndex: =25
+            ZIndex: =23
 
         "'I4.0_DPMS_CSL_GnO_TL7_IN-2_5' As label":
             BorderThickness: =1
@@ -1434,7 +1479,7 @@
             Width: =236
             X: =504
             Y: =256
-            ZIndex: =26
+            ZIndex: =24
 
         "'I4.0_DPMS_CSL_GnO_TL6_IN-2_20' As label":
             BorderThickness: =1
@@ -1448,7 +1493,7 @@
             Width: =171
             X: =740
             Y: =256
-            ZIndex: =27
+            ZIndex: =25
 
         "'I4.0_DPMS_CSL_GnO_TL6_IN-2_18' As label":
             BorderThickness: =1
@@ -1462,7 +1507,7 @@
             Width: =131
             X: =1046
             Y: =256
-            ZIndex: =28
+            ZIndex: =26
 
         "'I4.0_DPMS_CSL_GnO_TL6_IN-2_17' As label":
             BorderThickness: =1
@@ -1476,7 +1521,7 @@
             Width: =114
             X: =1177
             Y: =256
-            ZIndex: =29
+            ZIndex: =27
 
         "'I4.0_DPMS_CSL_GnO_TL6_IN-2_19' As label":
             BorderThickness: =1
@@ -1490,7 +1535,7 @@
             Width: =135
             X: =911
             Y: =256
-            ZIndex: =30
+            ZIndex: =28
 
         Icon1_8 As icon.Cancel:
             BorderColor: =RGBA(131, 24, 75, 1)
@@ -1503,7 +1548,7 @@
             Width: =30
             X: =1278
             Y: =192
-            ZIndex: =31
+            ZIndex: =29
 
         Label3_14 As label:
             BorderColor: =RGBA(131, 24, 75, 1)
@@ -1517,7 +1562,7 @@
             Width: =270
             X: =67
             Y: =194
-            ZIndex: =32
+            ZIndex: =30
 
         "'I4.0_DPMS_CSL_GnO_B5_CI-2_6' As button":
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -1616,7 +1661,7 @@
             Width: =150
             X: =1131
             Y: =578
-            ZIndex: =33
+            ZIndex: =31
 
         Circle2_2 As circle:
             BorderColor: =RGBA(131, 24, 75, 1)
@@ -1640,7 +1685,7 @@
             Width: =38
             X: =84
             Y: =588
-            ZIndex: =34
+            ZIndex: =32
 
         dpStatus_2 As dropdown:
             AccessibleLabel: ="Please Slect the focus Area"
@@ -1668,7 +1713,7 @@
             Width: =250
             X: =150
             Y: =585
-            ZIndex: =35
+            ZIndex: =33
 
         Label47_35 As label:
             BorderColor: =RGBA(131, 24, 75, 1)
@@ -1682,7 +1727,7 @@
             Width: =72
             X: =150
             Y: =587
-            ZIndex: =36
+            ZIndex: =34
 
         dpProgress_2 As dropdown:
             AccessibleLabel: ="Please Slect the focus Area"
@@ -1710,7 +1755,7 @@
             Width: =250
             X: =714
             Y: =581
-            ZIndex: =37
+            ZIndex: =35
 
         ObjectiveDescriptionUpdate_2 As text:
             Align: =Align.Justify
@@ -1737,7 +1782,7 @@
             Width: =555
             X: =80
             Y: =399
-            ZIndex: =38
+            ZIndex: =36
 
         CommentUpdate_2 As text:
             Align: =Align.Justify
@@ -1764,7 +1809,7 @@
             Width: =584
             X: =707
             Y: =399
-            ZIndex: =39
+            ZIndex: =37
 
         Label47_34 As label:
             BorderColor: =RGBA(131, 24, 75, 1)
@@ -1778,7 +1823,7 @@
             Width: =106
             X: =714
             Y: =585
-            ZIndex: =40
+            ZIndex: =38
 
         ObjectiveUpdateStar_1 As label:
             Align: =Align.Center
@@ -1792,7 +1837,7 @@
             Wrap: =false
             X: =264
             Y: =354
-            ZIndex: =41
+            ZIndex: =39
 
         ObjectiveDescriptionLength_6 As label:
             BorderColor: =RGBA(131, 24, 75, 1)
@@ -1809,7 +1854,7 @@
             Width: =218
             X: =438
             Y: =356
-            ZIndex: =42
+            ZIndex: =40
 
         CommentUpdateStar_1 As label:
             Align: =Align.Center
@@ -1823,7 +1868,7 @@
             Wrap: =false
             X: =803
             Y: =354
-            ZIndex: =43
+            ZIndex: =41
 
         ObjectiveDescriptionLength_5 As label:
             BorderColor: =RGBA(131, 24, 75, 1)
@@ -1840,7 +1885,7 @@
             Width: =218
             X: =1100
             Y: =356
-            ZIndex: =44
+            ZIndex: =42
 
         ObjectiveUpdateTick_1 As icon.Check:
             BorderColor: =RGBA(152, 208, 70, 1)
@@ -1853,7 +1898,7 @@
             Width: =36
             X: =272
             Y: =359
-            ZIndex: =45
+            ZIndex: =43
 
         CommentUpdateTick_1 As icon.Check:
             BorderColor: =RGBA(152, 208, 70, 1)
@@ -1866,7 +1911,7 @@
             Width: =36
             X: =805
             Y: =359
-            ZIndex: =46
+            ZIndex: =44
 
         StatusUpdateStar_1 As label:
             Align: =Align.Center
@@ -1885,7 +1930,7 @@
             Wrap: =false
             X: =130
             Y: =535
-            ZIndex: =47
+            ZIndex: =45
 
         StatusUpdateTick_1 As icon.Check:
             BorderColor: =RGBA(152, 208, 70, 1)
@@ -1903,7 +1948,7 @@
             Width: =36
             X: =138
             Y: =540
-            ZIndex: =48
+            ZIndex: =46
 
         ProgressUpdateStar_1 As label:
             Align: =Align.Center
@@ -1922,7 +1967,7 @@
             Wrap: =false
             X: =776
             Y: =531
-            ZIndex: =49
+            ZIndex: =47
 
         ProgressUpdateTick_1 As icon.Check:
             BorderColor: =RGBA(152, 208, 70, 1)
@@ -1940,5 +1985,5 @@
             Width: =36
             X: =784
             Y: =536
-            ZIndex: =50
+            ZIndex: =48
 

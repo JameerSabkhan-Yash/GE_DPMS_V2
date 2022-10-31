@@ -126,7 +126,7 @@
                     OnSelect: =Select(Parent)
                     Size: =11
                     Text: |
-                        =ThisItem.ObjectiveDescription
+                        =ThisItem.ObjUpdateDateTime
                     Width: =173
                     X: =1037
                     ZIndex: =6
